@@ -10,6 +10,13 @@
 		A929496D20962BD400350C43 /* ios_extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A929496320962BD400350C43 /* ios_extensions.framework */; };
 		A929497220962BD400350C43 /* ios_extensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929497120962BD400350C43 /* ios_extensionsTests.swift */; };
 		A929497420962BD400350C43 /* ios_extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A929496620962BD400350C43 /* ios_extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A929498420962BE600350C43 /* ClosedRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929497F20962BE600350C43 /* ClosedRange+Random.swift */; };
+		A929498620962BE600350C43 /* Int+Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498120962BE600350C43 /* Int+Power.swift */; };
+		A929498820962BE600350C43 /* Int+Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498220962BE600350C43 /* Int+Digits.swift */; };
+		A929498A20962BE600350C43 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498320962BE600350C43 /* Int+Random.swift */; };
+		A929499120962C1400350C43 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929499020962C1400350C43 /* IntTests.swift */; };
+		A929499620962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
+		A929499720962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,12 @@
 		A929496C20962BD400350C43 /* ios-extensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-extensionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A929497120962BD400350C43 /* ios_extensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_extensionsTests.swift; sourceTree = "<group>"; };
 		A929497320962BD400350C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A929497F20962BE600350C43 /* ClosedRange+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClosedRange+Random.swift"; sourceTree = "<group>"; };
+		A929498120962BE600350C43 /* Int+Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Power.swift"; sourceTree = "<group>"; };
+		A929498220962BE600350C43 /* Int+Digits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Digits.swift"; sourceTree = "<group>"; };
+		A929498320962BE600350C43 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
+		A929499020962C1400350C43 /* IntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
+		A929499520962E9C00350C43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +66,7 @@
 		A929495920962BD400350C43 = {
 			isa = PBXGroup;
 			children = (
+				A929499520962E9C00350C43 /* .gitignore */,
 				A929496520962BD400350C43 /* ios-extensions */,
 				A929497020962BD400350C43 /* ios-extensionsTests */,
 				A929496420962BD400350C43 /* Products */,
@@ -71,6 +85,7 @@
 		A929496520962BD400350C43 /* ios-extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A929497D20962BE600350C43 /* Extensions */,
 				A929496620962BD400350C43 /* ios_extensions.h */,
 				A929496720962BD400350C43 /* Info.plist */,
 			);
@@ -81,9 +96,37 @@
 			isa = PBXGroup;
 			children = (
 				A929497120962BD400350C43 /* ios_extensionsTests.swift */,
+				A929499020962C1400350C43 /* IntTests.swift */,
 				A929497320962BD400350C43 /* Info.plist */,
 			);
 			path = "ios-extensionsTests";
+			sourceTree = "<group>";
+		};
+		A929497D20962BE600350C43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A929497E20962BE600350C43 /* ClosedRange */,
+				A929498020962BE600350C43 /* Int */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A929497E20962BE600350C43 /* ClosedRange */ = {
+			isa = PBXGroup;
+			children = (
+				A929497F20962BE600350C43 /* ClosedRange+Random.swift */,
+			);
+			path = ClosedRange;
+			sourceTree = "<group>";
+		};
+		A929498020962BE600350C43 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				A929498120962BE600350C43 /* Int+Power.swift */,
+				A929498220962BE600350C43 /* Int+Digits.swift */,
+				A929498320962BE600350C43 /* Int+Random.swift */,
+			);
+			path = Int;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A929499620962E9C00350C43 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A929499720962E9C00350C43 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A929498420962BE600350C43 /* ClosedRange+Random.swift in Sources */,
+				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
+				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
+				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A929499120962C1400350C43 /* IntTests.swift in Sources */,
 				A929497220962BD400350C43 /* ios_extensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +439,7 @@
 		A929497B20962BD400350C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = "ios-extensionsTests/Info.plist";
@@ -407,6 +458,7 @@
 		A929497C20962BD400350C43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = "ios-extensionsTests/Info.plist";
