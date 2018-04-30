@@ -24,4 +24,9 @@ public extension Int {
         
         return Int(mini + arc4random_uniform(maxi - mini)) - offset
     }
+    
+    static func random(min: Int = 0, max: Int) -> Int {
+        return Int(arc4random_uniform(UInt32((max - min) + 1))) + min
+    }
+    
 }
