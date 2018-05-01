@@ -33,6 +33,7 @@
 		A999C5092096FA31006014B1 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C5082096FA31006014B1 /* UIImage+Resize.swift */; };
 		A999C50B2096FA74006014B1 /* UIImage+SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */; };
 		A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */; };
+		A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		A999C5082096FA31006014B1 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SolidColor.swift"; sourceTree = "<group>"; };
 		A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawOrientation.swift"; sourceTree = "<group>"; };
+		A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadFromURL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				A999C5062096FA06006014B1 /* UIImageView+Masking.swift */,
+				A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				A999C5042096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */,
 				A999C5092096FA31006014B1 /* UIImage+Resize.swift in Sources */,
 				A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */,
+				A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
