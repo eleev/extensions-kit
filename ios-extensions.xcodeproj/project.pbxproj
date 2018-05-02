@@ -33,6 +33,7 @@
 		A999C5092096FA31006014B1 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C5082096FA31006014B1 /* UIImage+Resize.swift */; };
 		A999C50B2096FA74006014B1 /* UIImage+SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */; };
 		A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */; };
+		A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */; };
 		A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		A999C5082096FA31006014B1 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SolidColor.swift"; sourceTree = "<group>"; };
 		A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawOrientation.swift"; sourceTree = "<group>"; };
+		A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+DispatchOnce.swift"; sourceTree = "<group>"; };
 		A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadFromURL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 		A929497D20962BE600350C43 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A9ACB9812099E68000966991 /* Grand Central Dispatch */,
 				A999C50E2096FB5F006014B1 /* UIImageView */,
 				A999C5022096F9A8006014B1 /* UIImage */,
 				A92130BC2096F33C0043ADAB /* Collection */,
@@ -186,6 +189,14 @@
 				A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */,
 			);
 			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		A9ACB9812099E68000966991 /* Grand Central Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */,
+			);
+			path = "Grand Central Dispatch";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
+				A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
 				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
