@@ -220,8 +220,8 @@
 		A9D4CFBB209AE7CC006461AF /* SpriteKit */ = {
 			isa = PBXGroup;
 			children = (
-				A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */,
-				A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */,
+				A9D4CFD0209AF342006461AF /* SKTextureAtlas */,
+				A9D4CFCF209AF339006461AF /* SKScene */,
 			);
 			path = SpriteKit;
 			sourceTree = "<group>";
@@ -253,6 +253,22 @@
 				A9D4CFC7209AEACF006461AF /* Bool+Random.swift */,
 			);
 			path = Bool;
+			sourceTree = "<group>";
+		};
+		A9D4CFCF209AF339006461AF /* SKScene */ = {
+			isa = PBXGroup;
+			children = (
+				A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */,
+			);
+			path = SKScene;
+			sourceTree = "<group>";
+		};
+		A9D4CFD0209AF342006461AF /* SKTextureAtlas */ = {
+			isa = PBXGroup;
+			children = (
+				A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */,
+			);
+			path = SKTextureAtlas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
