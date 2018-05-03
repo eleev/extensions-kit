@@ -43,6 +43,7 @@
 		A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC9209AEB3D006461AF /* Collection+ParallelIteration.swift */; };
 		A9D4CFCC209AEB88006461AF /* Collection+RandomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFCB209AEB88006461AF /* Collection+RandomItem.swift */; };
 		A9D4CFCE209AEBCB006461AF /* Collection+Sum&Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFCD209AEBCB006461AF /* Collection+Sum&Average.swift */; };
+		A9D4CFD5209AF3D1006461AF /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		A9D4CFC9209AEB3D006461AF /* Collection+ParallelIteration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+ParallelIteration.swift"; sourceTree = "<group>"; };
 		A9D4CFCB209AEB88006461AF /* Collection+RandomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+RandomItem.swift"; sourceTree = "<group>"; };
 		A9D4CFCD209AEBCB006461AF /* Collection+Sum&Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Sum&Average.swift"; sourceTree = "<group>"; };
+		A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,8 @@
 		A929497D20962BE600350C43 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A9D4CFD2209AF374006461AF /* CoreAnimation */,
+				A9D4CFD1209AF36E006461AF /* CoreGraphics */,
 				A9D4CFBD209AE7E1006461AF /* Foundation */,
 				A9D4CFBC209AE7D7006461AF /* UIKit */,
 				A9D4CFBB209AE7CC006461AF /* SpriteKit */,
@@ -238,6 +242,7 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A9D4CFD3209AF3C0006461AF /* Dictionary */,
 				A9D4CFC4209AEA72006461AF /* Bool */,
 				A92130BC2096F33C0043ADAB /* Collection */,
 				A929497E20962BE600350C43 /* ClosedRange */,
@@ -269,6 +274,28 @@
 				A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */,
 			);
 			path = SKTextureAtlas;
+			sourceTree = "<group>";
+		};
+		A9D4CFD1209AF36E006461AF /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		A9D4CFD2209AF374006461AF /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		A9D4CFD3209AF3C0006461AF /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */,
+			);
+			path = Dictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +412,7 @@
 				A999C50B2096FA74006014B1 /* UIImage+SolidColor.swift in Sources */,
 				A929498420962BE600350C43 /* ClosedRange+Random.swift in Sources */,
 				A9D4CFCE209AEBCB006461AF /* Collection+Sum&Average.swift in Sources */,
+				A9D4CFD5209AF3D1006461AF /* Dictionary+JSON.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
 				A999C5042096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */,
