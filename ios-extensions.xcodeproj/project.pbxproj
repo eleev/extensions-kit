@@ -37,6 +37,7 @@
 		A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */; };
 		A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */; };
 		A9D4CFC1209AE864006461AF /* SKTextureAtlas+FramesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */; };
+		A9D4CFC3209AEA29006461AF /* Int+Roman.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC2209AEA29006461AF /* Int+Roman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadFromURL.swift"; sourceTree = "<group>"; };
 		A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+SerialSpriteLoading.swift"; sourceTree = "<group>"; };
 		A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTextureAtlas+FramesLoader.swift"; sourceTree = "<group>"; };
+		A9D4CFC2209AEA29006461AF /* Int+Roman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Roman.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				A92130B62096F0910043ADAB /* Int+Factorial.swift */,
 				A92130B82096F0DB0043ADAB /* Int+EvenOdd.swift */,
 				A92130BA2096F1180043ADAB /* Int+Clamp.swift */,
+				A9D4CFC2209AEA29006461AF /* Int+Roman.swift */,
 			);
 			path = Int;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */,
+				A9D4CFC3209AEA29006461AF /* Int+Roman.swift in Sources */,
 				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
 				A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
