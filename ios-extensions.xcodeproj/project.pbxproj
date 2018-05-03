@@ -38,6 +38,8 @@
 		A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */; };
 		A9D4CFC1209AE864006461AF /* SKTextureAtlas+FramesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */; };
 		A9D4CFC3209AEA29006461AF /* Int+Roman.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC2209AEA29006461AF /* Int+Roman.swift */; };
+		A9D4CFC6209AEA7F006461AF /* Bool+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC5209AEA7F006461AF /* Bool+Int.swift */; };
+		A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC7209AEACF006461AF /* Bool+Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+SerialSpriteLoading.swift"; sourceTree = "<group>"; };
 		A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTextureAtlas+FramesLoader.swift"; sourceTree = "<group>"; };
 		A9D4CFC2209AEA29006461AF /* Int+Roman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Roman.swift"; sourceTree = "<group>"; };
+		A9D4CFC5209AEA7F006461AF /* Bool+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Int.swift"; sourceTree = "<group>"; };
+		A9D4CFC7209AEACF006461AF /* Bool+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Random.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,11 +229,21 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A9D4CFC4209AEA72006461AF /* Bool */,
 				A92130BC2096F33C0043ADAB /* Collection */,
 				A929497E20962BE600350C43 /* ClosedRange */,
 				A929498020962BE600350C43 /* Int */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		A9D4CFC4209AEA72006461AF /* Bool */ = {
+			isa = PBXGroup;
+			children = (
+				A9D4CFC5209AEA7F006461AF /* Bool+Int.swift */,
+				A9D4CFC7209AEACF006461AF /* Bool+Random.swift */,
+			);
+			path = Bool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,12 +359,14 @@
 				A9D4CFC1209AE864006461AF /* SKTextureAtlas+FramesLoader.swift in Sources */,
 				A999C50B2096FA74006014B1 /* UIImage+SolidColor.swift in Sources */,
 				A929498420962BE600350C43 /* ClosedRange+Random.swift in Sources */,
+				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
 				A999C5042096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */,
 				A999C5092096FA31006014B1 /* UIImage+Resize.swift in Sources */,
 				A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */,
 				A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
+				A9D4CFC6209AEA7F006461AF /* Bool+Int.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */,
 				A9D4CFC3209AEA29006461AF /* Int+Roman.swift in Sources */,
