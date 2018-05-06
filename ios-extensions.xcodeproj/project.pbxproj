@@ -35,6 +35,7 @@
 		A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */; };
 		A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */; };
 		A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */; };
+		A9CC5C33209F0BD200040E61 /* SKTexture+LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC5C32209F0BD200040E61 /* SKTexture+LinearGradient.swift */; };
 		A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */; };
 		A9D4CFC1209AE864006461AF /* SKTextureAtlas+FramesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */; };
 		A9D4CFC3209AEA29006461AF /* Int+Roman.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC2209AEA29006461AF /* Int+Roman.swift */; };
@@ -79,6 +80,7 @@
 		A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawOrientation.swift"; sourceTree = "<group>"; };
 		A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+DispatchOnce.swift"; sourceTree = "<group>"; };
 		A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadFromURL.swift"; sourceTree = "<group>"; };
+		A9CC5C32209F0BD200040E61 /* SKTexture+LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTexture+LinearGradient.swift"; sourceTree = "<group>"; };
 		A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+SerialSpriteLoading.swift"; sourceTree = "<group>"; };
 		A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTextureAtlas+FramesLoader.swift"; sourceTree = "<group>"; };
 		A9D4CFC2209AEA29006461AF /* Int+Roman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Roman.swift"; sourceTree = "<group>"; };
@@ -221,9 +223,18 @@
 			path = "Grand Central Dispatch";
 			sourceTree = "<group>";
 		};
+		A9CC5C34209F0BD600040E61 /* SKTexture */ = {
+			isa = PBXGroup;
+			children = (
+				A9CC5C32209F0BD200040E61 /* SKTexture+LinearGradient.swift */,
+			);
+			path = SKTexture;
+			sourceTree = "<group>";
+		};
 		A9D4CFBB209AE7CC006461AF /* SpriteKit */ = {
 			isa = PBXGroup;
 			children = (
+				A9CC5C34209F0BD600040E61 /* SKTexture */,
 				A9D4CFD0209AF342006461AF /* SKTextureAtlas */,
 				A9D4CFCF209AF339006461AF /* SKScene */,
 			);
@@ -420,6 +431,7 @@
 				A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */,
 				A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
+				A9CC5C33209F0BD200040E61 /* SKTexture+LinearGradient.swift in Sources */,
 				A9D4CFC6209AEA7F006461AF /* Bool+Int.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */,
