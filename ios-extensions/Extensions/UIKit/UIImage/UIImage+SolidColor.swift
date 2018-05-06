@@ -6,7 +6,7 @@
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
 //
 
-import UIKit
+import UIKit.UIImage
 
 // MARK: - Extension for creating UIImage from a UIColor
 public extension UIImage {

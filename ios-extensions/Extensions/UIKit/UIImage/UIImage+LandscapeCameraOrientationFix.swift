@@ -6,7 +6,7 @@
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
 //
 
-import UIKit
+import UIKit.UIImage
 
 // MARK: - This extension for UIImage fixes image orientation for cases when the iamge was captured using AVFoundation in landscape interface orientation
 extension UIImage {

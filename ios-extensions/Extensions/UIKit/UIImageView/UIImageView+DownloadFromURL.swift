@@ -6,7 +6,7 @@
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
 //
 
-import UIKit
+import UIKit.UIImageView
 
 extension UIImageView {
     

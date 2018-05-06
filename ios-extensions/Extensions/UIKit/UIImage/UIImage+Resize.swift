@@ -6,7 +6,7 @@
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
 //
 
-import UIKit
+import UIKit.UIImage
 
 // MARK: - Class-level extension for UIImage that allow to resize input image based on expected image width or/and height
 public extension UIImage {
