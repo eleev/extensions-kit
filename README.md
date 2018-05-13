@@ -59,4 +59,4 @@ All the extensions are split into separete `groups` each of which represents a s
 [Astemir Eleev](https://github.com/jVirus)
 
 # Licence
-
+The project is available under [MIT licence](https://github.com/jVirus/ios-extensions/blob/master/LICENSE)
