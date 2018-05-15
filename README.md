@@ -37,12 +37,24 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ## UIKit
 ### UIImage
-### UIIMageView
+- [UIImage+LandscapeCameraOrientationFix](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BLandscapeCameraOrientationFix.swift)
+- [UIImage+RawOrientation](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BRawOrientation.swift)
+- [UIImage+Resize](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BResize.swift)
+- [UIImage+SolidColor](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BSolidColor.swift)
+
+### UIImageView
+- [UIImageView+DownloadFromURL](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImageView/UIImageView%2BDownloadFromURL.swift)
+- [UIImageView+Masking](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImageView/UIImageView%2BMasking.swift)
 
 ## SpriteKit
 ### SKScene
+- [SKScene+SerialSpriteLoading](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKScene/SKScene%2BSerialSpriteLoading.swift)
+
 ### SKTexture
+- [SKTexture+LinearGradient](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKTexture/SKTexture%2BLinearGradient.swift)
+
 ### SKTextureAtlas
+- [SKTextureAtlas+FramesLoader](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKTextureAtlas/SKTextureAtlas%2BFramesLoader.swift)
 
 ## SceneKit
 - [SCNVector3+Operators](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SceneKit/SCNVector3%2BOperators.swift)
