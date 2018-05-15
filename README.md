@@ -8,6 +8,7 @@ All the extensions are split into separete `groups` each of which represents a s
 ### CGRect
 - [CGRect+Scale](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect%2BScale.swift)
 - [CGRect+Mid](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect%2BMid.swift)
+- [CGRect+AspectFit](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect%2BAspectFit.swift)
 
 ## Foundation
 ### Bool
