@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */; };
 		A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130B62096F0910043ADAB /* Int+Factorial.swift */; };
 		A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130B82096F0DB0043ADAB /* Int+EvenOdd.swift */; };
 		A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130BA2096F1180043ADAB /* Int+Clamp.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+ToggleFlash.swift"; sourceTree = "<group>"; };
 		A92130B62096F0910043ADAB /* Int+Factorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Factorial.swift"; sourceTree = "<group>"; };
 		A92130B82096F0DB0043ADAB /* Int+EvenOdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+EvenOdd.swift"; sourceTree = "<group>"; };
 		A92130BA2096F1180043ADAB /* Int+Clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Clamp.swift"; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A903943020AD916400376CC3 /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */,
+			);
+			path = AVFoundation;
+			sourceTree = "<group>";
+		};
 		A92130BC2096F33C0043ADAB /* Collection */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +185,7 @@
 		A929497D20962BE600350C43 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A903943020AD916400376CC3 /* AVFoundation */,
 				A9D4CFD2209AF374006461AF /* CoreAnimation */,
 				A9D4CFD1209AF36E006461AF /* CoreGraphics */,
 				A9D4CFBD209AE7E1006461AF /* Foundation */,
@@ -489,6 +500,7 @@
 				A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */,
 				A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
+				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
 				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
 			);
