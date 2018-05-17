@@ -4,6 +4,9 @@
 # List of extensions
 All the extensions are split into separete `groups` each of which represents a separete `SDK framework`. 
 
+## AVFoundation
+- [AVCaptureDevice+ToggleFlash](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/AVFoundation/AVCaptureDevice%2BToggleFlash.swift)
+
 ## Core Graphics
 ### CGRect
 - [CGRect+Scale](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect%2BScale.swift)
