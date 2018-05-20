@@ -8,10 +8,14 @@ All the extensions are split into separete `groups` each of which represents a s
 - [AVCaptureDevice+ToggleFlash](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/AVFoundation/AVCaptureDevice%2BToggleFlash.swift)
 
 ## Core Graphics
+### CGPoint
+- [CGPoint+Operators](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGPoint/CGPoint%2BOperators.swift)
+- [CGPoint+Utils](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGPoint/CGPoint%2BUtils.swift)
+
 ### CGRect
-- [CGRect+Scale](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect%2BScale.swift)
-- [CGRect+Mid](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect%2BMid.swift)
-- [CGRect+AspectFit](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect%2BAspectFit.swift)
+- [CGRect+Scale](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BScale.swift)
+- [CGRect+Mid](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BMid.swift)
+- [CGRect+AspectFit](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BAspectFit.swift)
 
 ## Foundation
 ### Bool
@@ -51,6 +55,11 @@ All the extensions are split into separete `groups` each of which represents a s
 - [UIImageView+Masking](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImageView/UIImageView%2BMasking.swift)
 
 ## SpriteKit
+- [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKTimingFunction.swift)
+
+### SKEmitterNode
+- [SKEmitterNode+AdvanceSimulation](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKEmitterNode/SKEmitterNode%2BAdvanceSimulation.swift)
+
 ### SKScene
 - [SKScene+SerialSpriteLoading](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKScene/SKScene%2BSerialSpriteLoading.swift)
 
