@@ -75,6 +75,11 @@ All the extensions are split into separete `groups` each of which represents a s
 ## Grapnd Central Dispatch
 - [DispatchQueue+DispatchOnce](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift)
 
+## WebKit
+
+### WKWebView
+- [WKWebView+Load](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/WebKit/WKWebView/WKWebView%2BLoad.swift)
+
 
 # Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
