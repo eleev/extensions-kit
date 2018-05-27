@@ -36,6 +36,7 @@
 		A999C5092096FA31006014B1 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C5082096FA31006014B1 /* UIImage+Resize.swift */; };
 		A999C50B2096FA74006014B1 /* UIImage+SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */; };
 		A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */; };
+		A9A429E420BB30D900CDF137 /* SKTexture+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A429E320BB30D900CDF137 /* SKTexture+GIF.swift */; };
 		A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */; };
 		A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */; };
 		A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */; };
@@ -93,6 +94,7 @@
 		A999C5082096FA31006014B1 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SolidColor.swift"; sourceTree = "<group>"; };
 		A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawOrientation.swift"; sourceTree = "<group>"; };
+		A9A429E320BB30D900CDF137 /* SKTexture+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTexture+GIF.swift"; sourceTree = "<group>"; };
 		A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+DispatchOnce.swift"; sourceTree = "<group>"; };
 		A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Scale.swift"; sourceTree = "<group>"; };
 		A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Shuffle.swift"; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				A9CC5C32209F0BD200040E61 /* SKTexture+LinearGradient.swift */,
+				A9A429E320BB30D900CDF137 /* SKTexture+GIF.swift */,
 			);
 			path = SKTexture;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				A9D4CFC6209AEA7F006461AF /* Bool+Int.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */,
+				A9A429E420BB30D900CDF137 /* SKTexture+GIF.swift in Sources */,
 				A9D4CFC3209AEA29006461AF /* Int+Roman.swift in Sources */,
 				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
 				A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */,
