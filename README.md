@@ -1,6 +1,6 @@
 # ios-extensions [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-**Last Update: 27/May/2018.**
+**Last Update: 28/May/2018.**
 
 🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`37`** different extensions. Feel free to contribute something new and amazing. 
 
