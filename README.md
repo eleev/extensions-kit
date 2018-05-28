@@ -63,11 +63,13 @@ All the extensions are split into separete `groups` each of which represents a s
 ### SKEmitterNode
 - [SKEmitterNode+AdvanceSimulation](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKEmitterNode/SKEmitterNode%2BAdvanceSimulation.swift)
 
+### SKSpriteNode
+- [SKSpriteNode+GIF](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKSpriteNode/SKSpriteNode%2BGIF.swift)
+
 ### SKScene
 - [SKScene+SerialSpriteLoading](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKScene/SKScene%2BSerialSpriteLoading.swift)
 
 ### SKTexture
-- [SKTexture+GIF](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKTexture/SKTexture%2BGIF.swift)
 - [SKTexture+LinearGradient](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKTexture/SKTexture%2BLinearGradient.swift)
 
 ### SKTextureAtlas
