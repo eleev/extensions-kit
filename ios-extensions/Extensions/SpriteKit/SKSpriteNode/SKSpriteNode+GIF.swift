@@ -1,5 +1,5 @@
 //
-//  SKTexture+GIF.swift
+//  SKSpriteNode+GIF.swift
 //  ios-extensions
 //
 //  Created by Astemir Eleev on 27/05/2018.
