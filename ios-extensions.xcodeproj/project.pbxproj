@@ -37,6 +37,7 @@
 		A999C50B2096FA74006014B1 /* UIImage+SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */; };
 		A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */; };
 		A9A429E420BB30D900CDF137 /* SKSpriteNode+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A429E320BB30D900CDF137 /* SKSpriteNode+GIF.swift */; };
+		A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */; };
 		A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */; };
 		A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */; };
 		A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */; };
@@ -95,6 +96,7 @@
 		A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SolidColor.swift"; sourceTree = "<group>"; };
 		A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawOrientation.swift"; sourceTree = "<group>"; };
 		A9A429E320BB30D900CDF137 /* SKSpriteNode+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+GIF.swift"; sourceTree = "<group>"; };
+		A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildViewControllers.swift"; sourceTree = "<group>"; };
 		A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+DispatchOnce.swift"; sourceTree = "<group>"; };
 		A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Scale.swift"; sourceTree = "<group>"; };
 		A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Shuffle.swift"; sourceTree = "<group>"; };
@@ -268,6 +270,14 @@
 			path = UIImageView;
 			sourceTree = "<group>";
 		};
+		A9A4BCDB20BC56DF00CA4848 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		A9ACB9812099E68000966991 /* Grand Central Dispatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +342,7 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A9A4BCDB20BC56DF00CA4848 /* UIViewController */,
 				A999C50E2096FB5F006014B1 /* UIImageView */,
 				A999C5022096F9A8006014B1 /* UIImage */,
 			);
@@ -544,6 +555,7 @@
 				A9D4CFCE209AEBCB006461AF /* Collection+Sum&Average.swift in Sources */,
 				A9D4CFD5209AF3D1006461AF /* Dictionary+JSON.swift in Sources */,
 				A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */,
+				A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */,
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
