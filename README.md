@@ -57,6 +57,9 @@ All the extensions are split into separete `groups` each of which represents a s
 - [UIImageView+DownloadFromURL](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImageView/UIImageView%2BDownloadFromURL.swift)
 - [UIImageView+Masking](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImageView/UIImageView%2BMasking.swift)
 
+### UIViewController
+- [UIViewController+ChildViewControllers](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift)
+
 ## SpriteKit
 - [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/SpriteKit/SKTimingFunction.swift)
 
