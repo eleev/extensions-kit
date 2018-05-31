@@ -1,8 +1,8 @@
 # ios-extensions [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-**Last Update: 28/May/2018.**
+**Last Update: 31/May/2018.**
 
-🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`38`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`39`** different extensions. Feel free to contribute something new and amazing. 
 
 # List of extensions
 All the extensions are split into separete `groups` each of which represents a separete `SDK framework`. 
@@ -47,6 +47,10 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Sequence+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift)
 
 ## UIKit
+
+### UICollectionView
+- [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift)
+
 ### UIImage
 - [UIImage+LandscapeCameraOrientationFix](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BLandscapeCameraOrientationFix.swift)
 - [UIImage+RawOrientation](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BRawOrientation.swift)
