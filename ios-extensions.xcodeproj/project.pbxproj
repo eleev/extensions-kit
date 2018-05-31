@@ -22,6 +22,7 @@
 		A929499620962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A929499720962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
+		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
 		A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */; };
 		A999C4FB2096F5A1006014B1 /* Int+Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498120962BE600350C43 /* Int+Power.swift */; };
 		A999C4FC2096F5A1006014B1 /* Int+Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498220962BE600350C43 /* Int+Digits.swift */; };
@@ -89,6 +90,7 @@
 		A929499020962C1400350C43 /* IntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
 		A929499520962E9C00350C43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
+		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
 		A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectFit.swift"; sourceTree = "<group>"; };
 		A999C5032096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LandscapeCameraOrientationFix.swift"; sourceTree = "<group>"; };
 		A999C5062096FA06006014B1 /* UIImageView+Masking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Masking.swift"; sourceTree = "<group>"; };
@@ -250,6 +252,14 @@
 			path = WKWebView;
 			sourceTree = "<group>";
 		};
+		A961E14220C0162F0069C29A /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 		A999C5022096F9A8006014B1 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +352,7 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A961E14220C0162F0069C29A /* UICollectionView */,
 				A9A4BCDB20BC56DF00CA4848 /* UIViewController */,
 				A999C50E2096FB5F006014B1 /* UIImageView */,
 				A999C5022096F9A8006014B1 /* UIImage */,
@@ -554,6 +565,7 @@
 				A929498420962BE600350C43 /* ClosedRange+Random.swift in Sources */,
 				A9D4CFCE209AEBCB006461AF /* Collection+Sum&Average.swift in Sources */,
 				A9D4CFD5209AF3D1006461AF /* Dictionary+JSON.swift in Sources */,
+				A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */,
 				A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */,
 				A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */,
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
