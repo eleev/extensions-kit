@@ -26,6 +26,7 @@
 		A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */; };
 		A9912EA520C6C44400619880 /* CGRect+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9912EA420C6C44400619880 /* CGRect+Corners.swift */; };
 		A9912EA820C6C51000619880 /* Array+Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9912EA720C6C51000619880 /* Array+Filtering.swift */; };
+		A9912EAA20C6C55800619880 /* UIImage+ImageFromUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9912EA920C6C55800619880 /* UIImage+ImageFromUIView.swift */; };
 		A999C4FB2096F5A1006014B1 /* Int+Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498120962BE600350C43 /* Int+Power.swift */; };
 		A999C4FC2096F5A1006014B1 /* Int+Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498220962BE600350C43 /* Int+Digits.swift */; };
 		A999C4FD2096F5A1006014B1 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498320962BE600350C43 /* Int+Random.swift */; };
@@ -96,6 +97,7 @@
 		A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectFit.swift"; sourceTree = "<group>"; };
 		A9912EA420C6C44400619880 /* CGRect+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Corners.swift"; sourceTree = "<group>"; };
 		A9912EA720C6C51000619880 /* Array+Filtering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Filtering.swift"; sourceTree = "<group>"; };
+		A9912EA920C6C55800619880 /* UIImage+ImageFromUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageFromUIView.swift"; sourceTree = "<group>"; };
 		A999C5032096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LandscapeCameraOrientationFix.swift"; sourceTree = "<group>"; };
 		A999C5062096FA06006014B1 /* UIImageView+Masking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Masking.swift"; sourceTree = "<group>"; };
 		A999C5082096FA31006014B1 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				A999C5082096FA31006014B1 /* UIImage+Resize.swift */,
 				A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */,
 				A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */,
+				A9912EA920C6C55800619880 /* UIImage+ImageFromUIView.swift */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
+				A9912EAA20C6C55800619880 /* UIImage+ImageFromUIView.swift in Sources */,
 				A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */,
 				A9E14DB220B1768A0075D725 /* SKEmitterNode+AdvanceSimulation.swift in Sources */,
 				A9E14DA720B158A60075D725 /* SKTimingFunction.swift in Sources */,
