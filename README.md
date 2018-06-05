@@ -2,7 +2,7 @@
 
 **Last Update: 31/May/2018.**
 
-🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`39`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`42`** different extensions. Feel free to contribute something new and amazing. 
 
 # List of extensions
 All the extensions are split into separete `groups` each of which represents a separete `SDK framework`. 
@@ -16,11 +16,17 @@ All the extensions are split into separete `groups` each of which represents a s
 - [CGPoint+Utils](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGPoint/CGPoint%2BUtils.swift)
 
 ### CGRect
-- [CGRect+Scale](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BScale.swift)
+- [CGRect+Scale](https://github.com/jVirus/ios-extensions/blob/master/ios-
+extensions/Extensions/CoreGraphics/CGRect/CGRect%2BScale.swift)
+- [CGRect+Corners](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BCorners.swift)
 - [CGRect+Mid](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BMid.swift)
 - [CGRect+AspectFit](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BAspectFit.swift)
 
 ## Foundation
+
+### Array
+- [Array+Filtering](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Array/Array%2BFiltering.swift)
+
 ### Bool
 - [Bool+Int](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Bool/Bool%2BInt.swift)
 - [Bool+Random](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Bool/Bool%2BRandom.swift)
@@ -52,6 +58,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift)
 
 ### UIImage
+- [UIImage+ImageFromUIView](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BImageFromUIView.swift)
 - [UIImage+LandscapeCameraOrientationFix](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BLandscapeCameraOrientationFix.swift)
 - [UIImage+RawOrientation](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BRawOrientation.swift)
 - [UIImage+Resize](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UIImage/UIImage%2BResize.swift)
