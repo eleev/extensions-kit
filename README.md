@@ -16,8 +16,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [CGPoint+Utils](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGPoint/CGPoint%2BUtils.swift)
 
 ### CGRect
-- [CGRect+Scale](https://github.com/jVirus/ios-extensions/blob/master/ios-
-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BScale.swift)
+- [CGRect+Scale](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BScale.swift)
 - [CGRect+Corners](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BCorners.swift)
 - [CGRect+Mid](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BMid.swift)
 - [CGRect+AspectFit](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BAspectFit.swift)
