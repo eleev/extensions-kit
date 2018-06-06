@@ -2,9 +2,23 @@
 
 **Last Update: 06/June/2018.**
 
+# About
+
 🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`43`** different extensions. Feel free to contribute something new and amazing. 
 
-# List of extensions
+# Categories
+List of categories for convenient navigation:
+
+- [AVFoundation](#avfoundation)
+- [Core Graphics](#core-graphics)
+- [Foundation](#foundation)
+- [UIKit](#uikit)
+- [SpriteKit](#spritekit)
+- [SceneKit](#scenekit)
+- [WebKit](#webkit)
+
+
+# List of Extensions
 All the extensions are split into separete `groups` each of which represents a separete `SDK framework`. 
 
 ## AVFoundation
