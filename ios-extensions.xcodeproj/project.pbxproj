@@ -21,6 +21,7 @@
 		A929499120962C1400350C43 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929499020962C1400350C43 /* IntTests.swift */; };
 		A929499620962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A929499720962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
+		A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
 		A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */; };
@@ -92,6 +93,7 @@
 		A929498320962BE600350C43 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		A929499020962C1400350C43 /* IntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
 		A929499520962E9C00350C43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+GetOrAddValue.swift"; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
 		A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectFit.swift"; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */,
+				A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */,
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
+				A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
 				A9912EAA20C6C55800619880 /* UIImage+ImageFromUIView.swift in Sources */,
