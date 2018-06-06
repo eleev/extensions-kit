@@ -7,15 +7,16 @@
 🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`43`** different extensions. Feel free to contribute something new and amazing. 
 
 # Categories
-List of categories for convenient navigation:
+List of categories for convenient navigation. The `numbers` represent total number of extension in a category. 
 
-- [AVFoundation](#avfoundation)
-- [Core Graphics](#core-graphics)
-- [Foundation](#foundation)
-- [UIKit](#uikit)
-- [SpriteKit](#spritekit)
-- [SceneKit](#scenekit)
-- [WebKit](#webkit)
+- [AVFoundation - 1](#avfoundation) 
+- [Core Graphics - 6](#core-graphics)
+- [Foundation - 18](#foundation)
+- [UIKit - 9](#uikit)
+- [SpriteKit - 6](#spritekit)
+- [SceneKit - 1](#scenekit)
+- [Grapnd Central Dispatch - 1](#grapnd-central-dispatch)
+- [WebKit - 1](#webkit)
 
 
 # List of Extensions
@@ -25,6 +26,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [AVCaptureDevice+ToggleFlash](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/AVFoundation/AVCaptureDevice%2BToggleFlash.swift)
 
 ## Core Graphics
+
 ### CGPoint
 - [CGPoint+Operators](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGPoint/CGPoint%2BOperators.swift)
 - [CGPoint+Utils](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGPoint/CGPoint%2BUtils.swift)
@@ -64,6 +66,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Int+Power](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Int/Int%2BPower.swift)
 - [Int+Random](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Int/Int%2BRandom.swift)
 - [Int+Roman](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Int/Int%2BRoman.swift)
+
 ### MutableCollection 
 - [MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift)
 
