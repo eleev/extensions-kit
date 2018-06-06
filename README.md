@@ -1,8 +1,8 @@
 # ios-extensions [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-**Last Update: 05/June/2018.**
+**Last Update: 06/June/2018.**
 
-🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`42`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`43`** different extensions. Feel free to contribute something new and amazing. 
 
 # List of extensions
 All the extensions are split into separete `groups` each of which represents a separete `SDK framework`. 
@@ -29,14 +29,19 @@ All the extensions are split into separete `groups` each of which represents a s
 ### Bool
 - [Bool+Int](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Bool/Bool%2BInt.swift)
 - [Bool+Random](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Bool/Bool%2BRandom.swift)
+
 ### ClosedRange
 - [ClosedRange+Random](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/ClosedRange/ClosedRange%2BRandom.swift)   
+
 ### Collection 
 - [Collection+ParallelIteration](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Collection/Collection%2BParallelIteration.swift)
 - [Collection+RandomItem](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Collection/Collection%2BRandomItem.swift)
 - [Collection+Sum&Average](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Collection/Collection%2BSum%26Average.swift)
+
 ### Dictionary
+- [Dictionary+GetOrAddValue](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift)
 - [Dictionary+JSON](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Dictionary/Dictionary%2BJSON.swift)
+
 ### Int
 - [Int+Clamp](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Int/Int%2BClamp.swift)
 - [Int+Digita](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Int/Int%2BDigits.swift)
