@@ -7,7 +7,7 @@
 🎉 Collection of Swift iOS-related extensions for various use cases. Many of the extension works on macOS, tvOS and watchOS. Basically it's a collection of extensions that I started implementing for my own needs. There are **`43`** different extensions. Feel free to contribute something new and amazing. 
 
 # Categories
-List of categories for convenient navigation. The `numbers` represent total number of extension in a category. 
+List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
 
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 6](#core-graphics)
