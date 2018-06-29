@@ -9,6 +9,7 @@
 # Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
 
+- [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 6](#core-graphics)
 - [Foundation - 18](#foundation)
