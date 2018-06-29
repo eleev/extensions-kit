@@ -51,6 +51,7 @@
 		A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2920A5DB89005221BA /* SCNVector3+Operators.swift */; };
 		A9B14F2C20A5DEA6005221BA /* CGRect+Mid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2B20A5DEA6005221BA /* CGRect+Mid.swift */; };
 		A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */; };
+		A9C5977220E6A8350015B08A /* NSBezierPath+cgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5977120E6A8350015B08A /* NSBezierPath+cgPath.swift */; };
 		A9CC5C33209F0BD200040E61 /* SKTexture+LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC5C32209F0BD200040E61 /* SKTexture+LinearGradient.swift */; };
 		A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */; };
 		A9D4CFC1209AE864006461AF /* SKTextureAtlas+FramesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */; };
@@ -116,6 +117,7 @@
 		A9B14F2920A5DB89005221BA /* SCNVector3+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Operators.swift"; sourceTree = "<group>"; };
 		A9B14F2B20A5DEA6005221BA /* CGRect+Mid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Mid.swift"; sourceTree = "<group>"; };
 		A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadFromURL.swift"; sourceTree = "<group>"; };
+		A9C5977120E6A8350015B08A /* NSBezierPath+cgPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+cgPath.swift"; sourceTree = "<group>"; };
 		A9CC5C32209F0BD200040E61 /* SKTexture+LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTexture+LinearGradient.swift"; sourceTree = "<group>"; };
 		A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+SerialSpriteLoading.swift"; sourceTree = "<group>"; };
 		A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTextureAtlas+FramesLoader.swift"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		A929497D20962BE600350C43 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A9C5977020E6A81B0015B08A /* AppKit */,
 				A98C5E8120D13F0100674186 /* PhotoKit */,
 				A95B443520B7DB8300AC5E23 /* WebKit */,
 				A903943020AD916400376CC3 /* AVFoundation */,
@@ -354,6 +357,14 @@
 				A9B14F2920A5DB89005221BA /* SCNVector3+Operators.swift */,
 			);
 			path = SceneKit;
+			sourceTree = "<group>";
+		};
+		A9C5977020E6A81B0015B08A /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9C5977120E6A8350015B08A /* NSBezierPath+cgPath.swift */,
+			);
+			path = AppKit;
 			sourceTree = "<group>";
 		};
 		A9CC5C34209F0BD600040E61 /* SKTexture */ = {
@@ -618,6 +629,7 @@
 				A9E14DA720B158A60075D725 /* SKTimingFunction.swift in Sources */,
 				A9B14F2C20A5DEA6005221BA /* CGRect+Mid.swift in Sources */,
 				A999C5042096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */,
+				A9C5977220E6A8350015B08A /* NSBezierPath+cgPath.swift in Sources */,
 				A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */,
 				A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */,
 				A999C5092096FA31006014B1 /* UIImage+Resize.swift in Sources */,
