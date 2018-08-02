@@ -1,6 +1,6 @@
 # extensions-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-**Last Update: 29/June/2018.**
+**Last Update: 02/August/2018.**
 
 # About
 
@@ -12,7 +12,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 6](#core-graphics)
-- [Foundation - 18](#foundation)
+- [Foundation - 19](#foundation)
 - [UIKit - 9](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -79,6 +79,9 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ### Sequence  
 - [Sequence+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift)
+
+### String
+- [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/String/String%2BDigits.swift)
 
 ## UIKit
 
