@@ -65,6 +65,9 @@
 		A9D4CFCC209AEB88006461AF /* Collection+RandomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFCB209AEB88006461AF /* Collection+RandomItem.swift */; };
 		A9D4CFCE209AEBCB006461AF /* Collection+Sum&Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFCD209AEBCB006461AF /* Collection+Sum&Average.swift */; };
 		A9D4CFD5209AF3D1006461AF /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */; };
+		A9D91E9021188A7300E9D822 /* UIColor+ColorComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D91E8F21188A7300E9D822 /* UIColor+ColorComponents.swift */; };
+		A9D91E9121188A7300E9D822 /* UIColor+ColorComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D91E8F21188A7300E9D822 /* UIColor+ColorComponents.swift */; };
+		A9D91E9321188BE600E9D822 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D91E9221188BE600E9D822 /* UIColorTests.swift */; };
 		A9E14DA720B158A60075D725 /* SKTimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DA620B158A60075D725 /* SKTimingFunction.swift */; };
 		A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DAA20B159700075D725 /* CGPoint+Utils.swift */; };
 		A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DAC20B159BB0075D725 /* CGPoint+Operators.swift */; };
@@ -133,6 +136,8 @@
 		A9D4CFCB209AEB88006461AF /* Collection+RandomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+RandomItem.swift"; sourceTree = "<group>"; };
 		A9D4CFCD209AEBCB006461AF /* Collection+Sum&Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Sum&Average.swift"; sourceTree = "<group>"; };
 		A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
+		A9D91E8F21188A7300E9D822 /* UIColor+ColorComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorComponents.swift"; sourceTree = "<group>"; };
+		A9D91E9221188BE600E9D822 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
 		A9E14DA620B158A60075D725 /* SKTimingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTimingFunction.swift; sourceTree = "<group>"; };
 		A9E14DAA20B159700075D725 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
 		A9E14DAC20B159BB0075D725 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
@@ -211,6 +216,7 @@
 				A929497120962BD400350C43 /* ios_extensionsTests.swift */,
 				A929499020962C1400350C43 /* IntTests.swift */,
 				A98C38332113563D00F3E87C /* StringTests.swift */,
+				A9D91E9221188BE600E9D822 /* UIColorTests.swift */,
 				A929497320962BD400350C43 /* Info.plist */,
 			);
 			path = "ios-extensionsTests";
@@ -413,6 +419,7 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A9D91E8E21188A5D00E9D822 /* UIColor */,
 				A961E14220C0162F0069C29A /* UICollectionView */,
 				A9A4BCDB20BC56DF00CA4848 /* UIViewController */,
 				A999C50E2096FB5F006014B1 /* UIImageView */,
@@ -485,6 +492,14 @@
 				A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */,
 			);
 			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		A9D91E8E21188A5D00E9D822 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A9D91E8F21188A7300E9D822 /* UIColor+ColorComponents.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		A9E14DA820B159330075D725 /* CGPoint */ = {
@@ -671,6 +686,7 @@
 				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
 				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
+				A9D91E9021188A7300E9D822 /* UIColor+ColorComponents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +699,7 @@
 				A999C4FC2096F5A1006014B1 /* Int+Digits.swift in Sources */,
 				A999C4FD2096F5A1006014B1 /* Int+Random.swift in Sources */,
 				A999C5052096F9F4006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */,
+				A9D91E9121188A7300E9D822 /* UIColor+ColorComponents.swift in Sources */,
 				A999C5012096F5A3006014B1 /* ClosedRange+Random.swift in Sources */,
 				A999C4FE2096F5A1006014B1 /* Int+Factorial.swift in Sources */,
 				A999C4FB2096F5A1006014B1 /* Int+Power.swift in Sources */,
@@ -690,6 +707,7 @@
 				A999C4FF2096F5A1006014B1 /* Int+EvenOdd.swift in Sources */,
 				A98C38342113563D00F3E87C /* StringTests.swift in Sources */,
 				A929497220962BD400350C43 /* ios_extensionsTests.swift in Sources */,
+				A9D91E9321188BE600E9D822 /* UIColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
