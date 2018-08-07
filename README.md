@@ -1,10 +1,10 @@
 # extensions-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-**Last Update: 02/August/2018.**
+**Last Update: 07/August/2018.**
 
 # About
 
-🎉 Collection of Swift iOS and macOS related extensions for various use cases. Basically it's a collection of extensions that I started implementing for my own needs. There are **`45`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift iOS and macOS related extensions for various use cases. Basically it's a collection of extensions that I started implementing for my own needs. There are **`47`** different extensions. Feel free to contribute something new and amazing. 
 
 # Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
@@ -13,7 +13,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 6](#core-graphics)
 - [Foundation - 19](#foundation)
-- [UIKit - 9](#uikit)
+- [UIKit - 10](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grapnd Central Dispatch - 1](#grapnd-central-dispatch)
@@ -84,6 +84,9 @@ All the extensions are split into separete `groups` each of which represents a s
 - [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/String/String%2BDigits.swift)
 
 ## UIKit
+
+### UIColor
+- [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift)
 
 ### UICollectionView
 - [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift)
