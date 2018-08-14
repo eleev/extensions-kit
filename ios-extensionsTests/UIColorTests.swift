@@ -21,48 +21,50 @@ class UIColorTests: XCTestCase {
     func testRGBComponentsColor() {
         let blackColor = UIColor.black
         guard let blackColorComponents = blackColor.rgba else {
-            assert(false)
+            return
         }
-        assert(blackColorComponents == (red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
+        XCTAssert(blackColorComponents == (red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
         
         let customColor = UIColor(red: 0.45, green: 0.23, blue: 0.75, alpha: 0.86)
         guard let customColorComponents = customColor.rgba else {
-            assert(false)
+            return
         }
         
-        assert(customColorComponents == (red: 0.45, green: 0.23, blue: 0.75, alpha: 0.86))
+        XCTAssert(customColorComponents == (red: 0.45, green: 0.23, blue: 0.75, alpha: 0.86))
     }
 
     func testHSBAComponnetsColor() {
         let blackColor = UIColor.black
         guard let blackColorComponents = blackColor.hsba else {
-            assert(false)
+            XCTAssert(false)
+            return
         }
-        assert(blackColorComponents == (hue: 0.0, saturation: 0.0, brightness: 0.0, alpha: 1.0))
+        XCTAssert(blackColorComponents == (hue: 0.0, saturation: 0.0, brightness: 0.0, alpha: 1.0))
         
         
         let customColor = UIColor(hue: 0.45, saturation: 0.23, brightness: 0.75, alpha: 0.86)
         guard let customColorComponents = customColor.hsba else {
-            assert(false)
+            XCTAssert(false)
+            return
         }
-        assert(customColorComponents == (hue: 0.45, saturation: 0.23, brightness: 0.75, alpha: 0.86), "\(customColorComponents)")
+        XCTAssert(customColorComponents == (hue: 0.45, saturation: 0.23, brightness: 0.75, alpha: 0.86))
         
     }
     
     func testGrayscaleComponnetsColor() {
         let blackColor = UIColor.black
         guard let blackColorComponents = blackColor.grayscale else {
-            assert(false)
+            return
         }
-        assert(blackColorComponents == (white: 0.0, alpha: 1.0))
+        XCTAssert(blackColorComponents == (white: 0.0, alpha: 1.0))
         
         
         let customColor = UIColor(white: 0.73, alpha: 0.39)
         guard let customColorComponents = customColor.grayscale else {
-            assert(false)
+            return
         }
         
-        assert(customColorComponents == (white: 0.73, alpha: 0.39))
+        XCTAssert(customColorComponents == (white: 0.73, alpha: 0.39))
     }
     
     

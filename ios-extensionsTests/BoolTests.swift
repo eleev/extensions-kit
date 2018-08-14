@@ -1,15 +1,15 @@
 //
-//  ios_extensionsTests.swift
+//  BoolTests.swift
 //  ios-extensionsTests
 //
-//  Created by Astemir Eleev on 29/04/2018.
+//  Created by Astemir Eleev on 14/08/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
 //
 
 import XCTest
 @testable import ios_extensions
 
-class ios_extensionsTests: XCTestCase {
+class BoolTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,9 +21,12 @@ class ios_extensionsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInt() {
+        let falseBool = false
+        XCTAssert(falseBool.int == 0)
+        
+        let trueBool = true
+        XCTAssert(trueBool.int == 1)
     }
     
     func testPerformanceExample() {

@@ -24,83 +24,75 @@ class IntTests: XCTestCase {
     func testDigits() {
         let ten = 15
         let tenResult = ten.digitCount
-        assert(tenResult == 2)
+        XCTAssert(tenResult == 2)
         
         let hundred = 133
         let hundredResult = hundred.digitCount
-        assert(hundredResult == 3)
+        XCTAssert(hundredResult == 3)
         
         let thousend = 1040
         let thousendResult = thousend.digitCount
-        assert(thousendResult == 4)
+        XCTAssert(thousendResult == 4)
         
         
         let tenThousend = 10204
         let tenThousendResult = tenThousend.digitCount
-        assert(tenThousendResult == 5)
+        XCTAssert(tenThousendResult == 5)
     }
     
     func testPower() {
-        let four = 2^^2
-        assert(four == 4)
+        XCTAssert(2^^2 == 4)
         
-        let sexteen = 2^^4
-        assert(sexteen == 16)
+        XCTAssert(2^^4 == 16)
         
-        let twentySeven = 3^^3
-        assert(twentySeven == 27)
+        XCTAssert(3^^3 == 27)
     }
     
     func testFactorial() {
-        var factorial = 1.factorial()
-        assert(factorial == 1)
+        XCTAssert(1.factorial() == 1)
 
-        factorial = 2.factorial()
-        assert(factorial == 2)
+        XCTAssert(2.factorial() == 2)
 
-        factorial = 3.factorial()
-        assert(factorial == 6)
+        XCTAssert(3.factorial() == 6)
         
-        factorial = 4.factorial()
-        assert(factorial == 24)
+        XCTAssert(4.factorial() == 24)
         
-        factorial = 5.factorial()
-        assert(factorial == 120)
+        XCTAssert(5.factorial() == 120)
+    
+        XCTAssert(6.factorial() == 720)
         
-        factorial = 6.factorial()
-        assert(factorial == 720)
+        XCTAssert(7.factorial() == 5040)
         
-        factorial = 7.factorial()
-        assert(factorial == 5040)
-        
-        factorial = 8.factorial()
-        assert(factorial == 40320)
+        XCTAssert(8.factorial() == 40320)
     }
     
     func testEvenOdd() {
         var isOdd = 2.isOdd()
-        assert(!isOdd)
+        XCTAssert(!isOdd)
         
         isOdd = 4.isOdd()
-        assert(!isOdd)
+        XCTAssert(!isOdd)
         
         var isEven = 7.isEven()
-        assert(!isEven)
+        XCTAssert(!isEven)
         
         isEven = 6347859.isEven()
-        assert(!isEven)
+        XCTAssert(!isEven)
     }
     
     func testClamp() {
         // Upper bound
         let ten = 10
         let tenRes = ten.clamp(min: 0, 5)
-        assert(tenRes == 5)
+        XCTAssert(tenRes == 5)
         
         // Lower bound
         let five = 5
         let fiveRes = five.clamp(min: 7, 12)
-        assert(fiveRes == 7)
+        XCTAssert(fiveRes == 7)
+        
+        let closedFiveRes = five.clamp(in: 7...12)
+        XCTAssert(closedFiveRes == 7)
     }
     
     func testPerformanceExample() {

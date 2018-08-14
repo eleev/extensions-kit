@@ -24,10 +24,10 @@ class StringTests: XCTestCase {
         let mixedString = "Hello World #345!"
         let mixedComplexString = "Hello 9983 World #345!"
         
-        assert(nonDigitString.digits == "")
-        assert(digitString.digits == "3345")
-        assert(mixedString.digits == "345")
-        assert(mixedComplexString.digits == "9983345")
+        XCTAssert(nonDigitString.digits == "")
+        XCTAssert(digitString.digits == "3345")
+        XCTAssert(mixedString.digits == "345")
+        XCTAssert(mixedComplexString.digits == "9983345")
     }
 
     func testPerformanceExample() {
