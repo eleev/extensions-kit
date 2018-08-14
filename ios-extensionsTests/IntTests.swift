@@ -95,6 +95,45 @@ class IntTests: XCTestCase {
         XCTAssert(closedFiveRes == 7)
     }
     
+    func testRomanNumerical() {
+        let romanX = 10.romanNumeral()
+        XCTAssert(romanX == "X")
+        
+        let romanCM = 900.romanNumeral()
+        XCTAssert(romanCM == "CM")
+    
+        let romanCDXXI = 421.romanNumeral()
+        XCTAssert(romanCDXXI == "CDXXI")
+        
+        let romanLXVII = 67.romanNumeral()
+        XCTAssert(romanLXVII == "LXVII")
+        
+        let negative = (-1).romanNumeral()
+        XCTAssert(negative == nil)
+    }
+    
+    func testRandom() {
+        var randomInt = Int.random(min: 0, max: 100)
+        var iteratons = 100
+        
+        while iteratons > -1 {
+            XCTAssert(randomInt != Int.random(min: 0, max: 100))
+            randomInt = Int.random(min: 0, max: 100)
+            iteratons -= 1
+        }
+        
+        iteratons = 10
+        
+        var randomRangeInt = Int.random(in: 0...100)
+        
+        while iteratons > -1 {
+            XCTAssert(randomRangeInt != Int.random(in: 0...100))
+            randomRangeInt = Int.random(in: 0...100)
+            
+            iteratons -= 1
+        }
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
