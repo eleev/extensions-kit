@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */; };
+		A920503821230BAF00B39C57 /* CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920503721230BAF00B39C57 /* CollectionTests.swift */; };
+		A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920503921230D0D00B39C57 /* SequenceTests.swift */; };
 		A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130B62096F0910043ADAB /* Int+Factorial.swift */; };
 		A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130B82096F0DB0043ADAB /* Int+EvenOdd.swift */; };
 		A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130BA2096F1180043ADAB /* Int+Clamp.swift */; };
@@ -77,6 +79,8 @@
 
 /* Begin PBXFileReference section */
 		A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+ToggleFlash.swift"; sourceTree = "<group>"; };
+		A920503721230BAF00B39C57 /* CollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTests.swift; sourceTree = "<group>"; };
+		A920503921230D0D00B39C57 /* SequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTests.swift; sourceTree = "<group>"; };
 		A92130B62096F0910043ADAB /* Int+Factorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Factorial.swift"; sourceTree = "<group>"; };
 		A92130B82096F0DB0043ADAB /* Int+EvenOdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+EvenOdd.swift"; sourceTree = "<group>"; };
 		A92130BA2096F1180043ADAB /* Int+Clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Clamp.swift"; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 				A9EB997A2122D41A0088FB88 /* IntTests.swift */,
 				A9EB99792122D41A0088FB88 /* StringTests.swift */,
 				A9EB997B2122D41A0088FB88 /* UIColorTests.swift */,
+				A920503721230BAF00B39C57 /* CollectionTests.swift */,
+				A920503921230D0D00B39C57 /* SequenceTests.swift */,
 			);
 			path = "ios-extensionsTests";
 			sourceTree = "<group>";
@@ -686,6 +692,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EB99782122D07B0088FB88 /* BoolTests.swift in Sources */,
+				A920503821230BAF00B39C57 /* CollectionTests.swift in Sources */,
+				A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */,
 				A999C5012096F5A3006014B1 /* ClosedRange+Random.swift in Sources */,
 				A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */,
 				A9EB997E2122D41A0088FB88 /* UIColorTests.swift in Sources */,
