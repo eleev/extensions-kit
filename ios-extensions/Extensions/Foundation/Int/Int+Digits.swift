@@ -13,9 +13,7 @@ public extension Int {
     // MARK: - Properties
     
     public var digitCount: Int {
-        get {
-            return counter(for: self)
-        }
+        return counter(for: self)
     }
     
     // MARK: - Methods
