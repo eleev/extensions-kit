@@ -13,39 +13,31 @@ public extension UIColor {
     
     // MARK: - Properties
     
-    public var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)? {
+    public var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
         
-        if getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
-            return (red, green, blue, alpha)
-        }
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return (red, green, blue, alpha)
         
-        return nil
     }
     
-    public var hsba: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)? {
+    public var hsba: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat) {
         var hue: CGFloat = 0.0
         var saturation: CGFloat = 0.0
         var brightness: CGFloat = 0.0
         var alpha: CGFloat = 0.0
         
-        if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
-            return (hue, saturation, brightness, alpha)
-        }
-        
-        return nil
+        getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+        return (hue, saturation, brightness, alpha)
     }
     
-    public var grayscale: (white: CGFloat, alpha: CGFloat)? {
+    public var grayscale: (white: CGFloat, alpha: CGFloat) {
         var (white, alpha) = (CGFloat(0.0), CGFloat(0.0))
         
-        if getWhite(&white, alpha: &alpha) {
-            return (white, alpha)
-        }
-        
-        return nil
+        getWhite(&white, alpha: &alpha)
+        return (white, alpha)
     }
 }
