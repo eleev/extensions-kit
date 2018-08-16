@@ -3,11 +3,11 @@
 [![Platform 1](https://img.shields.io/badge/platform-iOS-yellow.svg)]()
 [![Platform 2](https://img.shields.io/badge/platform-macOS-blue.svg)]()
 [![Language](https://img.shields.io/badge/language-swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-12%2C09%25-red.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-19%2C32%25-red.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
-**Last Update: 14/August/2018.**
+**Last Update: 16/August/2018.**
 
 # About
 
