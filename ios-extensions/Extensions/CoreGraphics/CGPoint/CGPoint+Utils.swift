@@ -20,7 +20,7 @@ public extension CGPoint {
     
     func normalized() -> CGPoint {
         let len = length()
-        return len>0 ? self / len : CGPoint.zero
+        return len > 0 ? self / len : CGPoint.zero
     }
     
     public mutating func normalize() -> CGPoint {
