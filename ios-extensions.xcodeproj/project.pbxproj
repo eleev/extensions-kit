@@ -22,6 +22,12 @@
 		A929499620962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A929499720962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C6621255D030041C558 /* SCNVector3OperationsTests.swift */; };
+		A9332C6921259B030041C558 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C6821259B030041C558 /* DictionaryTests.swift */; };
+		A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C6A21259F5C0041C558 /* CGPointOperatorsTests.swift */; };
+		A9332C6D2125A92D0041C558 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C6C2125A92D0041C558 /* CGPointTests.swift */; };
+		A9332C722125ABAD0041C558 /* CGFloat+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C712125ABAD0041C558 /* CGFloat+Rounded.swift */; };
+		A9332C742125ABD90041C558 /* Double+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C732125ABD90041C558 /* Double+Rounded.swift */; };
+		A9332C762125ABF00041C558 /* Float+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C752125ABF00041C558 /* Float+Rounded.swift */; };
 		A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
@@ -96,6 +102,12 @@
 		A929498320962BE600350C43 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		A929499520962E9C00350C43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A9332C6621255D030041C558 /* SCNVector3OperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3OperationsTests.swift; sourceTree = "<group>"; };
+		A9332C6821259B030041C558 /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		A9332C6A21259F5C0041C558 /* CGPointOperatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointOperatorsTests.swift; sourceTree = "<group>"; };
+		A9332C6C2125A92D0041C558 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
+		A9332C712125ABAD0041C558 /* CGFloat+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Rounded.swift"; sourceTree = "<group>"; };
+		A9332C732125ABD90041C558 /* Double+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Rounded.swift"; sourceTree = "<group>"; };
+		A9332C752125ABF00041C558 /* Float+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Rounded.swift"; sourceTree = "<group>"; };
 		A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+GetOrAddValue.swift"; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
@@ -218,6 +230,9 @@
 				A920503721230BAF00B39C57 /* CollectionTests.swift */,
 				A920503921230D0D00B39C57 /* SequenceTests.swift */,
 				A9332C6621255D030041C558 /* SCNVector3OperationsTests.swift */,
+				A9332C6821259B030041C558 /* DictionaryTests.swift */,
+				A9332C6A21259F5C0041C558 /* CGPointOperatorsTests.swift */,
+				A9332C6C2125A92D0041C558 /* CGPointTests.swift */,
 			);
 			path = "ios-extensionsTests";
 			sourceTree = "<group>";
@@ -260,6 +275,30 @@
 				A9D4CFC2209AEA29006461AF /* Int+Roman.swift */,
 			);
 			path = Int;
+			sourceTree = "<group>";
+		};
+		A9332C6E2125AB990041C558 /* Float */ = {
+			isa = PBXGroup;
+			children = (
+				A9332C752125ABF00041C558 /* Float+Rounded.swift */,
+			);
+			path = Float;
+			sourceTree = "<group>";
+		};
+		A9332C6F2125AB9D0041C558 /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				A9332C732125ABD90041C558 /* Double+Rounded.swift */,
+			);
+			path = Double;
+			sourceTree = "<group>";
+		};
+		A9332C702125ABA00041C558 /* CGFloat */ = {
+			isa = PBXGroup;
+			children = (
+				A9332C712125ABAD0041C558 /* CGFloat+Rounded.swift */,
+			);
+			path = CGFloat;
 			sourceTree = "<group>";
 		};
 		A95B443520B7DB8300AC5E23 /* WebKit */ = {
@@ -431,6 +470,9 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A9332C702125ABA00041C558 /* CGFloat */,
+				A9332C6F2125AB9D0041C558 /* Double */,
+				A9332C6E2125AB990041C558 /* Float */,
 				A98C382F211355C800F3E87C /* String */,
 				A9912EA620C6C4F500619880 /* Array */,
 				A9B14F2320A5DA4C005221BA /* Sequence */,
@@ -652,7 +694,10 @@
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
 				A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */,
+				A9332C762125ABF00041C558 /* Float+Rounded.swift in Sources */,
+				A9332C722125ABAD0041C558 /* CGFloat+Rounded.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
+				A9332C742125ABD90041C558 /* Double+Rounded.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
 				A9912EAA20C6C55800619880 /* UIImage+ImageFromUIView.swift in Sources */,
 				A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */,
@@ -699,9 +744,12 @@
 				A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */,
 				A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */,
 				A999C5012096F5A3006014B1 /* ClosedRange+Random.swift in Sources */,
+				A9332C6921259B030041C558 /* DictionaryTests.swift in Sources */,
+				A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */,
 				A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */,
 				A9EB997E2122D41A0088FB88 /* UIColorTests.swift in Sources */,
 				A9EB997C2122D41A0088FB88 /* StringTests.swift in Sources */,
+				A9332C6D2125A92D0041C558 /* CGPointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
