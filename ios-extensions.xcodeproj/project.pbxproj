@@ -470,7 +470,6 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				A9332C702125ABA00041C558 /* CGFloat */,
 				A9332C6F2125AB9D0041C558 /* Double */,
 				A9332C6E2125AB990041C558 /* Float */,
 				A98C382F211355C800F3E87C /* String */,
@@ -514,6 +513,7 @@
 		A9D4CFD1209AF36E006461AF /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				A9332C702125ABA00041C558 /* CGFloat */,
 				A9E14DA920B1593E0075D725 /* CGRect */,
 				A9E14DA820B159330075D725 /* CGPoint */,
 			);
