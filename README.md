@@ -3,7 +3,7 @@
 [![Platform 1](https://img.shields.io/badge/platform-iOS-yellow.svg)]()
 [![Platform 2](https://img.shields.io/badge/platform-macOS-blue.svg)]()
 [![Language](https://img.shields.io/badge/language-swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-19%2C32%25-red.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-28%2C6%25-red.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
@@ -11,7 +11,7 @@
 
 # About
 
-🎉 Collection of Swift iOS and macOS related extensions for various use cases. Basically it's a collection of extensions that I started implementing for my own needs. There are **`47`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift iOS and macOS related extensions for various use cases. Basically it's a collection of extensions that I started implementing for my own needs. There are **`50`** different extensions. Feel free to contribute something new and amazing. 
 
 # Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
@@ -19,7 +19,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 6](#core-graphics)
-- [Foundation - 19](#foundation)
+- [Foundation - 22](#foundation)
 - [UIKit - 10](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -51,6 +51,9 @@ All the extensions are split into separete `groups` each of which represents a s
 - [CGRect+Mid](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BMid.swift)
 - [CGRect+AspectFit](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BAspectFit.swift)
 
+### CGFloat
+- [CGFloat+Rounded](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/CGFloat/CGFloat%2BRounded.swift)
+
 ## Foundation
 
 ### Array
@@ -71,6 +74,12 @@ All the extensions are split into separete `groups` each of which represents a s
 ### Dictionary
 - [Dictionary+GetOrAddValue](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift)
 - [Dictionary+JSON](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Dictionary/Dictionary%2BJSON.swift)
+
+### Double
+- [Double+Rounded](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/Double/Double%2BRounded.swift)
+
+### Float 
+- [Float+Rounded](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/Float/Float%2BRounded.swift)
 
 ### Int
 - [Int+Clamp](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/Foundation/Int/Int%2BClamp.swift)
