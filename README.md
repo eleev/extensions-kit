@@ -18,8 +18,8 @@ List of categories for convenient navigation. The `numbers` represent total numb
 
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
-- [Core Graphics - 6](#core-graphics)
-- [Foundation - 22](#foundation)
+- [Core Graphics - 7](#core-graphics)
+- [Foundation - 21](#foundation)
 - [UIKit - 10](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
