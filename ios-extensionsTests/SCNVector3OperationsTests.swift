@@ -25,6 +25,7 @@ class SCNVector3OperationsTests: XCTestCase {
     func testBasicOperators() {
         XCTAssert(SCNVector3(4, 3, 2) == SCNVector3(4, 3, 2))
         XCTAssert(SCNVector3(4, 3, 2) != SCNVector3(4, 2, 2))
+        XCTAssert(!(SCNVector3(4, 3, 2) != SCNVector3(4, 3, 2)))
         XCTAssert(SCNVector3(4, 3, 2) + SCNVector3(4, 2, 2) == SCNVector3(8, 5, 4))
         
         var vec = SCNVector3(4, 3, 2)
@@ -66,6 +67,12 @@ class SCNVector3OperationsTests: XCTestCase {
         vec = SCNVector3(4, 3, 2)
         vec /= Float(2)
         XCTAssert(vec == SCNVector3(2, 1.5, 1))
+        
+        XCTAssert(SCNVector3(4, 3, 2) / SCNVector3(2, 3, 2) == SCNVector3(2, 1, 1))
+        
+        vec = SCNVector3(4, 3, 2)
+        vec /= SCNVector3(2, 3, 2)
+        XCTAssert(vec == SCNVector3(2, 1, 1))
     }
     
     func testAdvancedOperators() {

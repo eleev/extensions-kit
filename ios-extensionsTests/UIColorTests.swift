@@ -20,50 +20,33 @@ class UIColorTests: XCTestCase {
 
     func testRGBComponentsColor() {
         let blackColor = UIColor.black
-        guard let blackColorComponents = blackColor.rgba else {
-            return
-        }
+        let blackColorComponents = blackColor.rgba
         XCTAssert(blackColorComponents == (red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
         
         let customColor = UIColor(red: 0.45, green: 0.23, blue: 0.75, alpha: 0.86)
-        guard let customColorComponents = customColor.rgba else {
-            return
-        }
+        let customColorComponents = customColor.rgba
         
         XCTAssert(customColorComponents == (red: 0.45, green: 0.23, blue: 0.75, alpha: 0.86))
     }
 
     func testHSBAComponnetsColor() {
         let blackColor = UIColor.black
-        guard let blackColorComponents = blackColor.hsba else {
-            XCTAssert(false)
-            return
-        }
+        let blackColorComponents = blackColor.hsba
         XCTAssert(blackColorComponents == (hue: 0.0, saturation: 0.0, brightness: 0.0, alpha: 1.0))
         
-        
         let customColor = UIColor(hue: 0.45, saturation: 0.23, brightness: 0.75, alpha: 0.86)
-        guard let customColorComponents = customColor.hsba else {
-            XCTAssert(false)
-            return
-        }
+        let customColorComponents = customColor.hsba
         XCTAssert(customColorComponents == (hue: 0.45, saturation: 0.23, brightness: 0.75, alpha: 0.86))
-        
     }
     
     func testGrayscaleComponnetsColor() {
         let blackColor = UIColor.black
-        guard let blackColorComponents = blackColor.grayscale else {
-            return
-        }
+        let blackColorComponents = blackColor.grayscale
         XCTAssert(blackColorComponents == (white: 0.0, alpha: 1.0))
         
         
         let customColor = UIColor(white: 0.73, alpha: 0.39)
-        guard let customColorComponents = customColor.grayscale else {
-            return
-        }
-        
+        let customColorComponents = customColor.grayscale
         XCTAssert(customColorComponents == (white: 0.73, alpha: 0.39))
     }
     
