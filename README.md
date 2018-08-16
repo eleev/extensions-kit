@@ -52,7 +52,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [CGRect+AspectFit](https://github.com/jVirus/ios-extensions/blob/master/ios-extensions/Extensions/CoreGraphics/CGRect/CGRect%2BAspectFit.swift)
 
 ### CGFloat
-- [CGFloat+Rounded](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/CGFloat/CGFloat%2BRounded.swift)
+- [CGFloat+Rounded](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/CoreGraphics/CGFloat/CGFloat%2BRounded.swift)
 
 ## Foundation
 
