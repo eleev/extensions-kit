@@ -21,6 +21,7 @@
 		A929498A20962BE600350C43 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498320962BE600350C43 /* Int+Random.swift */; };
 		A929499620962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A929499720962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
+		A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C6621255D030041C558 /* SCNVector3OperationsTests.swift */; };
 		A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
@@ -94,6 +95,7 @@
 		A929498220962BE600350C43 /* Int+Digits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Digits.swift"; sourceTree = "<group>"; };
 		A929498320962BE600350C43 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		A929499520962E9C00350C43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A9332C6621255D030041C558 /* SCNVector3OperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3OperationsTests.swift; sourceTree = "<group>"; };
 		A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+GetOrAddValue.swift"; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				A9EB997B2122D41A0088FB88 /* UIColorTests.swift */,
 				A920503721230BAF00B39C57 /* CollectionTests.swift */,
 				A920503921230D0D00B39C57 /* SequenceTests.swift */,
+				A9332C6621255D030041C558 /* SCNVector3OperationsTests.swift */,
 			);
 			path = "ios-extensionsTests";
 			sourceTree = "<group>";
@@ -694,6 +697,7 @@
 				A9EB99782122D07B0088FB88 /* BoolTests.swift in Sources */,
 				A920503821230BAF00B39C57 /* CollectionTests.swift in Sources */,
 				A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */,
+				A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */,
 				A999C5012096F5A3006014B1 /* ClosedRange+Random.swift in Sources */,
 				A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */,
 				A9EB997E2122D41A0088FB88 /* UIColorTests.swift in Sources */,
