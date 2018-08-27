@@ -1,6 +1,6 @@
 //
 //  Int+EvenOdd.swift
-//  ios-extensions
+//  extensions-kit
 //
 //  Created by Astemir Eleev on 30/04/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.

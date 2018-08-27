@@ -1,6 +1,6 @@
 //
 //  NSBezierPath+cgPath.swift
-//  ios-extensions
+//  extensions-kit
 //
 //  Created by Astemir Eleev on 29/06/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.

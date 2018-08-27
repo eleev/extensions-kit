@@ -1,6 +1,6 @@
 //
 //  UIImage+ImageFromUIView.swift
-//  ios-extensions
+//  extensions-kit
 //
 //  Created by Astemir Eleev on 05/06/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.

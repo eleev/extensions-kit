@@ -1,6 +1,6 @@
 //
 //  ios_extensions.h
-//  ios-extensions
+//  extensions-kit
 //
 //  Created by Astemir Eleev on 29/04/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.

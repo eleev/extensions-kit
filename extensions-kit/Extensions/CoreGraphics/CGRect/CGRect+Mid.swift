@@ -1,6 +1,6 @@
 //
 //  CGRect+Mid.swift
-//  ios-extensions
+//  extensions-kit
 //
 //  Created by Astemir Eleev on 11/05/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
