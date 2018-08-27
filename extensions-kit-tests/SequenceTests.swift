@@ -1,6 +1,6 @@
 //
-//  CollectionTests.swift
-//  ios-extensionsTests
+//  SequenceTests.swift
+//  extensions-kit-tests
 //
 //  Created by Astemir Eleev on 14/08/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class CollectionTests: XCTestCase {
+class SequenceTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -20,14 +20,18 @@ class CollectionTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSum() {
-        let collection = [1,2,3,4,5,6]
-        XCTAssert(collection.sum == 21)
-    }
-    
-    func testAverage() {
-        let collection = [1,2,3,3,3,2,1]
-        XCTAssert(collection.average == 2)
+    func testShuffled() {
+        let array = [1,2,3,4,5,6,7]
+        var shuffledArray = array.shuffled()
+        var iterations = 10
+        
+        while iterations > -1 {
+            XCTAssert(shuffledArray != array.shuffled())
+
+            shuffledArray = array.shuffled()
+            iterations -= 1
+        }
+        
     }
     
     func testPerformanceExample() {

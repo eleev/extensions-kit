@@ -1,6 +1,6 @@
 //
 //  StringTests.swift
-//  ios-extensionsTests
+//  extensions-kit-tests
 //
 //  Created by Astemir Eleev on 02/08/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.

@@ -1,13 +1,13 @@
 //
 //  IntTests.swift
-//  ios-extensionsTests
+//  extensions-kit-tests
 //
 //  Created by Astemir Eleev on 29/04/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
 //
 
 import XCTest
-@testable import ios_extensions
+@testable import extensions_kit
 
 class IntTests: XCTestCase {
     

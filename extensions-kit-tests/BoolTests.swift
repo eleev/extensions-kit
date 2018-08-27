@@ -1,14 +1,15 @@
 //
-//  DateTests.swift
-//  ios-extensionsTests
+//  BoolTests.swift
+//  extensions-kit-tests
 //
-//  Created by Astemir Eleev on 27/08/2018.
+//  Created by Astemir Eleev on 14/08/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
 //
 
 import XCTest
+@testable import extensions_kit
 
-class DateTests: XCTestCase {
+class BoolTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -18,6 +19,14 @@ class DateTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testInt() {
+        let falseBool = false
+        XCTAssert(falseBool.int == 0)
+        
+        let trueBool = true
+        XCTAssert(trueBool.int == 1)
     }
     
     func testPerformanceExample() {

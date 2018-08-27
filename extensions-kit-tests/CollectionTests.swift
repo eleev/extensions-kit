@@ -1,15 +1,14 @@
 //
-//  BoolTests.swift
-//  ios-extensionsTests
+//  CollectionTests.swift
+//  extensions-kit-tests
 //
 //  Created by Astemir Eleev on 14/08/2018.
 //  Copyright © 2018 Astemir Eleev. All rights reserved.
 //
 
 import XCTest
-@testable import ios_extensions
 
-class BoolTests: XCTestCase {
+class CollectionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,12 +20,14 @@ class BoolTests: XCTestCase {
         super.tearDown()
     }
     
-    func testInt() {
-        let falseBool = false
-        XCTAssert(falseBool.int == 0)
-        
-        let trueBool = true
-        XCTAssert(trueBool.int == 1)
+    func testSum() {
+        let collection = [1,2,3,4,5,6]
+        XCTAssert(collection.sum == 21)
+    }
+    
+    func testAverage() {
+        let collection = [1,2,3,3,3,2,1]
+        XCTAssert(collection.average == 2)
     }
     
     func testPerformanceExample() {
