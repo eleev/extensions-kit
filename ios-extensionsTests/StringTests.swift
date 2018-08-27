@@ -29,6 +29,16 @@ class StringTests: XCTestCase {
         XCTAssert(mixedString.digits == "345")
         XCTAssert(mixedComplexString.digits == "9983345")
     }
+    
+    func testDate() {
+        let validFormat = "yyyy/MM/DD"
+        guard let _ = "2018/07/23".date(inFormat: validFormat) else {
+            XCTAssert(false)
+            return
+        }
+        // The date was converted successfully
+        XCTAssert(true)   
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
