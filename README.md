@@ -1,17 +1,16 @@
 # extensions-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Platform 1](https://img.shields.io/badge/platform-iOS-yellow.svg)]()
-[![Platform 2](https://img.shields.io/badge/platform-macOS-blue.svg)]()
-[![Language](https://img.shields.io/badge/language-swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-28%2C6%25-red.svg)]()
+[![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
+[![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-30%2C58%25-red.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
-**Last Update: 16/August/2018.**
+**Last Update: 27/August/2018.**
 
 # About
 
-🎉 Collection of Swift iOS and macOS related extensions for various use cases. Basically it's a collection of extensions that I started implementing for my own needs. There are **`50`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift iOS and macOS related extensions for various use cases. Basically it's a collection of extensions that I started implementing for my own needs. There are **`52`** different extensions. Feel free to contribute something new and amazing. 
 
 # Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
@@ -19,7 +18,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 7](#core-graphics)
-- [Foundation - 21](#foundation)
+- [Foundation - 23](#foundation)
 - [UIKit - 10](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -77,6 +76,7 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ### Double
 - [Double+Rounded](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/Double/Double%2BRounded.swift)
+- [Double+CurrencyShorcuts](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/Double/Double%2BCurrencyShortcuts.swift)
 
 ### Float 
 - [Float+Rounded](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/Float/Float%2BRounded.swift)
@@ -98,6 +98,7 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ### String
 - [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/String/String%2BDigits.swift)
+- [String+FormattedDate](https://github.com/jVirus/extensions-kit/blob/master/ios-extensions/Extensions/Foundation/String/String%2BFormattedDate.swift)
 
 ## UIKit
 
