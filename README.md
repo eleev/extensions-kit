@@ -10,7 +10,7 @@
 
 # About
 
-🎉 Collection of Swift iOS and macOS related extensions for various use cases. Basically it's a collection of extensions that I started implementing for my own needs. There are **`52`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions for various use cases. The kit contains **`52`** different extensions. Feel free to contribute something new and amazing. 
 
 # Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
