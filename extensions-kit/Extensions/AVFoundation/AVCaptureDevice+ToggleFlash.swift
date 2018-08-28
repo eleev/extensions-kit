@@ -8,6 +8,7 @@
 
 import AVFoundation
 
+#if os(iOS)
 // MARK: - AVCaptureDevice+Flashlight extnesion that adds support for flashlight capabilities and management through a simple method with custom states.
 extension AVCaptureDevice {
     
@@ -75,3 +76,4 @@ extension AVCaptureDevice {
         return AVFlashlightState.undefined
     }
 }
+#endif
