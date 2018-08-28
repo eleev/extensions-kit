@@ -167,7 +167,7 @@ All the extensions are split into separete `groups` each of which represents a s
 ### PHAsset
 - [PHAsset+URL](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/PhotoKit/PHAsset/PHAsset%2BURL.swift)
 
-# Contributing 
+# 🙋‍♂️ Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
 - The other `soft` rule is - please include `unit tests` with your extensions. 
 
