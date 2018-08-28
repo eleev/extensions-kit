@@ -6,7 +6,7 @@ source 'https://github.com/jVirus/extensions-kit'
 
 target 'extensions-kit' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+  # use_frameworks!
 
   # Pods for extensions-kit
 
