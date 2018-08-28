@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60186AE35AD03192C9E73DAF /* libPods-extensions-kit-tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA725FE03A9135ED914CE68F /* libPods-extensions-kit-tests.a */; };
+		94F864300B36A6F3419B920B /* libPods-extensions-kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D5918ED8E7F1AA851CCE85 /* libPods-extensions-kit.a */; };
 		A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */; };
 		A920503821230BAF00B39C57 /* CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920503721230BAF00B39C57 /* CollectionTests.swift */; };
 		A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920503921230D0D00B39C57 /* SequenceTests.swift */; };
@@ -76,8 +78,6 @@
 		A9EB997C2122D41A0088FB88 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB99792122D41A0088FB88 /* StringTests.swift */; };
 		A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB997A2122D41A0088FB88 /* IntTests.swift */; };
 		A9EB997E2122D41A0088FB88 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB997B2122D41A0088FB88 /* UIColorTests.swift */; };
-		C78471871FC776D29180DC00 /* Pods_extensions_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBA2EB2CED2195F09B94771 /* Pods_extensions_kit.framework */; };
-		DE09CB62EA55D9A4B0D88142 /* Pods_extensions_kit_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE855C0B35C53AB25066EF9 /* Pods_extensions_kit_tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +92,8 @@
 
 /* Begin PBXFileReference section */
 		6C874BF4637A54A3E47136C3 /* Pods-extensions-kit-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extensions-kit-tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-extensions-kit-tests/Pods-extensions-kit-tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7FBA2EB2CED2195F09B94771 /* Pods_extensions_kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_extensions_kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D5918ED8E7F1AA851CCE85 /* libPods-extensions-kit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-extensions-kit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F9DD677267ABE9FE66DFD3 /* Pods-extensions-kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extensions-kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-extensions-kit/Pods-extensions-kit.debug.xcconfig"; sourceTree = "<group>"; };
-		9CE855C0B35C53AB25066EF9 /* Pods_extensions_kit_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_extensions_kit_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDA119608F76AE7FBD1644D /* Pods-extensions-kit-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extensions-kit-tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-extensions-kit-tests/Pods-extensions-kit-tests.release.xcconfig"; sourceTree = "<group>"; };
 		A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+ToggleFlash.swift"; sourceTree = "<group>"; };
 		A920503721230BAF00B39C57 /* CollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTests.swift; sourceTree = "<group>"; };
@@ -166,6 +165,7 @@
 		A9EB99792122D41A0088FB88 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		A9EB997A2122D41A0088FB88 /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
 		A9EB997B2122D41A0088FB88 /* UIColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		DA725FE03A9135ED914CE68F /* libPods-extensions-kit-tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-extensions-kit-tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BD2D742D2BA84C02ECFC18 /* Pods-extensions-kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extensions-kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-extensions-kit/Pods-extensions-kit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C78471871FC776D29180DC00 /* Pods_extensions_kit.framework in Frameworks */,
+				94F864300B36A6F3419B920B /* libPods-extensions-kit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A929496D20962BD400350C43 /* extensions_kit.framework in Frameworks */,
-				DE09CB62EA55D9A4B0D88142 /* Pods_extensions_kit_tests.framework in Frameworks */,
+				60186AE35AD03192C9E73DAF /* libPods-extensions-kit-tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +204,8 @@
 		8077A7067AB2ACF6352D2BF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7FBA2EB2CED2195F09B94771 /* Pods_extensions_kit.framework */,
-				9CE855C0B35C53AB25066EF9 /* Pods_extensions_kit_tests.framework */,
+				78D5918ED8E7F1AA851CCE85 /* libPods-extensions-kit.a */,
+				DA725FE03A9135ED914CE68F /* libPods-extensions-kit-tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
