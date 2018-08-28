@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/jVirus/extensions-kit", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/jVirus/extensions-kit/blob/master/extensions-kit.podspec", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
