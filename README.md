@@ -3,16 +3,27 @@
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![Coverage](https://img.shields.io/badge/coverage-30%2C58%25-red.svg)]()
+[![CocoaPod](https://img.shields.io/badge/pod-1.0.0-lightgrey.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
 **Last Update: 27/August/2018.**
 
-# About
+# ✍️ About
 
 🎉 Collection of Swift extensions for various use cases. The kit contains **`52`** different extensions. Feel free to contribute something new and amazing. 
 
-# Categories
+# ✌️ Installation
+## CocoaPods
+`extensions-kit` is availabe via `CocoaPods`
+
+```swift
+pod 'extensions-kit', '~> 1.0.0' 
+```
+## Manual
+You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
+
+# 🤲 Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
 
 - [AppKit - 1](#appkit)
@@ -27,7 +38,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [PhotoKit - 1](#photokit)
 
 
-# List of Extensions
+# 📚 List of Extensions
 All the extensions are split into separete `groups` each of which represents a separete `SDK framework`. 
 
 ## AppKit
@@ -160,8 +171,8 @@ All the extensions are split into separete `groups` each of which represents a s
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
 - The other `soft` rule is - please include `unit tests` with your extensions. 
 
-# Author 
+# 👨‍💻 Author 
 [Astemir Eleev](https://github.com/jVirus)
 
-# Licence
+# 🔖 Licence
 The project is available under [MIT licence](https://github.com/jVirus/extensions-kit/blob/master/LICENSE)
