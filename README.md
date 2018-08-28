@@ -23,7 +23,7 @@ pod 'extensions-kit', '~> 1.0.0'
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
 
-# 🤲 Categories
+# 🍱 Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
 
 - [AppKit - 1](#appkit)
