@@ -13,7 +13,7 @@
 
 🎉 Collection of Swift extensions for various use cases. The kit contains **`52`** different extensions. Feel free to contribute something new and amazing. 
 
-# ✌️ Installation
+# 🏗 Installation
 ## CocoaPods
 `extensions-kit` is availabe via `CocoaPods`
 
