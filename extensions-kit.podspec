@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   #
 
   # s.author             = { "Astemir Eleev" => "astemireleev@domen.com" }
-    s.author    = "Astemir Eleev"
+    s.author             = { "Astemir Eleev" => "astemireleev@gmail.com" }
   # Or just: s.author    = "Astemir Eleev"
   # s.authors            = { "Astemir Eleev" => "astemireleev@domen.com" }
   # s.social_media_url   = "http://twitter.com/Astemir Eleev"
@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
   s.source_files = "extensions-kit/Extensions/**/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+ # s.public_header_files = "extensions-kit/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
