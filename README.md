@@ -2,16 +2,16 @@
 
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-30%2C58%25-red.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-32%2C65%25-red.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.0.0-lightgrey.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
-**Last Update: 28/August/2018.**
+**Last Update: 29/August/2018.**
 
 # ✍️ About
 
-🎉 Collection of Swift extensions for various use cases. The kit contains **`52`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions for various use cases. The kit contains **`56`** different extensions. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -29,7 +29,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 7](#core-graphics)
-- [Foundation - 23](#foundation)
+- [Foundation - 27](#foundation)
 - [UIKit - 10](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -101,6 +101,9 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Int+Random](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRandom.swift)
 - [Int+Roman](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRoman.swift)
 
+### OptionSet
+- [OptionSet+Operations](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/OptionSet/OptionSet%2BOperations.swift)
+
 ### MutableCollection 
 - [MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift)
 
@@ -110,6 +113,9 @@ All the extensions are split into separete `groups` each of which represents a s
 ### String
 - [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BDigits.swift)
 - [String+FormattedDate](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BFormattedDate.swift)
+- [String+IndexOf](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BIndexOf.swift)
+- [String+Base64](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BBase64.swift)
+- [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift)
 
 ## UIKit
 
