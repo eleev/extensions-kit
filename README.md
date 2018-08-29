@@ -18,7 +18,7 @@
 `extensions-kit` is availabe via `CocoaPods`
 
 ```swift
-pod 'extensions-kit', '~> 1.0.0' 
+pod 'extensions-kit', '~> 1.1.0' 
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
