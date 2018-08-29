@@ -39,6 +39,43 @@ class StringTests: XCTestCase {
         // The date was converted successfully
         XCTAssert(true)   
     }
+    
+    func testIndexOf() {
+        let testString = "This is the test text z"
+        
+        let zIndex = testString.lastIndex(of: "z")
+        XCTAssert(zIndex?.encodedOffset == testString.count - 1)
+        
+        let tIndex = testString.lastIndex(of: "t")
+        XCTAssert(tIndex?.encodedOffset == testString.count - 3)
+        
+        let iIndex = testString.lastIndex(of: "i")
+        XCTAssert(iIndex?.encodedOffset == testString.count - 18)
+        
+        let yIndex = testString.lastIndex(of: "Y")
+        XCTAssertFalse(yIndex?.encodedOffset == testString.count - 18)
+    }
+    
+    func testBase64() {
+        
+        let test = "123U djkfhg jksdf thkh dkjfg hdkfjg hdkjfg quihfkug hadfkjg adufkgh dkfhjg \n sdf sdf "
+        
+        let base64 = test.toBase64()
+        
+        XCTAssertTrue(base64 == "MTIzVSBkamtmaGcgamtzZGYgdGhraCBka2pmZyBoZGtmamcgaGRramZnIHF1aWhma3VnIGhhZGZramcgYWR1ZmtnaCBka2ZoamcgCiBzZGYgc2RmIA==")
+        
+        let fromBase64 = base64.fromBase64()
+        
+        XCTAssertTrue(fromBase64 == test)
+    }
+    
+    func testValidation() {
+        let alhaNum = "37964798hvjkdhkjsdf3kjKJfkh2KJH34"
+        XCTAssertTrue(alhaNum.isAlphaNumeric())
+        
+        let nonAlhaNum = "Hello World!"
+        XCTAssertFalse(nonAlhaNum.isAlphaNumeric())
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
