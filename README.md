@@ -3,7 +3,7 @@
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![Coverage](https://img.shields.io/badge/coverage-32%2C65%25-red.svg)]()
-[![CocoaPod](https://img.shields.io/badge/pod-1.0.0-lightgrey.svg)]()
+[![CocoaPod]https://img.shields.io/badge/pod-1.1.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
