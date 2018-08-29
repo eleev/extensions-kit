@@ -70,6 +70,11 @@
 		A9D4CFCE209AEBCB006461AF /* Collection+Sum&Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFCD209AEBCB006461AF /* Collection+Sum&Average.swift */; };
 		A9D4CFD5209AF3D1006461AF /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */; };
 		A9D91E9021188A7300E9D822 /* UIColor+ColorComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D91E8F21188A7300E9D822 /* UIColor+ColorComponents.swift */; };
+		A9DEA74621366E3E00AAA063 /* String+IndexOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA74521366E3E00AAA063 /* String+IndexOf.swift */; };
+		A9DEA74821367CF100AAA063 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA74721367CF100AAA063 /* String+Base64.swift */; };
+		A9DEA74A21367D9B00AAA063 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA74921367D9B00AAA063 /* String+Validation.swift */; };
+		A9DEA74D21367EDD00AAA063 /* OptionSet+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA74C21367EDD00AAA063 /* OptionSet+Operations.swift */; };
+		A9DEA74F21367F5000AAA063 /* OptionSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA74E21367F5000AAA063 /* OptionSetTests.swift */; };
 		A9E14DA720B158A60075D725 /* SKTimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DA620B158A60075D725 /* SKTimingFunction.swift */; };
 		A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DAA20B159700075D725 /* CGPoint+Utils.swift */; };
 		A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DAC20B159BB0075D725 /* CGPoint+Operators.swift */; };
@@ -157,6 +162,11 @@
 		A9D4CFCD209AEBCB006461AF /* Collection+Sum&Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Sum&Average.swift"; sourceTree = "<group>"; };
 		A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
 		A9D91E8F21188A7300E9D822 /* UIColor+ColorComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorComponents.swift"; sourceTree = "<group>"; };
+		A9DEA74521366E3E00AAA063 /* String+IndexOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IndexOf.swift"; sourceTree = "<group>"; };
+		A9DEA74721367CF100AAA063 /* String+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
+		A9DEA74921367D9B00AAA063 /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		A9DEA74C21367EDD00AAA063 /* OptionSet+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionSet+Operations.swift"; sourceTree = "<group>"; };
+		A9DEA74E21367F5000AAA063 /* OptionSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSetTests.swift; sourceTree = "<group>"; };
 		A9E14DA620B158A60075D725 /* SKTimingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTimingFunction.swift; sourceTree = "<group>"; };
 		A9E14DAA20B159700075D725 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
 		A9E14DAC20B159BB0075D725 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
@@ -275,6 +285,7 @@
 				A9332C6C2125A92D0041C558 /* CGPointTests.swift */,
 				A9C0B7E82133F78400C0D908 /* DateTests.swift */,
 				A9C0B7EE2133FAF500C0D908 /* DoubleTests.swift */,
+				A9DEA74E21367F5000AAA063 /* OptionSetTests.swift */,
 			);
 			path = "extensions-kit-tests";
 			sourceTree = "<group>";
@@ -373,6 +384,9 @@
 			children = (
 				A98C3830211355DB00F3E87C /* String+Digits.swift */,
 				A9C0B7E62133F76500C0D908 /* String+FormattedDate.swift */,
+				A9DEA74521366E3E00AAA063 /* String+IndexOf.swift */,
+				A9DEA74721367CF100AAA063 /* String+Base64.swift */,
+				A9DEA74921367D9B00AAA063 /* String+Validation.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -521,6 +535,7 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A9DEA74B21367ECD00AAA063 /* OptionSet */,
 				A9C0B7E52133F74700C0D908 /* Date */,
 				A9332C6F2125AB9D0041C558 /* Double */,
 				A9332C6E2125AB990041C558 /* Float */,
@@ -594,6 +609,14 @@
 				A9D91E8F21188A7300E9D822 /* UIColor+ColorComponents.swift */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		A9DEA74B21367ECD00AAA063 /* OptionSet */ = {
+			isa = PBXGroup;
+			children = (
+				A9DEA74C21367EDD00AAA063 /* OptionSet+Operations.swift */,
+			);
+			path = OptionSet;
 			sourceTree = "<group>";
 		};
 		A9E14DA820B159330075D725 /* CGPoint */ = {
@@ -788,6 +811,7 @@
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
 				A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */,
+				A9DEA74821367CF100AAA063 /* String+Base64.swift in Sources */,
 				A9332C762125ABF00041C558 /* Float+Rounded.swift in Sources */,
 				A9332C722125ABAD0041C558 /* CGFloat+Rounded.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
@@ -800,6 +824,7 @@
 				A9E14DA720B158A60075D725 /* SKTimingFunction.swift in Sources */,
 				A9B14F2C20A5DEA6005221BA /* CGRect+Mid.swift in Sources */,
 				A999C5042096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */,
+				A9DEA74621366E3E00AAA063 /* String+IndexOf.swift in Sources */,
 				A9C5977220E6A8350015B08A /* NSBezierPath+cgPath.swift in Sources */,
 				A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */,
 				A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */,
@@ -809,6 +834,7 @@
 				A9912EA520C6C44400619880 /* CGRect+Corners.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
 				A9CC5C33209F0BD200040E61 /* SKTexture+LinearGradient.swift in Sources */,
+				A9DEA74A21367D9B00AAA063 /* String+Validation.swift in Sources */,
 				A9D4CFC6209AEA7F006461AF /* Bool+Int.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */,
@@ -821,6 +847,7 @@
 				A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */,
 				A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */,
 				A98C5E8420D13F5100674186 /* PHAsset+URL.swift in Sources */,
+				A9DEA74D21367EDD00AAA063 /* OptionSet+Operations.swift in Sources */,
 				A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
 				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
@@ -839,6 +866,7 @@
 				A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */,
 				A9C0B7EF2133FAF500C0D908 /* DoubleTests.swift in Sources */,
 				A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */,
+				A9DEA74F21367F5000AAA063 /* OptionSetTests.swift in Sources */,
 				A999C5012096F5A3006014B1 /* ClosedRange+Random.swift in Sources */,
 				A9332C6921259B030041C558 /* DictionaryTests.swift in Sources */,
 				A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */,
