@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
-**Last Update: 29/August/2018.**
+**Last Update: 02/September/2018.**
 
 # ✍️ About
 
@@ -173,7 +173,7 @@ All the extensions are split into separete `groups` each of which represents a s
 ### PHAsset
 - [PHAsset+URL](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/PhotoKit/PHAsset/PHAsset%2BURL.swift)
 
-# 🙋‍♂️ Contributing 
+# 🙋‍♀️🙋‍♂️Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
 - The other `soft` rule is - please include `unit tests` with your extensions. 
 
