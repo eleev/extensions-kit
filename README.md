@@ -67,30 +67,30 @@ All the extensions are split into separete `groups` each of which represents a s
 ## Foundation
 
 ### Array
-- [Array+Filtering](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BFiltering.swift) - 
+- [Array+Filtering](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BFiltering.swift) - contains a number of methods for filtering in a `functional-style`, has `skip`, `all` and `any` filters
 
 ### Bool
-- [Bool+Int](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BInt.swift)
-- [Bool+Random](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BRandom.swift)
+- [Bool+Int](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BInt.swift) - adds a property that returns `Int` representation of `self`
+- [Bool+Random](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BRandom.swift) - adds a random property for `self`
 
 ### ClosedRange
-- [ClosedRange+Random](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/ClosedRange/ClosedRange%2BRandom.swift)   
+- [ClosedRange+Random](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/ClosedRange/ClosedRange%2BRandom.swift) - adds a property that generates a random `Int` with respect to `self`
 
 ### Collection 
-- [Collection+ParallelIteration](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BParallelIteration.swift)
-- [Collection+RandomItem](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BRandomItem.swift)
-- [Collection+Sum&Average](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BSum%26Average.swift)
+- [Collection+ParallelIteration](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BParallelIteration.swift) - adds `parallelForEach` method 
+- [Collection+RandomItem](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BRandomItem.swift) - adds a property that returns a random element from `self`
+- [Collection+Sum&Average](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BSum%26Average.swift) - adds two properties for `sum` and `average` with the corresponding functionality
 
 ### Dictionary
-- [Dictionary+GetOrAddValue](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift)
-- [Dictionary+JSON](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BJSON.swift)
+- [Dictionary+GetOrAddValue](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift) - parses `self` as `JSON` to `Data` or `String`
+- [Dictionary+JSON](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BJSON.swift) - checks for a value for a given key or creates a new key/value pair if none was found
 
 ### Double
-- [Double+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BRounded.swift)
-- [Double+CurrencyShorcuts](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BCurrencyShortcuts.swift)
+- [Double+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BRounded.swift) - rounds `self` to decimal places value
+- [Double+CurrencyShorcuts](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BCurrencyShortcuts.swift) - adds several commonly used currency shortcuts as properties
 
 ### Float 
-- [Float+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Float/Float%2BRounded.swift)
+- [Float+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Float/Float%2BRounded.swift) - rounds `self` to decimal places value
 
 ### Int
 - [Int+Clamp](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BClamp.swift) - clamps `self` into a range that can be described using `ClosedRange` or two separate properties
@@ -105,60 +105,60 @@ All the extensions are split into separete `groups` each of which represents a s
 - [OptionSet+Operations](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/OptionSet/OptionSet%2BOperations.swift) - adds support for in-place `incert` and `remove` operations
 
 ### MutableCollection 
-- [MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift)
+- [MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift) - in-place shuffling of `self`
 
 ### Sequence  
-- [Sequence+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift)
+- [Sequence+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift) - shuffles the elements of `self`
 
 ### String
-- [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BDigits.swift)
-- [String+FormattedDate](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BFormattedDate.swift)
-- [String+IndexOf](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BIndexOf.swift)
-- [String+Base64](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BBase64.swift)
-- [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift)
+- [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BDigits.swift) - combines decimal digits into a single `String` property
+- [String+FormattedDate](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BFormattedDate.swift) - creates a `Date` instance from `self` based in the specified format
+- [String+IndexOf](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BIndexOf.swift) - finds the first occurence for a given `String`
+- [String+Base64](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BBase64.swift) - encodes/decodes `self` to `Base64` encoding
+- [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) - determines if `self` is *alphanumeric* `String`
 
 ## UIKit
 
 ### UIColor
-- [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift)
+- [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift) - adds support for missing color components properties such as `rgba`, `hsba` and `grayscale`
 
 ### UICollectionView
-- [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift)
+- [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift) - registers custom `UICollectionViewCell` for a `UICollectionView` instance. `UICollectionViewCell` needs to be located in current Bundle
 
 ### UIImage
-- [UIImage+ImageFromUIView](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BImageFromUIView.swift)
-- [UIImage+LandscapeCameraOrientationFix](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BLandscapeCameraOrientationFix.swift)
-- [UIImage+RawOrientation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BRawOrientation.swift)
-- [UIImage+Resize](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BResize.swift)
-- [UIImage+SolidColor](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BSolidColor.swift)
+- [UIImage+ImageFromUIView](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BImageFromUIView.swift) - renders `UIView` to `UIImage`
+- [UIImage+LandscapeCameraOrientationFix](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BLandscapeCameraOrientationFix.swift) - fixes image orientation for cases when the image was captured using `AVFoundation` in *landscape interface orientation*
+- [UIImage+RawOrientation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BRawOrientation.swift) - raw image orientation (from `UIImageOrientation` to `Int32`) 
+- [UIImage+Resize](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BResize.swift) - class-level extension that allows to resize input image based on expected image *width* or/and *height*
+- [UIImage+SolidColor](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BSolidColor.swift) - create a `UIImage` from the *color data* and *size*
 
 ### UIImageView
-- [UIImageView+DownloadFromURL](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BDownloadFromURL.swift)
-- [UIImageView+Masking](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BMasking.swift)
+- [UIImageView+DownloadFromURL](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BDownloadFromURL.swift) - adds a convenience method for downloading and parsing `UIImage` with the specified `URL`
+- [UIImageView+Masking](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BMasking.swift) - masks a given `UIImage` with the target image size
 
 ### UIViewController
-- [UIViewController+ChildViewControllers](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift)
+- [UIViewController+ChildViewControllers](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift) - addds convenience methods for `adding` and `removing` child view controllers
 
 ## SpriteKit
-- [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTimingFunction.swift)
+- [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTimingFunction.swift) - adds **36(!)** different timing functions 
 
 ### SKEmitterNode
-- [SKEmitterNode+AdvanceSimulation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKEmitterNode/SKEmitterNode%2BAdvanceSimulation.swift)
+- [SKEmitterNode+AdvanceSimulation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKEmitterNode/SKEmitterNode%2BAdvanceSimulation.swift) - fafely advance the particle simulation for a given `TimeInterval`
 
 ### SKSpriteNode
-- [SKSpriteNode+GIF](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKSpriteNode/SKSpriteNode%2BGIF.swift)
+- [SKSpriteNode+GIF](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKSpriteNode/SKSpriteNode%2BGIF.swift) - adds support for uploading and playing and `GIFs` from local files
 
 ### SKScene
-- [SKScene+SerialSpriteLoading](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKScene/SKScene%2BSerialSpriteLoading.swift)
+- [SKScene+SerialSpriteLoading](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKScene/SKScene%2BSerialSpriteLoading.swift) - uploads a set of scene graph nodes with a specific pattern, useful when a scene contains a lot of nodes, but just a specific subset needs to be processed 
 
 ### SKTexture
-- [SKTexture+LinearGradient](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTexture/SKTexture%2BLinearGradient.swift)
+- [SKTexture+LinearGradient](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTexture/SKTexture%2BLinearGradient.swift) - adds a convenience initializer that greates a `gradient texture` for the specified *size*, *start* and *end* colors
 
 ### SKTextureAtlas
-- [SKTextureAtlas+FramesLoader](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTextureAtlas/SKTextureAtlas%2BFramesLoader.swift)
+- [SKTextureAtlas+FramesLoader](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTextureAtlas/SKTextureAtlas%2BFramesLoader.swift) - uploads an animation sequence from a texture atlas and returns an array of textures that can be futher used
 
 ## SceneKit
-- [SCNVector3+Operators](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift)
+- [SCNVector3+Operators](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) - adds support for various mathematical operators for `SCNVector3` type
 
 ## Grapnd Central Dispatch
 - [DispatchQueue+DispatchOnce](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift) - adds support for `class` method that executes block of code once a.k.a. `DispatchOnce` 
