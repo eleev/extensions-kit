@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [UIKit - 10](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
-- [Grapnd Central Dispatch - 1](#grapnd-central-dispatch)
+- [Grand Central Dispatch - 1](#grapnd-central-dispatch)
 - [WebKit - 1](#webkit)
 - [PhotoKit - 1](#photokit)
 
@@ -160,7 +160,7 @@ All the extensions are split into separete `groups` each of which represents a s
 ## SceneKit
 - [SCNVector3+Operators](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) - adds support for various mathematical operators for `SCNVector3` type
 
-## Grapnd Central Dispatch
+## Grand Central Dispatch
 - [DispatchQueue+DispatchOnce](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift) - adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
 
 ## WebKit
