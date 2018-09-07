@@ -11,14 +11,14 @@
 
 # ✍️ About
 
-🎉 Collection of Swift extensions for various use cases. The kit contains **`56`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions for various use cases. The kit contains **`66`** different extensions. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
 `extensions-kit` is availabe via `CocoaPods`
 
 ```
-pod 'extensions-kit', '~> 1.1.1' 
+pod 'extensions-kit', '~> 1.2.0' 
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
@@ -29,7 +29,8 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 7](#core-graphics)
-- [Foundation - 27](#foundation)
+- [Core Image - 1](#core-image)
+- [Foundation - 36](#foundation)
 - [UIKit - 10](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -64,10 +65,19 @@ All the extensions are split into separete `groups` each of which represents a s
 ### CGFloat
 - [CGFloat+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGFloat/CGFloat%2BRounded.swift) - rounds `self` to the specified decimal places
 
+## CoreImage
+
+### New Filters
+- [HighlightFilter](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/Filters/HighlightFilter.swift) - filter is originally designed for highlighting 3D objects but can be used to add this effect to images and sprites
+
 ## Foundation
 
 ### Array
 - [Array+Filtering](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BFiltering.swift) - contains a number of methods for filtering in a `functional-style`, has `skip`, `all` and `any` filters
+- [Array+Contains](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BContains.swift) - checks if self contains the specified elements
+- [Array+Difference](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BDifference.swift) - computes differences between self and the input arrays
+- [Array+Intersection](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) - computes intersection of self and the input values
+- [Array+Union](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BUnion.swift) - unions self and the input arrays
 
 ### Bool
 - [Bool+Int](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BInt.swift) - adds a property that returns `Int` representation of `self`
@@ -84,6 +94,11 @@ All the extensions are split into separete `groups` each of which represents a s
 ### Dictionary
 - [Dictionary+GetOrAddValue](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift) - parses `self` as `JSON` to `Data` or `String`
 - [Dictionary+JSON](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BJSON.swift) - checks for a value for a given key or creates a new key/value pair if none was found
+- [Dictionary+ConvenienceWrappers](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BConvenienceWrappers.swift) - adds wrappers around common operations such as `has(key: )->Bool` and `each(: (Key, Value)->())`
+- [Dictionary+Difference](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BDifference.swift) - computes differences between self and the input dictionaries 
+- [Dictionary+Intersection](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BIntersection.swift) - computes intersection of self and the input Dictionaries
+- [Dictionary+Map](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BMap.swift) - custom mapping function
+- [Dictionary+Union](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BUnion.swift) - unions self and the input dictionaries
 
 ### Double
 - [Double+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BRounded.swift) - rounds `self` to decimal places value
