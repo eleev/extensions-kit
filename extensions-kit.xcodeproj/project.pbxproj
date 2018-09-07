@@ -47,6 +47,16 @@
 		A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */; };
 		A9A429E420BB30D900CDF137 /* SKSpriteNode+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A429E320BB30D900CDF137 /* SKSpriteNode+GIF.swift */; };
 		A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */; };
+		A9AB24E52142A4E9006E334B /* HighlightFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24E42142A4E9006E334B /* HighlightFilter.swift */; };
+		A9AB24E72142A7AD006E334B /* Array+Union.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24E62142A7AD006E334B /* Array+Union.swift */; };
+		A9AB24E92142A83F006E334B /* Array+Contains.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24E82142A83F006E334B /* Array+Contains.swift */; };
+		A9AB24EB2142AA10006E334B /* Array+Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24EA2142AA10006E334B /* Array+Difference.swift */; };
+		A9AB24ED2142AB64006E334B /* Array+Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24EC2142AB64006E334B /* Array+Intersection.swift */; };
+		A9AB24EF2142AD5F006E334B /* Dictionary+Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24EE2142AD5F006E334B /* Dictionary+Difference.swift */; };
+		A9AB24F12142AEB7006E334B /* Dictionary+ConvenienceWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24F02142AEB7006E334B /* Dictionary+ConvenienceWrappers.swift */; };
+		A9AB24F32142B079006E334B /* Dictionary+Union.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24F22142B079006E334B /* Dictionary+Union.swift */; };
+		A9AB24F52142B136006E334B /* Dictionary+Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24F42142B136006E334B /* Dictionary+Intersection.swift */; };
+		A9AB24F72142BA10006E334B /* Dictionary+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24F62142BA10006E334B /* Dictionary+Map.swift */; };
 		A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */; };
 		A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */; };
 		A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */; };
@@ -139,6 +149,16 @@
 		A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawOrientation.swift"; sourceTree = "<group>"; };
 		A9A429E320BB30D900CDF137 /* SKSpriteNode+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+GIF.swift"; sourceTree = "<group>"; };
 		A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildViewControllers.swift"; sourceTree = "<group>"; };
+		A9AB24E42142A4E9006E334B /* HighlightFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightFilter.swift; sourceTree = "<group>"; };
+		A9AB24E62142A7AD006E334B /* Array+Union.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Union.swift"; sourceTree = "<group>"; };
+		A9AB24E82142A83F006E334B /* Array+Contains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Contains.swift"; sourceTree = "<group>"; };
+		A9AB24EA2142AA10006E334B /* Array+Difference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Difference.swift"; sourceTree = "<group>"; };
+		A9AB24EC2142AB64006E334B /* Array+Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Intersection.swift"; sourceTree = "<group>"; };
+		A9AB24EE2142AD5F006E334B /* Dictionary+Difference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Difference.swift"; sourceTree = "<group>"; };
+		A9AB24F02142AEB7006E334B /* Dictionary+ConvenienceWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ConvenienceWrappers.swift"; sourceTree = "<group>"; };
+		A9AB24F22142B079006E334B /* Dictionary+Union.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Union.swift"; sourceTree = "<group>"; };
+		A9AB24F42142B136006E334B /* Dictionary+Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Intersection.swift"; sourceTree = "<group>"; };
+		A9AB24F62142BA10006E334B /* Dictionary+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Map.swift"; sourceTree = "<group>"; };
 		A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+DispatchOnce.swift"; sourceTree = "<group>"; };
 		A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Scale.swift"; sourceTree = "<group>"; };
 		A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Shuffle.swift"; sourceTree = "<group>"; };
@@ -298,6 +318,7 @@
 				A95B443520B7DB8300AC5E23 /* WebKit */,
 				A903943020AD916400376CC3 /* AVFoundation */,
 				A9D4CFD2209AF374006461AF /* CoreAnimation */,
+				A9AB24E22142A4CA006E334B /* CoreImage */,
 				A9D4CFD1209AF36E006461AF /* CoreGraphics */,
 				A9D4CFBD209AE7E1006461AF /* Foundation */,
 				A9D4CFBC209AE7D7006461AF /* UIKit */,
@@ -411,6 +432,10 @@
 			isa = PBXGroup;
 			children = (
 				A9912EA720C6C51000619880 /* Array+Filtering.swift */,
+				A9AB24E62142A7AD006E334B /* Array+Union.swift */,
+				A9AB24E82142A83F006E334B /* Array+Contains.swift */,
+				A9AB24EA2142AA10006E334B /* Array+Difference.swift */,
+				A9AB24EC2142AB64006E334B /* Array+Intersection.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -442,6 +467,22 @@
 				A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		A9AB24E22142A4CA006E334B /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB24E32142A4D5006E334B /* Filters */,
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
+		A9AB24E32142A4D5006E334B /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB24E42142A4E9006E334B /* HighlightFilter.swift */,
+			);
+			path = Filters;
 			sourceTree = "<group>";
 		};
 		A9ACB9812099E68000966991 /* Grand Central Dispatch */ = {
@@ -599,6 +640,11 @@
 			children = (
 				A9D4CFD4209AF3D1006461AF /* Dictionary+JSON.swift */,
 				A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */,
+				A9AB24F02142AEB7006E334B /* Dictionary+ConvenienceWrappers.swift */,
+				A9AB24EE2142AD5F006E334B /* Dictionary+Difference.swift */,
+				A9AB24F22142B079006E334B /* Dictionary+Union.swift */,
+				A9AB24F42142B136006E334B /* Dictionary+Intersection.swift */,
+				A9AB24F62142BA10006E334B /* Dictionary+Map.swift */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
@@ -809,12 +855,14 @@
 				A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */,
 				A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */,
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
+				A9AB24F52142B136006E334B /* Dictionary+Intersection.swift in Sources */,
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
 				A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */,
 				A9DEA74821367CF100AAA063 /* String+Base64.swift in Sources */,
 				A9332C762125ABF00041C558 /* Float+Rounded.swift in Sources */,
 				A9332C722125ABAD0041C558 /* CGFloat+Rounded.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
+				A9AB24E52142A4E9006E334B /* HighlightFilter.swift in Sources */,
 				A9332C742125ABD90041C558 /* Double+Rounded.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
 				A9912EAA20C6C55800619880 /* UIImage+ImageFromUIView.swift in Sources */,
@@ -833,23 +881,31 @@
 				A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */,
 				A9912EA520C6C44400619880 /* CGRect+Corners.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
+				A9AB24F12142AEB7006E334B /* Dictionary+ConvenienceWrappers.swift in Sources */,
+				A9AB24EF2142AD5F006E334B /* Dictionary+Difference.swift in Sources */,
 				A9CC5C33209F0BD200040E61 /* SKTexture+LinearGradient.swift in Sources */,
 				A9DEA74A21367D9B00AAA063 /* String+Validation.swift in Sources */,
 				A9D4CFC6209AEA7F006461AF /* Bool+Int.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */,
+				A9AB24E92142A83F006E334B /* Array+Contains.swift in Sources */,
+				A9AB24EB2142AA10006E334B /* Array+Difference.swift in Sources */,
 				A9A429E420BB30D900CDF137 /* SKSpriteNode+GIF.swift in Sources */,
 				A9912EA820C6C51000619880 /* Array+Filtering.swift in Sources */,
+				A9AB24ED2142AB64006E334B /* Array+Intersection.swift in Sources */,
 				A9D4CFC3209AEA29006461AF /* Int+Roman.swift in Sources */,
 				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
 				A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */,
 				A9D4CFCC209AEB88006461AF /* Collection+RandomItem.swift in Sources */,
 				A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */,
 				A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */,
+				A9AB24E72142A7AD006E334B /* Array+Union.swift in Sources */,
 				A98C5E8420D13F5100674186 /* PHAsset+URL.swift in Sources */,
 				A9DEA74D21367EDD00AAA063 /* OptionSet+Operations.swift in Sources */,
+				A9AB24F72142BA10006E334B /* Dictionary+Map.swift in Sources */,
 				A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
+				A9AB24F32142B079006E334B /* Dictionary+Union.swift in Sources */,
 				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
 				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
