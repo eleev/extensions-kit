@@ -24,7 +24,7 @@ public extension Array {
     /// - Parameter condition: a closure with one input element and bool as a return value
     /// - Returns: a bool value taht indicates whether the condition was satisfied for all elements
     public func all(condition: (Element) -> Bool) -> Bool {
-        return self.filter(condition).count == self.count
+        return filter(condition).count == count
     }
     
     /// Checks if any element in the given array satisfies a given condition
@@ -32,6 +32,6 @@ public extension Array {
     /// - Parameter condition: a closure with one input element and bool as a return value
     /// - Returns: a bool value that indicates whether the condition was satisfied at least once
     public func any(condition: (Element) -> Bool) -> Bool {
-        return self.filter(condition).count > 0
+        return filter(condition).count > 0
     }
 }
