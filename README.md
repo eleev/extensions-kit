@@ -7,11 +7,11 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
-**Last Update: 07/September/2018.**
+**Last Update: 10/September/2018.**
 
 # ✍️ About
 
-🎉 Collection of Swift extensions for various use cases. The kit contains **`66`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions for various use cases. The kit contains **`70`** different extensions. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -31,7 +31,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 7](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 36](#foundation)
-- [UIKit - 10](#uikit)
+- [UIKit - 14](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 1](#grapnd-central-dispatch)
@@ -134,6 +134,13 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ## UIKit
 
+### NSLayoutConstraint
+- [NSLayoutConstraint+Activation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/NSLayoutConstraint%2BActivation/NSLayoutConstraint%2BActivation.swift) - adds convenience methods for *setting* and *activating* layout priorities
+
+### UIView
+- [UIView+Corners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BCorners.swift) - convenience extension for setting and getting round corners
+- [UIView+HuggingPriority](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BHuggingPriority.swift) - convenience wrappers that simplify inerfaces for *setContentHuggingPriority* and *setContentCompressionResistancePriority* methods
+
 ### UIColor
 - [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift) - adds support for missing color components properties such as `rgba`, `hsba` and `grayscale`
 
@@ -146,6 +153,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [UIImage+RawOrientation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BRawOrientation.swift) - raw image orientation (from `UIImageOrientation` to `Int32`) 
 - [UIImage+Resize](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BResize.swift) - class-level extension that allows to resize input image based on expected image *width* or/and *height*
 - [UIImage+SolidColor](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BSolidColor.swift) - create a `UIImage` from the *color data* and *size*
+- [UIImage+Inverted](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BInverted.swift) - adds a property that returns an *inverted* copy of `self`
 
 ### UIImageView
 - [UIImageView+DownloadFromURL](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BDownloadFromURL.swift) - adds a convenience method for downloading and parsing `UIImage` with the specified `URL`
