@@ -33,6 +33,10 @@
 		A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
+		A96A71FB2146397E006A6C15 /* UIImage+Inverted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FA2146397E006A6C15 /* UIImage+Inverted.swift */; };
+		A96A71FE21463A7F006A6C15 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FD21463A7F006A6C15 /* UIView+Corners.swift */; };
+		A96A720021463B4B006A6C15 /* UIView+HuggingPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FF21463B4B006A6C15 /* UIView+HuggingPriority.swift */; };
+		A96A720321463BFB006A6C15 /* NSLayoutConstraint+Activation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */; };
 		A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */; };
 		A98C3831211355DB00F3E87C /* String+Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C3830211355DB00F3E87C /* String+Digits.swift */; };
 		A98C5E8420D13F5100674186 /* PHAsset+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C5E8320D13F5100674186 /* PHAsset+URL.swift */; };
@@ -136,6 +140,10 @@
 		A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+GetOrAddValue.swift"; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
+		A96A71FA2146397E006A6C15 /* UIImage+Inverted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Inverted.swift"; sourceTree = "<group>"; };
+		A96A71FD21463A7F006A6C15 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
+		A96A71FF21463B4B006A6C15 /* UIView+HuggingPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+HuggingPriority.swift"; sourceTree = "<group>"; };
+		A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Activation.swift"; sourceTree = "<group>"; };
 		A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectFit.swift"; sourceTree = "<group>"; };
 		A98C3830211355DB00F3E87C /* String+Digits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Digits.swift"; sourceTree = "<group>"; };
 		A98C5E8320D13F5100674186 /* PHAsset+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+URL.swift"; sourceTree = "<group>"; };
@@ -400,6 +408,23 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		A96A71FC21463A71006A6C15 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A96A71FD21463A7F006A6C15 /* UIView+Corners.swift */,
+				A96A71FF21463B4B006A6C15 /* UIView+HuggingPriority.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A96A720121463BCE006A6C15 /* NSLayoutConstraint+Activation */ = {
+			isa = PBXGroup;
+			children = (
+				A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */,
+			);
+			path = "NSLayoutConstraint+Activation";
+			sourceTree = "<group>";
+		};
 		A98C382F211355C800F3E87C /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +473,7 @@
 				A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */,
 				A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */,
 				A9912EA920C6C55800619880 /* UIImage+ImageFromUIView.swift */,
+				A96A71FA2146397E006A6C15 /* UIImage+Inverted.swift */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -564,6 +590,8 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A96A720121463BCE006A6C15 /* NSLayoutConstraint+Activation */,
+				A96A71FC21463A71006A6C15 /* UIView */,
 				A9D91E8E21188A5D00E9D822 /* UIColor */,
 				A961E14220C0162F0069C29A /* UICollectionView */,
 				A9A4BCDB20BC56DF00CA4848 /* UIViewController */,
@@ -855,6 +883,7 @@
 				A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */,
 				A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */,
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
+				A96A71FB2146397E006A6C15 /* UIImage+Inverted.swift in Sources */,
 				A9AB24F52142B136006E334B /* Dictionary+Intersection.swift in Sources */,
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
 				A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */,
@@ -866,6 +895,7 @@
 				A9332C742125ABD90041C558 /* Double+Rounded.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
 				A9912EAA20C6C55800619880 /* UIImage+ImageFromUIView.swift in Sources */,
+				A96A720321463BFB006A6C15 /* NSLayoutConstraint+Activation.swift in Sources */,
 				A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */,
 				A9C0B7E72133F76500C0D908 /* String+FormattedDate.swift in Sources */,
 				A9E14DB220B1768A0075D725 /* SKEmitterNode+AdvanceSimulation.swift in Sources */,
@@ -902,9 +932,11 @@
 				A9AB24E72142A7AD006E334B /* Array+Union.swift in Sources */,
 				A98C5E8420D13F5100674186 /* PHAsset+URL.swift in Sources */,
 				A9DEA74D21367EDD00AAA063 /* OptionSet+Operations.swift in Sources */,
+				A96A71FE21463A7F006A6C15 /* UIView+Corners.swift in Sources */,
 				A9AB24F72142BA10006E334B /* Dictionary+Map.swift in Sources */,
 				A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
+				A96A720021463B4B006A6C15 /* UIView+HuggingPriority.swift in Sources */,
 				A9AB24F32142B079006E334B /* Dictionary+Union.swift in Sources */,
 				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
