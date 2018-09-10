@@ -3,7 +3,7 @@
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![Coverage](https://img.shields.io/badge/coverage-32%2C65%25-red.svg)]()
-[![CocoaPod](https://img.shields.io/badge/pod-1.2.0-lightblue.svg)]()
+[![CocoaPod](https://img.shields.io/badge/pod-1.3.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
@@ -18,7 +18,7 @@
 `extensions-kit` is availabe via `CocoaPods`
 
 ```
-pod 'extensions-kit', '~> 1.2.0' 
+pod 'extensions-kit', '~> 1.3.0' 
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
