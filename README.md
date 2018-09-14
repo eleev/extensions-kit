@@ -6,8 +6,9 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.3.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
+**Last Update: 14/September/2018.**
 
-**Last Update: 10/September/2018.**
+![](logo-extensions_kit.png)
 
 # ✍️ About
 
