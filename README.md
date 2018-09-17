@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.3.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 14/September/2018.**
+**Last Update: 17/September/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-🎉 Collection of Swift extensions for various use cases. The kit contains **`70`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions for various use cases. The kit contains **`74`** different extensions. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -35,7 +35,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [UIKit - 14](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
-- [Grand Central Dispatch - 1](#grapnd-central-dispatch)
+- [Grand Central Dispatch - 5](#grapnd-central-dispatch)
 - [WebKit - 1](#webkit)
 - [PhotoKit - 1](#photokit)
 
@@ -182,20 +182,24 @@ All the extensions are split into separete `groups` each of which represents a s
 - [SKTextureAtlas+FramesLoader](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTextureAtlas/SKTextureAtlas%2BFramesLoader.swift) - uploads an animation sequence from a texture atlas and returns an array of textures that can be futher used
 
 ## SceneKit
-- [SCNVector3+Operators](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) - adds support for various mathematical operators for `SCNVector3` type
+- [SCNVector3+Operators](/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) - adds support for various mathematical operators for `SCNVector3` type
 
 ## Grand Central Dispatch
-- [DispatchQueue+DispatchOnce](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift) - adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
+- [DispatchQueue+DispatchOnce](/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift) - adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
+- [Atomic](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Atomics/Atomic.swift) - guarantees that a valid value will be returned when accessing such property by using multiple thread
+- [Mutex](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/Mutex.swift) - used to proptect shared resources. A mutex is owned by the task that takes it. In a given region of code only one thread is active
+- [ReadWriteLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/ReadWriteLock.swift) - a synchronization primitive that solves one of the readers–writers problems
+- [SpinLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/SpinLock.swift) - a lock which causes a thread trying to acquire it to simply wait in a loop ("spin") while repeatedly checking if the lock is available
 
 ## WebKit
 
 ### WKWebView
-- [WKWebView+Load](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/WebKit/WKWebView/WKWebView%2BLoad.swift) - adds support for navigating to the requested `URL` using `String`
+- [WKWebView+Load](/extensions-kit/Extensions/WebKit/WKWebView/WKWebView%2BLoad.swift) - adds support for navigating to the requested `URL` using `String`
 
 ## PhotoKit
 
 ### PHAsset
-- [PHAsset+URL](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/PhotoKit/PHAsset/PHAsset%2BURL.swift) - provides possibility to get `URL` for image and video media types
+- [PHAsset+URL](/extensions-kit/Extensions/PhotoKit/PHAsset/PHAsset%2BURL.swift) - provides possibility to get `URL` for image and video media types
 
 # 🙋‍♀️🙋‍♂️Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
