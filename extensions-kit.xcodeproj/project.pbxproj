@@ -23,6 +23,11 @@
 		A929498A20962BE600350C43 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929498320962BE600350C43 /* Int+Random.swift */; };
 		A929499620962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A929499720962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
+		A92BBB8E214FF5A200BE02CD /* LockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB8D214FF5A200BE02CD /* LockType.swift */; };
+		A92BBB90214FF5B600BE02CD /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB8F214FF5B600BE02CD /* SpinLock.swift */; };
+		A92BBB92214FF5C700BE02CD /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB91214FF5C700BE02CD /* Mutex.swift */; };
+		A92BBB94214FF5DA00BE02CD /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB93214FF5DA00BE02CD /* ReadWriteLock.swift */; };
+		A92BBB96214FF5EC00BE02CD /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB95214FF5EC00BE02CD /* Atomic.swift */; };
 		A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C6621255D030041C558 /* SCNVector3OperationsTests.swift */; };
 		A9332C6921259B030041C558 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C6821259B030041C558 /* DictionaryTests.swift */; };
 		A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C6A21259F5C0041C558 /* CGPointOperatorsTests.swift */; };
@@ -130,6 +135,11 @@
 		A929498220962BE600350C43 /* Int+Digits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Digits.swift"; sourceTree = "<group>"; };
 		A929498320962BE600350C43 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		A929499520962E9C00350C43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A92BBB8D214FF5A200BE02CD /* LockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockType.swift; sourceTree = "<group>"; };
+		A92BBB8F214FF5B600BE02CD /* SpinLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinLock.swift; sourceTree = "<group>"; };
+		A92BBB91214FF5C700BE02CD /* Mutex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
+		A92BBB93214FF5DA00BE02CD /* ReadWriteLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWriteLock.swift; sourceTree = "<group>"; };
+		A92BBB95214FF5EC00BE02CD /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		A9332C6621255D030041C558 /* SCNVector3OperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3OperationsTests.swift; sourceTree = "<group>"; };
 		A9332C6821259B030041C558 /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		A9332C6A21259F5C0041C558 /* CGPointOperatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointOperatorsTests.swift; sourceTree = "<group>"; };
@@ -359,6 +369,25 @@
 			path = Int;
 			sourceTree = "<group>";
 		};
+		A92BBB97214FF60800BE02CD /* Locks */ = {
+			isa = PBXGroup;
+			children = (
+				A92BBB8D214FF5A200BE02CD /* LockType.swift */,
+				A92BBB8F214FF5B600BE02CD /* SpinLock.swift */,
+				A92BBB91214FF5C700BE02CD /* Mutex.swift */,
+				A92BBB93214FF5DA00BE02CD /* ReadWriteLock.swift */,
+			);
+			path = Locks;
+			sourceTree = "<group>";
+		};
+		A92BBB98214FF61C00BE02CD /* Atomics */ = {
+			isa = PBXGroup;
+			children = (
+				A92BBB95214FF5EC00BE02CD /* Atomic.swift */,
+			);
+			path = Atomics;
+			sourceTree = "<group>";
+		};
 		A9332C6E2125AB990041C558 /* Float */ = {
 			isa = PBXGroup;
 			children = (
@@ -514,6 +543,8 @@
 		A9ACB9812099E68000966991 /* Grand Central Dispatch */ = {
 			isa = PBXGroup;
 			children = (
+				A92BBB98214FF61C00BE02CD /* Atomics */,
+				A92BBB97214FF60800BE02CD /* Locks */,
 				A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */,
 			);
 			path = "Grand Central Dispatch";
@@ -891,6 +922,7 @@
 				A9332C762125ABF00041C558 /* Float+Rounded.swift in Sources */,
 				A9332C722125ABAD0041C558 /* CGFloat+Rounded.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
+				A92BBB96214FF5EC00BE02CD /* Atomic.swift in Sources */,
 				A9AB24E52142A4E9006E334B /* HighlightFilter.swift in Sources */,
 				A9332C742125ABD90041C558 /* Double+Rounded.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
@@ -904,10 +936,13 @@
 				A999C5042096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */,
 				A9DEA74621366E3E00AAA063 /* String+IndexOf.swift in Sources */,
 				A9C5977220E6A8350015B08A /* NSBezierPath+cgPath.swift in Sources */,
+				A92BBB94214FF5DA00BE02CD /* ReadWriteLock.swift in Sources */,
 				A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */,
 				A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */,
+				A92BBB92214FF5C700BE02CD /* Mutex.swift in Sources */,
 				A999C5092096FA31006014B1 /* UIImage+Resize.swift in Sources */,
 				A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */,
+				A92BBB90214FF5B600BE02CD /* SpinLock.swift in Sources */,
 				A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */,
 				A9912EA520C6C44400619880 /* CGRect+Corners.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
@@ -927,6 +962,7 @@
 				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
 				A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */,
 				A9D4CFCC209AEB88006461AF /* Collection+RandomItem.swift in Sources */,
+				A92BBB8E214FF5A200BE02CD /* LockType.swift in Sources */,
 				A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */,
 				A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */,
 				A9AB24E72142A7AD006E334B /* Array+Union.swift in Sources */,
