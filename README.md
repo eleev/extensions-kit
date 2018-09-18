@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.3.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 17/September/2018.**
+**Last Update: 18/September/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`74`** different extensions. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`70`** extensions + **`4`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
