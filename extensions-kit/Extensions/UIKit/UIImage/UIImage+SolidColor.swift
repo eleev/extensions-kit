@@ -24,7 +24,7 @@ public extension UIImage {
     }
     
     func isImageWhite() -> Bool? {
-        guard let whiteImage = UIImage(color: .white, size: self.size), let whiteImageData = UIImageJPEGRepresentation(whiteImage, 1.0), let imageData = UIImageJPEGRepresentation(self, 1.0) else {
+        guard let whiteImage = UIImage(color: .white, size: self.size), let whiteImageData = whiteImage.jpegData(compressionQuality: 1.0), let imageData = self.jpegData(compressionQuality: 1.0) else {
             return nil
         }
         return whiteImageData == imageData

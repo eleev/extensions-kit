@@ -12,14 +12,14 @@ import UIKit.UIImage
 extension UIImage {
     
     func landscapeCameraCaptureOrientationFix(for interfaceOrinetation: UIInterfaceOrientation) -> UIImage? {
-        var imageOrientation: UIImageOrientation!
+        var imageOrientation: UIImage.Orientation!
         var shouldOrient: Bool = false
         
         if interfaceOrinetation == .landscapeRight {
-            imageOrientation = UIImageOrientation.left
+            imageOrientation = UIImage.Orientation.left
             shouldOrient = !shouldOrient
         } else if interfaceOrinetation == .landscapeLeft {
-            imageOrientation = UIImageOrientation.right
+            imageOrientation = UIImage.Orientation.right
             shouldOrient = !shouldOrient
         }
         if shouldOrient, let cgimage = self.cgImage {
