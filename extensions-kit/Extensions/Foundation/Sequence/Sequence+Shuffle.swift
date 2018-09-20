@@ -13,7 +13,7 @@ public extension Sequence {
     /// Shuffls the elements of self
     ///
     /// - Returns: an array of shuffled Elements
-    public func shuffled() -> [Element] {
+    public func randomlyShuffled() -> [Element] {
         var result = Array(self)
         result.shuffle()
         return result
