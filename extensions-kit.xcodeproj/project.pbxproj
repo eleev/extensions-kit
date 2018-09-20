@@ -24,7 +24,7 @@
 		A929499620962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A929499720962E9C00350C43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A929499520962E9C00350C43 /* .gitignore */; };
 		A92BBB8E214FF5A200BE02CD /* LockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB8D214FF5A200BE02CD /* LockType.swift */; };
-		A92BBB90214FF5B600BE02CD /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB8F214FF5B600BE02CD /* SpinLock.swift */; };
+		A92BBB90214FF5B600BE02CD /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB8F214FF5B600BE02CD /* UnfairLock.swift */; };
 		A92BBB92214FF5C700BE02CD /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB91214FF5C700BE02CD /* Mutex.swift */; };
 		A92BBB94214FF5DA00BE02CD /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB93214FF5DA00BE02CD /* ReadWriteLock.swift */; };
 		A92BBB96214FF5EC00BE02CD /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92BBB95214FF5EC00BE02CD /* Atomic.swift */; };
@@ -136,7 +136,7 @@
 		A929498320962BE600350C43 /* Int+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		A929499520962E9C00350C43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A92BBB8D214FF5A200BE02CD /* LockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockType.swift; sourceTree = "<group>"; };
-		A92BBB8F214FF5B600BE02CD /* SpinLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinLock.swift; sourceTree = "<group>"; };
+		A92BBB8F214FF5B600BE02CD /* UnfairLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
 		A92BBB91214FF5C700BE02CD /* Mutex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
 		A92BBB93214FF5DA00BE02CD /* ReadWriteLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWriteLock.swift; sourceTree = "<group>"; };
 		A92BBB95214FF5EC00BE02CD /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
@@ -373,7 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				A92BBB8D214FF5A200BE02CD /* LockType.swift */,
-				A92BBB8F214FF5B600BE02CD /* SpinLock.swift */,
+				A92BBB8F214FF5B600BE02CD /* UnfairLock.swift */,
 				A92BBB91214FF5C700BE02CD /* Mutex.swift */,
 				A92BBB93214FF5DA00BE02CD /* ReadWriteLock.swift */,
 			);
@@ -942,7 +942,7 @@
 				A92BBB92214FF5C700BE02CD /* Mutex.swift in Sources */,
 				A999C5092096FA31006014B1 /* UIImage+Resize.swift in Sources */,
 				A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */,
-				A92BBB90214FF5B600BE02CD /* SpinLock.swift in Sources */,
+				A92BBB90214FF5B600BE02CD /* UnfairLock.swift in Sources */,
 				A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */,
 				A9912EA520C6C44400619880 /* CGRect+Corners.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,

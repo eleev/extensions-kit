@@ -1,5 +1,5 @@
 //
-//  SpinLock.swift
+//  UnfairLock.swift
 //  extensions-kit
 //
 //  Created by Astemir Eleev on 17/09/2018.
@@ -9,7 +9,7 @@
 import Foundation
 
 /// A lock which causes a thread trying to acquire it to simply wait in a loop ("spin") while repeatedly checking if the lock is available
-final public class SpinLock: LockType {
+final public class UnfairLock: LockType {
     
     // MARK: - Properties
     
