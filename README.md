@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.3.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 20/September/2018.**
+**Last Update: 21/September/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`70`** extensions + **`4`** custom types. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`71`** extensions + **`4`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -31,7 +31,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 7](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 36](#foundation)
+- [Foundation - 37](#foundation)
 - [UIKit - 14](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -124,7 +124,8 @@ All the extensions are split into separete `groups` each of which represents a s
 - [MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift) - in-place shuffling of `self`
 
 ### Sequence  
-- [Sequence+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift) - shuffles the elements of `self`
+- [Sequence+Shuffle](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift) - shuffles the elements of `self`
+- [Sequence+Count](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BCount.swift) - counts the number of occurences of a logical expression
 
 ### String
 - [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BDigits.swift) - combines decimal digits into a single `String` property
