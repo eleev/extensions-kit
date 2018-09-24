@@ -125,7 +125,7 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ### Sequence  
 - [Sequence+Shuffle](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift) - shuffles the elements of `self`
-- [Sequence+Count](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BCount.swift) - counts the number of occurences of a logical expression
+- [Sequence+Count](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BCount.swift) - counts the number of occurrences of a logical expression
 
 ### String
 - [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BDigits.swift) - combines decimal digits into a single `String` property
