@@ -34,6 +34,29 @@ class SequenceTests: XCTestCase {
         
     }
     
+    func testCount() {
+        let array = [1,2,3,4,5,6,7,8,9]
+        let numberOfEvens = array.count {
+            $0 % 2 == 0
+        }
+        
+        XCTAssert(numberOfEvens == 4)
+        
+        let numberOfOdds = array.count {
+            $0 % 2 == 1
+        }
+        
+        XCTAssert(numberOfOdds == 5)
+        
+        let stringArray = ["Asdjf", "ASGhjsndm", "eds", "Hello", "snoyle", "Long", "Play", "vAMpire", "AsdinneR"]
+        
+        let prefixCount = stringArray.count {
+            $0.hasPrefix("As")
+        }
+        
+        XCTAssert(prefixCount == 2)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
