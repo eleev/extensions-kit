@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.3.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 21/September/2018.**
+**Last Update: 28/September/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`71`** extensions + **`4`** custom types. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`77`** extensions + **`7`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -31,7 +31,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 7](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 37](#foundation)
+- [Foundation - 46](#foundation)
 - [UIKit - 14](#uikit)
 - [SpriteKit - 6](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -73,6 +73,13 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ## Foundation
 
+### Custom Types
+- [ObjectPool](/extensions-kit/Extensions/Foundation/ObjectPool/ObjectPool.swift) - thread-safe implementation of `ObjectPool` design pattern
+- [Observer](/extensions-kit/tree/master/extensions-kit/Extensions/Foundation/Observer) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
+- [MulticastDelegation](/extensions-kit//Extensions/Foundation/MulticastDelegation/MulticastDelegation.swift) - non thread-safe implementation of `MulticastDelegation` design pattern
+
+### Extensions
+
 ### Array
 - [Array+Filtering](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BFiltering.swift) - contains a number of methods for filtering in a `functional-style`, has `skip`, `all` and `any` filters
 - [Array+Contains](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BContains.swift) - checks if self contains the specified elements
@@ -104,6 +111,10 @@ All the extensions are split into separete `groups` each of which represents a s
 ### Double
 - [Double+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BRounded.swift) - rounds `self` to decimal places value
 - [Double+CurrencyShorcuts](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BCurrencyShortcuts.swift) - adds several commonly used currency shortcuts as properties
+
+### Date
+- [Date+FirstLast](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Date/Date%2BFirstLast.swift) - adds a number of properties that allow to quickly access: `first day of a week`, `start of a day`, `end of a day` and a `number of days in a month`
+- [Date+PreviousNext](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Date/Date%2BPreviousNext.swift) - adds properties that allow to get access to the `previous` and `next` days
 
 ### Float 
 - [Float+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Float/Float%2BRounded.swift) - rounds `self` to decimal places value
@@ -186,7 +197,11 @@ All the extensions are split into separete `groups` each of which represents a s
 - [SCNVector3+Operators](/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) - adds support for various mathematical operators for `SCNVector3` type
 
 ## Grand Central Dispatch
+
+### Extensions
 - [DispatchQueue+DispatchOnce](/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift) - adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
+
+### Custom Types
 - [Atomic](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Atomics/Atomic.swift) - guarantees that a valid value will be returned when accessing such property by using multiple thread
 - [Mutex](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/Mutex.swift) - used to proptect shared resources. A mutex is owned by the task that takes it. In a given region of code only one thread is active
 - [ReadWriteLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/ReadWriteLock.swift) - a synchronization primitive that solves one of the readers–writers problems
