@@ -107,6 +107,7 @@
 		A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DAA20B159700075D725 /* CGPoint+Utils.swift */; };
 		A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DAC20B159BB0075D725 /* CGPoint+Operators.swift */; };
 		A9E14DB220B1768A0075D725 /* SKEmitterNode+AdvanceSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DB120B1768A0075D725 /* SKEmitterNode+AdvanceSimulation.swift */; };
+		A9E9D12F215F5F6C00E087C7 /* Array+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9D12E215F5F6C00E087C7 /* Array+Remove.swift */; };
 		A9EB99782122D07B0088FB88 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB99772122D07B0088FB88 /* BoolTests.swift */; };
 		A9EB997C2122D41A0088FB88 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB99792122D41A0088FB88 /* StringTests.swift */; };
 		A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB997A2122D41A0088FB88 /* IntTests.swift */; };
@@ -227,6 +228,7 @@
 		A9E14DAA20B159700075D725 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
 		A9E14DAC20B159BB0075D725 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
 		A9E14DB120B1768A0075D725 /* SKEmitterNode+AdvanceSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKEmitterNode+AdvanceSimulation.swift"; sourceTree = "<group>"; };
+		A9E9D12E215F5F6C00E087C7 /* Array+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Remove.swift"; sourceTree = "<group>"; };
 		A9EB99772122D07B0088FB88 /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
 		A9EB99792122D41A0088FB88 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		A9EB997A2122D41A0088FB88 /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
@@ -544,6 +546,7 @@
 				A9AB24E82142A83F006E334B /* Array+Contains.swift */,
 				A9AB24EA2142AA10006E334B /* Array+Difference.swift */,
 				A9AB24EC2142AB64006E334B /* Array+Intersection.swift */,
+				A9E9D12E215F5F6C00E087C7 /* Array+Remove.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1037,6 +1040,7 @@
 				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
 				A9421F5E215E448200A4DFAC /* Date+FirstLast.swift in Sources */,
+				A9E9D12F215F5F6C00E087C7 /* Array+Remove.swift in Sources */,
 				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
 				A9D91E9021188A7300E9D822 /* UIColor+ColorComponents.swift in Sources */,
 				A9421F56215E42FE00A4DFAC /* ObjectPoolItem.swift in Sources */,
