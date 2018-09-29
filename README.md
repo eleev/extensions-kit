@@ -12,7 +12,7 @@
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`121`** extensions + **`9`** custom types. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`128`** extensions + **`9`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -31,7 +31,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 15](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 62](#foundation)
+- [Foundation - 69](#foundation)
 - [UIKit - 23](#uikit)
 - [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -87,6 +87,13 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Array+Intersection](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) - computes intersection of self and the input values
 - [Array+Union](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BUnion.swift) - unions self and the input arrays
 - [Array+Remove](/extensions-kit/Extensions/Foundation/Array/Array%2BRemove.swift) - a set of methods that remove `Element` form an array by mutating it
+- [Array+InsertionSort](/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) - adds support for `Insertion Sort` algorithm
+- [Array+MergeSort](/extensions-kit/Extensions/Foundation/Array/Array%2BMergeSort.swift) - adds support for `Merget Sort` algorithm
+- [Array+QuickSortHoareScheme](/extensions-kit/Extensions/Foundation/Array/Array%2BQuickSortHoareScheme.swift) - adds support for `Quick Sort` algorithms using `Hoare's` partitioning scheme 
+- [Array+QuickSortLomutoScheme](/extensions-kit/Extensions/Foundation/Array/Array%2BQuickSortLomutoScheme.swift) - adds support for `Quick Sort` algorithm using `Lomuto's` partitioning scheme 
+- [Array+BubbleSort](/extensions-kit/Extensions/Foundation/Array/Array%2BBubbleSort.swift) - adds support for `Bubble Sort` algorithm
+- [Array+ShellSort](/extensions-kit/Extensions/Foundation/Array/Array%2BShellSort.swift) - adds support for `Shell Sort` algorithm
+- [Array+RadixSort](/extensions-kit/Extensions/Foundation/Array/Array%2BRadixSort.swift) - adds support for `Radix Sort` algoritm
 
 ### Bool
 - [Bool+Int](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BInt.swift) - adds a property that returns `Int` representation of `self`
