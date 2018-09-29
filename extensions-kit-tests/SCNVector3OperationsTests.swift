@@ -35,7 +35,7 @@ class SCNVector3OperationsTests: XCTestCase {
         XCTAssert(SCNVector3(4, 3, 2) - SCNVector3(4, 2, 2) == SCNVector3(0, 1, 0))
         
         vec = SCNVector3(4, 3, 2)
-        vec -= SCNVector3(4, 2, 2)
+        vec = vec - SCNVector3(4, 2, 2)
         XCTAssert(vec == SCNVector3(0, 1, 0))
         
         XCTAssert(SCNVector3(4, 3, 2) * SCNVector3(4, 2, 2) == SCNVector3(16, 6, 4))

@@ -119,7 +119,7 @@ class IntTests: XCTestCase {
         while iteratons > -1 {
             XCTAssert(randomInt != Int.random(min: 0, max: 100))
             randomInt = Int.random(min: 0, max: 100)
-            iteratons -= 1
+            iteratons = iteratons - 1
         }
         
         iteratons = 10
@@ -130,7 +130,7 @@ class IntTests: XCTestCase {
             XCTAssert(randomRangeInt != Int.random(in: 0...100))
             randomRangeInt = Int.random(in: 0...100)
             
-            iteratons -= 1
+            iteratons = iteratons - 1
         }
     }
     

@@ -43,14 +43,14 @@ class CGPointOperatorsTests: XCTestCase {
         XCTAssert(pointOne - pointTwo == CGPoint(x: -7, y: -2))
         
         var subPointOne = pointOne
-        subPointOne -= pointTwo
+        subPointOne = subPointOne - pointTwo
         
         XCTAssert(subPointOne == CGPoint(x: -7, y: -2))
         
         XCTAssert(pointOne - vectorTwo == CGPoint(x: -7, y: -2))
         
         subPointOne = pointOne
-        subPointOne -= vectorTwo
+        subPointOne = subPointOne - vectorTwo
         XCTAssert(subPointOne == CGPoint(x: -7, y: -2))
         
         
