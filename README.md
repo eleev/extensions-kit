@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.3.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 28/September/2018.**
+**Last Update: 29/September/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`111`** extensions + **`7`** custom types. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`118`** extensions + **`9`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -29,11 +29,11 @@ List of categories for convenient navigation. The `numbers` represent total numb
 
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
-- [Core Graphics - 7](#core-graphics)
+- [Core Graphics - 15](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 46](#foundation)
-- [UIKit - 14](#uikit)
-- [SpriteKit - 6](#spritekit)
+- [Foundation - 59](#foundation)
+- [UIKit - 23](#uikit)
+- [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
 - [WebKit - 1](#webkit)
