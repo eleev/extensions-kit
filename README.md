@@ -25,7 +25,7 @@ pod 'extensions-kit', '~> 1.3.0'
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
 
 # 🍱 Categories
-List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category.
+List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category. Each extension file may contain a number of extensions, grouped by a category.
 
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
