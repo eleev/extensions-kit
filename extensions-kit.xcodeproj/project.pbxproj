@@ -82,6 +82,8 @@
 		A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */; };
 		A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2920A5DB89005221BA /* SCNVector3+Operators.swift */; };
 		A9B14F2C20A5DEA6005221BA /* CGRect+Mid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2B20A5DEA6005221BA /* CGRect+Mid.swift */; };
+		A9B9A8A82160FAC400D1D0C0 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9A8A72160FAC400D1D0C0 /* Stack.swift */; };
+		A9B9A8AB2160FB6000D1D0C0 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9A8AA2160FB6000D1D0C0 /* Queue.swift */; };
 		A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */; };
 		A9C0B7E72133F76500C0D908 /* String+FormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C0B7E62133F76500C0D908 /* String+FormattedDate.swift */; };
 		A9C0B7E92133F78400C0D908 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C0B7E82133F78400C0D908 /* DateTests.swift */; };
@@ -211,6 +213,8 @@
 		A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Shuffle.swift"; sourceTree = "<group>"; };
 		A9B14F2920A5DB89005221BA /* SCNVector3+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Operators.swift"; sourceTree = "<group>"; };
 		A9B14F2B20A5DEA6005221BA /* CGRect+Mid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Mid.swift"; sourceTree = "<group>"; };
+		A9B9A8A72160FAC400D1D0C0 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		A9B9A8AA2160FB6000D1D0C0 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadFromURL.swift"; sourceTree = "<group>"; };
 		A9C0B7E62133F76500C0D908 /* String+FormattedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FormattedDate.swift"; sourceTree = "<group>"; };
 		A9C0B7E82133F78400C0D908 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
@@ -656,6 +660,22 @@
 			path = SceneKit;
 			sourceTree = "<group>";
 		};
+		A9B9A8A52160FAAF00D1D0C0 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9A8A72160FAC400D1D0C0 /* Stack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		A9B9A8A92160FB5200D1D0C0 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				A9B9A8AA2160FB6000D1D0C0 /* Queue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
 		A9C5977020E6A81B0015B08A /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -710,6 +730,8 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A9B9A8A92160FB5200D1D0C0 /* Queue */,
+				A9B9A8A52160FAAF00D1D0C0 /* Stack */,
 				A9421F54215E42D900A4DFAC /* ObjectPool */,
 				A9421F4D215E422F00A4DFAC /* Observer */,
 				A9421F4C215E421800A4DFAC /* MulticastDelegation */,
@@ -1043,6 +1065,7 @@
 				A9CC5C33209F0BD200040E61 /* SKTexture+LinearGradient.swift in Sources */,
 				A9DEA74A21367D9B00AAA063 /* String+Validation.swift in Sources */,
 				A9D4CFC6209AEA7F006461AF /* Bool+Int.swift in Sources */,
+				A9B9A8AB2160FB6000D1D0C0 /* Queue.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
 				A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */,
 				A9AB24E92142A83F006E334B /* Array+Contains.swift in Sources */,
@@ -1055,6 +1078,7 @@
 				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
 				A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */,
 				A98E856F215FE5940023526B /* UIViewController+Storyboard.swift in Sources */,
+				A9B9A8A82160FAC400D1D0C0 /* Stack.swift in Sources */,
 				A9D4CFCC209AEB88006461AF /* Collection+RandomItem.swift in Sources */,
 				A92BBB8E214FF5A200BE02CD /* LockType.swift in Sources */,
 				A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */,
