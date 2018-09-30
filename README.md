@@ -213,7 +213,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [DispatchQueue+DispatchOnce](/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift) - adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
 
 ### Custom Types
-- [Atomic](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Atomics/Atomic.swift) - guarantees that a valid value will be returned when accessing such property by using multiple thread
+- [Atomic](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Atomics/Atomic.swift) - guarantees that a valid value will be returned when accessing such property by using multiple threads
 - [Mutex](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/Mutex.swift) - used to proptect shared resources. A mutex is owned by the task that takes it. In a given region of code only one thread is active
 - [ReadWriteLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/ReadWriteLock.swift) - a synchronization primitive that solves one of the readers–writers problems
 - [UnfairLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/UnfairLock.swift) - a lock which causes a thread trying to acquire it to simply wait in a loop ("spin") while repeatedly checking if the lock is available
