@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.4.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 29/September/2018.**
+**Last Update: 30/September/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`128`** extensions + **`9`** custom types. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`129`** extensions + **`11`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -31,8 +31,8 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 15](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 69](#foundation)
-- [UIKit - 23](#uikit)
+- [Foundation - 71](#foundation)
+- [UIKit - 24](#uikit)
 - [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -77,6 +77,8 @@ All the extensions are split into separete `groups` each of which represents a s
 - [ObjectPool](/extensions-kit/Extensions/Foundation/ObjectPool/ObjectPool.swift) - thread-safe implementation of `ObjectPool` design pattern
 - [Observer](/extensions-kit/tree/master/extensions-kit/Extensions/Foundation/Observer) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
 - [MulticastDelegation](/extensions-kit//Extensions/Foundation/MulticastDelegation/MulticastDelegation.swift) - non thread-safe implementation of `MulticastDelegation` design pattern
+- [Stack](/extensions-kit//Extensions/Foundation/Stack/Stack.swift) - is an implementation of `Stack` data structure
+- [Queue](/extensions-kit//Extensions/Foundation/Queue/Queue.swift) - is an implementation of `Queue` data structure
 
 ### Extensions
 
@@ -181,7 +183,8 @@ All the extensions are split into separete `groups` each of which represents a s
 - [UIImageView+Masking](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BMasking.swift) - masks a given `UIImage` with the target image size
 
 ### UIViewController
-- [UIViewController+ChildViewControllers](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift) - addds convenience methods for `adding` and `removing` child view controllers
+- [UIViewController+ChildViewControllers](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift) - addds convenience methods for `adding` and `removing` child view controllers
+- [UIViewController+Storyboard](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BStoryboard.swift) - instantiates a `UIViewController` instance from a `Storyboard` using the `UIViewController's` name as a reference name of the `Storyboard` file. Used in cases when `Coordinator` or `Flow` design patterns need to be implemented
 
 ## SpriteKit
 - [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTimingFunction.swift) - adds **36(!)** different timing functions 
