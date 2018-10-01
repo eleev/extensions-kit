@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.4.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 30/September/2018.**
+**Last Update: 01/October/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`129`** extensions + **`11`** custom types. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`129`** extensions + **`16`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -25,13 +25,13 @@ pod 'extensions-kit', '~> 1.4.0'
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
 
 # 🍱 Categories
-List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category. Each extension file may contain a number of extensions, grouped by a category.
+List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category + custom types. Each extension file may contain a number of extensions, grouped by a category.
 
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Graphics - 15](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 71](#foundation)
+- [Foundation - 76](#foundation)
 - [UIKit - 24](#uikit)
 - [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -79,6 +79,11 @@ All the extensions are split into separete `groups` each of which represents a s
 - [MulticastDelegation](/extensions-kit//Extensions/Foundation/MulticastDelegation/MulticastDelegation.swift) - non thread-safe implementation of `MulticastDelegation` design pattern
 - [Stack](/extensions-kit//Extensions/Foundation/Stack/Stack.swift) - is an implementation of `Stack` data structure
 - [Queue](/extensions-kit//Extensions/Foundation/Queue/Queue.swift) - is an implementation of `Queue` data structure
+- [ProrityQueue](/extensions-kit//Extensions/Foundation/ProrityQueue/ProrityQueue.swift) -  is an implementation of `Prority Queue` data structure based on `Heap` data structure
+- [Dequeue](/extensions-kit//Extensions/Foundation/Dequeue/Dequeue.swift) - is an implementation of `Dequeue` data structure 
+- [LinkedList](/extensions-kit//Extensions/Foundation/LinkedList/LinkedList.swift) - is an implementation of `Linked List` data structure 
+- [DoublyLinkedList](/extensions-kit//Extensions/Foundation/DoublyLinkedList/DoublyLinkedList.swift) - is an implementation of `Doubly Linked List` data structure
+- [Heap](/extensions-kit//Extensions/Foundation/Heap/Heap.swift) - is an implementation of `Heap` data structure
 
 ### Extensions
 
