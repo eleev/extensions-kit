@@ -115,6 +115,12 @@
 		A9EB997C2122D41A0088FB88 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB99792122D41A0088FB88 /* StringTests.swift */; };
 		A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB997A2122D41A0088FB88 /* IntTests.swift */; };
 		A9EB997E2122D41A0088FB88 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB997B2122D41A0088FB88 /* UIColorTests.swift */; };
+		A9FA8521216230700046B154 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA8520216230700046B154 /* LinkedList.swift */; };
+		A9FA8523216230AD0046B154 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA8522216230AD0046B154 /* DoublyLinkedList.swift */; };
+		A9FA8526216230C80046B154 /* DoublyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA8525216230C80046B154 /* DoublyNode.swift */; };
+		A9FA852A2162314F0046B154 /* Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA85292162314F0046B154 /* Dequeue.swift */; };
+		A9FA852E216231940046B154 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA852D216231940046B154 /* PriorityQueue.swift */; };
+		A9FA8530216231C60046B154 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA852F216231C60046B154 /* Heap.swift */; };
 		A9FD59CC215F6268004ECA9A /* Array+InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD59CB215F6268004ECA9A /* Array+InsertionSort.swift */; };
 		A9FD59CE215F62EA004ECA9A /* Array+MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD59CD215F62EA004ECA9A /* Array+MergeSort.swift */; };
 		A9FD59D0215F632E004ECA9A /* Array+QuickSortHoareScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD59CF215F632E004ECA9A /* Array+QuickSortHoareScheme.swift */; };
@@ -246,6 +252,12 @@
 		A9EB99792122D41A0088FB88 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		A9EB997A2122D41A0088FB88 /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
 		A9EB997B2122D41A0088FB88 /* UIColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		A9FA8520216230700046B154 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		A9FA8522216230AD0046B154 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		A9FA8525216230C80046B154 /* DoublyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyNode.swift; sourceTree = "<group>"; };
+		A9FA85292162314F0046B154 /* Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequeue.swift; sourceTree = "<group>"; };
+		A9FA852D216231940046B154 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		A9FA852F216231C60046B154 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		A9FD59CB215F6268004ECA9A /* Array+InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+InsertionSort.swift"; sourceTree = "<group>"; };
 		A9FD59CD215F62EA004ECA9A /* Array+MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+MergeSort.swift"; sourceTree = "<group>"; };
 		A9FD59CF215F632E004ECA9A /* Array+QuickSortHoareScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+QuickSortHoareScheme.swift"; sourceTree = "<group>"; };
@@ -730,6 +742,11 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A9FA852C216231860046B154 /* Heap */,
+				A9FA8528216231240046B154 /* Dequeue */,
+				A9FA8527216231090046B154 /* PriorityQueue */,
+				A9FA8524216230B50046B154 /* DoublyLinkedList */,
+				A9FA851F216230350046B154 /* LinkedList */,
 				A9B9A8A92160FB5200D1D0C0 /* Queue */,
 				A9B9A8A52160FAAF00D1D0C0 /* Stack */,
 				A9421F54215E42D900A4DFAC /* ObjectPool */,
@@ -850,6 +867,47 @@
 				A9E14DB120B1768A0075D725 /* SKEmitterNode+AdvanceSimulation.swift */,
 			);
 			path = SKEmitterNode;
+			sourceTree = "<group>";
+		};
+		A9FA851F216230350046B154 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA8520216230700046B154 /* LinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		A9FA8524216230B50046B154 /* DoublyLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA8522216230AD0046B154 /* DoublyLinkedList.swift */,
+				A9FA8525216230C80046B154 /* DoublyNode.swift */,
+			);
+			path = DoublyLinkedList;
+			sourceTree = "<group>";
+		};
+		A9FA8527216231090046B154 /* PriorityQueue */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA852D216231940046B154 /* PriorityQueue.swift */,
+			);
+			path = PriorityQueue;
+			sourceTree = "<group>";
+		};
+		A9FA8528216231240046B154 /* Dequeue */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA85292162314F0046B154 /* Dequeue.swift */,
+			);
+			path = Dequeue;
+			sourceTree = "<group>";
+		};
+		A9FA852C216231860046B154 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA852F216231C60046B154 /* Heap.swift */,
+			);
+			path = Heap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1022,6 +1080,7 @@
 				A96A71FB2146397E006A6C15 /* UIImage+Inverted.swift in Sources */,
 				A9AB24F52142B136006E334B /* Dictionary+Intersection.swift in Sources */,
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
+				A9FA8530216231C60046B154 /* Heap.swift in Sources */,
 				A9FD59D6215F641A004ECA9A /* Array+ShellSort.swift in Sources */,
 				A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */,
 				A9DEA74821367CF100AAA063 /* String+Base64.swift in Sources */,
@@ -1030,11 +1089,14 @@
 				A9332C722125ABAD0041C558 /* CGFloat+Rounded.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
 				A92BBB96214FF5EC00BE02CD /* Atomic.swift in Sources */,
+				A9FA8523216230AD0046B154 /* DoublyLinkedList.swift in Sources */,
 				A9AB24E52142A4E9006E334B /* HighlightFilter.swift in Sources */,
+				A9FA852A2162314F0046B154 /* Dequeue.swift in Sources */,
 				A9332C742125ABD90041C558 /* Double+Rounded.swift in Sources */,
 				A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */,
 				A9912EAA20C6C55800619880 /* UIImage+ImageFromUIView.swift in Sources */,
 				A96A720321463BFB006A6C15 /* NSLayoutConstraint+Activation.swift in Sources */,
+				A9FA8521216230700046B154 /* LinkedList.swift in Sources */,
 				A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */,
 				A9FD59CC215F6268004ECA9A /* Array+InsertionSort.swift in Sources */,
 				A9C0B7E72133F76500C0D908 /* String+FormattedDate.swift in Sources */,
@@ -1079,6 +1141,7 @@
 				A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */,
 				A98E856F215FE5940023526B /* UIViewController+Storyboard.swift in Sources */,
 				A9B9A8A82160FAC400D1D0C0 /* Stack.swift in Sources */,
+				A9FA852E216231940046B154 /* PriorityQueue.swift in Sources */,
 				A9D4CFCC209AEB88006461AF /* Collection+RandomItem.swift in Sources */,
 				A92BBB8E214FF5A200BE02CD /* LockType.swift in Sources */,
 				A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */,
@@ -1095,6 +1158,7 @@
 				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
 				A9421F5E215E448200A4DFAC /* Date+FirstLast.swift in Sources */,
+				A9FA8526216230C80046B154 /* DoublyNode.swift in Sources */,
 				A9E9D12F215F5F6C00E087C7 /* Array+Remove.swift in Sources */,
 				A9FD59CE215F62EA004ECA9A /* Array+MergeSort.swift in Sources */,
 				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
