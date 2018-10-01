@@ -12,7 +12,7 @@
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`129`** extensions + **`16`** custom types. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`130`** extensions + **`16`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -29,6 +29,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
+- [Core Animation - 1](#core-animation)
 - [Core Graphics - 15](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 76](#foundation)
@@ -50,6 +51,11 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ## AVFoundation
 - [AVCaptureDevice+ToggleFlash](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AVFoundation/AVCaptureDevice%2BToggleFlash.swift) - adds support for flashlight capabilities and management
+
+## Core Animation
+
+### CAAnimation
+- [CAAnimation+PatternReplicator](/extensions-kit/Extensions/CoreAnimation/CAAnimation/CAAnimation%2BPatternReplicator.swift) - creates a pattern-based, wavy animation for the specified image, layer size and other properties
 
 ## Core Graphics
 
