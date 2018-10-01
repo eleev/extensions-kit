@@ -121,6 +121,7 @@
 		A9FA852A2162314F0046B154 /* Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA85292162314F0046B154 /* Dequeue.swift */; };
 		A9FA852E216231940046B154 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA852D216231940046B154 /* PriorityQueue.swift */; };
 		A9FA8530216231C60046B154 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA852F216231C60046B154 /* Heap.swift */; };
+		A9FA8534216252E90046B154 /* CAAnimation+PatternReplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA8533216252E90046B154 /* CAAnimation+PatternReplicator.swift */; };
 		A9FD59CC215F6268004ECA9A /* Array+InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD59CB215F6268004ECA9A /* Array+InsertionSort.swift */; };
 		A9FD59CE215F62EA004ECA9A /* Array+MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD59CD215F62EA004ECA9A /* Array+MergeSort.swift */; };
 		A9FD59D0215F632E004ECA9A /* Array+QuickSortHoareScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD59CF215F632E004ECA9A /* Array+QuickSortHoareScheme.swift */; };
@@ -258,6 +259,7 @@
 		A9FA85292162314F0046B154 /* Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequeue.swift; sourceTree = "<group>"; };
 		A9FA852D216231940046B154 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		A9FA852F216231C60046B154 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		A9FA8533216252E90046B154 /* CAAnimation+PatternReplicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAAnimation+PatternReplicator.swift"; sourceTree = "<group>"; };
 		A9FD59CB215F6268004ECA9A /* Array+InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+InsertionSort.swift"; sourceTree = "<group>"; };
 		A9FD59CD215F62EA004ECA9A /* Array+MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+MergeSort.swift"; sourceTree = "<group>"; };
 		A9FD59CF215F632E004ECA9A /* Array+QuickSortHoareScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+QuickSortHoareScheme.swift"; sourceTree = "<group>"; };
@@ -387,7 +389,7 @@
 				A98C5E8120D13F0100674186 /* PhotoKit */,
 				A95B443520B7DB8300AC5E23 /* WebKit */,
 				A903943020AD916400376CC3 /* AVFoundation */,
-				A9D4CFD2209AF374006461AF /* CoreAnimation */,
+				A9FA8531216252C70046B154 /* CoreAnimation */,
 				A9AB24E22142A4CA006E334B /* CoreImage */,
 				A9D4CFD1209AF36E006461AF /* CoreGraphics */,
 				A9D4CFBD209AE7E1006461AF /* Foundation */,
@@ -804,13 +806,6 @@
 			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
-		A9D4CFD2209AF374006461AF /* CoreAnimation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreAnimation;
-			sourceTree = "<group>";
-		};
 		A9D4CFD3209AF3C0006461AF /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
@@ -908,6 +903,22 @@
 				A9FA852F216231C60046B154 /* Heap.swift */,
 			);
 			path = Heap;
+			sourceTree = "<group>";
+		};
+		A9FA8531216252C70046B154 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA8532216252D60046B154 /* CAAnimation */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		A9FA8532216252D60046B154 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA8533216252E90046B154 /* CAAnimation+PatternReplicator.swift */,
+			);
+			path = CAAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1153,6 +1164,7 @@
 				A9AB24F72142BA10006E334B /* Dictionary+Map.swift in Sources */,
 				A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
+				A9FA8534216252E90046B154 /* CAAnimation+PatternReplicator.swift in Sources */,
 				A96A720021463B4B006A6C15 /* UIView+HuggingPriority.swift in Sources */,
 				A9AB24F32142B079006E334B /* Dictionary+Union.swift in Sources */,
 				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
