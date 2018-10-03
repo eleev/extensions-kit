@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.4.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 01/October/2018.**
+**Last Update: 03/October/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`130`** extensions + **`16`** custom types. Feel free to contribute something new and amazing. 
+🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`142`** extensions + **`16`** custom types. Feel free to contribute something new and amazing. 
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 15](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 76](#foundation)
-- [UIKit - 24](#uikit)
+- [UIKit - 36](#uikit)
 - [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -174,12 +174,21 @@ All the extensions are split into separete `groups` each of which represents a s
 ### UIView
 - [UIView+Corners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BCorners.swift) - convenience extension for setting and getting round corners
 - [UIView+HuggingPriority](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BHuggingPriority.swift) - convenience wrappers that simplify inerfaces for *setContentHuggingPriority* and *setContentCompressionResistancePriority* methods
+- [UIView+Screenshot](/extensions-kit/Extensions/UIKit/UIView/UIView%2BScreenshot.swift) - allows to take a screenshot of self
+- [UIView+RoundedCorners](/extensions-kit/Extensions/UIKit/UIView/UIView%2BRoundedCorners.swift) - yet another extension for rounding corners 
 
 ### UIColor
 - [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift) - adds support for missing color components properties such as `rgba`, `hsba` and `grayscale`
 
 ### UICollectionView
 - [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift) - registers custom `UICollectionViewCell` for a `UICollectionView` instance. `UICollectionViewCell` needs to be located in current Bundle
+- [UICollectionView+ScrollingUtils](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BScrollingUtils.swift) - adds methods that allow to programmatically scroll to the `top`, `bottom` or to the specified `index path` of a table view
+- [UICollectionView+Safety](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BSafety.swift) - adds validation utils 
+
+### UITableView
+- [UITableView+FooterHeaderUtils](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BFooterHeaderUtils.swift) - the extension adds convenience helpers for working with `Footer` and `Header` views
+- [UITableView+ScrollingUtils](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BScrollingUtils.swift) -  adds methods that allow to programmatically scroll to the `top`, `bottom` or to the specified `index path` of a table view
+- [UITableView+Safety](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BSafety.swift) - adds validation utils 
 
 ### UIImage
 - [UIImage+ImageFromUIView](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BImageFromUIView.swift) - renders `UIView` to `UIImage`
