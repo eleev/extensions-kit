@@ -35,6 +35,13 @@
 		A9332C722125ABAD0041C558 /* CGFloat+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C712125ABAD0041C558 /* CGFloat+Rounded.swift */; };
 		A9332C742125ABD90041C558 /* Double+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C732125ABD90041C558 /* Double+Rounded.swift */; };
 		A9332C762125ABF00041C558 /* Float+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C752125ABF00041C558 /* Float+Rounded.swift */; };
+		A93773AF2164EC3F008D809A /* UIView+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93773AE2164EC3F008D809A /* UIView+Screenshot.swift */; };
+		A93773B12164ECB2008D809A /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93773B02164ECB2008D809A /* UIView+RoundedCorners.swift */; };
+		A93773B42164EDEF008D809A /* UITableView+FooterHeaderUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93773B32164EDEF008D809A /* UITableView+FooterHeaderUtils.swift */; };
+		A93773B62164EE2B008D809A /* UITableView+ScrollingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93773B52164EE2B008D809A /* UITableView+ScrollingUtils.swift */; };
+		A93773B82164EFD1008D809A /* UITableView+Safety.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93773B72164EFD1008D809A /* UITableView+Safety.swift */; };
+		A93773BA2164F101008D809A /* UICollectionView+ScrollingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93773B92164F101008D809A /* UICollectionView+ScrollingUtils.swift */; };
+		A93773BC2164F2EF008D809A /* UICollectionView+Safety.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93773BB2164F2EF008D809A /* UICollectionView+Safety.swift */; };
 		A9421F4F215E427900A4DFAC /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9421F4E215E427900A4DFAC /* Notification.swift */; };
 		A9421F51215E429300A4DFAC /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9421F50215E429300A4DFAC /* Subject.swift */; };
 		A9421F53215E42A300A4DFAC /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9421F52215E42A300A4DFAC /* Observer.swift */; };
@@ -174,6 +181,13 @@
 		A9332C712125ABAD0041C558 /* CGFloat+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Rounded.swift"; sourceTree = "<group>"; };
 		A9332C732125ABD90041C558 /* Double+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Rounded.swift"; sourceTree = "<group>"; };
 		A9332C752125ABF00041C558 /* Float+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Rounded.swift"; sourceTree = "<group>"; };
+		A93773AE2164EC3F008D809A /* UIView+Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Screenshot.swift"; sourceTree = "<group>"; };
+		A93773B02164ECB2008D809A /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
+		A93773B32164EDEF008D809A /* UITableView+FooterHeaderUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FooterHeaderUtils.swift"; sourceTree = "<group>"; };
+		A93773B52164EE2B008D809A /* UITableView+ScrollingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ScrollingUtils.swift"; sourceTree = "<group>"; };
+		A93773B72164EFD1008D809A /* UITableView+Safety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Safety.swift"; sourceTree = "<group>"; };
+		A93773B92164F101008D809A /* UICollectionView+ScrollingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ScrollingUtils.swift"; sourceTree = "<group>"; };
+		A93773BB2164F2EF008D809A /* UICollectionView+Safety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Safety.swift"; sourceTree = "<group>"; };
 		A9421F4E215E427900A4DFAC /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		A9421F50215E429300A4DFAC /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		A9421F52215E42A300A4DFAC /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
@@ -467,6 +481,16 @@
 			path = CGFloat;
 			sourceTree = "<group>";
 		};
+		A93773B22164EDD5008D809A /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				A93773B32164EDEF008D809A /* UITableView+FooterHeaderUtils.swift */,
+				A93773B52164EE2B008D809A /* UITableView+ScrollingUtils.swift */,
+				A93773B72164EFD1008D809A /* UITableView+Safety.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		A9421F4C215E421800A4DFAC /* MulticastDelegation */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +547,8 @@
 			isa = PBXGroup;
 			children = (
 				A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */,
+				A93773B92164F101008D809A /* UICollectionView+ScrollingUtils.swift */,
+				A93773BB2164F2EF008D809A /* UICollectionView+Safety.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -532,6 +558,8 @@
 			children = (
 				A96A71FD21463A7F006A6C15 /* UIView+Corners.swift */,
 				A96A71FF21463B4B006A6C15 /* UIView+HuggingPriority.swift */,
+				A93773AE2164EC3F008D809A /* UIView+Screenshot.swift */,
+				A93773B02164ECB2008D809A /* UIView+RoundedCorners.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -730,6 +758,7 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A93773B22164EDD5008D809A /* UITableView */,
 				A96A720121463BCE006A6C15 /* NSLayoutConstraint+Activation */,
 				A96A71FC21463A71006A6C15 /* UIView */,
 				A9D91E8E21188A5D00E9D822 /* UIColor */,
@@ -1074,6 +1103,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93773B62164EE2B008D809A /* UITableView+ScrollingUtils.swift in Sources */,
+				A93773BC2164F2EF008D809A /* UICollectionView+Safety.swift in Sources */,
 				A9421F5C215E443100A4DFAC /* Date+PreviousNext.swift in Sources */,
 				A9D4CFC1209AE864006461AF /* SKTextureAtlas+FramesLoader.swift in Sources */,
 				A9C0B7ED2133F90F00C0D908 /* Double+CurrencyShortcuts.swift in Sources */,
@@ -1081,6 +1112,7 @@
 				A98C3831211355DB00F3E87C /* String+Digits.swift in Sources */,
 				A929498420962BE600350C43 /* ClosedRange+Random.swift in Sources */,
 				A9FD59D2215F6385004ECA9A /* Array+QuickSortLomutoScheme.swift in Sources */,
+				A93773B12164ECB2008D809A /* UIView+RoundedCorners.swift in Sources */,
 				A9D4CFCE209AEBCB006461AF /* Collection+Sum&Average.swift in Sources */,
 				A9D4CFD5209AF3D1006461AF /* Dictionary+JSON.swift in Sources */,
 				A9421F53215E42A300A4DFAC /* Observer.swift in Sources */,
@@ -1096,11 +1128,13 @@
 				A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */,
 				A9DEA74821367CF100AAA063 /* String+Base64.swift in Sources */,
 				A9421F58215E431300A4DFAC /* ObjectPool.swift in Sources */,
+				A93773B42164EDEF008D809A /* UITableView+FooterHeaderUtils.swift in Sources */,
 				A9332C762125ABF00041C558 /* Float+Rounded.swift in Sources */,
 				A9332C722125ABAD0041C558 /* CGFloat+Rounded.swift in Sources */,
 				A9D4CFC8209AEACF006461AF /* Bool+Random.swift in Sources */,
 				A92BBB96214FF5EC00BE02CD /* Atomic.swift in Sources */,
 				A9FA8523216230AD0046B154 /* DoublyLinkedList.swift in Sources */,
+				A93773AF2164EC3F008D809A /* UIView+Screenshot.swift in Sources */,
 				A9AB24E52142A4E9006E334B /* HighlightFilter.swift in Sources */,
 				A9FA852A2162314F0046B154 /* Dequeue.swift in Sources */,
 				A9332C742125ABD90041C558 /* Double+Rounded.swift in Sources */,
@@ -1121,6 +1155,7 @@
 				A9C5977220E6A8350015B08A /* NSBezierPath+cgPath.swift in Sources */,
 				A92BBB94214FF5DA00BE02CD /* ReadWriteLock.swift in Sources */,
 				A9FD59D8215F6434004ECA9A /* Array+RadixSort.swift in Sources */,
+				A93773B82164EFD1008D809A /* UITableView+Safety.swift in Sources */,
 				A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */,
 				A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */,
 				A92BBB92214FF5C700BE02CD /* Mutex.swift in Sources */,
@@ -1171,6 +1206,7 @@
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
 				A9421F5E215E448200A4DFAC /* Date+FirstLast.swift in Sources */,
 				A9FA8526216230C80046B154 /* DoublyNode.swift in Sources */,
+				A93773BA2164F101008D809A /* UICollectionView+ScrollingUtils.swift in Sources */,
 				A9E9D12F215F5F6C00E087C7 /* Array+Remove.swift in Sources */,
 				A9FD59CE215F62EA004ECA9A /* Array+MergeSort.swift in Sources */,
 				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
