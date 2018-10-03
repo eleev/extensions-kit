@@ -12,7 +12,7 @@
 
 # ✍️ About
 
-🎉 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`142`** extensions + **`16`** custom types. Feel free to contribute something new and amazing. 
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`142`** extensions + **`16`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
