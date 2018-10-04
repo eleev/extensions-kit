@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.4.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 03/October/2018.**
+**Last Update: 04/October/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`142`** extensions + **`16`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`145`** extensions + **`16`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 15](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 76](#foundation)
-- [UIKit - 36](#uikit)
+- [UIKit - 39](#uikit)
 - [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -184,6 +184,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift) - registers custom `UICollectionViewCell` for a `UICollectionView` instance. `UICollectionViewCell` needs to be located in current Bundle
 - [UICollectionView+ScrollingUtils](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BScrollingUtils.swift) - adds methods that allow to programmatically scroll to the `top`, `bottom` or to the specified `index path` of a table view
 - [UICollectionView+Safety](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BSafety.swift) - adds validation utils 
+- [UICollectionView+Operations](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BOperations.swift) - convenience `reload`, `delete` and `insert` operations for collections of item indices
 
 ### UITableView
 - [UITableView+FooterHeaderUtils](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BFooterHeaderUtils.swift) - the extension adds convenience helpers for working with `Footer` and `Header` views
