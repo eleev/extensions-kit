@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.4.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 04/October/2018.**
+**Last Update: 05/October/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`145`** extensions + **`16`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`146`** extensions + **`16`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -30,7 +30,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Animation - 1](#core-animation)
-- [Core Graphics - 15](#core-graphics)
+- [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 76](#foundation)
 - [UIKit - 39](#uikit)
@@ -58,6 +58,9 @@ All the extensions are split into separete `groups` each of which represents a s
 - [CAAnimation+PatternReplicator](/extensions-kit/Extensions/CoreAnimation/CAAnimation/CAAnimation%2BPatternReplicator.swift) - creates a pattern-based, wavy animation for the specified image, layer size and other properties
 
 ## Core Graphics
+
+### CGSize 
+- [CGSize+Operators](/extensions-kit/Extensions/CoreGraphics/CGSize/CGSize%2BOperators.swift) - adds various mathematical operators such as `+`, `-`, `*`, `/` for convenience
 
 ### CGPoint
 - [CGPoint+Operators](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGPoint/CGPoint%2BOperators.swift) - various mathematical operators such as `+`, `-`, `*`, `/`, `lerp` etc.
