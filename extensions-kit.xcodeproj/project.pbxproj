@@ -52,6 +52,7 @@
 		A9421F5E215E448200A4DFAC /* Date+FirstLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9421F5D215E448200A4DFAC /* Date+FirstLast.swift */; };
 		A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
+		A95BCAB4216759F5006DF658 /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
 		A96A71FB2146397E006A6C15 /* UIImage+Inverted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FA2146397E006A6C15 /* UIImage+Inverted.swift */; };
 		A96A71FE21463A7F006A6C15 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FD21463A7F006A6C15 /* UIView+Corners.swift */; };
@@ -199,6 +200,7 @@
 		A9421F5D215E448200A4DFAC /* Date+FirstLast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date+FirstLast.swift"; path = "extensions-kit/Extensions/Foundation/Date/Date+FirstLast.swift"; sourceTree = SOURCE_ROOT; };
 		A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+GetOrAddValue.swift"; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
+		A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Operators.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
 		A96A71FA2146397E006A6C15 /* UIImage+Inverted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Inverted.swift"; sourceTree = "<group>"; };
 		A96A71FD21463A7F006A6C15 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
@@ -545,6 +547,14 @@
 			path = WKWebView;
 			sourceTree = "<group>";
 		};
+		A95BCAB2216759DE006DF658 /* CGSize */ = {
+			isa = PBXGroup;
+			children = (
+				A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */,
+			);
+			path = CGSize;
+			sourceTree = "<group>";
+		};
 		A961E14220C0162F0069C29A /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -831,6 +841,7 @@
 		A9D4CFD1209AF36E006461AF /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				A95BCAB2216759DE006DF658 /* CGSize */,
 				A9332C702125ABA00041C558 /* CGFloat */,
 				A9E14DA920B1593E0075D725 /* CGRect */,
 				A9E14DA820B159330075D725 /* CGPoint */,
@@ -1130,6 +1141,7 @@
 				A9FD59D6215F641A004ECA9A /* Array+ShellSort.swift in Sources */,
 				A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */,
 				A9DEA74821367CF100AAA063 /* String+Base64.swift in Sources */,
+				A95BCAB4216759F5006DF658 /* CGSize+Operators.swift in Sources */,
 				A9421F58215E431300A4DFAC /* ObjectPool.swift in Sources */,
 				A93773B42164EDEF008D809A /* UITableView+FooterHeaderUtils.swift in Sources */,
 				A9332C762125ABF00041C558 /* Float+Rounded.swift in Sources */,
