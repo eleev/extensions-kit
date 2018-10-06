@@ -14,7 +14,7 @@ public extension Array where Element: Comparable {
         let count = self.count
         
         for _ in 0...count {
-            for value in 1...count - 2 {
+            for value in 1...count - 1 {
                 if sign(self[value - 1], self[value]) {
                     // An alternative to the manual `swap`
                     // self.swapAt(value - 1, value)

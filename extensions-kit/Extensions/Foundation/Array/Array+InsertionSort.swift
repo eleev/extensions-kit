@@ -10,10 +10,10 @@ import Foundation
 
 public extension Array where Element: Comparable {
     
-    // Sorts self with the given order (<, >) using the Insertion Sort algorithm
-    public mutating func insertionSort(order: (Element, Element) -> Bool) -> Array {
+    /// Sorts self in place with the given order (<, >) using the Insertion Sort algorithm
+    public mutating func insertionSorted(order: (Element, Element) -> Bool) {
         
-        if self.count <= 1 { return self }
+        if self.count <= 1 { return }
         
         for i in 1..<self.count {
             let temp = self[i]
@@ -25,7 +25,6 @@ public extension Array where Element: Comparable {
             }
             self[j] = temp
         }
-        return self
     }
     
 }

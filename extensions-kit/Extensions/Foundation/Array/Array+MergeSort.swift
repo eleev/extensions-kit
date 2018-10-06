@@ -51,7 +51,7 @@ public extension Array where Element: Comparable {
             let leftElement = lhalf[leftIndex]
             let rightElement = rhalf[rightIndex]
             
-            let leftGreatherThanRight = sign(leftElement, rightElement)
+            let leftGreatherThanRight = sign(rightElement, leftElement) // sign(leftElement, rightElement)
             let leftSmallerThanRight = !leftGreatherThanRight
             
             if leftGreatherThanRight {
