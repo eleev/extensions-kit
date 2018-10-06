@@ -85,6 +85,7 @@
 		A9AB24F52142B136006E334B /* Dictionary+Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24F42142B136006E334B /* Dictionary+Intersection.swift */; };
 		A9AB24F72142BA10006E334B /* Dictionary+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24F62142BA10006E334B /* Dictionary+Map.swift */; };
 		A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */; };
+		A9AFCF182168910A00980730 /* ArraySortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AFCF172168910A00980730 /* ArraySortingTests.swift */; };
 		A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */; };
 		A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */; };
 		A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */; };
@@ -232,6 +233,7 @@
 		A9AB24F42142B136006E334B /* Dictionary+Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Intersection.swift"; sourceTree = "<group>"; };
 		A9AB24F62142BA10006E334B /* Dictionary+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Map.swift"; sourceTree = "<group>"; };
 		A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+DispatchOnce.swift"; sourceTree = "<group>"; };
+		A9AFCF172168910A00980730 /* ArraySortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySortingTests.swift; sourceTree = "<group>"; };
 		A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Scale.swift"; sourceTree = "<group>"; };
 		A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Shuffle.swift"; sourceTree = "<group>"; };
 		A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Shuffle.swift"; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				A9C0B7E82133F78400C0D908 /* DateTests.swift */,
 				A9C0B7EE2133FAF500C0D908 /* DoubleTests.swift */,
 				A9DEA74E21367F5000AAA063 /* OptionSetTests.swift */,
+				A9AFCF172168910A00980730 /* ArraySortingTests.swift */,
 			);
 			path = "extensions-kit-tests";
 			sourceTree = "<group>";
@@ -1237,6 +1240,7 @@
 			files = (
 				A9EB99782122D07B0088FB88 /* BoolTests.swift in Sources */,
 				A920503821230BAF00B39C57 /* CollectionTests.swift in Sources */,
+				A9AFCF182168910A00980730 /* ArraySortingTests.swift in Sources */,
 				A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */,
 				A9C0B7EF2133FAF500C0D908 /* DoubleTests.swift in Sources */,
 				A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */,
