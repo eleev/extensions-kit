@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.5.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 06/October/2018.**
+**Last Update: 09/October/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`146`** extensions + **`16`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`156`** extensions + **`16`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -32,8 +32,8 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 76](#foundation)
-- [UIKit - 39](#uikit)
+- [Foundation - 78](#foundation)
+- [UIKit - 47](#uikit)
 - [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -151,6 +151,8 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Int+Power](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BPower.swift) - operator that performs `exponentiation` matematical operation, where left number is the *base* and the right one is the *exponent*
 - [Int+Random](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRandom.swift) - generates pseudo-random number in a range that can be specified as `ClosedRange` or two separate `Int` properties
 - [Int+Roman](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRoman.swift) - converts `self` into *Roman* number (as `String`)
+- [Int+DecimalToBinary](/extensions-kit/Extensions/Foundation/Int/Int%2BDecimalToBinary.swift) - allows to convert `decimal` number to `binary` format and vice versa 
+
 
 ### OptionSet
 - [OptionSet+Operations](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/OptionSet/OptionSet%2BOperations.swift) - adds support for in-place `insert` and `remove` operations
@@ -171,6 +173,9 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ## UIKit
 
+### UIApplication
+- [UIApplication+SafeAreas](/extensions-kit/Extensions/UIKit/UIApplication/UIApplication%2BSafeAreas.swift) - contains extensions that allow to get numerical representations of `top` and `bottom` safe areas
+
 ### NSLayoutConstraint
 - [NSLayoutConstraint+Activation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/NSLayoutConstraint%2BActivation/NSLayoutConstraint%2BActivation.swift) - adds convenience methods for *setting* and *activating* layout priorities
 
@@ -178,7 +183,9 @@ All the extensions are split into separete `groups` each of which represents a s
 - [UIView+Corners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BCorners.swift) - convenience extension for setting and getting round corners
 - [UIView+HuggingPriority](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BHuggingPriority.swift) - convenience wrappers that simplify inerfaces for *setContentHuggingPriority* and *setContentCompressionResistancePriority* methods
 - [UIView+Screenshot](/extensions-kit/Extensions/UIKit/UIView/UIView%2BScreenshot.swift) - allows to take a screenshot of self
-- [UIView+RoundedCorners](/extensions-kit/Extensions/UIKit/UIView/UIView%2BRoundedCorners.swift) - yet another extension for rounding corners 
+- [UIView+RoundedCorners](/extensions-kit/Extensions/UIKit/UIView/UIView%2BRoundedCorners.swift) - yet another extension for rounding corners
+- [UIView+Constraints](/extensions-kit/Extensions/UIKit/UIView/UIView%2BConstraints.swift) - adds convenience auto-layout methods that allow to `pin`, `add`, get `height` & `width` and to get all the constrains for a particular `UIView`
+- [UIView+LayoutAnimation](/extensions-kit/Extensions/UIKit/UIView/UIView%2BLayoutAnimation.swift) - adds animation extensions that operate on layout constraints
 
 ### UIColor
 - [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift) - adds support for missing color components properties such as `rgba`, `hsba` and `grayscale`
