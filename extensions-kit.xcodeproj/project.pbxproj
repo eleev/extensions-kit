@@ -600,12 +600,12 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		A96A720121463BCE006A6C15 /* NSLayoutConstraint+Activation */ = {
+		A96A720121463BCE006A6C15 /* NSLayoutConstraint */ = {
 			isa = PBXGroup;
 			children = (
 				A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */,
 			);
-			path = "NSLayoutConstraint+Activation";
+			path = NSLayoutConstraint;
 			sourceTree = "<group>";
 		};
 		A98C382F211355C800F3E87C /* String */ = {
@@ -804,7 +804,7 @@
 			children = (
 				A9ABF93F216CFD7D00BF4350 /* UIApplication */,
 				A93773B22164EDD5008D809A /* UITableView */,
-				A96A720121463BCE006A6C15 /* NSLayoutConstraint+Activation */,
+				A96A720121463BCE006A6C15 /* NSLayoutConstraint */,
 				A96A71FC21463A71006A6C15 /* UIView */,
 				A9D91E8E21188A5D00E9D822 /* UIColor */,
 				A961E14220C0162F0069C29A /* UICollectionView */,
