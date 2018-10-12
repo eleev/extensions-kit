@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.5.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 09/October/2018.**
+**Last Update: 12/October/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`156`** extensions + **`16`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`160`** extensions + **`16`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -32,7 +32,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 78](#foundation)
+- [Foundation - 82](#foundation)
 - [UIKit - 47](#uikit)
 - [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -169,7 +169,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [String+FormattedDate](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BFormattedDate.swift) - creates a `Date` instance from `self` based in the specified format
 - [String+IndexOf](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BIndexOf.swift) - finds the first occurence for a given `String`
 - [String+Base64](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BBase64.swift) - encodes/decodes `self` to `Base64` encoding
-- [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) - determines if `self` is *alphanumeric* `String`
+- [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) - contains a number of extensions for validating `String` based on the following: `isAlphanumeric`, `hasLetters`, `hasNumbers`, `isEmail`, `isAlphabetic`
 
 ## UIKit
 
