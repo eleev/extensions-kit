@@ -13,7 +13,7 @@ public extension String {
     /// Determines if self is alphanumeric String
     ///
     /// - Returns: boolean value indicating wherher self is alphanumeric
-    func isAlphaNumeric() -> Bool {
+    public var isAlphaNumeric: Bool {
         let alphaNumeric = NSCharacterSet.alphanumerics
         let output = self.unicodeScalars.split { !alphaNumeric.contains($0)}.map(String.init)
         
@@ -21,5 +21,40 @@ public extension String {
             return false
         }
         return output.count == 1
+    }
+    
+    /// Check whether the string is an email or not
+    ///
+    /// - Returns: boolean value indicating whether self is an email
+    public var isEmail: Bool {
+        let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let predicate = NSPredicate(format:"SELF MATCHES %@", regex)
+        return predicate.evaluate(with: self)
+    }
+    
+    /// Check whether the string contains one or more letters
+    ///
+    /// - Returns: boolean value indicating whether self has letters
+    public var hasLetters: Bool {
+        return rangeOfCharacter(from: .letters, options: .literal) != nil
+    }
+    
+    /// Check whether the string contains one or more numbers
+    ///
+    /// - Returns: boolean value indicating whether self has numbers
+    public var hasNumbers: Bool {
+        return rangeOfCharacter(from: .decimalDigits, options: .literal) != nil
+    }
+    
+    /// Check whether the string contains only letters
+    ///
+    /// - Returns: boolean value indicating whether self is alphabetic
+    public var isAlphabetic: Bool {
+        for c in self {
+            if !(c >= "a" && c <= "z") && !(c >= "A" && c <= "Z") {
+                return false
+            }
+        }
+        return true
     }
 }
