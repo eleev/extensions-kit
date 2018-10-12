@@ -69,14 +69,87 @@ class StringTests: XCTestCase {
         XCTAssertTrue(fromBase64 == test)
     }
     
-    func testValidation() {
+    func testValidationAlphanumeric() {
         let alhaNum = "37964798hvjkdhkjsdf3kjKJfkh2KJH34"
-        XCTAssertTrue(alhaNum.isAlphaNumeric())
+        XCTAssertTrue(alhaNum.isAlphaNumeric)
         
         let nonAlhaNum = "Hello World!"
-        XCTAssertFalse(nonAlhaNum.isAlphaNumeric())
+        XCTAssertFalse(nonAlhaNum.isAlphaNumeric)
     }
 
+    func testValidationEmail() {
+        let exampleOne = "john.black@gmail.com"
+        let exampleTwo = "blackJogn234@yahoo.net"
+        let exampleThree = "345jdjgg3445nmbn.w34@mail.global"
+        
+        XCTAssert(exampleOne.isEmail == true)
+        XCTAssert(exampleTwo.isEmail == true)
+        XCTAssert(exampleThree.isEmail == true)
+        
+        let exampleFour = "jsldfhJJj--x-x@mfmfc@"
+        let exampleFive = "g@.com.com@"
+        let exampleSix = "237846987gmail.com"
+        
+        XCTAssert(exampleFour.isEmail == false)
+        XCTAssert(exampleFive.isEmail == false)
+        XCTAssert(exampleSix.isEmail == false)
+    }
+
+    
+    func testValidationLetters() {
+        let exampleOne = "jlsdhfjksdf234jhL&8o7w34"
+        let exampleTwo = "mm34m)((*S)(UG()V()(SJ"
+        let exampleThree = "23748920374298347898h7238947"
+        
+        XCTAssert(exampleOne.hasLetters == true)
+        XCTAssert(exampleTwo.hasLetters == true)
+        XCTAssert(exampleThree.hasLetters == true)
+        
+        let exampleFour = "82937420394#$&^%*()@8"
+        let exampleFive = "82-0930--=03"
+        let exampleSix = "˙¨˙∂˚∆∫√µ∑≥¨˚§•¡ªº£¶•ª¶¨ˆøƒ˙∆£334"
+        
+        XCTAssert(exampleFour.isEmail == false)
+        XCTAssert(exampleFive.isEmail == false)
+        XCTAssert(exampleSix.isEmail == false)
+    }
+    
+    func testValidationNumbers() {
+        let exampleOne = "jlsdhfjksdf234jhL&8o7w34"
+        let exampleTwo = "mm34m)((*S)(UG()V()(SJ"
+        let exampleThree = "23748920374298347898h7238947"
+        
+        XCTAssert(exampleOne.hasNumbers == true)
+        XCTAssert(exampleTwo.hasNumbers == true)
+        XCTAssert(exampleThree.hasNumbers == true)
+        
+        let exampleFour = "najkvsdfghaskldfjskldfNJKLHGJE"
+        let exampleFive = ",mnjuLKJKLJDHJK˙˚∆ƒ"
+        let exampleSix = "˙¨˙∂˚∆∫√µ∑≥¨˚§•¡ªº£¶•ª¶¨ˆøƒ˙∆£"
+        
+        XCTAssert(exampleFour.hasNumbers == false)
+        XCTAssert(exampleFive.hasNumbers == false)
+        XCTAssert(exampleSix.hasNumbers == false)
+    }
+    
+    func testValidationAlphabetic() {
+        let exampleOne = "JKLFnvdjhfjkhgdfgbnvndj"
+        let exampleTwo = "HelloSwiftcharacters"
+        let exampleThree = "njvhllsdhfJKYKURYHKJVnjgjgjjsdfHKHKJ"
+        
+        XCTAssert(exampleOne.isAlphabetic == true)
+        XCTAssert(exampleTwo.isAlphabetic == true)
+        XCTAssert(exampleThree.isAlphabetic == true)
+        
+        let exampleFour = "najkvsdf3ghas5kldfjskldfNJKLHGJE"
+        let exampleFive = ",mnjuLKJ2K345LJDHgJK˙˚∆ƒ"
+        let exampleSix = "˙¨˙∂˚∆∫√µ∑≥2¨2˚22§44•2¡ªº£¶•ª¶¨ˆøƒ˙∆£"
+        
+        XCTAssert(exampleFour.isAlphabetic == false)
+        XCTAssert(exampleFive.isAlphabetic == false)
+        XCTAssert(exampleSix.isAlphabetic == false)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
