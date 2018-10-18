@@ -19,7 +19,7 @@
 `extensions-kit` is availabe via `CocoaPods`
 
 ```
-pod 'extensions-kit', '~> 1.5.0' 
+pod 'extensions-kit', '~> 1.6.0' 
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
