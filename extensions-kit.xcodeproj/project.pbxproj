@@ -704,6 +704,24 @@
 			path = FunctionalLenses;
 			sourceTree = "<group>";
 		};
+		A9A2AF6D21786EAC00389DDA /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				A9A2AF662178680800389DDA /* FunctionalLenses */,
+				A9FA852C216231860046B154 /* Heap */,
+				A9FA8528216231240046B154 /* Dequeue */,
+				A9FA8527216231090046B154 /* PriorityQueue */,
+				A9FA8524216230B50046B154 /* DoublyLinkedList */,
+				A9FA851F216230350046B154 /* LinkedList */,
+				A9B9A8A92160FB5200D1D0C0 /* Queue */,
+				A9B9A8A52160FAAF00D1D0C0 /* Stack */,
+				A9421F54215E42D900A4DFAC /* ObjectPool */,
+				A9421F4D215E422F00A4DFAC /* Observer */,
+				A9421F4C215E421800A4DFAC /* MulticastDelegation */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
 		A9A4BCDB20BC56DF00CA4848 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -844,18 +862,8 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				A9A2AF662178680800389DDA /* FunctionalLenses */,
+				A9A2AF6D21786EAC00389DDA /* DataStructures */,
 				A9A2AF632178661600389DDA /* Functions */,
-				A9FA852C216231860046B154 /* Heap */,
-				A9FA8528216231240046B154 /* Dequeue */,
-				A9FA8527216231090046B154 /* PriorityQueue */,
-				A9FA8524216230B50046B154 /* DoublyLinkedList */,
-				A9FA851F216230350046B154 /* LinkedList */,
-				A9B9A8A92160FB5200D1D0C0 /* Queue */,
-				A9B9A8A52160FAAF00D1D0C0 /* Stack */,
-				A9421F54215E42D900A4DFAC /* ObjectPool */,
-				A9421F4D215E422F00A4DFAC /* Observer */,
-				A9421F4C215E421800A4DFAC /* MulticastDelegation */,
 				A9DEA74B21367ECD00AAA063 /* OptionSet */,
 				A9421F5F215E466A00A4DFAC /* Date */,
 				A9332C6F2125AB9D0041C558 /* Double */,
