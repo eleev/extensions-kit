@@ -88,11 +88,11 @@ All the extensions are split into separete `groups` each of which represents a s
 ### Data Structures
 - [Lens](/extensions-kit/Extensions/Foundation/DataStructures/FunctionalLenses/Lens.swift) - `Lens` is an implementation of `Functional Lenses` concept that allows to safely modify immutable `structs` and provides fundamental tools to work with complex data structures (see `UnitTests`)
 - [ObjectPool](/extensions-kit/Extensions/Foundation/DataStructures/ObjectPool/ObjectPool.swift) - thread-safe implementation of `ObjectPool` design pattern
-- [Observer](/extensions-kit/tree/master/extensions-kit/Extensions/DataStructures/Foundation/Observer) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
+- [Observer](/extensions-kit/Extensions/Foundation/DataStructures/Observer/) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
 - [MulticastDelegation](/extensions-kit//Extensions/Foundation/DataStructures/MulticastDelegation/MulticastDelegation.swift) - non thread-safe implementation of `MulticastDelegation` design pattern
 - [Stack](/extensions-kit//Extensions/Foundation/DataStructures/Stack/Stack.swift) - is an implementation of `Stack` data structure
 - [Queue](/extensions-kit//Extensions/Foundation/DataStructures/Queue/Queue.swift) - is an implementation of `Queue` data structure
-- [ProrityQueue](/extensions-kit//Extensions/Foundation/DataStructures/ProrityQueue/ProrityQueue.swift) -  is an implementation of `Prority Queue` data structure based on `Heap` data structure
+- [ProrityQueue](/extensions-kit/Extensions/Foundation/DataStructures/PriorityQueue/PriorityQueue.swift) -  is an implementation of `Prority Queue` data structure based on `Heap` data structure
 - [Dequeue](/extensions-kit//Extensions/Foundation/DataStructures/Dequeue/Dequeue.swift) - is an implementation of `Dequeue` data structure 
 - [LinkedList](/extensions-kit//Extensions/Foundation/DataStructures/LinkedList/LinkedList.swift) - is an implementation of `Linked List` data structure 
 - [DoublyLinkedList](/extensions-kit//Extensions/Foundation/DataStructures/DoublyLinkedList/DoublyLinkedList.swift) - is an implementation of `Doubly Linked List` data structure
