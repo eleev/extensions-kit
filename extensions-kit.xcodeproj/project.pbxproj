@@ -72,6 +72,10 @@
 		A999C50B2096FA74006014B1 /* UIImage+SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */; };
 		A999C50D2096FAC7006014B1 /* UIImage+RawOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */; };
 		A9A171EE2158C16900C75B6D /* Sequence+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A171ED2158C16900C75B6D /* Sequence+Count.swift */; };
+		A9A2AF652178662A00389DDA /* FunctionalComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2AF642178662A00389DDA /* FunctionalComposition.swift */; };
+		A9A2AF682178681B00389DDA /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2AF672178681B00389DDA /* Lens.swift */; };
+		A9A2AF6A2178683F00389DDA /* FunctionalCompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2AF692178683F00389DDA /* FunctionalCompositionTests.swift */; };
+		A9A2AF6C21786A9A00389DDA /* FunctionalLensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2AF6B21786A9A00389DDA /* FunctionalLensesTests.swift */; };
 		A9A429E420BB30D900CDF137 /* SKSpriteNode+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A429E320BB30D900CDF137 /* SKSpriteNode+GIF.swift */; };
 		A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */; };
 		A9AB24E52142A4E9006E334B /* HighlightFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB24E42142A4E9006E334B /* HighlightFilter.swift */; };
@@ -227,6 +231,10 @@
 		A999C50A2096FA74006014B1 /* UIImage+SolidColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SolidColor.swift"; sourceTree = "<group>"; };
 		A999C50C2096FAC7006014B1 /* UIImage+RawOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RawOrientation.swift"; sourceTree = "<group>"; };
 		A9A171ED2158C16900C75B6D /* Sequence+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Count.swift"; sourceTree = "<group>"; };
+		A9A2AF642178662A00389DDA /* FunctionalComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalComposition.swift; sourceTree = "<group>"; };
+		A9A2AF672178681B00389DDA /* Lens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		A9A2AF692178683F00389DDA /* FunctionalCompositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalCompositionTests.swift; sourceTree = "<group>"; };
+		A9A2AF6B21786A9A00389DDA /* FunctionalLensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalLensesTests.swift; sourceTree = "<group>"; };
 		A9A429E320BB30D900CDF137 /* SKSpriteNode+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+GIF.swift"; sourceTree = "<group>"; };
 		A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildViewControllers.swift"; sourceTree = "<group>"; };
 		A9AB24E42142A4E9006E334B /* HighlightFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightFilter.swift; sourceTree = "<group>"; };
@@ -416,6 +424,8 @@
 				A9AFCF19216899A800980730 /* ArrayFilterTests.swift */,
 				A9AFCF1B21689CD500980730 /* ArrayUnionTests.swift */,
 				A9ABF93D216CF84F00BF4350 /* IntDecimalToBinaryTests.swift */,
+				A9A2AF692178683F00389DDA /* FunctionalCompositionTests.swift */,
+				A9A2AF6B21786A9A00389DDA /* FunctionalLensesTests.swift */,
 			);
 			path = "extensions-kit-tests";
 			sourceTree = "<group>";
@@ -678,6 +688,22 @@
 			path = UIImageView;
 			sourceTree = "<group>";
 		};
+		A9A2AF632178661600389DDA /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				A9A2AF642178662A00389DDA /* FunctionalComposition.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		A9A2AF662178680800389DDA /* FunctionalLenses */ = {
+			isa = PBXGroup;
+			children = (
+				A9A2AF672178681B00389DDA /* Lens.swift */,
+			);
+			path = FunctionalLenses;
+			sourceTree = "<group>";
+		};
 		A9A4BCDB20BC56DF00CA4848 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -818,6 +844,8 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A9A2AF662178680800389DDA /* FunctionalLenses */,
+				A9A2AF632178661600389DDA /* Functions */,
 				A9FA852C216231860046B154 /* Heap */,
 				A9FA8528216231240046B154 /* Dequeue */,
 				A9FA8527216231090046B154 /* PriorityQueue */,
@@ -1242,6 +1270,7 @@
 				A92BBB8E214FF5A200BE02CD /* LockType.swift in Sources */,
 				A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */,
 				A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */,
+				A9A2AF652178662A00389DDA /* FunctionalComposition.swift in Sources */,
 				A9AB24E72142A7AD006E334B /* Array+Union.swift in Sources */,
 				A98C5E8420D13F5100674186 /* PHAsset+URL.swift in Sources */,
 				A9DEA74D21367EDD00AAA063 /* OptionSet+Operations.swift in Sources */,
@@ -1249,6 +1278,7 @@
 				A9AB24F72142BA10006E334B /* Dictionary+Map.swift in Sources */,
 				A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
+				A9A2AF682178681B00389DDA /* Lens.swift in Sources */,
 				A9FA8534216252E90046B154 /* CAAnimation+PatternReplicator.swift in Sources */,
 				A96A720021463B4B006A6C15 /* UIView+HuggingPriority.swift in Sources */,
 				A9AB24F32142B079006E334B /* Dictionary+Union.swift in Sources */,
@@ -1280,11 +1310,13 @@
 				A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */,
 				A9DEA74F21367F5000AAA063 /* OptionSetTests.swift in Sources */,
 				A999C5012096F5A3006014B1 /* ClosedRange+Random.swift in Sources */,
+				A9A2AF6A2178683F00389DDA /* FunctionalCompositionTests.swift in Sources */,
 				A9ABF93E216CF84F00BF4350 /* IntDecimalToBinaryTests.swift in Sources */,
 				A9332C6921259B030041C558 /* DictionaryTests.swift in Sources */,
 				A9AFCF1A216899A800980730 /* ArrayFilterTests.swift in Sources */,
 				A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */,
 				A9C0B7E92133F78400C0D908 /* DateTests.swift in Sources */,
+				A9A2AF6C21786A9A00389DDA /* FunctionalLensesTests.swift in Sources */,
 				A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */,
 				A9EB997E2122D41A0088FB88 /* UIColorTests.swift in Sources */,
 				A9EB997C2122D41A0088FB88 /* StringTests.swift in Sources */,
