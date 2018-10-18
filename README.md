@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.5.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 12/October/2018.**
+**Last Update: 18/October/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`160`** extensions + **`16`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`160`** extensions + **`18`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -32,7 +32,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 82](#foundation)
+- [Foundation - 84](#foundation)
 - [UIKit - 47](#uikit)
 - [SpriteKit - 10](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -82,17 +82,21 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ## Foundation
 
-### Custom Types
-- [ObjectPool](/extensions-kit/Extensions/Foundation/ObjectPool/ObjectPool.swift) - thread-safe implementation of `ObjectPool` design pattern
-- [Observer](/extensions-kit/tree/master/extensions-kit/Extensions/Foundation/Observer) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
-- [MulticastDelegation](/extensions-kit//Extensions/Foundation/MulticastDelegation/MulticastDelegation.swift) - non thread-safe implementation of `MulticastDelegation` design pattern
-- [Stack](/extensions-kit//Extensions/Foundation/Stack/Stack.swift) - is an implementation of `Stack` data structure
-- [Queue](/extensions-kit//Extensions/Foundation/Queue/Queue.swift) - is an implementation of `Queue` data structure
-- [ProrityQueue](/extensions-kit//Extensions/Foundation/ProrityQueue/ProrityQueue.swift) -  is an implementation of `Prority Queue` data structure based on `Heap` data structure
-- [Dequeue](/extensions-kit//Extensions/Foundation/Dequeue/Dequeue.swift) - is an implementation of `Dequeue` data structure 
-- [LinkedList](/extensions-kit//Extensions/Foundation/LinkedList/LinkedList.swift) - is an implementation of `Linked List` data structure 
-- [DoublyLinkedList](/extensions-kit//Extensions/Foundation/DoublyLinkedList/DoublyLinkedList.swift) - is an implementation of `Doubly Linked List` data structure
-- [Heap](/extensions-kit//Extensions/Foundation/Heap/Heap.swift) - is an implementation of `Heap` data structure
+### Functions 
+- [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift) - is a functions that implements `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls)
+
+### Data Structures
+- [Lens](/extensions-kit/Extensions/Foundation/DataStructures/FunctionalLenses/Lens.swift) - `Lens` is an implementation of `Functional Lenses` concept that allows to safely modify immutable `structs` and provides fundamental tools to work with complex data structures (see `UnitTests`)
+- [ObjectPool](/extensions-kit/Extensions/Foundation/DataStructures/ObjectPool/ObjectPool.swift) - thread-safe implementation of `ObjectPool` design pattern
+- [Observer](/extensions-kit/tree/master/extensions-kit/Extensions/DataStructures/Foundation/Observer) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
+- [MulticastDelegation](/extensions-kit//Extensions/Foundation/DataStructures/MulticastDelegation/MulticastDelegation.swift) - non thread-safe implementation of `MulticastDelegation` design pattern
+- [Stack](/extensions-kit//Extensions/Foundation/DataStructures/Stack/Stack.swift) - is an implementation of `Stack` data structure
+- [Queue](/extensions-kit//Extensions/Foundation/DataStructures/Queue/Queue.swift) - is an implementation of `Queue` data structure
+- [ProrityQueue](/extensions-kit//Extensions/Foundation/DataStructures/ProrityQueue/ProrityQueue.swift) -  is an implementation of `Prority Queue` data structure based on `Heap` data structure
+- [Dequeue](/extensions-kit//Extensions/Foundation/DataStructures/Dequeue/Dequeue.swift) - is an implementation of `Dequeue` data structure 
+- [LinkedList](/extensions-kit//Extensions/Foundation/DataStructures/LinkedList/LinkedList.swift) - is an implementation of `Linked List` data structure 
+- [DoublyLinkedList](/extensions-kit//Extensions/Foundation/DataStructures/DoublyLinkedList/DoublyLinkedList.swift) - is an implementation of `Doubly Linked List` data structure
+- [Heap](/extensions-kit//Extensions/Foundation/DataStructures/Heap/Heap.swift) - is an implementation of `Heap` data structure
 
 ### Extensions
 
