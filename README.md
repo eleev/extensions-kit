@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.6.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 18/October/2018.**
+**Last Update: 03/November/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`160`** extensions + **`18`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`161`** extensions + **`18`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -34,7 +34,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Image - 1](#core-image)
 - [Foundation - 84](#foundation)
 - [UIKit - 47](#uikit)
-- [SpriteKit - 10](#spritekit)
+- [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
 - [WebKit - 1](#webkit)
@@ -232,6 +232,7 @@ All the extensions are split into separete `groups` each of which represents a s
 
 ### SKScene
 - [SKScene+SerialSpriteLoading](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKScene/SKScene%2BSerialSpriteLoading.swift) - uploads a set of scene graph nodes with a specific pattern, useful when a scene contains a lot of nodes, but just a specific subset needs to be processed or accessed
+- [SKScene+ReferenceNodeFix](/extensions-kit/Extensions/SpriteKit/SKScene/SKScene%2BReferenceNodeFix.swift) - a small fix that resolves the default behavior for nodes that were referenced from differnet .sks files. The thing is that they do not launch their animations by default, so this small `hack` fixes this issue
 
 ### SKTexture
 - [SKTexture+LinearGradient](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTexture/SKTexture%2BLinearGradient.swift) - adds a convenience initializer that generates a `gradient texture` for the specified *size*, *start* and *end* colors
