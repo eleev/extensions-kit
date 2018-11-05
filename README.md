@@ -6,13 +6,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.6.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 03/November/2018.**
+**Last Update: 05/November/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`161`** extensions + **`18`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`161`** extensions + **`19`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 84](#foundation)
-- [UIKit - 47](#uikit)
+- [UIKit - 48](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -184,10 +184,10 @@ All the extensions are split into separete `groups` each of which represents a s
 - [NSLayoutConstraint+Activation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/NSLayoutConstraint%2BActivation/NSLayoutConstraint%2BActivation.swift) - adds convenience methods for *setting* and *activating* layout priorities
 
 ### UIView
-- [UIView+Corners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BCorners.swift) - convenience extension for setting and getting round corners
+- [UIView+CACorners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BCACorners.swift) - convenience extension for setting and getting round corners
+- [UIView+BezierRoundedCorners](/extensions-kit/Extensions/UIKit/UIView/UIView%2BBezierRoundedCorners.swift) - yet another extension for rounding corners
 - [UIView+HuggingPriority](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BHuggingPriority.swift) - convenience wrappers that simplify inerfaces for *setContentHuggingPriority* and *setContentCompressionResistancePriority* methods
 - [UIView+Screenshot](/extensions-kit/Extensions/UIKit/UIView/UIView%2BScreenshot.swift) - allows to take a screenshot of self
-- [UIView+RoundedCorners](/extensions-kit/Extensions/UIKit/UIView/UIView%2BRoundedCorners.swift) - yet another extension for rounding corners
 - [UIView+Constraints](/extensions-kit/Extensions/UIKit/UIView/UIView%2BConstraints.swift) - adds convenience auto-layout methods that allow to `pin`, `add`, get `height` & `width` and to get all the constrains for a particular `UIView`
 - [UIView+LayoutAnimation](/extensions-kit/Extensions/UIKit/UIView/UIView%2BLayoutAnimation.swift) - adds animation extensions that operate on layout constraints
 
