@@ -12,7 +12,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`161`** extensions + **`19`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`162`** extensions + **`19`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 84](#foundation)
-- [UIKit - 48](#uikit)
+- [UIKit - 49](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
