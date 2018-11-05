@@ -63,6 +63,10 @@ public extension UIView {
                 return CACornerMask(rawValue: rawValue)
             }
         }
+        
+        static fileprivate func encode(cornerMask: CACornerMask) -> UICorner {
+            return UICorner(rawValue: cornerMask.rawValue)
+        }
     }
     
     /// Rounds the specified `corners` wit the given `radius`
@@ -84,5 +88,14 @@ public extension UIView {
     /// Returns current corner radius
     public func getCornerRadius() -> CGFloat {
         return layer.cornerRadius
+    }
+    
+    public func getRoundedCorners() -> UIView.UICorner {
+        return UICorner.encode(cornerMask: layer.maskedCorners)
+    }
+    
+    public func resetRoundedCorners() {
+        layer.cornerRadius = 0
+        layer.maskedCorners = .init(rawValue: 0)
     }
 }
