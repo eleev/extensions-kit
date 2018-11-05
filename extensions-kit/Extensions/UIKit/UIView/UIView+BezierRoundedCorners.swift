@@ -1,5 +1,5 @@
 //
-//  UIView+RoundedCorners.swift
+//  UIView+BezierRoundedCorners.swift
 //  extensions-kit
 //
 //  Created by Astemir Eleev on 03/10/2018.
@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS, deprecated: 11.0)
 public extension UIView {
     
     /// Rounds the corners of self by masking the CALayer with a CAShapeLayer using UIBezierPath
@@ -22,6 +23,7 @@ public extension UIView {
             cornerRadii: CGSize(width: radius, height: radius))
         
         let shape = CAShapeLayer()
+        shape.frame = bounds
         shape.path = maskPath.cgPath
         layer.mask = shape
     }
