@@ -111,6 +111,7 @@
 		A9C0B7ED2133F90F00C0D908 /* Double+CurrencyShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C0B7EC2133F90F00C0D908 /* Double+CurrencyShortcuts.swift */; };
 		A9C0B7EF2133FAF500C0D908 /* DoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C0B7EE2133FAF500C0D908 /* DoubleTests.swift */; };
 		A9C5977220E6A8350015B08A /* NSBezierPath+cgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5977120E6A8350015B08A /* NSBezierPath+cgPath.swift */; };
+		A9C93EF6219C5A0000DD666C /* NSLayoutConstraint+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C93EF5219C5A0000DD666C /* NSLayoutConstraint+Animation.swift */; };
 		A9CC5C33209F0BD200040E61 /* SKTexture+LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC5C32209F0BD200040E61 /* SKTexture+LinearGradient.swift */; };
 		A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */; };
 		A9D4CFC1209AE864006461AF /* SKTextureAtlas+FramesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */; };
@@ -271,6 +272,7 @@
 		A9C0B7EC2133F90F00C0D908 /* Double+CurrencyShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+CurrencyShortcuts.swift"; sourceTree = "<group>"; };
 		A9C0B7EE2133FAF500C0D908 /* DoubleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTests.swift; sourceTree = "<group>"; };
 		A9C5977120E6A8350015B08A /* NSBezierPath+cgPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+cgPath.swift"; sourceTree = "<group>"; };
+		A9C93EF5219C5A0000DD666C /* NSLayoutConstraint+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Animation.swift"; sourceTree = "<group>"; };
 		A9CC5C32209F0BD200040E61 /* SKTexture+LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTexture+LinearGradient.swift"; sourceTree = "<group>"; };
 		A9D4CFBE209AE813006461AF /* SKScene+SerialSpriteLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+SerialSpriteLoading.swift"; sourceTree = "<group>"; };
 		A9D4CFC0209AE864006461AF /* SKTextureAtlas+FramesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTextureAtlas+FramesLoader.swift"; sourceTree = "<group>"; };
@@ -616,6 +618,7 @@
 			isa = PBXGroup;
 			children = (
 				A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */,
+				A9C93EF5219C5A0000DD666C /* NSLayoutConstraint+Animation.swift */,
 			);
 			path = NSLayoutConstraint;
 			sourceTree = "<group>";
@@ -1294,6 +1297,7 @@
 				A9FA8534216252E90046B154 /* CAAnimation+PatternReplicator.swift in Sources */,
 				A96A720021463B4B006A6C15 /* UIView+HuggingPriority.swift in Sources */,
 				A9AB24F32142B079006E334B /* Dictionary+Union.swift in Sources */,
+				A9C93EF6219C5A0000DD666C /* NSLayoutConstraint+Animation.swift in Sources */,
 				A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */,
 				A9FA779721661456008F8813 /* UICollectionView+Operations.swift in Sources */,
 				A929498A20962BE600350C43 /* Int+Random.swift in Sources */,
