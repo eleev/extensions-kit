@@ -7,13 +7,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.6.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 11/November/2018.**
+**Last Update: 14/November/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`162`** extensions + **`19`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`163`** extensions + **`19`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -34,7 +34,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 84](#foundation)
-- [UIKit - 49](#uikit)
+- [UIKit - 50](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -182,6 +182,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [UIApplication+SafeAreas](/extensions-kit/Extensions/UIKit/UIApplication/UIApplication%2BSafeAreas.swift) - contains extensions that allow to get numerical representations of `top` and `bottom` safe areas
 
 ### NSLayoutConstraint
+- [NSLayoutConstraint+Animation](/extensions-kit/Extensions/UIKit/NSLayoutConstraint/NSLayoutConstraint%2BAnimation.swift) - allows a constraint to be animated when `animated` flag is a set to `true` (default is `false`)
 - [NSLayoutConstraint+Activation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/NSLayoutConstraint%2BActivation/NSLayoutConstraint%2BActivation.swift) - adds convenience methods for *setting* and *activating* layout priorities
 
 ### UIView
