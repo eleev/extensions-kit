@@ -10,7 +10,7 @@ import UIKit
 
 public extension NSLayoutConstraint {
     
-    public func setConstant(for value: CGFloat, animated: Bool = false) {
+    public func setConstant(for value: CGFloat, animated: Bool = false, duration: TimeInterval = 0.3) {
         constant = value
         
         guard let first = firstItem as? UIView,
@@ -23,6 +23,6 @@ public extension NSLayoutConstraint {
             return
         }
         
-        UIView.animate(withDuration: 0.3) { superview.layoutIfNeeded() }
+        UIView.animate(withDuration: duration) { superview.layoutIfNeeded() }
     }
 }
