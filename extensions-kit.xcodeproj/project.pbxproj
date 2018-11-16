@@ -59,6 +59,7 @@
 		A96A71FE21463A7F006A6C15 /* UIView+CACorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FD21463A7F006A6C15 /* UIView+CACorners.swift */; };
 		A96A720021463B4B006A6C15 /* UIView+HuggingPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FF21463B4B006A6C15 /* UIView+HuggingPriority.swift */; };
 		A96A720321463BFB006A6C15 /* NSLayoutConstraint+Activation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */; };
+		A96E1189219F017900F36250 /* UIScreen+InterfaceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1188219F017900F36250 /* UIScreen+InterfaceOrientation.swift */; };
 		A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */; };
 		A98C3831211355DB00F3E87C /* String+Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C3830211355DB00F3E87C /* String+Digits.swift */; };
 		A98C5E8420D13F5100674186 /* PHAsset+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C5E8320D13F5100674186 /* PHAsset+URL.swift */; };
@@ -221,6 +222,7 @@
 		A96A71FD21463A7F006A6C15 /* UIView+CACorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CACorners.swift"; sourceTree = "<group>"; };
 		A96A71FF21463B4B006A6C15 /* UIView+HuggingPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+HuggingPriority.swift"; sourceTree = "<group>"; };
 		A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Activation.swift"; sourceTree = "<group>"; };
+		A96E1188219F017900F36250 /* UIScreen+InterfaceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+InterfaceOrientation.swift"; sourceTree = "<group>"; };
 		A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectFit.swift"; sourceTree = "<group>"; };
 		A98C3830211355DB00F3E87C /* String+Digits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Digits.swift"; sourceTree = "<group>"; };
 		A98C5E8320D13F5100674186 /* PHAsset+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+URL.swift"; sourceTree = "<group>"; };
@@ -623,6 +625,14 @@
 			path = NSLayoutConstraint;
 			sourceTree = "<group>";
 		};
+		A96E1187219F016500F36250 /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A96E1188219F017900F36250 /* UIScreen+InterfaceOrientation.swift */,
+			);
+			path = UIScreen;
+			sourceTree = "<group>";
+		};
 		A98C382F211355C800F3E87C /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -851,6 +861,7 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A96E1187219F016500F36250 /* UIScreen */,
 				A9ABF93F216CFD7D00BF4350 /* UIApplication */,
 				A93773B22164EDD5008D809A /* UITableView */,
 				A96A720121463BCE006A6C15 /* NSLayoutConstraint */,
@@ -1283,6 +1294,7 @@
 				A9FA852E216231940046B154 /* PriorityQueue.swift in Sources */,
 				A9D4CFCC209AEB88006461AF /* Collection+RandomItem.swift in Sources */,
 				A92BBB8E214FF5A200BE02CD /* LockType.swift in Sources */,
+				A96E1189219F017900F36250 /* UIScreen+InterfaceOrientation.swift in Sources */,
 				A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */,
 				A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */,
 				A9A2AF652178662A00389DDA /* FunctionalComposition.swift in Sources */,
