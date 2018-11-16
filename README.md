@@ -13,7 +13,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`165`** extensions + **`19`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`166`** extensions + **`19`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -34,7 +34,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 84](#foundation)
-- [UIKit - 52](#uikit)
+- [UIKit - 53](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -177,6 +177,9 @@ All the extensions are split into separete `groups` each of which represents a s
 - [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) - contains a number of extensions for validating `String` based on the following: `isAlphanumeric`, `hasLetters`, `hasNumbers`, `isEmail`, `isAlphabetic`
 
 ## UIKit
+
+### UIScreen
+- [UIScreen+InterfaceOrientation](/extensions-kit/Extensions/UIKit/UIScreen/UIScreen%2BInterfaceOrientation.swift) - interace orientation for the current `UIScreen`
 
 ### UIApplication
 - [UIApplication+SafeAreas](/extensions-kit/Extensions/UIKit/UIApplication/UIApplication%2BSafeAreas.swift) - contains extensions that allow to get numerical representations of `top` and `bottom` safe areas
