@@ -30,6 +30,13 @@ class CollectionTests: XCTestCase {
         XCTAssert(collection.average == 2)
     }
     
+    func testSafeSubscript() {
+        let collection = [1,2,4,5,6,7,89,90]
+        XCTAssert(collection[safe: 0] == 1)
+        XCTAssert(collection[safe: collection.count - 1] == 90)
+        XCTAssert(collection[safe: collection.count + 1] == nil)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
