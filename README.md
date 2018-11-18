@@ -7,13 +7,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.6.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 16/November/2018.**
+**Last Update: 18/November/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`166`** extensions + **`19`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`168`** extensions + **`19`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 84](#foundation)
+- [Foundation - 86](#foundation)
 - [UIKit - 53](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -84,7 +84,7 @@ All the extensions are split into separete `groups` each of which represents a s
 ## Foundation
 
 ### Functions 
-- [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift) - is a functions that implements `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls)
+- [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift) - is a functions that implements `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls). Also the extension includes the `reversed` operator that composes functions in reversed order.
 
 ### Data Structures
 - [Lens](/extensions-kit/Extensions/Foundation/DataStructures/FunctionalLenses/Lens.swift) - `Lens` is an implementation of `Functional Lenses` concept that allows to safely modify immutable `structs` and provides fundamental tools to work with complex data structures (see `UnitTests`)
@@ -127,6 +127,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Collection+ParallelIteration](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BParallelIteration.swift) - adds `parallelForEach` method 
 - [Collection+RandomItem](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BRandomItem.swift) - adds a property that returns a random element from `self`
 - [Collection+Sum&Average](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BSum%26Average.swift) - adds two properties for `sum` and `average` with the corresponding functionality
+- [Collection+SafeSubscript](/extensions-kit/Extensions/Foundation/Collection/Collection%2BSafeSubscript.swift) - safely checks whether the collection is able to retreive an element for the given Index, otherwise it will return nil
 
 ### Dictionary
 - [Dictionary+GetOrAddValue](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift) - parses `self` as `JSON` to `Data` or `String`
