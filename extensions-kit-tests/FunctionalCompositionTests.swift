@@ -39,6 +39,9 @@ class FunctionalCompositionTests: XCTestCase {
         let expectedResult = ["4", "16", "36", "64", "100"]
         
         XCTAssert(newData == expectedResult)
+        
+        let reversedComposition = (toStringArray <<- square <<- double)(data)
+        XCTAssert(reversedComposition == expectedResult)
     }
 
 }
