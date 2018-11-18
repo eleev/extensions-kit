@@ -8,9 +8,11 @@
 
 import Foundation
 
-public struct Lens<C, V> {
-    public let get: (C) -> V
-    public let set: (C, V) -> C
+// C -> Whole
+// V -> Part
+public struct Lens<Whole, Part> {
+    public let get: (Whole) -> Part
+    public let set: (Whole, Part) -> Whole
 }
 
 precedencegroup ComposePrecedence {
@@ -19,7 +21,7 @@ precedencegroup ComposePrecedence {
 
 infix operator >>> : ComposePrecedence
 
-public func >>> <C, V, U>(lhs: Lens<C, V>, rhs: Lens<V, U>) -> Lens<C, U> {
+public func >>> <Whole, Part, Subpart>(lhs: Lens<Whole, Part>, rhs: Lens<Part, Subpart>) -> Lens<Whole, Subpart> {
     return Lens(
         get: { container in
             let view = lhs.get(container)
