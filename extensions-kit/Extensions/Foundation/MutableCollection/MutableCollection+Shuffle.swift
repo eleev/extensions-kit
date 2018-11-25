@@ -8,16 +8,20 @@
 
 import Foundation
 
-public extension MutableCollection {
+public extension MutableCollection where Self: RandomAccessCollection {
     
     /// In-place shuffling of self
     public mutating func shuffle() {
-        if count < 2 { return }
+        var i = startIndex
+        let beforeEndIndex = index(before: endIndex)
         
-        for i in indices.dropLast() {
+        while i < beforeEndIndex {
             let dist = distance(from: i, to: endIndex)
             let j = index(i, offsetBy: numericCast(arc4random_uniform(numericCast(dist))))
+            
+            guard i != j else { continue }
             swapAt(i, j)
+            formIndex(after: &i)
         }
     }
 }
