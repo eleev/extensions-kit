@@ -7,13 +7,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.6.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 18/November/2018.**
+**Last Update: 25/November/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`168`** extensions + **`19`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`170`** extensions + **`19`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 86](#foundation)
+- [Foundation - 88](#foundation)
 - [UIKit - 53](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -128,6 +128,9 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Collection+RandomItem](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BRandomItem.swift) - adds a property that returns a random element from `self`
 - [Collection+Sum&Average](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BSum%26Average.swift) - adds two properties for `sum` and `average` with the corresponding functionality
 - [Collection+SafeSubscript](/extensions-kit/Extensions/Foundation/Collection/Collection%2BSafeSubscript.swift) - safely checks whether the collection is able to retreive an element for the given Index, otherwise it will return nil
+
+### RandomAccessCollection
+- [RandomAccessCollection+BinarySearch](/extensions-kit/Extensions/Foundation/RandomAccessCollection/RandomAccessCollection%2BBinarySearch.swift) - implementation of `Binary Search` algorithm 
 
 ### Dictionary
 - [Dictionary+GetOrAddValue](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift) - parses `self` as `JSON` to `Data` or `String`
