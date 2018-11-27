@@ -4,7 +4,7 @@
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![Coverage](https://img.shields.io/badge/coverage-32%2C65%25-red.svg)]()
 [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]()
-[![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg]()
+[![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 **Last Update: 27/November/2018.**
