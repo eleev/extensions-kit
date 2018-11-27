@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "extensions-kit"
-  s.version      = "1.6.0"
-  s.summary      = "📦 A collection of extensions for Swift Programming Language -> 1️⃣6️⃣0️⃣ extensions + 1️⃣8️⃣ custom types."
+  s.version      = "1.7.0"
+  s.summary      = "📦 A collection of extensions for Swift Programming Language -> 1️⃣7️⃣0️⃣ extensions + 1️⃣9️⃣ custom types."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains 160 extensions + 18 custom types.
+                    📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains 170 extensions + 19 custom types.
                     DESC
 
   s.homepage     = "https://github.com/jVirus/extensions-kit"
