@@ -9,6 +9,7 @@
 import UIKit
 
 #if os(iOS)
+/// Allows to easily manage the UIApplication icon badge number status
 public struct Badge {
     
     private static let sharedApplication = UIApplication.shared
