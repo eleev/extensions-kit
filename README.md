@@ -7,13 +7,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 27/November/2018.**
+**Last Update: 01/December/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`170`** extensions + **`19`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`170`** extensions + **`20`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -34,7 +34,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 88](#foundation)
-- [UIKit - 53](#uikit)
+- [UIKit - 54](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -181,6 +181,10 @@ All the extensions are split into separete `groups` each of which represents a s
 - [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) - contains a number of extensions for validating `String` based on the following: `isAlphanumeric`, `hasLetters`, `hasNumbers`, `isEmail`, `isAlphabetic`
 
 ## UIKit
+
+### Badge
+- [Badge](/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/Badge/Badge.swift) - a custom type, wrapper 
+badge app icon `API` that simplifies development
 
 ### UIScreen
 - [UIScreen+InterfaceOrientation](/extensions-kit/Extensions/UIKit/UIScreen/UIScreen%2BInterfaceOrientation.swift) - interace orientation for the current `UIScreen`
