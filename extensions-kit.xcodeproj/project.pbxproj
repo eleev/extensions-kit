@@ -68,6 +68,7 @@
 		A9912EA520C6C44400619880 /* CGRect+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9912EA420C6C44400619880 /* CGRect+Corners.swift */; };
 		A9912EA820C6C51000619880 /* Array+Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9912EA720C6C51000619880 /* Array+Filtering.swift */; };
 		A9912EAA20C6C55800619880 /* UIImage+ImageFromUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9912EA920C6C55800619880 /* UIImage+ImageFromUIView.swift */; };
+		A99219D721B271B4007986AE /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99219D621B271B4007986AE /* Badge.swift */; };
 		A999C5012096F5A3006014B1 /* ClosedRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929497F20962BE600350C43 /* ClosedRange+Random.swift */; };
 		A999C5042096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C5032096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift */; };
 		A999C5072096FA06006014B1 /* UIImageView+Masking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999C5062096FA06006014B1 /* UIImageView+Masking.swift */; };
@@ -233,6 +234,7 @@
 		A9912EA420C6C44400619880 /* CGRect+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Corners.swift"; sourceTree = "<group>"; };
 		A9912EA720C6C51000619880 /* Array+Filtering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Filtering.swift"; sourceTree = "<group>"; };
 		A9912EA920C6C55800619880 /* UIImage+ImageFromUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageFromUIView.swift"; sourceTree = "<group>"; };
+		A99219D621B271B4007986AE /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		A999C5032096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LandscapeCameraOrientationFix.swift"; sourceTree = "<group>"; };
 		A999C5062096FA06006014B1 /* UIImageView+Masking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Masking.swift"; sourceTree = "<group>"; };
 		A999C5082096FA31006014B1 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
@@ -694,6 +696,14 @@
 			path = Array;
 			sourceTree = "<group>";
 		};
+		A99219D521B2718D007986AE /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				A99219D621B271B4007986AE /* Badge.swift */,
+			);
+			path = Badge;
+			sourceTree = "<group>";
+		};
 		A999C5022096F9A8006014B1 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -874,6 +884,7 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A99219D521B2718D007986AE /* Badge */,
 				A96E1187219F016500F36250 /* UIScreen */,
 				A9ABF93F216CFD7D00BF4350 /* UIApplication */,
 				A93773B22164EDD5008D809A /* UITableView */,
@@ -1238,6 +1249,7 @@
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
 				A96A71FB2146397E006A6C15 /* UIImage+Inverted.swift in Sources */,
 				A9AB24F52142B136006E334B /* Dictionary+Intersection.swift in Sources */,
+				A99219D721B271B4007986AE /* Badge.swift in Sources */,
 				A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */,
 				A9FA8530216231C60046B154 /* Heap.swift in Sources */,
 				A9FD59D6215F641A004ECA9A /* Array+ShellSort.swift in Sources */,
