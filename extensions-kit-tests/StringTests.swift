@@ -150,6 +150,36 @@ class StringTests: XCTestCase {
         XCTAssert(exampleSix.isAlphabetic == false)
     }
     
+    func testSubscriptCoutableClosedRnage() {
+        let example = "Hello World"
+        let result = example[0...3]
+        XCTAssert(result == "Hell")
+    }
+    
+    func testSubscriptCountableRange() {
+        let example = "Hello World"
+        let result = example[0..<3]
+        XCTAssert(result == "Hel")
+    }
+    
+    func testSubscriptPartialRnageUpTo() {
+        let example = "Hello World"
+        let result = example[..<3]
+        XCTAssert(result == "Hel")
+    }
+    
+    func testSubscriptPartialRangeThrough() {
+        let example = "Hello World"
+        let result = example[...3]
+        XCTAssert(result == "Hell")
+    }
+    
+    func testSubscriptPartialRangeFrom() {
+        let example = "Hello World"
+        let result = example[3...]
+        XCTAssert(result == "lo World")
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
