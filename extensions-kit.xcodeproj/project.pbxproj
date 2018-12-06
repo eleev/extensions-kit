@@ -54,6 +54,7 @@
 		A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */; };
 		A9498F8621B96C9200D498ED /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9498F8521B96C9200D498ED /* BuilderProtocol.swift */; };
 		A9498F8A21B96D8900D498ED /* BuilderProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9498F8921B96D8900D498ED /* BuilderProtocolTests.swift */; };
+		A9498F8C21B9717A00D498ED /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9498F8B21B9717A00D498ED /* String+Subscript.swift */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
 		A95BCAB4216759F5006DF658 /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
@@ -222,6 +223,7 @@
 		A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+GetOrAddValue.swift"; sourceTree = "<group>"; };
 		A9498F8521B96C9200D498ED /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
 		A9498F8921B96D8900D498ED /* BuilderProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocolTests.swift; sourceTree = "<group>"; };
+		A9498F8B21B9717A00D498ED /* String+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
 		A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Operators.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
@@ -661,6 +663,7 @@
 				A9DEA74521366E3E00AAA063 /* String+IndexOf.swift */,
 				A9DEA74721367CF100AAA063 /* String+Base64.swift */,
 				A9DEA74921367D9B00AAA063 /* String+Validation.swift */,
+				A9498F8B21B9717A00D498ED /* String+Subscript.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -1289,6 +1292,7 @@
 				A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */,
 				A9FD59CC215F6268004ECA9A /* Array+InsertionSort.swift in Sources */,
 				A9C0B7E72133F76500C0D908 /* String+FormattedDate.swift in Sources */,
+				A9498F8C21B9717A00D498ED /* String+Subscript.swift in Sources */,
 				A9E14DB220B1768A0075D725 /* SKEmitterNode+AdvanceSimulation.swift in Sources */,
 				A9E14DA720B158A60075D725 /* SKTimingFunction.swift in Sources */,
 				A9B14F2C20A5DEA6005221BA /* CGRect+Mid.swift in Sources */,
