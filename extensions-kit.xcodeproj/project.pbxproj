@@ -52,6 +52,8 @@
 		A9421F5C215E443100A4DFAC /* Date+PreviousNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9421F5B215E443100A4DFAC /* Date+PreviousNext.swift */; };
 		A9421F5E215E448200A4DFAC /* Date+FirstLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9421F5D215E448200A4DFAC /* Date+FirstLast.swift */; };
 		A947280620C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */; };
+		A9498F8621B96C9200D498ED /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9498F8521B96C9200D498ED /* BuilderProtocol.swift */; };
+		A9498F8A21B96D8900D498ED /* BuilderProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9498F8921B96D8900D498ED /* BuilderProtocolTests.swift */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
 		A95BCAB4216759F5006DF658 /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
@@ -218,6 +220,8 @@
 		A9421F5B215E443100A4DFAC /* Date+PreviousNext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date+PreviousNext.swift"; path = "extensions-kit/Extensions/Foundation/Date/Date+PreviousNext.swift"; sourceTree = SOURCE_ROOT; };
 		A9421F5D215E448200A4DFAC /* Date+FirstLast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date+FirstLast.swift"; path = "extensions-kit/Extensions/Foundation/Date/Date+FirstLast.swift"; sourceTree = SOURCE_ROOT; };
 		A947280520C7BF5100DE62E6 /* Dictionary+GetOrAddValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+GetOrAddValue.swift"; sourceTree = "<group>"; };
+		A9498F8521B96C9200D498ED /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
+		A9498F8921B96D8900D498ED /* BuilderProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocolTests.swift; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
 		A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Operators.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
@@ -439,6 +443,7 @@
 				A9ABF93D216CF84F00BF4350 /* IntDecimalToBinaryTests.swift */,
 				A9A2AF692178683F00389DDA /* FunctionalCompositionTests.swift */,
 				A9A2AF6B21786A9A00389DDA /* FunctionalLensesTests.swift */,
+				A9498F8921B96D8900D498ED /* BuilderProtocolTests.swift */,
 			);
 			path = "extensions-kit-tests";
 			sourceTree = "<group>";
@@ -573,6 +578,14 @@
 				A9421F5D215E448200A4DFAC /* Date+FirstLast.swift */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		A9498F8421B96C7B00D498ED /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				A9498F8521B96C9200D498ED /* BuilderProtocol.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		A95B443520B7DB8300AC5E23 /* WebKit */ = {
@@ -745,6 +758,7 @@
 		A9A2AF6D21786EAC00389DDA /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				A9498F8421B96C7B00D498ED /* Builder */,
 				A9A2AF662178680800389DDA /* FunctionalLenses */,
 				A9FA852C216231860046B154 /* Heap */,
 				A9FA8528216231240046B154 /* Dequeue */,
@@ -1228,6 +1242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A93773B62164EE2B008D809A /* UITableView+ScrollingUtils.swift in Sources */,
+				A9498F8621B96C9200D498ED /* BuilderProtocol.swift in Sources */,
 				A93773BC2164F2EF008D809A /* UICollectionView+Safety.swift in Sources */,
 				A9ABF941216CFD9100BF4350 /* UIApplication+SafeAreas.swift in Sources */,
 				A9421F5C215E443100A4DFAC /* Date+PreviousNext.swift in Sources */,
@@ -1370,6 +1385,7 @@
 				A9ABF93E216CF84F00BF4350 /* IntDecimalToBinaryTests.swift in Sources */,
 				A9332C6921259B030041C558 /* DictionaryTests.swift in Sources */,
 				A9AFCF1A216899A800980730 /* ArrayFilterTests.swift in Sources */,
+				A9498F8A21B96D8900D498ED /* BuilderProtocolTests.swift in Sources */,
 				A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */,
 				A9C0B7E92133F78400C0D908 /* DateTests.swift in Sources */,
 				A9A2AF6C21786A9A00389DDA /* FunctionalLensesTests.swift in Sources */,
