@@ -13,7 +13,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`170`** extensions + **`21`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`174`** extensions + **`21`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 89](#foundation)
+- [Foundation - 93](#foundation)
 - [UIKit - 54](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -175,6 +175,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Sequence+Count](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BCount.swift) - counts the number of occurrences of a logical expression
 
 ### String
+- [String+Subscript](/extensions-kit/Extensions/Foundation/String/String%2BSubscript.swift) - adds conformances to `CoutableClosedRange`, `CountableRange`, `PartialRangeThrough` and `PartialRangeFrom` protocols support in a form of subscripts
 - [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BDigits.swift) - combines decimal digits into a single `String` property
 - [String+FormattedDate](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BFormattedDate.swift) - creates a `Date` instance from `self` based in the specified format
 - [String+IndexOf](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BIndexOf.swift) - finds the first occurence for a given `String`
