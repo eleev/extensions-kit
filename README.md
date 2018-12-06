@@ -7,13 +7,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 01/December/2018.**
+**Last Update: 06/December/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`170`** extensions + **`20`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`170`** extensions + **`21`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 88](#foundation)
+- [Foundation - 89](#foundation)
 - [UIKit - 54](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -87,6 +87,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift) - is a functions that implements `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls). Also the extension includes the `reversed` operator that composes functions in reversed order.
 
 ### Data Structures
+- [BuilderProtocol](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/DataStructures/Builder/BuilderProtocol.swift) - Allows `AnyObject` to be extended with chainable initialization methods by using Keypath feature. Please note that the extension works only since `Swift 4.0`
 - [Lens](/extensions-kit/Extensions/Foundation/DataStructures/FunctionalLenses/Lens.swift) - `Lens` is an implementation of `Functional Lenses` concept that allows to safely modify immutable `structs` and provides fundamental tools to work with complex data structures (see `UnitTests`)
 - [ObjectPool](/extensions-kit/Extensions/Foundation/DataStructures/ObjectPool/ObjectPool.swift) - thread-safe implementation of `ObjectPool` design pattern
 - [Observer](/extensions-kit/Extensions/Foundation/DataStructures/Observer/) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
