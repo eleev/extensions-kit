@@ -87,7 +87,7 @@ All the extensions are split into separete `groups` each of which represents a s
 - [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift) - is a functions that implements `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls). Also the extension includes the `reversed` operator that composes functions in reversed order.
 
 ### Data Structures
-- [BuilderProtocol](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/DataStructures/Builder/BuilderProtocol.swift) - Allows `AnyObject` to be extended with chainable initialization methods by using Keypath feature. Please note that the extension works only since `Swift 4.0`
+- [BuilderProtocol](/extensions-kit/Extensions/Foundation/DataStructures/Builder/BuilderProtocol.swift) - Allows `AnyObject` to be extended with chainable initialization methods by using Keypath feature. Please note that the extension works only since `Swift 4.0`
 - [Lens](/extensions-kit/Extensions/Foundation/DataStructures/FunctionalLenses/Lens.swift) - `Lens` is an implementation of `Functional Lenses` concept that allows to safely modify immutable `structs` and provides fundamental tools to work with complex data structures (see `UnitTests`)
 - [ObjectPool](/extensions-kit/Extensions/Foundation/DataStructures/ObjectPool/ObjectPool.swift) - thread-safe implementation of `ObjectPool` design pattern
 - [Observer](/extensions-kit/Extensions/Foundation/DataStructures/Observer/) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
@@ -184,7 +184,7 @@ All the extensions are split into separete `groups` each of which represents a s
 ## UIKit
 
 ### Badge
-- [Badge](/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/Badge/Badge.swift) - a custom type, wrapper 
+- [Badge](/extensions-kit/Extensions/UIKit/Badge/Badge.swift) - a custom type, wrapper 
 badge app icon `API` that simplifies development
 
 ### UIScreen
