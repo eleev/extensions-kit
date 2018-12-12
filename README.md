@@ -51,21 +51,60 @@ All the extensions are split into separete `groups` each of which represents a s
 - [NSBezierPath+cgPath](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AppKit/NSBezierPath%2BcgPath.swift) - adds missing `cgPath` property that converts `self` (port of similar functionality from `iOS`)
 
 ## AVFoundation
-- [AVCaptureDevice+ToggleFlash](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AVFoundation/AVCaptureDevice%2BToggleFlash.swift) - adds support for flashlight capabilities and management
+#### [AVCaptureDevice+ToggleFlash](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AVFoundation/AVCaptureDevice%2BToggleFlash.swift)
+Adds support for easy flashlight management:
+
+```swift
+AVCaptureDevice.toggleFlashlight(with: .max)
+```
 
 ## Core Animation
 
 ### CAAnimation
-- [CAAnimation+PatternReplicator](/extensions-kit/Extensions/CoreAnimation/CAAnimation/CAAnimation%2BPatternReplicator.swift) - creates a pattern-based, wavy animation for the specified image, layer size and other properties
+#### [CAAnimation+PatternReplicator](/extensions-kit/Extensions/CoreAnimation/CAAnimation/CAAnimation%2BPatternReplicator.swift)
+Creates a pattern-based, wavy animation for the specified image, layer size and other properties:
+
+```swift
+CAAnimation.patternReplocator(with: UIImage("image"), size: CGSize(width: 600, height: 600), targetLayer: drawerView.layer)
+```
 
 ## Core Graphics
 
 ### CGSize 
-- [CGSize+Operators](/extensions-kit/Extensions/CoreGraphics/CGSize/CGSize%2BOperators.swift) - adds various mathematical operators such as `+`, `-`, `*`, `/` for convenience
+#### [CGSize+Operators](/extensions-kit/Extensions/CoreGraphics/CGSize/CGSize%2BOperators.swift)
+Various mathematical operators such as `+`, `-`, `*`, `/` for convenience:
+
+```swift
+CGSize(width: 10, height: 20) + CGSize(width: 25.4, height: 23.6)
+CGSize(width: 10, height: 20) - CGSize(width: 25.4, height: 23.6)
+CGSize(width: 10, height: 20) * CGSize(width: 25.4, height: 23.6)
+CGSize(width: 10, height: 20) / CGSize(width: 25.4, height: 23.6)
+```
 
 ### CGPoint
-- [CGPoint+Operators](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGPoint/CGPoint%2BOperators.swift) - various mathematical operators such as `+`, `-`, `*`, `/`, `lerp` etc.
-- [CGPoint+Utils](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGPoint/CGPoint%2BUtils.swift) - missing mathematical utilities such as `normalized`, `lenght`, `distanceTo` and `angle`
+#### [CGPoint+Operators](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGPoint/CGPoint%2BOperators.swift)
+Various mathematical operators such as `+`, `-`, `*`, `/`, `lerp` etc.:
+
+```swift
+var origin: CGPoint = .zero
+let addPoint = origin + CGPoint(x: 10, y: 3)
+origin += CGPoint(x: 12, y: 5)
+let subPoint = origin - CGPoint(x: 12, y: 5)
+        
+let interpolatedPoint = CGPoint.lerp(start: pointOne, end: pointTwo, t: 2)
+```
+
+#### [CGPoint+Utils](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGPoint/CGPoint%2BUtils.swift) 
+Missing mathematical utilities such as `normalized`, `lenght`, `distanceTo` and `angle`:
+
+```swift
+let point = CGPoint(x: 3, y: 5)
+let _ = point.length()
+let _ = point.angle
+let _ = point.normalized()
+let distanceBetweenTwoPoints = point.distanceTo(anotherPoint)
+let _ = point.lengthSquared()
+```
 
 ### CGRect
 - [CGRect+Scale](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BScale.swift) - scales `self` to the specified size
@@ -74,7 +113,13 @@ All the extensions are split into separete `groups` each of which represents a s
 - [CGRect+AspectFit](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BAspectFit.swift) - adds `aspectFit(inRect: CGRect) -> CGRect` method that scales `self` to fit the specified `CGRect`
 
 ### CGFloat
-- [CGFloat+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGFloat/CGFloat%2BRounded.swift) - rounds `self` to the specified decimal places
+#### [CGFloat+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGFloat/CGFloat%2BRounded.swift)
+Rounds `self` to the specified decimal places:
+
+```swift
+let val: CGFloat = 4.32
+let roundedVal = val.rounded(toPlaces: 1) // roundedVal holds `4.3`
+```
 
 ## CoreImage
 
