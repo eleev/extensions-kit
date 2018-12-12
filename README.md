@@ -7,13 +7,13 @@
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 06/December/2018.**
+**Last Update: 12/December/2018.**
 
 ![](logo-extensions_kit.png)
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`174`** extensions + **`21`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`175`** extensions + **`22`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -33,7 +33,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 93](#foundation)
+- [Foundation - 95](#foundation)
 - [UIKit - 54](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -82,6 +82,10 @@ All the extensions are split into separete `groups` each of which represents a s
 - [HighlightFilter](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/Filters/HighlightFilter.swift) - filter is originally designed for highlighting 3D objects but can be used to add this effect to images and sprites
 
 ## Foundation
+
+### Custom Structures
+- [Variable](
+https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) - lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework.
 
 ### Functions 
 - [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift) - is a functions that implements `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls). Also the extension includes the `reversed` operator that composes functions in reversed order.
@@ -163,7 +167,6 @@ All the extensions are split into separete `groups` each of which represents a s
 - [Int+Roman](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRoman.swift) - converts `self` into *Roman* number (as `String`)
 - [Int+DecimalToBinary](/extensions-kit/Extensions/Foundation/Int/Int%2BDecimalToBinary.swift) - allows to convert `decimal` number to `binary` format and vice versa 
 
-
 ### OptionSet
 - [OptionSet+Operations](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/OptionSet/OptionSet%2BOperations.swift) - adds support for in-place `insert` and `remove` operations
 
@@ -173,6 +176,8 @@ All the extensions are split into separete `groups` each of which represents a s
 ### Sequence  
 - [Sequence+Shuffle](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift) - shuffles the elements of `self`
 - [Sequence+Count](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BCount.swift) - counts the number of occurrences of a logical expression
+- [Sequence+DuplicatesRemoved](
+https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BDuplicatesRemoved.swift) - removes the duplicate elements and returns the new Sequence without duplicates if any
 
 ### String
 - [String+Subscript](/extensions-kit/Extensions/Foundation/String/String%2BSubscript.swift) - adds conformances to `CoutableClosedRange`, `CountableRange`, `PartialRangeThrough` and `PartialRangeFrom` protocols support in a form of subscripts
