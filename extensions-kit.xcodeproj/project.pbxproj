@@ -11,6 +11,9 @@
 		94F864300B36A6F3419B920B /* libPods-extensions-kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D5918ED8E7F1AA851CCE85 /* libPods-extensions-kit.a */; };
 		A902D6DB218DA45300698AD4 /* SKScene+ReferenceNodeFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A902D6DA218DA45300698AD4 /* SKScene+ReferenceNodeFix.swift */; };
 		A903943220AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */; };
+		A90BEB4521C0E945009AAF03 /* Sequence+DuplicatesRemoved.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90BEB4421C0E945009AAF03 /* Sequence+DuplicatesRemoved.swift */; };
+		A90BEB4821C0ED79009AAF03 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90BEB4721C0ED79009AAF03 /* Variable.swift */; };
+		A90BEB5221C114A6009AAF03 /* VariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90BEB5121C114A6009AAF03 /* VariableTests.swift */; };
 		A920503821230BAF00B39C57 /* CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920503721230BAF00B39C57 /* CollectionTests.swift */; };
 		A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920503921230D0D00B39C57 /* SequenceTests.swift */; };
 		A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130B62096F0910043ADAB /* Int+Factorial.swift */; };
@@ -178,6 +181,9 @@
 		9FDA119608F76AE7FBD1644D /* Pods-extensions-kit-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extensions-kit-tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-extensions-kit-tests/Pods-extensions-kit-tests.release.xcconfig"; sourceTree = "<group>"; };
 		A902D6DA218DA45300698AD4 /* SKScene+ReferenceNodeFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+ReferenceNodeFix.swift"; sourceTree = "<group>"; };
 		A903943120AD919600376CC3 /* AVCaptureDevice+ToggleFlash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+ToggleFlash.swift"; sourceTree = "<group>"; };
+		A90BEB4421C0E945009AAF03 /* Sequence+DuplicatesRemoved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+DuplicatesRemoved.swift"; sourceTree = "<group>"; };
+		A90BEB4721C0ED79009AAF03 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		A90BEB5121C114A6009AAF03 /* VariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTests.swift; sourceTree = "<group>"; };
 		A920503721230BAF00B39C57 /* CollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTests.swift; sourceTree = "<group>"; };
 		A920503921230D0D00B39C57 /* SequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTests.swift; sourceTree = "<group>"; };
 		A92130B62096F0910043ADAB /* Int+Factorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Factorial.swift"; sourceTree = "<group>"; };
@@ -380,6 +386,14 @@
 			path = AVFoundation;
 			sourceTree = "<group>";
 		};
+		A90BEB4621C0ED5A009AAF03 /* CustomStructures */ = {
+			isa = PBXGroup;
+			children = (
+				A90BEB4721C0ED79009AAF03 /* Variable.swift */,
+			);
+			path = CustomStructures;
+			sourceTree = "<group>";
+		};
 		A92130BC2096F33C0043ADAB /* Collection */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,6 +460,7 @@
 				A9A2AF692178683F00389DDA /* FunctionalCompositionTests.swift */,
 				A9A2AF6B21786A9A00389DDA /* FunctionalLensesTests.swift */,
 				A9498F8921B96D8900D498ED /* BuilderProtocolTests.swift */,
+				A90BEB5121C114A6009AAF03 /* VariableTests.swift */,
 			);
 			path = "extensions-kit-tests";
 			sourceTree = "<group>";
@@ -833,6 +848,7 @@
 			children = (
 				A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */,
 				A9A171ED2158C16900C75B6D /* Sequence+Count.swift */,
+				A90BEB4421C0E945009AAF03 /* Sequence+DuplicatesRemoved.swift */,
 			);
 			path = Sequence;
 			sourceTree = "<group>";
@@ -919,9 +935,10 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				A98EFF3721AAE6D50016BCD5 /* RandomAccessCollection */,
-				A9A2AF6D21786EAC00389DDA /* DataStructures */,
+				A90BEB4621C0ED5A009AAF03 /* CustomStructures */,
 				A9A2AF632178661600389DDA /* Functions */,
+				A9A2AF6D21786EAC00389DDA /* DataStructures */,
+				A98EFF3721AAE6D50016BCD5 /* RandomAccessCollection */,
 				A9DEA74B21367ECD00AAA063 /* OptionSet */,
 				A9421F5F215E466A00A4DFAC /* Date */,
 				A9332C6F2125AB9D0041C558 /* Double */,
@@ -1305,6 +1322,7 @@
 				A92BBB94214FF5DA00BE02CD /* ReadWriteLock.swift in Sources */,
 				A9FD59D8215F6434004ECA9A /* Array+RadixSort.swift in Sources */,
 				A93773B82164EFD1008D809A /* UITableView+Safety.swift in Sources */,
+				A90BEB4821C0ED79009AAF03 /* Variable.swift in Sources */,
 				A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */,
 				A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */,
 				A92BBB92214FF5C700BE02CD /* Mutex.swift in Sources */,
@@ -1316,6 +1334,7 @@
 				A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */,
 				A9912EA520C6C44400619880 /* CGRect+Corners.swift in Sources */,
 				A9FD59D4215F63D3004ECA9A /* Array+BubbleSort.swift in Sources */,
+				A90BEB4521C0E945009AAF03 /* Sequence+DuplicatesRemoved.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
 				A9AB24F12142AEB7006E334B /* Dictionary+ConvenienceWrappers.swift in Sources */,
 				A98EFF3921AAE6EB0016BCD5 /* RandomAccessCollection+BinarySearch.swift in Sources */,
@@ -1381,6 +1400,7 @@
 				A920503821230BAF00B39C57 /* CollectionTests.swift in Sources */,
 				A9AFCF182168910A00980730 /* ArraySortingTests.swift in Sources */,
 				A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */,
+				A90BEB5221C114A6009AAF03 /* VariableTests.swift in Sources */,
 				A9C0B7EF2133FAF500C0D908 /* DoubleTests.swift in Sources */,
 				A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */,
 				A9DEA74F21367F5000AAA063 /* OptionSetTests.swift in Sources */,
