@@ -57,6 +57,14 @@ class SequenceTests: XCTestCase {
         XCTAssert(prefixCount == 2)
     }
     
+    func testDuplicatedRemoved() {
+        let test = [1,1,6,4,3,3,4,5,7,7,3,4,5,5,3,2,3,4]
+        
+        let removedDuplicates = test.removeDuplicates()
+        
+        XCTAssert(removedDuplicates == [1,6,4,3,5,7,2])
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
