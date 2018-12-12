@@ -20,7 +20,7 @@ class VariableTests: XCTestCase {
     }
 
     func testVariable() {
-        let stringVariable = Variable("Initial Value", false)
+        let stringVariable = Variable("Initial Value")
         let newValue = "New Value"
         stringVariable.value = newValue
 
