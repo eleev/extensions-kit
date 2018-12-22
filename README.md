@@ -109,10 +109,45 @@ let _ = point.lengthSquared()
 ```
 
 ### CGRect
-- [CGRect+Scale](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BScale.swift) - scales `self` to the specified size
-- [CGRect+Corners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BCorners.swift) - adds properties for `topLeft`, `topRight`, `bottomLeft` and `bottomRight` points
-- [CGRect+Mid](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BMid.swift) - adds property for `mid` point of `self`
-- [CGRect+AspectFit](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BAspectFit.swift) - adds `aspectFit(inRect: CGRect) -> CGRect` method that scales `self` to fit the specified `CGRect`
+
+#### [CGRect+Scale](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BScale.swift)
+Scales `self` to the specified size:
+
+```swift
+let rect = CGRect(origin: .zero, size: CGSize(width: 100, height:
+            200))
+let newSize = rect.scaled(to: targetSize)
+```
+
+#### [CGRect+Corners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BCorners.swift)
+Adds properties for `topLeft`, `topRight`, `bottomLeft` and `bottomRight` points:
+
+```swift
+let rect = CGRect(origin: .zero, size: CGSize(width: 100, height:
+            200))
+rect.topLeft
+rect.topRight
+rect.bottomLeft
+rect.bottomRight
+````
+
+#### [CGRect+Mid](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BMid.swift)
+Adds property for `mid` point of `self`:
+
+```swift
+let rect = CGRect(origin: .zero, size: CGSize(width: 100, height:
+            200))
+rect.mid
+```
+
+#### [CGRect+AspectFit](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGRect/CGRect%2BAspectFit.swift)
+Adds `aspectFit(inRect: CGRect) -> CGRect` method that scales `self` to fit the specified `CGRect`:
+
+```swift
+let rect = CGRect(origin: .zero, size: CGSize(width: 100, height:
+            200))
+rect.aspectFit(inRect: targetRect)
+```
 
 ### CGFloat
 #### [CGFloat+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreGraphics/CGFloat/CGFloat%2BRounded.swift)
