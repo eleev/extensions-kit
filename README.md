@@ -2,7 +2,7 @@
 
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-20%2C06%25-red.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-20%2C09%25-red.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
@@ -16,7 +16,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`175`** extensions + **`22`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`176`** extensions + **`22`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -36,7 +36,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 95](#foundation)
+- [Foundation - 96](#foundation)
 - [UIKit - 54](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -474,6 +474,21 @@ Safely checks whether the collection is able to retreive an element for the give
 ### RandomAccessCollection
 #### [RandomAccessCollection+BinarySearch](/extensions-kit/Extensions/Foundation/RandomAccessCollection/RandomAccessCollection%2BBinarySearch.swift) 
 Implementation of `Binary Search` algorithm 
+
+### Decodable
+#### [Decodable+DecodeFromFile](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Decodable/Decodable%2BDecodeFromFile.swift) 
+Decodes a file into a type:
+
+```swift
+// User is a .json file containing the following data:
+// {
+//    "name":"Willy",
+//    "age":30
+// }
+
+let decodedUser = try? User.decodeFromFile(named: "User")
+// decodedUser will be a Decodable struct named User with two properties for name and age
+```
 
 ### Dictionary
 #### [Dictionary+GetOrAddValue](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift) 
