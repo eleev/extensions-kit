@@ -19,6 +19,9 @@
 		A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130B62096F0910043ADAB /* Int+Factorial.swift */; };
 		A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130B82096F0DB0043ADAB /* Int+EvenOdd.swift */; };
 		A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92130BA2096F1180043ADAB /* Int+Clamp.swift */; };
+		A922387821D121FC00DB9801 /* Decodable+DecodeFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922387721D121FC00DB9801 /* Decodable+DecodeFromFile.swift */; };
+		A922387A21D122EB00DB9801 /* DecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A922387921D122EB00DB9801 /* DecodableTests.swift */; };
+		A922387D21D1274900DB9801 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = A922387C21D1274900DB9801 /* User.json */; };
 		A929496D20962BD400350C43 /* extensions_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A929496320962BD400350C43 /* extensions_kit.framework */; };
 		A929497420962BD400350C43 /* ios_extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A929496620962BD400350C43 /* ios_extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A929498420962BE600350C43 /* ClosedRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929497F20962BE600350C43 /* ClosedRange+Random.swift */; };
@@ -189,6 +192,9 @@
 		A92130B62096F0910043ADAB /* Int+Factorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Factorial.swift"; sourceTree = "<group>"; };
 		A92130B82096F0DB0043ADAB /* Int+EvenOdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+EvenOdd.swift"; sourceTree = "<group>"; };
 		A92130BA2096F1180043ADAB /* Int+Clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Clamp.swift"; sourceTree = "<group>"; };
+		A922387721D121FC00DB9801 /* Decodable+DecodeFromFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+DecodeFromFile.swift"; sourceTree = "<group>"; };
+		A922387921D122EB00DB9801 /* DecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableTests.swift; sourceTree = "<group>"; };
+		A922387C21D1274900DB9801 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		A929496320962BD400350C43 /* extensions_kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = extensions_kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A929496620962BD400350C43 /* ios_extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_extensions.h; sourceTree = "<group>"; };
 		A929496720962BD400350C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -405,6 +411,22 @@
 			path = Collection;
 			sourceTree = "<group>";
 		};
+		A922387621D121C000DB9801 /* Decodable */ = {
+			isa = PBXGroup;
+			children = (
+				A922387721D121FC00DB9801 /* Decodable+DecodeFromFile.swift */,
+			);
+			path = Decodable;
+			sourceTree = "<group>";
+		};
+		A922387B21D1273A00DB9801 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A922387C21D1274900DB9801 /* User.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		A929495920962BD400350C43 = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +461,7 @@
 		A929497020962BD400350C43 /* extensions-kit-tests */ = {
 			isa = PBXGroup;
 			children = (
+				A922387B21D1273A00DB9801 /* Assets */,
 				A929497320962BD400350C43 /* Info.plist */,
 				A9EB99772122D07B0088FB88 /* BoolTests.swift */,
 				A9EB997A2122D41A0088FB88 /* IntTests.swift */,
@@ -461,6 +484,7 @@
 				A9A2AF6B21786A9A00389DDA /* FunctionalLensesTests.swift */,
 				A9498F8921B96D8900D498ED /* BuilderProtocolTests.swift */,
 				A90BEB5121C114A6009AAF03 /* VariableTests.swift */,
+				A922387921D122EB00DB9801 /* DecodableTests.swift */,
 			);
 			path = "extensions-kit-tests";
 			sourceTree = "<group>";
@@ -942,6 +966,7 @@
 				A9DEA74B21367ECD00AAA063 /* OptionSet */,
 				A9421F5F215E466A00A4DFAC /* Date */,
 				A9332C6F2125AB9D0041C558 /* Double */,
+				A922387621D121C000DB9801 /* Decodable */,
 				A9332C6E2125AB990041C558 /* Float */,
 				A98C382F211355C800F3E87C /* String */,
 				A9912EA620C6C4F500619880 /* Array */,
@@ -1211,6 +1236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A922387D21D1274900DB9801 /* User.json in Resources */,
 				A929499720962E9C00350C43 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1372,6 +1398,7 @@
 				A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
 				A9A2AF682178681B00389DDA /* Lens.swift in Sources */,
+				A922387821D121FC00DB9801 /* Decodable+DecodeFromFile.swift in Sources */,
 				A9FA8534216252E90046B154 /* CAAnimation+PatternReplicator.swift in Sources */,
 				A96A720021463B4B006A6C15 /* UIView+HuggingPriority.swift in Sources */,
 				A9AB24F32142B079006E334B /* Dictionary+Union.swift in Sources */,
@@ -1411,6 +1438,7 @@
 				A9AFCF1A216899A800980730 /* ArrayFilterTests.swift in Sources */,
 				A9498F8A21B96D8900D498ED /* BuilderProtocolTests.swift in Sources */,
 				A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */,
+				A922387A21D122EB00DB9801 /* DecodableTests.swift in Sources */,
 				A9C0B7E92133F78400C0D908 /* DateTests.swift in Sources */,
 				A9A2AF6C21786A9A00389DDA /* FunctionalLensesTests.swift in Sources */,
 				A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */,
