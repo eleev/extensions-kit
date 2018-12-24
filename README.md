@@ -50,7 +50,13 @@ All the extensions are split into separete `groups` each of which represents a s
 ## AppKit
 
 ## NSBezierPath
-- [NSBezierPath+cgPath](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AppKit/NSBezierPath%2BcgPath.swift) - adds missing `cgPath` property that converts `self` (port of similar functionality from `iOS`)
+#### [NSBezierPath+cgPath](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AppKit/NSBezierPath%2BcgPath.swift) 
+Adds missing `cgPath` property that converts `self` (port of similar functionality from `iOS`)
+
+```swift
+let path = bezierPath.cgPath
+// path is of type CGPath and can be used in a shared code with iOS, tvOS or watchOS targets
+```
 
 ## AVFoundation
 #### [AVCaptureDevice+ToggleFlash](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AVFoundation/AVCaptureDevice%2BToggleFlash.swift)
@@ -161,210 +167,573 @@ let roundedVal = val.rounded(toPlaces: 1) // roundedVal holds `4.3`
 ## CoreImage
 
 ### New Filters
-- [HighlightFilter](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/Filters/HighlightFilter.swift) - filter is originally designed for highlighting 3D objects but can be used to add this effect to images and sprites
+#### [HighlightFilter](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/Filters/HighlightFilter.swift) 
+Filter is originally designed for highlighting 3D objects but can be used to add this effect to images and sprites.
 
 ## Foundation
 
 ### Custom Structures
-- [Variable](
-https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) - lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework.
+#### [Variable](
+https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) Lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework:
+
+```swift
+let stringVariable = Variable("Initial Value")
+let newValue = "New Value"
+stringVariable.value = newValue
+
+stringVariable.onUpdate = {
+        let isEqual = $0 == newValue
+        XCTAssert(isEqual)
+}
+```
 
 ### Functions 
-- [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift) - is a functions that implements `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls). Also the extension includes the `reversed` operator that composes functions in reversed order.
+#### [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift)
+Is a number of functions that implement `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls). Also the extension includes the `reversed` operator that composes functions in reversed order:
+
+```swift
+func double<T: Numeric>(array: [T]) -> [T] {
+        return array.map { $0 * 2 }
+}
+        
+func square<T: Numeric>(array: [T]) -> [T] {
+        return array.map { $0 * $0 }
+}
+        
+func toStringArray<T: Numeric>(array: [T]) -> [String] {
+        return array.map { "\($0)" }
+}
+
+let data = [1,2,3,4,5]
+let newData = (double ->> square ->> toStringArray)(data)        
+// newData now equals to ["4", "16", "36", "64", "100"]
+```
 
 ### Data Structures
-- [BuilderProtocol](/extensions-kit/Extensions/Foundation/DataStructures/Builder/BuilderProtocol.swift) - Allows `AnyObject` to be extended with chainable initialization methods by using Keypath feature. Please note that the extension works only since `Swift 4.0`
-- [Lens](/extensions-kit/Extensions/Foundation/DataStructures/FunctionalLenses/Lens.swift) - `Lens` is an implementation of `Functional Lenses` concept that allows to safely modify immutable `structs` and provides fundamental tools to work with complex data structures (see `UnitTests`)
-- [ObjectPool](/extensions-kit/Extensions/Foundation/DataStructures/ObjectPool/ObjectPool.swift) - thread-safe implementation of `ObjectPool` design pattern
-- [Observer](/extensions-kit/Extensions/Foundation/DataStructures/Observer/) - thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern)
-- [MulticastDelegation](/extensions-kit//Extensions/Foundation/DataStructures/MulticastDelegation/MulticastDelegation.swift) - non thread-safe implementation of `MulticastDelegation` design pattern
-- [Stack](/extensions-kit//Extensions/Foundation/DataStructures/Stack/Stack.swift) - is an implementation of `Stack` data structure
-- [Queue](/extensions-kit//Extensions/Foundation/DataStructures/Queue/Queue.swift) - is an implementation of `Queue` data structure
-- [ProrityQueue](/extensions-kit/Extensions/Foundation/DataStructures/PriorityQueue/PriorityQueue.swift) -  is an implementation of `Prority Queue` data structure based on `Heap` data structure
-- [Dequeue](/extensions-kit//Extensions/Foundation/DataStructures/Dequeue/Dequeue.swift) - is an implementation of `Dequeue` data structure 
-- [LinkedList](/extensions-kit//Extensions/Foundation/DataStructures/LinkedList/LinkedList.swift) - is an implementation of `Linked List` data structure 
-- [DoublyLinkedList](/extensions-kit//Extensions/Foundation/DataStructures/DoublyLinkedList/DoublyLinkedList.swift) - is an implementation of `Doubly Linked List` data structure
-- [Heap](/extensions-kit//Extensions/Foundation/DataStructures/Heap/Heap.swift) - is an implementation of `Heap` data structure
+#### [BuilderProtocol](/extensions-kit/Extensions/Foundation/DataStructures/Builder/BuilderProtocol.swift)
+Allows `AnyObject` to be extended with chainable initialization methods by using Keypath feature. Please note that the extension works only since `Swift 4.0`:
+
+```swift
+// 1. Add conformance to BuilderProtocol
+extension Song: BuilderProtocol { /* empty implementation */ }
+
+// 2. Then you can use Key-Path builder approach:
+let song = Song()
+        .init(\.author,         with: author)
+        .init(\.name,           with: name)
+        .init(\.genre,          with: genre)
+        .init(\.duration,       with: duration)
+        .init(\.releaseDate,    with: releaseDate)
+```
+
+#### [Lens](/extensions-kit/Extensions/Foundation/DataStructures/FunctionalLenses/Lens.swift)
+`Lens` is an implementation of `Functional Lenses` concept that allows to safely modify immutable `structs` and provides fundamental tools to work with complex data structures (see `UnitTests`):
+
+```swift
+extension Actor {
+    struct Lenses {
+        static let name = Lens<Actor, String>(
+            get: {$0.name},
+            set: {(me, value) in Actor(name: value, surname: me.surname) }
+        )
+        static let surname = Lens<Actor, String>(
+            get: {$0.surname},
+            set: {(me, value) in Actor(name: me.name, surname: value) }
+        )
+    }
+}
+
+extension Movie {
+    struct Lenses {
+        static let mainActor = Lens<Movie, Actor?>(get: { movie in
+            let actor: Actor? = movie.actors.first
+            return actor
+        }, set: { me, actor -> Movie in
+            guard let actor = actor else { return me }
+            
+            return Movie(name: me.name, year: me.year, actors: [actor] + me.actors)
+        })
+    }
+}
+```
+
+#### [ObjectPool](/extensions-kit/Extensions/Foundation/DataStructures/ObjectPool/ObjectPool.swift) 
+Thread-safe implementation of `ObjectPool` design pattern:
+
+```swift
+let objectPool = ObjectPool(objects: [resource, anotherResource, thirdResource])
+let reusedResource = objectPool.dequeue()
+objectPool.enqueue(object: reusedResource)
+objectPool.eraseAll()
+```
+
+#### [Observer](/extensions-kit/Extensions/Foundation/DataStructures/Observer/) 
+Thread-safe implementation of `Observer` design pattern (don't confuse with NotiifcationCenter - it's an implementation of `Publish-Subscribe` pattern):
+
+```swift
+let observerOne = ObserverOne()
+var observerTwo: ObserverTwo? = ObserverTwo()
+let observerThree = ObserverThree()
+
+let subject = Subject()
+subject += [observerOne, observerTwo!, observerThree]
+
+subject ~> EmailNotification(message: "Hello Observers, this messag was sent from the Subject!")
+
+// Will produce the following output:
+// 
+// Observer One:  data: Optional("Hello Observers, this messag was sent from the Subject!")
+// Observer Two:  data: Optional("Hello Observers, this messag was sent from the Subject!")
+// Observer Three:  data: Optional("Hello Observers, this messag was sent from the Subject!")
+```
+
+#### [MulticastDelegation](/extensions-kit//Extensions/Foundation/DataStructures/MulticastDelegation/MulticastDelegation.swift)
+Non thread-safe implementation of `MulticastDelegation` design pattern:
+
+```swift
+// Create the view controllers that will be delegates
+let containerViewController = ContainerViewController()
+let profileViewController = ProfileViewController()
+
+let profileModel = ProfileModel()
+
+// Attach the delegates
+profileModel.delegates.add(delegate: containerViewController)
+profileModel.delegates.add(delegate: profileViewController)
+
+// Change the model
+profileModel.name = "John"
+
+// After changing `name` property we got the following in console:
+// ContainerViewControllers:  didUpdate(name:)  value:  John
+// ProfileViewController:  didUpdate(name:)  value:  John
+
+// Assume that we needed to remove one of the delegates:
+profileModel.delegates.remove(delegate: profileViewController)
+
+// And again update the model:
+profileModel.city = "New York"
+// This time the console outputs is the following:
+// ContainerViewControllers:  didUpdate(city:)  value:  New York
+
+// We again attach ProfileViewController
+profileModel.delegates.add(delegate: profileViewController)
+
+// Custom closure that is called outside of the model layer, for cases when something custom is required without the need to touch the original code-base. For instance we may implement this function in our view-model layer when using MVVM architecture
+profileModel.delegates.update { modelDelegate in
+    modelDelegate.didSave()
+}
+```
+
+#### [Stack](/extensions-kit//Extensions/Foundation/DataStructures/Stack/Stack.swift) 
+Is an implementation of `Stack` data structure:
+
+```swift
+var stack: Stack = [1,2,3,4,5,6,7,8,1]
+let lastElement = stack.pop()
+stack.push(element: 10)
+```
+
+#### [Queue](/extensions-kit//Extensions/Foundation/DataStructures/Queue/Queue.swift) 
+Is an implementation of `Queue` data structure:
+
+```swift
+var queue: Queue = [1,2,3,4,5,6,7,8,1]
+queue.enqueue(element: 9)
+let dequeuedElement = queue.dequeue()
+```
+
+#### [ProrityQueue](/extensions-kit/Extensions/Foundation/DataStructures/PriorityQueue/PriorityQueue.swift) 
+Is an implementation of `Prority Queue` data structure based on `Heap` data structure:
+
+```swift
+var queue = PriorityQueue<Int>(elements: [2, 1, 4, 3, 5], order: >)
+queue.enqueue(9)
+```
+
+#### [Dequeue](/extensions-kit//Extensions/Foundation/DataStructures/Dequeue/Dequeue.swift) 
+Is an implementation of `Dequeue` data structure:
+
+```swift
+var dequeue = Dequeue([1,2,34,5,6,7])
+let back = dequeue.dequeueBack()
+let front = dequeue.dequeueFront()
+
+dequeue.enqueue(front: 99)
+dequeue.enqueue(back: 99)
+```
+
+#### [LinkedList](/extensions-kit//Extensions/Foundation/DataStructures/LinkedList/LinkedList.swift)
+Is an implementation of `Linked List` data structure:
+
+```swift
+var list: LinkedList = [1,2,4,5]
+list.pop()
+
+var newList = LinkedList<Int>(sequence: list)
+newList.pop()
+```
+
+#### [DoublyLinkedList](/extensions-kit//Extensions/Foundation/DataStructures/DoublyLinkedList/DoublyLinkedList.swift) 
+Is an implementation of `Doubly Linked List` data structure:
+
+```swift
+var list: DoublyLinkedList = [1,2,4,5,6,7]
+list.head
+list.tail
+
+list.removeHead()
+list.removeTail()
+
+list.push(newHead: 99)
+list.push(newTail: 101)
+```
+
+#### [Heap](/extensions-kit//Extensions/Foundation/DataStructures/Heap/Heap.swift) 
+Is an implementation of `Heap` data structure:
+
+```swift
+var maxHeap = Heap<Int>(order: >)
+maxHeap.insert(node: 1)
+maxHeap.insert(node: 5)
+maxHeap.insert(node: 2)
+maxHeap.insert(node: 7)
+maxHeap.insert(node: 9)
+
+maxHeap.index(of: 3)
+let sortedHeapmaxHeap.sorted()
+```
 
 ### Extensions
 
 ### Array
-- [Array+Filtering](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BFiltering.swift) - contains a number of methods for filtering in a `functional-style`, has `skip`, `all` and `any` filters
-- [Array+Contains](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BContains.swift) - checks if self contains the specified elements
-- [Array+Difference](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BDifference.swift) - computes differences between self and the input arrays
-- [Array+Intersection](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) - computes intersection of self and the input values
-- [Array+Union](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BUnion.swift) - unions self and the input arrays
-- [Array+Remove](/extensions-kit/Extensions/Foundation/Array/Array%2BRemove.swift) - a set of methods that remove `Element` form an array by mutating it
-- [Array+InsertionSort](/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) - adds support for `Insertion Sort` algorithm
-- [Array+MergeSort](/extensions-kit/Extensions/Foundation/Array/Array%2BMergeSort.swift) - adds support for `Merget Sort` algorithm
-- [Array+QuickSortHoareScheme](/extensions-kit/Extensions/Foundation/Array/Array%2BQuickSortHoareScheme.swift) - adds support for `Quick Sort` algorithms using `Hoare's` partitioning scheme 
-- [Array+QuickSortLomutoScheme](/extensions-kit/Extensions/Foundation/Array/Array%2BQuickSortLomutoScheme.swift) - adds support for `Quick Sort` algorithm using `Lomuto's` partitioning scheme 
-- [Array+BubbleSort](/extensions-kit/Extensions/Foundation/Array/Array%2BBubbleSort.swift) - adds support for `Bubble Sort` algorithm
-- [Array+ShellSort](/extensions-kit/Extensions/Foundation/Array/Array%2BShellSort.swift) - adds support for `Shell Sort` algorithm
-- [Array+RadixSort](/extensions-kit/Extensions/Foundation/Array/Array%2BRadixSort.swift) - adds support for `Radix Sort` algoritm
+#### [Array+Filtering](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BFiltering.swift) 
+Contains a number of methods for filtering in a `functional-style`, has `skip`, `all` and `any` filters
+
+#### [Array+Contains](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BContains.swift) 
+Checks if self contains the specified elements
+
+#### [Array+Difference](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BDifference.swift) 
+Computes differences between self and the input arrays
+
+#### [Array+Intersection](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) 
+Computes intersection of self and the input values
+
+#### [Array+Union](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BUnion.swift) 
+Unions self and the input arrays
+
+#### [Array+Remove](/extensions-kit/Extensions/Foundation/Array/Array%2BRemove.swift) 
+A set of methods that remove `Element` form an array by mutating it
+
+#### [Array+InsertionSort](/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) 
+Adds support for `Insertion Sort` algorithm
+
+#### [Array+MergeSort](/extensions-kit/Extensions/Foundation/Array/Array%2BMergeSort.swift) 
+Adds support for `Merget Sort` algorithm
+
+#### [Array+QuickSortHoareScheme](/extensions-kit/Extensions/Foundation/Array/Array%2BQuickSortHoareScheme.swift) 
+Adds support for `Quick Sort` algorithms using `Hoare's` partitioning scheme 
+
+#### [Array+QuickSortLomutoScheme](/extensions-kit/Extensions/Foundation/Array/Array%2BQuickSortLomutoScheme.swift) 
+Adds support for `Quick Sort` algorithm using `Lomuto's` partitioning scheme 
+
+#### [Array+BubbleSort](/extensions-kit/Extensions/Foundation/Array/Array%2BBubbleSort.swift) 
+Adds support for `Bubble Sort` algorithm
+
+#### [Array+ShellSort](/extensions-kit/Extensions/Foundation/Array/Array%2BShellSort.swift) 
+Adds support for `Shell Sort` algorithm
+
+#### [Array+RadixSort](/extensions-kit/Extensions/Foundation/Array/Array%2BRadixSort.swift) 
+Adds support for `Radix Sort` algoritm
 
 ### Bool
-- [Bool+Int](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BInt.swift) - adds a property that returns `Int` representation of `self`
-- [Bool+Random](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BRandom.swift) - adds a random property for `self`
+#### [Bool+Int](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BInt.swift) 
+Adds a property that returns `Int` representation of `self`
+
+#### [Bool+Random](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Bool/Bool%2BRandom.swift) 
+Adds a random property for `self`
 
 ### ClosedRange
-- [ClosedRange+Random](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/ClosedRange/ClosedRange%2BRandom.swift) - adds a property that generates a random `Int` with respect to `self`
+#### [ClosedRange+Random](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/ClosedRange/ClosedRange%2BRandom.swift) 
+Adds a property that generates a random `Int` with respect to `self`
 
 ### Collection 
-- [Collection+ParallelIteration](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BParallelIteration.swift) - adds `parallelForEach` method 
-- [Collection+RandomItem](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BRandomItem.swift) - adds a property that returns a random element from `self`
-- [Collection+Sum&Average](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BSum%26Average.swift) - adds two properties for `sum` and `average` with the corresponding functionality
-- [Collection+SafeSubscript](/extensions-kit/Extensions/Foundation/Collection/Collection%2BSafeSubscript.swift) - safely checks whether the collection is able to retreive an element for the given Index, otherwise it will return nil
+#### [Collection+ParallelIteration](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BParallelIteration.swift) 
+Adds `parallelForEach` method 
+
+#### [Collection+RandomItem](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BRandomItem.swift) 
+Adds a property that returns a random element from `self`
+
+#### [Collection+Sum&Average](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Collection/Collection%2BSum%26Average.swift)  
+Adds two properties for `sum` and `average` with the corresponding functionality
+
+#### [Collection+SafeSubscript](/extensions-kit/Extensions/Foundation/Collection/Collection%2BSafeSubscript.swift) 
+Safely checks whether the collection is able to retreive an element for the given Index, otherwise it will return nil
 
 ### RandomAccessCollection
-- [RandomAccessCollection+BinarySearch](/extensions-kit/Extensions/Foundation/RandomAccessCollection/RandomAccessCollection%2BBinarySearch.swift) - implementation of `Binary Search` algorithm 
+#### [RandomAccessCollection+BinarySearch](/extensions-kit/Extensions/Foundation/RandomAccessCollection/RandomAccessCollection%2BBinarySearch.swift) 
+Implementation of `Binary Search` algorithm 
 
 ### Dictionary
-- [Dictionary+GetOrAddValue](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift) - parses `self` as `JSON` to `Data` or `String`
-- [Dictionary+JSON](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BJSON.swift) - checks for a value for a given key or creates a new key/value pair if none was found
-- [Dictionary+ConvenienceWrappers](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BConvenienceWrappers.swift) - adds wrappers around common operations such as `has(key: )->Bool` and `each(: (Key, Value)->())`
-- [Dictionary+Difference](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BDifference.swift) - computes differences between self and the input dictionaries 
-- [Dictionary+Intersection](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BIntersection.swift) - computes intersection of self and the input Dictionaries
-- [Dictionary+Map](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BMap.swift) - custom mapping function
-- [Dictionary+Union](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BUnion.swift) - unions self and the input dictionaries
+#### [Dictionary+GetOrAddValue](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BGetOrAddValue.swift) 
+Parses `self` as `JSON` to `Data` or `String`
+
+#### [Dictionary+JSON](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BJSON.swift) 
+Checks for a value for a given key or creates a new key/value pair if none was found
+
+#### [Dictionary+ConvenienceWrappers](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BConvenienceWrappers.swift) 
+Adds wrappers around common operations such as `has(key: )->Bool` and `each(: (Key, Value)->())`
+
+#### [Dictionary+Difference](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BDifference.swift) 
+Computes differences between self and the input dictionaries 
+
+#### [Dictionary+Intersection](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BIntersection.swift) 
+Computes intersection of self and the input Dictionaries
+
+#### [Dictionary+Map](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BMap.swift) 
+Custom mapping function
+
+#### [Dictionary+Union](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Dictionary/Dictionary%2BUnion.swift) 
+Unions self and the input dictionaries
 
 ### Double
-- [Double+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BRounded.swift) - rounds `self` to decimal places value
-- [Double+CurrencyShorcuts](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BCurrencyShortcuts.swift) - adds several commonly used currency shortcuts as properties
+#### [Double+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BRounded.swift) 
+Rounds `self` to decimal places value
+
+#### [Double+CurrencyShorcuts](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Double/Double%2BCurrencyShortcuts.swift) 
+Adds several commonly used currency shortcuts as properties
 
 ### Date
-- [Date+FirstLast](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Date/Date%2BFirstLast.swift) - adds a number of properties that allow to quickly access: `first day of a week`, `start of a day`, `end of a day` and a `number of days in a month`
-- [Date+PreviousNext](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Date/Date%2BPreviousNext.swift) - adds properties that allow to get access to the `previous` and `next` days
+#### [Date+FirstLast](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Date/Date%2BFirstLast.swift) 
+Adds a number of properties that allow to quickly access: `first day of a week`, `start of a day`, `end of a day` and a `number of days in a month`
+
+#### [Date+PreviousNext](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Date/Date%2BPreviousNext.swift)
+Adds properties that allow to get access to the `previous` and `next` days
 
 ### Float 
-- [Float+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Float/Float%2BRounded.swift) - rounds `self` to decimal places value
+#### [Float+Rounded](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Float/Float%2BRounded.swift) 
+Rounds `self` to decimal places value
 
 ### Int
-- [Int+Clamp](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BClamp.swift) - clamps `self` into a range that can be described using `ClosedRange` or two separate properties
-- [Int+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BDigits.swift) - adds `digitCount` property that contains the number of digits for `self`
-- [Int+EvenOdd](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BEvenOdd.swift) - checks whether `self` is even or if it's odd
-- [Int+Factorial](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BFactorial.swift) - computes *factorial* of `self`
-- [Int+Power](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BPower.swift) - operator that performs `exponentiation` matematical operation, where left number is the *base* and the right one is the *exponent*
-- [Int+Random](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRandom.swift) - generates pseudo-random number in a range that can be specified as `ClosedRange` or two separate `Int` properties
-- [Int+Roman](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRoman.swift) - converts `self` into *Roman* number (as `String`)
-- [Int+DecimalToBinary](/extensions-kit/Extensions/Foundation/Int/Int%2BDecimalToBinary.swift) - allows to convert `decimal` number to `binary` format and vice versa 
+#### [Int+Clamp](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BClamp.swift) 
+Clamps `self` into a range that can be described using `ClosedRange` or two separate properties
+
+#### [Int+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BDigits.swift) 
+Adds `digitCount` property that contains the number of digits for `self`
+
+#### [Int+EvenOdd](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BEvenOdd.swift) 
+Checks whether `self` is even or if it's odd
+
+#### [Int+Factorial](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BFactorial.swift) 
+Computes *factorial* of `self`
+
+#### [Int+Power](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BPower.swift) 
+Operator that performs `exponentiation` matematical operation, where left number is the *base* and the right one is the *exponent*
+
+#### [Int+Random](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRandom.swift) 
+Generates pseudo-random number in a range that can be specified as `ClosedRange` or two separate `Int` properties
+
+#### [Int+Roman](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/Int/Int%2BRoman.swift) 
+Converts `self` into *Roman* number (as `String`)
+
+#### [Int+DecimalToBinary](/extensions-kit/Extensions/Foundation/Int/Int%2BDecimalToBinary.swift) 
+Allows to convert `decimal` number to `binary` format and vice versa 
 
 ### OptionSet
-- [OptionSet+Operations](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/OptionSet/OptionSet%2BOperations.swift) - adds support for in-place `insert` and `remove` operations
+#### [OptionSet+Operations](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/OptionSet/OptionSet%2BOperations.swift) 
+Adds support for in-place `insert` and `remove` operations
 
 ### MutableCollection 
-- [MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift) - in-place shuffling of `self`
+- [MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift) 
+In-place shuffling of `self`
 
 ### Sequence  
-- [Sequence+Shuffle](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift) - shuffles the elements of `self`
-- [Sequence+Count](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BCount.swift) - counts the number of occurrences of a logical expression
-- [Sequence+DuplicatesRemoved](
-https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BDuplicatesRemoved.swift) - removes the duplicate elements and returns the new Sequence without duplicates if any
+#### [Sequence+Shuffle](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BShuffle.swift) 
+Shuffles the elements of `self`
+
+#### [Sequence+Count](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BCount.swift) 
+Counts the number of occurrences of a logical expression
+
+#### [Sequence+DuplicatesRemoved](
+https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BDuplicatesRemoved.swift) 
+Removes the duplicate elements and returns the new Sequence without duplicates if any
 
 ### String
-- [String+Subscript](/extensions-kit/Extensions/Foundation/String/String%2BSubscript.swift) - adds conformances to `CoutableClosedRange`, `CountableRange`, `PartialRangeThrough` and `PartialRangeFrom` protocols support in a form of subscripts
-- [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BDigits.swift) - combines decimal digits into a single `String` property
-- [String+FormattedDate](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BFormattedDate.swift) - creates a `Date` instance from `self` based in the specified format
-- [String+IndexOf](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BIndexOf.swift) - finds the first occurence for a given `String`
-- [String+Base64](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BBase64.swift) - encodes/decodes `self` to `Base64` encoding
-- [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) - contains a number of extensions for validating `String` based on the following: `isAlphanumeric`, `hasLetters`, `hasNumbers`, `isEmail`, `isAlphabetic`
+#### [String+Subscript](/extensions-kit/Extensions/Foundation/String/String%2BSubscript.swift) 
+Adds conformances to `CoutableClosedRange`, `CountableRange`, `PartialRangeThrough` and `PartialRangeFrom` protocols support in a form of subscripts
+
+#### [String+Digits](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BDigits.swift) 
+Combines decimal digits into a single `String` property
+
+#### [String+FormattedDate](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BFormattedDate.swift) 
+Creates a `Date` instance from `self` based in the specified format
+
+#### [String+IndexOf](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BIndexOf.swift) 
+Finds the first occurence for a given `String`
+
+#### [String+Base64](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BBase64.swift) 
+Encodes/decodes `self` to `Base64` encoding
+
+#### [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) - contains a number of extensions for validating `String` based on the following: `isAlphanumeric`, `hasLetters`, `hasNumbers`, `isEmail`, `isAlphabetic`
 
 ## UIKit
 
 ### Badge
-- [Badge](/extensions-kit/Extensions/UIKit/Badge/Badge.swift) - a custom type, wrapper 
-badge app icon `API` that simplifies development
+#### [Badge](/extensions-kit/Extensions/UIKit/Badge/Badge.swift) 
+A custom type, wrapper badge app icon `API` that simplifies development
 
 ### UIScreen
-- [UIScreen+InterfaceOrientation](/extensions-kit/Extensions/UIKit/UIScreen/UIScreen%2BInterfaceOrientation.swift) - interace orientation for the current `UIScreen`
+#### [UIScreen+InterfaceOrientation](/extensions-kit/Extensions/UIKit/UIScreen/UIScreen%2BInterfaceOrientation.swift) 
+Interace orientation for the current `UIScreen`
 
 ### UIApplication
-- [UIApplication+SafeAreas](/extensions-kit/Extensions/UIKit/UIApplication/UIApplication%2BSafeAreas.swift) - contains extensions that allow to get numerical representations of `top` and `bottom` safe areas
+#### [UIApplication+SafeAreas](/extensions-kit/Extensions/UIKit/UIApplication/UIApplication%2BSafeAreas.swift) 
+Contains extensions that allow to get numerical representations of `top` and `bottom` safe areas
 
 ### NSLayoutConstraint
-- [NSLayoutConstraint+Animation](/extensions-kit/Extensions/UIKit/NSLayoutConstraint/NSLayoutConstraint%2BAnimation.swift) - allows a constraint to be animated when `animated` flag is a set to `true` (default is `false`)
-- [NSLayoutConstraint+Activation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/NSLayoutConstraint%2BActivation/NSLayoutConstraint%2BActivation.swift) - adds convenience methods for *setting* and *activating* layout priorities
+#### [NSLayoutConstraint+Animation](/extensions-kit/Extensions/UIKit/NSLayoutConstraint/NSLayoutConstraint%2BAnimation.swift) 
+Allows a constraint to be animated when `animated` flag is a set to `true` (default is `false`)
+
+#### [NSLayoutConstraint+Activation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/NSLayoutConstraint%2BActivation/NSLayoutConstraint%2BActivation.swift) 
+Adds convenience methods for *setting* and *activating* layout priorities
 
 ### UIView
-- [UIView+CACorners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BCACorners.swift) - convenience extension for setting and getting round corners
-- [UIView+BezierRoundedCorners](/extensions-kit/Extensions/UIKit/UIView/UIView%2BBezierRoundedCorners.swift) - yet another extension for rounding corners
-- [UIView+HuggingPriority](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BHuggingPriority.swift) - convenience wrappers that simplify inerfaces for *setContentHuggingPriority* and *setContentCompressionResistancePriority* methods
-- [UIView+Screenshot](/extensions-kit/Extensions/UIKit/UIView/UIView%2BScreenshot.swift) - allows to take a screenshot of self
-- [UIView+Constraints](/extensions-kit/Extensions/UIKit/UIView/UIView%2BConstraints.swift) - adds convenience auto-layout methods that allow to `pin`, `add`, get `height` & `width` and to get all the constrains for a particular `UIView`
-- [UIView+LayoutAnimation](/extensions-kit/Extensions/UIKit/UIView/UIView%2BLayoutAnimation.swift) - adds animation extensions that operate on layout constraints
+#### [UIView+CACorners](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BCACorners.swift) 
+Convenience extension for setting and getting round corners
+
+#### [UIView+BezierRoundedCorners](/extensions-kit/Extensions/UIKit/UIView/UIView%2BBezierRoundedCorners.swift) 
+Yet another extension for rounding corners
+
+#### [UIView+HuggingPriority](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BHuggingPriority.swift) 
+Convenience wrappers that simplify inerfaces for *setContentHuggingPriority* and *setContentCompressionResistancePriority* methods
+
+#### [UIView+Screenshot](/extensions-kit/Extensions/UIKit/UIView/UIView%2BScreenshot.swift) 
+Allows to take a screenshot of self
+
+#### [UIView+Constraints](/extensions-kit/Extensions/UIKit/UIView/UIView%2BConstraints.swift) 
+Adds convenience auto-layout methods that allow to `pin`, `add`, get `height` & `width` and to get all the constrains for a particular `UIView`
+
+#### [UIView+LayoutAnimation](/extensions-kit/Extensions/UIKit/UIView/UIView%2BLayoutAnimation.swift) 
+Adds animation extensions that operate on layout constraints
 
 ### UIColor
-- [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift) - adds support for missing color components properties such as `rgba`, `hsba` and `grayscale`
+#### [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift)
+Adds support for missing color components properties such as `rgba`, `hsba` and `grayscale`
 
 ### UICollectionView
-- [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift) - registers custom `UICollectionViewCell` for a `UICollectionView` instance. `UICollectionViewCell` needs to be located in current Bundle
-- [UICollectionView+ScrollingUtils](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BScrollingUtils.swift) - adds methods that allow to programmatically scroll to the `top`, `bottom` or to the specified `index path` of a table view
-- [UICollectionView+Safety](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BSafety.swift) - adds validation utils 
-- [UICollectionView+Operations](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BOperations.swift) - convenience `reload`, `delete` and `insert` operations for collections of item indices
+#### [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift) 
+Registers custom `UICollectionViewCell` for a `UICollectionView` instance. `UICollectionViewCell` needs to be located in current Bundle
+
+#### [UICollectionView+ScrollingUtils](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BScrollingUtils.swift) 
+Adds methods that allow to programmatically scroll to the `top`, `bottom` or to the specified `index path` of a table view
+
+#### [UICollectionView+Safety](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BSafety.swift) 
+Adds validation utils 
+
+#### [UICollectionView+Operations](/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BOperations.swift) 
+Convenience `reload`, `delete` and `insert` operations for collections of item indices
 
 ### UITableView
-- [UITableView+FooterHeaderUtils](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BFooterHeaderUtils.swift) - the extension adds convenience helpers for working with `Footer` and `Header` views
-- [UITableView+ScrollingUtils](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BScrollingUtils.swift) -  adds methods that allow to programmatically scroll to the `top`, `bottom` or to the specified `index path` of a table view
-- [UITableView+Safety](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BSafety.swift) - adds validation utils 
+#### [UITableView+FooterHeaderUtils](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BFooterHeaderUtils.swift)  
+The extension adds convenience helpers for working with `Footer` and `Header` views
+
+#### [UITableView+ScrollingUtils](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BScrollingUtils.swift)  
+Adds methods that allow to programmatically scroll to the `top`, `bottom` or to the specified `index path` of a table view
+
+#### [UITableView+Safety](/extensions-kit/Extensions/UIKit/UITableView/UITableView%2BSafety.swift) 
+Adds validation utils 
 
 ### UIImage
-- [UIImage+ImageFromUIView](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BImageFromUIView.swift) - renders `UIView` to `UIImage`
-- [UIImage+LandscapeCameraOrientationFix](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BLandscapeCameraOrientationFix.swift) - fixes image orientation for cases when the image was captured using `AVFoundation` in *landscape interface orientation*
-- [UIImage+RawOrientation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BRawOrientation.swift) - raw image orientation (from `UIImageOrientation` to `Int32`) 
-- [UIImage+Resize](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BResize.swift) - class-level extension that allows to resize input image based on expected image *width* or/and *height*
-- [UIImage+SolidColor](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BSolidColor.swift) - create a `UIImage` from the *color data* and *size*
-- [UIImage+Inverted](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BInverted.swift) - adds a property that returns an *inverted* copy of `self`
+#### [UIImage+ImageFromUIView](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BImageFromUIView.swift) 
+Renders `UIView` to `UIImage`
+
+#### [UIImage+LandscapeCameraOrientationFix](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BLandscapeCameraOrientationFix.swift) 
+Fixes image orientation for cases when the image was captured using `AVFoundation` in *landscape interface orientation*
+
+#### [UIImage+RawOrientation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BRawOrientation.swift) 
+Raw image orientation (from `UIImageOrientation` to `Int32`) 
+
+#### [UIImage+Resize](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BResize.swift) 
+Class-level extension that allows to resize input image based on expected image *width* or/and *height*
+
+#### [UIImage+SolidColor](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BSolidColor.swift) 
+Create a `UIImage` from the *color data* and *size*
+
+#### [UIImage+Inverted](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BInverted.swift) 
+Adds a property that returns an *inverted* copy of `self`
 
 ### UIImageView
 - [UIImageView+DownloadFromURL](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BDownloadFromURL.swift) - adds a convenience method for downloading and parsing `UIImage` with the specified `URL`
 - [UIImageView+Masking](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BMasking.swift) - masks a given `UIImage` with the target image size
 
 ### UIViewController
-- [UIViewController+ChildViewControllers](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift) - addds convenience methods for `adding` and `removing` child view controllers
-- [UIViewController+Storyboard](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BStoryboard.swift) - instantiates a `UIViewController` instance from a `Storyboard` using the `UIViewController's` name as a reference name of the `Storyboard` file. Used in cases when `Coordinator` or `Flow` design patterns need to be implemented
+#### [UIViewController+ChildViewControllers](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift) 
+Addds convenience methods for `adding` and `removing` child view controllers
+
+#### [UIViewController+Storyboard](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BStoryboard.swift) 
+Instantiates a `UIViewController` instance from a `Storyboard` using the `UIViewController's` name as a reference name of the `Storyboard` file. Used in cases when `Coordinator` or `Flow` design patterns need to be implemented
 
 ## SpriteKit
-- [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTimingFunction.swift) - adds **36(!)** different timing functions 
+#### [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTimingFunction.swift) 
+Adds **36(!)** different timing functions 
 
 ### SKEmitterNode
-- [SKEmitterNode+AdvanceSimulation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKEmitterNode/SKEmitterNode%2BAdvanceSimulation.swift) - safely advance the particle simulation for a given `TimeInterval`
+#### [SKEmitterNode+AdvanceSimulation](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKEmitterNode/SKEmitterNode%2BAdvanceSimulation.swift) 
+Safely advance the particle simulation for a given `TimeInterval`
 
 ### SKSpriteNode
-- [SKSpriteNode+GIF](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKSpriteNode/SKSpriteNode%2BGIF.swift) - adds support for uploading and playing `GIFs` from local files
+#### [SKSpriteNode+GIF](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKSpriteNode/SKSpriteNode%2BGIF.swift)  
+Adds support for uploading and playing `GIFs` from local files
 
 ### SKScene
-- [SKScene+SerialSpriteLoading](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKScene/SKScene%2BSerialSpriteLoading.swift) - uploads a set of scene graph nodes with a specific pattern, useful when a scene contains a lot of nodes, but just a specific subset needs to be processed or accessed
-- [SKScene+ReferenceNodeFix](/extensions-kit/Extensions/SpriteKit/SKScene/SKScene%2BReferenceNodeFix.swift) - a small fix that resolves the default behavior for nodes that were referenced from differnet .sks files. The thing is that they do not launch their animations by default, so this small `hack` fixes this issue
+#### [SKScene+SerialSpriteLoading](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKScene/SKScene%2BSerialSpriteLoading.swift)
+Uploads a set of scene graph nodes with a specific pattern, useful when a scene contains a lot of nodes, but just a specific subset needs to be processed or accessed
+
+#### [SKScene+ReferenceNodeFix](/extensions-kit/Extensions/SpriteKit/SKScene/SKScene%2BReferenceNodeFix.swift) 
+A small fix that resolves the default behavior for nodes that were referenced from differnet .sks files. The thing is that they do not launch their animations by default, so this small `hack` fixes this issue
 
 ### SKTexture
-- [SKTexture+LinearGradient](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTexture/SKTexture%2BLinearGradient.swift) - adds a convenience initializer that generates a `gradient texture` for the specified *size*, *start* and *end* colors
+#### [SKTexture+LinearGradient](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTexture/SKTexture%2BLinearGradient.swift) 
+Adds a convenience initializer that generates a `gradient texture` for the specified *size*, *start* and *end* colors
 
 ### SKTextureAtlas
-- [SKTextureAtlas+FramesLoader](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTextureAtlas/SKTextureAtlas%2BFramesLoader.swift) - uploads an animation sequence from a texture atlas and returns an array of textures that can be futher used
+#### [SKTextureAtlas+FramesLoader](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTextureAtlas/SKTextureAtlas%2BFramesLoader.swift) 
+Uploads an animation sequence from a texture atlas and returns an array of textures that can be futher used
 
 ## SceneKit
-- [SCNVector3+Operators](/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) - adds support for various mathematical operators for `SCNVector3` type
+#### [SCNVector3+Operators](/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) 
+Adds support for various mathematical operators for `SCNVector3` type
 
 ## Grand Central Dispatch
 
 ### Extensions
-- [DispatchQueue+DispatchOnce](/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift) - adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
+#### [DispatchQueue+DispatchOnce](/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift)  
+Adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
 
 ### Custom Types
-- [Atomic](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Atomics/Atomic.swift) - guarantees that a valid value will be returned when accessing such property by using multiple threads
-- [Mutex](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/Mutex.swift) - used to proptect shared resources. A mutex is owned by the task that takes it. In a given region of code only one thread is active
-- [ReadWriteLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/ReadWriteLock.swift) - a synchronization primitive that solves one of the readers–writers problems
-- [UnfairLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/UnfairLock.swift) - a lock which causes a thread trying to acquire it to simply wait in a loop ("spin") while repeatedly checking if the lock is available
+#### [Atomic](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Atomics/Atomic.swift) 
+Guarantees that a valid value will be returned when accessing such property by using multiple threads
+
+### [Mutex](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/Mutex.swift) 
+Used to proptect shared resources. A mutex is owned by the task that takes it. In a given region of code only one thread is active
+
+#### [ReadWriteLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/ReadWriteLock.swift) 
+A synchronization primitive that solves one of the readers–writers problems
+
+### [UnfairLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/UnfairLock.swift) 
+A lock which causes a thread trying to acquire it to simply wait in a loop ("spin") while repeatedly checking if the lock is available
 
 ## WebKit
 
 ### WKWebView
-- [WKWebView+Load](/extensions-kit/Extensions/WebKit/WKWebView/WKWebView%2BLoad.swift) - adds support for navigating to the requested `URL` using `String`
+#### [WKWebView+Load](/extensions-kit/Extensions/WebKit/WKWebView/WKWebView%2BLoad.swift) 
+Adds support for navigating to the requested `URL` using `String`
 
 ## PhotoKit
 
 ### PHAsset
-- [PHAsset+URL](/extensions-kit/Extensions/PhotoKit/PHAsset/PHAsset%2BURL.swift) - provides possibility to get `URL` for image and video media types
+#### [PHAsset+URL](/extensions-kit/Extensions/PhotoKit/PHAsset/PHAsset%2BURL.swift) 
+Provides possibility to get `URL` for image and video media types
 
 # 🙋‍♀️🙋‍♂️Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
