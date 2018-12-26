@@ -8,7 +8,7 @@
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 24/December/2018.**
+**Last Update: 26/December/2018.**
 
 ![](logo-extensions_kit.png)
 
@@ -174,8 +174,8 @@ Filter is originally designed for highlighting 3D objects but can be used to add
 ## Foundation
 
 ### Custom Structures
-#### [Variable](
-https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) Lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework:
+#### [Variable](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) 
+Lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework:
 
 ```swift
 let stringVariable = Variable("Initial Value")
