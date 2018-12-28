@@ -69,6 +69,10 @@
 		A96A720021463B4B006A6C15 /* UIView+HuggingPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FF21463B4B006A6C15 /* UIView+HuggingPriority.swift */; };
 		A96A720321463BFB006A6C15 /* NSLayoutConstraint+Activation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */; };
 		A96E1189219F017900F36250 /* UIScreen+InterfaceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E1188219F017900F36250 /* UIScreen+InterfaceOrientation.swift */; };
+		A971E5BD21D6076800BF0D20 /* Array+ContainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971E5BC21D6076800BF0D20 /* Array+ContainsTests.swift */; };
+		A971E5BF21D6084300BF0D20 /* Array+DifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971E5BE21D6084300BF0D20 /* Array+DifferenceTests.swift */; };
+		A971E5C121D6094600BF0D20 /* Array+IntersectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971E5C021D6094600BF0D20 /* Array+IntersectionTests.swift */; };
+		A971E5C321D60A5100BF0D20 /* Array+RemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971E5C221D60A5100BF0D20 /* Array+RemoveTests.swift */; };
 		A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */; };
 		A98C3831211355DB00F3E87C /* String+Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C3830211355DB00F3E87C /* String+Digits.swift */; };
 		A98C5E8420D13F5100674186 /* PHAsset+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C5E8320D13F5100674186 /* PHAsset+URL.swift */; };
@@ -244,6 +248,10 @@
 		A96A71FF21463B4B006A6C15 /* UIView+HuggingPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+HuggingPriority.swift"; sourceTree = "<group>"; };
 		A96A720221463BFB006A6C15 /* NSLayoutConstraint+Activation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Activation.swift"; sourceTree = "<group>"; };
 		A96E1188219F017900F36250 /* UIScreen+InterfaceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+InterfaceOrientation.swift"; sourceTree = "<group>"; };
+		A971E5BC21D6076800BF0D20 /* Array+ContainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ContainsTests.swift"; sourceTree = "<group>"; };
+		A971E5BE21D6084300BF0D20 /* Array+DifferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+DifferenceTests.swift"; sourceTree = "<group>"; };
+		A971E5C021D6094600BF0D20 /* Array+IntersectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+IntersectionTests.swift"; sourceTree = "<group>"; };
+		A971E5C221D60A5100BF0D20 /* Array+RemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+RemoveTests.swift"; sourceTree = "<group>"; };
 		A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectFit.swift"; sourceTree = "<group>"; };
 		A98C3830211355DB00F3E87C /* String+Digits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Digits.swift"; sourceTree = "<group>"; };
 		A98C5E8320D13F5100674186 /* PHAsset+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+URL.swift"; sourceTree = "<group>"; };
@@ -479,6 +487,10 @@
 				A9AFCF172168910A00980730 /* ArraySortingTests.swift */,
 				A9AFCF19216899A800980730 /* ArrayFilterTests.swift */,
 				A9AFCF1B21689CD500980730 /* ArrayUnionTests.swift */,
+				A971E5BC21D6076800BF0D20 /* Array+ContainsTests.swift */,
+				A971E5BE21D6084300BF0D20 /* Array+DifferenceTests.swift */,
+				A971E5C021D6094600BF0D20 /* Array+IntersectionTests.swift */,
+				A971E5C221D60A5100BF0D20 /* Array+RemoveTests.swift */,
 				A9ABF93D216CF84F00BF4350 /* IntDecimalToBinaryTests.swift */,
 				A9A2AF692178683F00389DDA /* FunctionalCompositionTests.swift */,
 				A9A2AF6B21786A9A00389DDA /* FunctionalLensesTests.swift */,
@@ -1424,12 +1436,15 @@
 			files = (
 				A9AFCF1C21689CD500980730 /* ArrayUnionTests.swift in Sources */,
 				A9EB99782122D07B0088FB88 /* BoolTests.swift in Sources */,
+				A971E5C121D6094600BF0D20 /* Array+IntersectionTests.swift in Sources */,
+				A971E5C321D60A5100BF0D20 /* Array+RemoveTests.swift in Sources */,
 				A920503821230BAF00B39C57 /* CollectionTests.swift in Sources */,
 				A9AFCF182168910A00980730 /* ArraySortingTests.swift in Sources */,
 				A920503A21230D0D00B39C57 /* SequenceTests.swift in Sources */,
 				A90BEB5221C114A6009AAF03 /* VariableTests.swift in Sources */,
 				A9C0B7EF2133FAF500C0D908 /* DoubleTests.swift in Sources */,
 				A9332C6721255D030041C558 /* SCNVector3OperationsTests.swift in Sources */,
+				A971E5BD21D6076800BF0D20 /* Array+ContainsTests.swift in Sources */,
 				A9DEA74F21367F5000AAA063 /* OptionSetTests.swift in Sources */,
 				A999C5012096F5A3006014B1 /* ClosedRange+Random.swift in Sources */,
 				A9A2AF6A2178683F00389DDA /* FunctionalCompositionTests.swift in Sources */,
@@ -1440,6 +1455,7 @@
 				A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */,
 				A922387A21D122EB00DB9801 /* DecodableTests.swift in Sources */,
 				A9C0B7E92133F78400C0D908 /* DateTests.swift in Sources */,
+				A971E5BF21D6084300BF0D20 /* Array+DifferenceTests.swift in Sources */,
 				A9A2AF6C21786A9A00389DDA /* FunctionalLensesTests.swift in Sources */,
 				A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */,
 				A9EB997E2122D41A0088FB88 /* UIColorTests.swift in Sources */,
