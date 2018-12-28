@@ -8,7 +8,7 @@
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 24/December/2018.**
+**Last Update: 28/December/2018.**
 
 ![](logo-extensions_kit.png)
 
@@ -174,8 +174,8 @@ Filter is originally designed for highlighting 3D objects but can be used to add
 ## Foundation
 
 ### Custom Structures
-#### [Variable](
-https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) Lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework:
+#### [Variable](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) 
+Lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework:
 
 ```swift
 let stringVariable = Variable("Initial Value")
@@ -411,20 +411,76 @@ let sortedHeapmaxHeap.sorted()
 #### [Array+Filtering](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BFiltering.swift) 
 Contains a number of methods for filtering in a `functional-style`, has `skip`, `all` and `any` filters
 
+```swift
+let result = [1,2,3,4,5,6,7,8,9,10].skip(5)
+// result array contains all the elements except the first 5 e.g. [6,7,8,9,10]
+
+let result = [1,2,3,4,5,6,7,8,9,10].all { $0 < 20 }
+// result will be true since all the elements are less than 20
+
+let result = [1,2,3,4,5,6,7,8,9,10].any { $0 < 5 }
+// result will be true since there are a number of elements that are less than 5
+```
+
 #### [Array+Contains](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BContains.swift) 
 Checks if self contains the specified elements
+
+```swift
+let result = [1,2,4,5,6,7,8,9,10].contains(elements: 1,2,4,5)
+// result will be true since the target array contains all the specified elements
+
+let result = [1,2,4,5,6,7,8,9,10].contains(elements: 9,10,11,12)
+// result will be false since the target array does not contain 11 and 12
+```
 
 #### [Array+Difference](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BDifference.swift) 
 Computes differences between self and the input arrays
 
+```swift
+let testA = [1,2,3,4,5]
+let testB = [4,5,7,8,9]
+
+let result = testA.difference(elements: testB)
+// result will be [1,2,3]
+
+let result = testB.difference(elements: testA)
+// result will be [7,8,9]
+```
+
 #### [Array+Intersection](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) 
 Computes intersection of self and the input values
+
+```swift
+let testA = [1,2,3,4,5]
+let testB = [4,5,6,7]
+
+let result = testA.intersection(values: testB)
+// result will be [4,5]
+```
 
 #### [Array+Union](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Array/Array%2BUnion.swift) 
 Unions self and the input arrays
 
+```swift
+let result = [1,2,4,5,6,7,8].union(value: [8,9,10])
+// result will be [1, 2, 4, 5, 6, 7, 8, 9, 10]
+```
+
 #### [Array+Remove](/extensions-kit/Extensions/Foundation/Array/Array%2BRemove.swift) 
 A set of methods that remove `Element` form an array by mutating it
+
+```swift
+var test = [1,2,3,4,5,6,7,8]
+
+test.remove(object: 8)
+// test contains the following elements [1,2,3,4,5,6,7]
+
+test.remove(objects: [1,2,4])
+// test contains the following elements [3,5,6,7]
+
+test.remove(objects: 5,6)
+// test contains the following elements [3,7]
+```
 
 #### [Array+InsertionSort](/extensions-kit/Extensions/Foundation/Array/Array%2BIntersection.swift) 
 Adds support for `Insertion Sort` algorithm
