@@ -119,6 +119,8 @@
 		A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */; };
 		A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2920A5DB89005221BA /* SCNVector3+Operators.swift */; };
 		A9B14F2C20A5DEA6005221BA /* CGRect+Mid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2B20A5DEA6005221BA /* CGRect+Mid.swift */; };
+		A9B411C421DCE6D900039D1B /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B411C321DCE6D900039D1B /* NSObject+ClassName.swift */; };
+		A9B411C621DCE99D00039D1B /* NSObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B411C521DCE99D00039D1B /* NSObjectTests.swift */; };
 		A9B9A8A82160FAC400D1D0C0 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9A8A72160FAC400D1D0C0 /* Stack.swift */; };
 		A9B9A8AB2160FB6000D1D0C0 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9A8AA2160FB6000D1D0C0 /* Queue.swift */; };
 		A9BA127620983E1A00633898 /* UIImageView+DownloadFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */; };
@@ -297,6 +299,8 @@
 		A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Shuffle.swift"; sourceTree = "<group>"; };
 		A9B14F2920A5DB89005221BA /* SCNVector3+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Operators.swift"; sourceTree = "<group>"; };
 		A9B14F2B20A5DEA6005221BA /* CGRect+Mid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Mid.swift"; sourceTree = "<group>"; };
+		A9B411C321DCE6D900039D1B /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		A9B411C521DCE99D00039D1B /* NSObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectTests.swift; sourceTree = "<group>"; };
 		A9B9A8A72160FAC400D1D0C0 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		A9B9A8AA2160FB6000D1D0C0 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		A9BA127520983E1A00633898 /* UIImageView+DownloadFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadFromURL.swift"; sourceTree = "<group>"; };
@@ -497,6 +501,7 @@
 				A9498F8921B96D8900D498ED /* BuilderProtocolTests.swift */,
 				A90BEB5121C114A6009AAF03 /* VariableTests.swift */,
 				A922387921D122EB00DB9801 /* DecodableTests.swift */,
+				A9B411C521DCE99D00039D1B /* NSObjectTests.swift */,
 			);
 			path = "extensions-kit-tests";
 			sourceTree = "<group>";
@@ -897,6 +902,14 @@
 			path = SceneKit;
 			sourceTree = "<group>";
 		};
+		A9B411C221DCE6C100039D1B /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				A9B411C321DCE6D900039D1B /* NSObject+ClassName.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
 		A9B9A8A52160FAAF00D1D0C0 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
@@ -971,6 +984,7 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A9B411C221DCE6C100039D1B /* NSObject */,
 				A90BEB4621C0ED5A009AAF03 /* CustomStructures */,
 				A9A2AF632178661600389DDA /* Functions */,
 				A9A2AF6D21786EAC00389DDA /* DataStructures */,
@@ -1318,6 +1332,7 @@
 				A9421F53215E42A300A4DFAC /* Observer.swift in Sources */,
 				A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */,
 				A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */,
+				A9B411C421DCE6D900039D1B /* NSObject+ClassName.swift in Sources */,
 				A9A4BCDD20BC570900CA4848 /* UIViewController+ChildViewControllers.swift in Sources */,
 				A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */,
 				A96A71FB2146397E006A6C15 /* UIImage+Inverted.swift in Sources */,
@@ -1455,6 +1470,7 @@
 				A9332C6B21259F5C0041C558 /* CGPointOperatorsTests.swift in Sources */,
 				A922387A21D122EB00DB9801 /* DecodableTests.swift in Sources */,
 				A9C0B7E92133F78400C0D908 /* DateTests.swift in Sources */,
+				A9B411C621DCE99D00039D1B /* NSObjectTests.swift in Sources */,
 				A971E5BF21D6084300BF0D20 /* Array+DifferenceTests.swift in Sources */,
 				A9A2AF6C21786A9A00389DDA /* FunctionalLensesTests.swift in Sources */,
 				A9EB997D2122D41A0088FB88 /* IntTests.swift in Sources */,
