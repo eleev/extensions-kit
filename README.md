@@ -2,13 +2,13 @@
 
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-22%2C08%25-red.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-22%2C80%25-red.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 28/December/2018.**
+**Last Update: 02/January/2019.**
 
 ![](logo-extensions_kit.png)
 
@@ -16,7 +16,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`176`** extensions + **`22`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`179`** extensions + **`22`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -36,8 +36,8 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
-- [Foundation - 96](#foundation)
-- [UIKit - 54](#uikit)
+- [Foundation - 97](#foundation)
+- [UIKit - 56](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -616,7 +616,7 @@ Allows to convert `decimal` number to `binary` format and vice versa
 Adds support for in-place `insert` and `remove` operations
 
 ### MutableCollection 
-- [MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift) 
+[MutableCollection+Shuffle](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/Foundation/MutableCollection/MutableCollection%2BShuffle.swift) 
 In-place shuffling of `self`
 
 ### Sequence  
@@ -626,8 +626,7 @@ Shuffles the elements of `self`
 #### [Sequence+Count](/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BCount.swift) 
 Counts the number of occurrences of a logical expression
 
-#### [Sequence+DuplicatesRemoved](
-https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BDuplicatesRemoved.swift) 
+#### [Sequence+DuplicatesRemoved](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Sequence/Sequence%2BDuplicatesRemoved.swift) 
 Removes the duplicate elements and returns the new Sequence without duplicates if any
 
 ### String
@@ -646,7 +645,17 @@ Finds the first occurence for a given `String`
 #### [String+Base64](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BBase64.swift) 
 Encodes/decodes `self` to `Base64` encoding
 
-#### [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) - contains a number of extensions for validating `String` based on the following: `isAlphanumeric`, `hasLetters`, `hasNumbers`, `isEmail`, `isAlphabetic`
+#### [String+Validation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/String/String%2BValidation.swift) 
+Contains a number of extensions for validating `String` based on the following: `isAlphanumeric`, `hasLetters`, `hasNumbers`, `isEmail`, `isAlphabetic`
+
+### NSObject
+#### [NSObject+ClassName](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/NSObject/NSObject%2BClassName.swift)
+Allows to get the exact class name:
+
+```swift
+let className = Foo.nameOfclass
+// className property holds `Foo`
+```
 
 ## UIKit
 
@@ -744,6 +753,14 @@ Addds convenience methods for `adding` and `removing` child view controllers
 
 #### [UIViewController+Storyboard](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BStoryboard.swift) 
 Instantiates a `UIViewController` instance from a `Storyboard` using the `UIViewController's` name as a reference name of the `Storyboard` file. Used in cases when `Coordinator` or `Flow` design patterns need to be implemented
+
+```swift
+// Instantiation of a view controller by explicitly setting the storyboard and identifier
+let loginViewController = UIViewController.instantiateController(from: mainStoryboard, identifier: "LoginViewController")
+
+// An another way to instantiate a UIViewController instnace: here the identifier will be the class name
+let viewController = UIViewController.instantiateController(from: mainStoryboard)
+```
 
 ## SpriteKit
 #### [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTimingFunction.swift) 
