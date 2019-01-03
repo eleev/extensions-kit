@@ -2,13 +2,13 @@
 
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-22%2C80%25-red.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-22%2C60%25-red.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 02/January/2019.**
+**Last Update: 03/January/2019.**
 
 ![](logo-extensions_kit.png)
 
@@ -16,7 +16,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`179`** extensions + **`22`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`181`** extensions + **`22`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -37,7 +37,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 1](#core-image)
 - [Foundation - 97](#foundation)
-- [UIKit - 56](#uikit)
+- [UIKit - 58](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 5](#grapnd-central-dispatch)
@@ -697,6 +697,14 @@ Adds convenience auto-layout methods that allow to `pin`, `add`, get `height` & 
 #### [UIView+LayoutAnimation](/extensions-kit/Extensions/UIKit/UIView/UIView%2BLayoutAnimation.swift) 
 Adds animation extensions that operate on layout constraints
 
+#### [UIView+Masking](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIView/UIView%2BMasking.swift) 
+Masks the view with the specified UIRectCorner array and corner radius:
+
+```swift
+let view = UIView()
+view.mask(corners: .allCorners, with: 10)
+```
+
 ### UIColor
 #### [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift)
 Adds support for missing color components properties such as `rgba`, `hsba` and `grayscale`
@@ -746,6 +754,28 @@ Adds a property that returns an *inverted* copy of `self`
 ### UIImageView
 - [UIImageView+DownloadFromURL](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BDownloadFromURL.swift) - adds a convenience method for downloading and parsing `UIImage` with the specified `URL`
 - [UIImageView+Masking](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImageView/UIImageView%2BMasking.swift) - masks a given `UIImage` with the target image size
+
+### UIAlertController
+#### [UIAlertController+Presentation](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIAlertController/UIAlertController%2BPresentation.swift) 
+Presents a UIAlertController with the given title, message, tintColor and alert actions:
+
+```swift
+UIAlertController.present(with: "Warning!", and: "The item will be deleted", from: targetViewController) { () -> [UIAlertAction] in
+        let deleteAction = UIAlertAction(title: "Delete",
+                                         style: .destructive,
+                                         handler: { (action) in
+                // Callback handling
+        })
+            
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .cancel,
+                                         handler: { (action) in
+                // Callback handling
+        })
+            
+        return [deleteAction, cancelAction]
+}
+```
 
 ### UIViewController
 #### [UIViewController+ChildViewControllers](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift) 
