@@ -147,6 +147,8 @@
 		A9DEA74A21367D9B00AAA063 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA74921367D9B00AAA063 /* String+Validation.swift */; };
 		A9DEA74D21367EDD00AAA063 /* OptionSet+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA74C21367EDD00AAA063 /* OptionSet+Operations.swift */; };
 		A9DEA74F21367F5000AAA063 /* OptionSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA74E21367F5000AAA063 /* OptionSetTests.swift */; };
+		A9E0485221DE16760000A9C4 /* UIAlertController+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E0485121DE16760000A9C4 /* UIAlertController+Presentation.swift */; };
+		A9E0485421DE19110000A9C4 /* UIView+Masking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E0485321DE19110000A9C4 /* UIView+Masking.swift */; };
 		A9E14DA720B158A60075D725 /* SKTimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DA620B158A60075D725 /* SKTimingFunction.swift */; };
 		A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DAA20B159700075D725 /* CGPoint+Utils.swift */; };
 		A9E14DAD20B159BB0075D725 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E14DAC20B159BB0075D725 /* CGPoint+Operators.swift */; };
@@ -327,6 +329,8 @@
 		A9DEA74921367D9B00AAA063 /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
 		A9DEA74C21367EDD00AAA063 /* OptionSet+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionSet+Operations.swift"; sourceTree = "<group>"; };
 		A9DEA74E21367F5000AAA063 /* OptionSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSetTests.swift; sourceTree = "<group>"; };
+		A9E0485121DE16760000A9C4 /* UIAlertController+Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Presentation.swift"; sourceTree = "<group>"; };
+		A9E0485321DE19110000A9C4 /* UIView+Masking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Masking.swift"; sourceTree = "<group>"; };
 		A9E14DA620B158A60075D725 /* SKTimingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTimingFunction.swift; sourceTree = "<group>"; };
 		A9E14DAA20B159700075D725 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
 		A9E14DAC20B159BB0075D725 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
@@ -690,6 +694,7 @@
 				A93773AE2164EC3F008D809A /* UIView+Screenshot.swift */,
 				A9ABF942216CFDD900BF4350 /* UIView+Constraints.swift */,
 				A9ABF944216CFE4E00BF4350 /* UIView+LayoutAnimation.swift */,
+				A9E0485321DE19110000A9C4 /* UIView+Masking.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -966,6 +971,7 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A9E0485021DE16560000A9C4 /* UIAlertController */,
 				A99219D521B2718D007986AE /* Badge */,
 				A96E1187219F016500F36250 /* UIScreen */,
 				A9ABF93F216CFD7D00BF4350 /* UIApplication */,
@@ -1072,6 +1078,14 @@
 				A9DEA74C21367EDD00AAA063 /* OptionSet+Operations.swift */,
 			);
 			path = OptionSet;
+			sourceTree = "<group>";
+		};
+		A9E0485021DE16560000A9C4 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				A9E0485121DE16760000A9C4 /* UIAlertController+Presentation.swift */,
+			);
+			path = UIAlertController;
 			sourceTree = "<group>";
 		};
 		A9E14DA820B159330075D725 /* CGPoint */ = {
@@ -1365,6 +1379,7 @@
 				A9498F8C21B9717A00D498ED /* String+Subscript.swift in Sources */,
 				A9E14DB220B1768A0075D725 /* SKEmitterNode+AdvanceSimulation.swift in Sources */,
 				A9E14DA720B158A60075D725 /* SKTimingFunction.swift in Sources */,
+				A9E0485421DE19110000A9C4 /* UIView+Masking.swift in Sources */,
 				A9B14F2C20A5DEA6005221BA /* CGRect+Mid.swift in Sources */,
 				A999C5042096F9D6006014B1 /* UIImage+LandscapeCameraOrientationFix.swift in Sources */,
 				A9DEA74621366E3E00AAA063 /* String+IndexOf.swift in Sources */,
@@ -1423,6 +1438,7 @@
 				A96A71FE21463A7F006A6C15 /* UIView+CACorners.swift in Sources */,
 				A9AB24F72142BA10006E334B /* Dictionary+Map.swift in Sources */,
 				A9D4CFCA209AEB3D006461AF /* Collection+ParallelIteration.swift in Sources */,
+				A9E0485221DE16760000A9C4 /* UIAlertController+Presentation.swift in Sources */,
 				A92130BE2096F3CA0043ADAB /* Int+Clamp.swift in Sources */,
 				A9A2AF682178681B00389DDA /* Lens.swift in Sources */,
 				A922387821D121FC00DB9801 /* Decodable+DecodeFromFile.swift in Sources */,
