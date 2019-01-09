@@ -185,7 +185,7 @@ Generates a QR image from the input `text` and with an optional `scale` paramete
 
 ```swift
 let helloWorldQRImage = CIImage.qrImage(from: "Hello World!")
-// helloWorldQRImage holds image data that represent QR code for `Hello World!` message
+// helloWorldQRImage holds image data that represents QR code for `Hello World!` message
 ```
 
 #### [CIImage+Tinted](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/CIImage%2BTinted.swift)
