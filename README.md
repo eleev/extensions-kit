@@ -8,7 +8,7 @@
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 03/January/2019.**
+**Last Update: 09/January/2019.**
 
 ![](logo-extensions_kit.png)
 
@@ -16,7 +16,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`181`** extensions + **`22`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`186`** extensions + **`22`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -35,7 +35,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [AVFoundation - 1](#avfoundation) 
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
-- [Core Image - 1](#core-image)
+- [Core Image - 6](#core-image)
 - [Foundation - 97](#foundation)
 - [UIKit - 58](#uikit)
 - [SpriteKit - 11](#spritekit)
@@ -170,6 +170,39 @@ let roundedVal = val.rounded(toPlaces: 1) // roundedVal holds `4.3`
 ### New Filters
 #### [HighlightFilter](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/Filters/HighlightFilter.swift) 
 Filter is originally designed for highlighting 3D objects but can be used to add this effect to images and sprites.
+
+### CIImage
+#### [CIImage+Inverted](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/CIImage%2BInverted.swift)
+Inverts the colors of `self`:
+
+```swift
+let invertedImage = ciImage.inverted
+// invertedImage holds the same image data but with inverted colors
+```
+
+#### [CIImage+QRImage](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/CIImage%2BQRImage.swift)
+Generates a QR image from the input `text` and with an optional `scale` parameter that specifies the affine transformation for the output `CIImage`:
+
+```swift
+let helloWorldQRImage = CIImage.qrImage(from: "Hello World!")
+// helloWorldQRImage holds image data that represent QR code for `Hello World!` message
+```
+
+#### [CIImage+Tinted](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/CIImage%2BTinted.swift)
+Applies the specified `color` as a tint color:
+
+```swift
+let redQRImage = qrImage.tinted(by: .red)
+// redQRImage holds the same QR image data as before but tinted by red color
+```
+
+#### [CIImage+Transparent](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/CoreImage/CIImage%2BTransparent.swift)
+A number of extensions that convert the target `CIImage` instance to it's transparent version by applying alpha masking filter:
+
+```swift
+let transparentImage = ciImage.transparent
+let blackTransparentImage = anotherImage.blackTransparent
+```
 
 ## Foundation
 
