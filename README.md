@@ -2,13 +2,13 @@
 
 [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-22%2C60%25-red.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-23%2C30%25-red.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 09/January/2019.**
+**Last Update: 10/January/2019.**
 
 ![](logo-extensions_kit.png)
 
