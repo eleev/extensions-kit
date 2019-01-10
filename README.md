@@ -16,7 +16,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`186`** extensions + **`22`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`187`** extensions + **`25`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -36,7 +36,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 6](#core-image)
-- [Foundation - 97](#foundation)
+- [Foundation - 101](#foundation)
 - [UIKit - 58](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -206,6 +206,32 @@ let blackTransparentImage = anotherImage.blackTransparent
 
 ## Foundation
 
+### Custom Protocols
+#### [Identifiable](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomProtocols/Identifiable.swift)
+The protocol supposed to be used with types that need identification, such as UITableViewCell, UITableViewHeaderFooterView, UICollectionReusableView etc.:
+
+```swift
+class FeedTableViewCell: UITableViewCell, Identifiable {
+       // ... 
+       // Implementation details
+       // ... 
+}
+
+// Somewhere in `UITableViewControllerDelegate`:
+let cell = dequeueReusableCell(withIdetifier: cell. reuseIdentifier)
+```
+
+#### [Then](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomProtocols/Then.swift)
+Protocol for object configuration:
+
+```swift
+var imageView = UIImageView().then {
+        $0.layer.cornerRadius = 10
+        $0.contentMode = .scaleAspectFill
+        $0.clipsToBounds = true
+}
+```
+
 ### Custom Structures
 #### [Variable](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) 
 Lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework:
@@ -219,6 +245,17 @@ stringVariable.onUpdate = {
         let isEqual = $0 == newValue
         XCTAssert(isEqual)
 }
+```
+
+#### [Debouncer](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Debouncer.swift)
+Allows an action to be performed after a delay:
+
+```swift
+let debouncer = Debouncer(delay: 2.0)
+debouncer.schedule {
+        value = "Changed Value"            
+}
+// After 2.0 seconds the value will be changed to "Changed Value"
 ```
 
 ### Functions 
@@ -688,6 +725,15 @@ Allows to get the exact class name:
 ```swift
 let className = Foo.nameOfclass
 // className property holds `Foo`
+```
+
+### URL
+#### [URL+QRImage](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/URL/URL%2BQRImage.swift)
+Creates a QR image from the `absoluteString` of the `URL`:
+
+```swift
+let customUrlQRImage = url.qrImage()
+// customUrlQRImage holds image data for QR image that represents the given URL address
 ```
 
 ## UIKit
