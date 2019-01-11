@@ -16,7 +16,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`187`** extensions + **`25`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`189`** extensions + **`25`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -37,10 +37,10 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 6](#core-image)
 - [Foundation - 101](#foundation)
-- [UIKit - 58](#uikit)
+- [UIKit - 59](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
-- [Grand Central Dispatch - 5](#grapnd-central-dispatch)
+- [Grand Central Dispatch - 6](#grapnd-central-dispatch)
 - [WebKit - 1](#webkit)
 - [PhotoKit - 1](#photokit)
 
@@ -812,6 +812,14 @@ Adds methods that allow to programmatically scroll to the `top`, `bottom` or to 
 Adds validation utils 
 
 ### UIImage
+#### [UIImage+Downsample](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BDownsample.swift)
+Downsamples the input image to the specified point size and scale factor. Can be used to present the thumbnails, supports caching:
+
+```swift
+let downsampledImage = UIImage.downsample(imageAt: url, to: targetSize)
+// downsampledImage stores a `UIImage` instance that was cached and downsized to the `targetSize`
+```
+
 #### [UIImage+ImageFromUIView](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UIImage/UIImage%2BImageFromUIView.swift) 
 Renders `UIView` to `UIImage`
 
@@ -905,8 +913,19 @@ Adds support for various mathematical operators for `SCNVector3` type
 ## Grand Central Dispatch
 
 ### Extensions
+
+### DispatchQueue
 #### [DispatchQueue+DispatchOnce](/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift)  
 Adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
+
+#### [DispatchQueue+AsyncAfter](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BAsyncAfter.swift)
+Convenience method that removes the need to pass `.now() + time` in order to make an async call:
+
+```swift
+DispatchQueue.main.asyncAfter(seconds: 2.5) {
+       expectation.fulfill()
+}
+```
 
 ### Custom Types
 #### [Atomic](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Atomics/Atomic.swift) 
