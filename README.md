@@ -8,7 +8,7 @@
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 10/January/2019.**
+**Last Update: 11/January/2019.**
 
 ![](logo-extensions_kit.png)
 
