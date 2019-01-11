@@ -19,7 +19,7 @@ public extension UIImage {
     ///   - pointSize: is the target size represented by `CGSize` that you wish to get
     ///   - scale: is the scale factor that is represented by `CGFloat`
     /// - Returns: an optional `UIImage` instnace that holds the downsampled image, or `nil` if either `CGImageSourceCreateWithURL` or `CGImageSourceCreateThumbnailAtIndex` has failed a `guard` statement
-    public func downsample(imageAt url: URL, to pointSize: CGSize, scale: CGFloat) -> UIImage? {
+    public static func downsample(imageAt url: URL, to pointSize: CGSize, scale: CGFloat) -> UIImage? {
         let imageSourceOptions = [kCGImageSourceShouldCache: false] as CFDictionary
         guard let imageSource = CGImageSourceCreateWithURL(url as CFURL, imageSourceOptions) else { return nil }
         
