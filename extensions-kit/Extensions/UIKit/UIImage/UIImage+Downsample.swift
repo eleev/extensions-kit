@@ -10,9 +10,9 @@ import UIKit
 
 public extension UIImage {
     
-    /// Downsamples the imput image to the specified point size and scale factor. Can be used to present the thumbnails, supports caching. The best way to unilize this method is to use GCD in order to delegate the work off the main thread, then use the .main dispatch queue to sync the results.
+    /// Downsamples the input image to the specified point size and scale factor. Can be used to present the thumbnails, supports caching. The best way to utilize this method is to use GCD in order to delegate the work off the main thread, then use the .main dispatch queue to sync the results.
     ///
-    /// There is a possible caveat when using this method intensively by repeatedly creating dispatch queues. That may lead to Thread Explosion. If you need to process many images, for instances for `UITableView` or `UICollectionView`, pelase use a serial dispatch queue and asyncronously delegate the work. That will prevent your downsampling code to cause Thread Explosion and will keep the performance at a decent level.
+    /// There is a possible caveat when using this method intensively by repeatedly creating dispatch queues. That may lead to Thread Explosion. If you need to process many images, for instances for `UITableView` or `UICollectionView`, please use a serial dispatch queue and asynchronously delegate the work. That will prevent your downsampling code to cause Thread Explosion and will keep the performance at a decent level.
     ///
     /// - Parameters:
     ///   - url: a URL instnace that that specifies the location of an image
