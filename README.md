@@ -727,6 +727,25 @@ let className = Foo.nameOfclass
 // className property holds `Foo`
 ```
 
+### NotificationCenter
+#### [NotificationCenter+PostUtils](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/NotificationCenter/NotificationCenter%2BPostUtils.swift)
+Various utility extensions that help to reduce the boilerplate code:
+
+```swift
+NotificationCenter.post(notification: .userHasUpdated)
+```
+
+### OperationQueue
+#### [OperationQueue+MainUtils](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Operaton/OperationQueue%2BMainUtils.swift)
+Utility extensions for `.main` operation queue:
+
+```swift
+OperationQueue.isMain // if current operation queue is the main the result will be true, otherwise false
+OperationQueue.onMain {
+        // This closure will be executed on the main operation queue
+}
+```
+
 ### URL
 #### [URL+QRImage](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/URL/URL%2BQRImage.swift)
 Creates a QR image from the `absoluteString` of the `URL`:
