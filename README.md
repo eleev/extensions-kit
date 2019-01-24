@@ -36,7 +36,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 6](#core-image)
-- [Foundation - 104](#foundation)
+- [Foundation - 106](#foundation)
 - [UIKit - 59](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -205,6 +205,20 @@ let blackTransparentImage = anotherImage.blackTransparent
 ```
 
 ## Foundation
+
+### NSObjectProtocol
+#### [NSObjectProtocol+KVO+KVC](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/NSObjectProtocol/NSObjectProtocol%2BKVO%2BKVC.swift)
+Observe and bind observables with ease:
+
+```swift
+// Binding is as easy as writing just a single line of code:
+viewModel.bind(\.progressSlider, to: progressSlider, at: \.value)
+
+// Observing for changes is thinner than the `Swifts 4.0` updated `KVO`:
+viewModel.observe(\.buttonTitle) { [button] in
+        button!.setTitle($0, for: .normal)
+}
+```
 
 ### Custom Protocols
 #### [Identifiable](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomProtocols/Identifiable.swift)
@@ -896,6 +910,14 @@ let loginViewController = UIViewController.instantiateController(from: mainStory
 
 // An another way to instantiate a UIViewController instnace: here the identifier will be the class name
 let viewController = UIViewController.instantiateController(from: mainStoryboard)
+```
+
+### UIWindow
+#### [UIWindow+Instantiate](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIWindow/UIWindow%2BInstantiate.swift)
+Syntactic sugar for much easier `UIWindow` instantiation:
+
+```swift
+window = UIWindow.create(with: coordinator.rootViewController, option: .keyAndVisible)
 ```
 
 ## SpriteKit
