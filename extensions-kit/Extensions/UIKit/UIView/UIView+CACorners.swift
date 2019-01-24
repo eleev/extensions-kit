@@ -32,9 +32,9 @@ public extension UIView {
         
         // MARK: - Static properties
         
-        public static let topLeft    = UICorner(rawValue: 1 << 0)
-        public static let topRight  = UICorner(rawValue: 1 << 1)
-        public static let bottomLeft   = UICorner(rawValue: 1 << 2)
+        public static let topLeft       = UICorner(rawValue: 1 << 0)
+        public static let topRight      = UICorner(rawValue: 1 << 1)
+        public static let bottomLeft    = UICorner(rawValue: 1 << 2)
         public static let bottomRight   = UICorner(rawValue: 1 << 3)
         
         public static let all: UICorner = [.topLeft, .topRight, .bottomLeft, .bottomRight]
