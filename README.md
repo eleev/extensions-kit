@@ -8,7 +8,7 @@
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 12/January/2019.**
+**Last Update: 24/January/2019.**
 
 ![](logo-extensions_kit.png)
 
@@ -16,7 +16,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`192`** extensions + **`25`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`195`** extensions + **`25`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -37,7 +37,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 6](#core-image)
 - [Foundation - 106](#foundation)
-- [UIKit - 59](#uikit)
+- [UIKit - 60](#uikit)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
 - [Grand Central Dispatch - 6](#grapnd-central-dispatch)
