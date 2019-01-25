@@ -32,6 +32,7 @@ You can always use `copy-paste` the sources method 😄. Or you can compile the 
 # ✏️ Notes
 - Technically you may reuse the majority of the extensions for `macOS`, `watchOS` and `tvOS`, even without the direct support of those `OSs`
 - The description says that this framework contains extensions for `macOS`, `watchOS` and `tvOS`. As it was pointed out, its the work in progress. However, technically you can reuse the majority of the extensions, but it can be done only manually at the moment
+- Please, note that this framework was developed for proprietary projects, later on it was decided to open source the framework. It's far from being finished, however it does provide some value. Those parts that are unit-test covered were/are actually tested in real projects. However, many of those extensions are experimental
 
 # 🗺 Roadmap
 These are the goals that need to be achieved over time:
