@@ -920,6 +920,16 @@ Syntactic sugar for much easier `UIWindow` instantiation:
 window = UIWindow.create(with: coordinator.rootViewController, option: .keyAndVisible)
 ```
 
+## os
+### OSLog
+#### [OSLog+LogLevels](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/os/OSLog/OSLog%2BLogLevels.swift)
+Adds a number of convenient log levels and a global function that simplifies logging:
+
+```swift
+os_log("Received .json data from the remove", log: .network)
+os_log("Attempting to sync with the main UI thread", log: .ui)
+```
+
 ## SpriteKit
 #### [SKTimingFunction](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/SpriteKit/SKTimingFunction.swift) 
 Adds **36(!)** different timing functions 
