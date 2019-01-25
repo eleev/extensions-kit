@@ -18,13 +18,13 @@ public extension OSLog {
     
     // MARK: Static properties
     
-    public static var ui = OSLog(subsystem: try! subsystem(), category: "UI")
-    public static var network = OSLog(subsystem: try! subsystem(), category: "Network")
+    public static var ui        = OSLog(subsystem: try! subsystem(), category: "UI")
+    public static var network   = OSLog(subsystem: try! subsystem(), category: "Network")
     public static var `default` = OSLog(subsystem: try! subsystem(), category: "Default")
-    public static var info = OSLog(subsystem: try! subsystem(), category: "Info")
-    public static var debug = OSLog(subsystem: try! subsystem(), category: "Debug")
-    public static var error = OSLog(subsystem: try! subsystem(), category: "Error")
-    public static var fault = OSLog(subsystem: try! subsystem(), category: "Fault")
+    public static var info      = OSLog(subsystem: try! subsystem(), category: "Info")
+    public static var debug     = OSLog(subsystem: try! subsystem(), category: "Debug")
+    public static var error     = OSLog(subsystem: try! subsystem(), category: "Error")
+    public static var fault     = OSLog(subsystem: try! subsystem(), category: "Fault")
     
     // MARK: - Private helpers
     
