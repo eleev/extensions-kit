@@ -30,6 +30,8 @@ pod 'extensions-kit', '~> 1.7.0'
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
 
 # ✏️ Notes
+Please read these notes before openning any new issues or "burning" this repo 😅:
+
 - Technically you may reuse the majority of the extensions for `macOS`, `watchOS` and `tvOS`, even without the direct support of those `OSs`
 - The description says that this framework contains extensions for `macOS`, `watchOS` and `tvOS`. As it was pointed out, its the work in progress. However, technically you can reuse the majority of the extensions, but it can be done only manually at the moment
 - Please, note that this framework was developed for proprietary projects, later on it was decided to open source it. It's far from being finished, however it does provide some value. Those parts that are unit-test covered were/are actually extensively used in real projects
