@@ -1,6 +1,7 @@
 # extensions-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]()
+<!-- [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]() -->
+[![Platforms](https://img.shields.io/badge/platforms-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![Coverage](https://img.shields.io/badge/coverage-23%2C30%25-red.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
@@ -27,6 +28,21 @@ pod 'extensions-kit', '~> 1.7.0'
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
+
+# ✏️ Notes
+- Technically you may reuse the majority of the extensions for `macOS`, `watchOS` and `tvOS`, even without the direct support of those `OSs`
+- The description says that this framework contains extensions for `macOS`, `watchOS` and `tvOS`. As it was pointed out, its the work in progress. However, technically you can reuse the majority of the extensions, but it can be done only manually at the moment
+
+# 🗺 Roadmap
+These are the goals that need to be achieved over time:
+
+- [ ] Add `macOS` framework target
+- [ ] Add `watchOS` framework target
+- [ ] Add `tvOS` framework target
+- [ ] Refactor the extensions into common `Sources` group, in order to be able to share them across different targets
+- [ ] Added unit test coverage and keep it at a high level
+- [ ] Add `TravisCI` support
+- [ ] Completely cover the framework with docs and sample code
 
 # 🍱 Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category + custom types. Each extension file may contain a number of extensions, grouped by a category.
