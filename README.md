@@ -1,12 +1,18 @@
 # extensions-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-<!-- [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]() -->
 [![Platforms](https://img.shields.io/badge/platforms-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-23%2C30%25-red.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
+[![Status](https://img.shields.io/badge/status-alpha-magenta.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
+<!-- The presented platforms are supported yet. This badge will be needed as soon as the platforms are actually supported -->
+<!-- [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]() -->
+
+<!-- Coverage was updated manually, which is ok, but CI needs to handle this task -->
+<!-- [![Coverage](https://img.shields.io/badge/coverage-23%2C30%25-red.svg)]() -->
+
+<!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
 **Last Update: 03/February/2019.**
