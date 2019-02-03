@@ -294,6 +294,29 @@ debouncer.schedule {
 // After 2.0 seconds the value will be changed to "Changed Value"
 ```
 
+### Custom TextOutputStream
+#### [FileOutputStream](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Custom%20TextOutputStream/FileOutputStream.swift)
+Prints the output stream to the specified file for the given `URL` and `encoding`:
+
+```swift
+let url = URL(fileURLWithPath: "/somePath/subpath/file.rtf")
+let fileHandle = try FileHandle(forWritingTo: url)
+var textOutputStream = TextOutputStream(fileHandle)
+
+print("\(outputString)", &textOutputStream)
+// The print statement will write the output stream to the specified FileHandle at the specified URL. This stream mimics Java's SDK File Output Stream. 
+```
+
+#### [](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/Custom%20TextOutputStream/UnicodeOutputStream.swift)
+ Prints all the `Unicode` characters with the following scheme:
+
+```swift
+var unicodeOutputStream = UnicodeOutputStream()
+print("👨‍👩‍👧‍👧", to: &unicodeOutputStream)
+
+// Will print all the unicode indices + characters + names
+```
+
 ### Functions 
 #### [FunctionalComposition](/extensions-kit/Extensions/Foundation/Functions/FunctionalComposition.swift)
 Is a number of functions that implement `Functional Composition` concept which allows to combine multiple functions and chain them together, in order to transform data. Consider the following construction: (`doubleNumbers` ->> `squareNumbers` ->> `convertToStringArray`)(array) which returns a processed array by linearly composing the functions (rather that nesting the function calls). Also the extension includes the `reversed` operator that composes functions in reversed order:
