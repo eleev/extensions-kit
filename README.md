@@ -17,7 +17,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`196`** extensions + **`25`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`196`** extensions + **`27`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -57,7 +57,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 6](#core-image)
-- [Foundation - 106](#foundation)
+- [Foundation - 108](#foundation)
 - [UIKit - 60](#uikit)
 - [os - 1](#os)
 - [SpriteKit - 11](#spritekit)
