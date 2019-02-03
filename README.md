@@ -3,7 +3,7 @@
 [![Platforms](https://img.shields.io/badge/platforms-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
-[![Status](https://img.shields.io/badge/status-alpha-magenta.svg)]()
+[![Status](https://img.shields.io/badge/status-Alpha-magenta.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 <!-- The presented platforms are supported yet. This badge will be needed as soon as the platforms are actually supported -->
