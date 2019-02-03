@@ -9,7 +9,7 @@
 
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 25/January/2019.**
+**Last Update: 03/February/2019.**
 
 ![](logo-extensions_kit.png)
 
