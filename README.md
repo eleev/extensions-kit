@@ -23,7 +23,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`196`** extensions + **`27`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`199`** extensions + **`27`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -64,7 +64,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 6](#core-image)
 - [Foundation - 108](#foundation)
-- [UIKit - 60](#uikit)
+- [UIKit - 63](#uikit)
 - [os - 1](#os)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
@@ -949,6 +949,10 @@ UIAlertController.present(with: "Warning!", and: "The item will be deleted", fro
 ```
 
 ### UIViewController
+
+#### [UIViewController+ContainerController](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BContainerViewController.swift)
+Loads, adds and removes container view controllers as children
+
 #### [UIViewController+ChildViewControllers](/extensions-kit/Extensions/UIKit/UIViewController/UIViewController%2BChildViewControllers.swift) 
 Addds convenience methods for `adding` and `removing` child view controllers
 
