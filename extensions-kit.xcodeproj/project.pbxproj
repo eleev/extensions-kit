@@ -67,6 +67,8 @@
 		A955729A21E8E98F00C54B36 /* OperationQueue+MainUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A955729921E8E98F00C54B36 /* OperationQueue+MainUtils.swift */; };
 		A95B443720B7DB9F00AC5E23 /* WKWebView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */; };
 		A95BCAB4216759F5006DF658 /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */; };
+		A95E0B7C2206D9FE0052A2F3 /* UIViewController+ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E0B7B2206D9FE0052A2F3 /* UIViewController+ContainerViewController.swift */; };
+		A95E0B7E2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E0B7D2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
 		A969EB0621F997B100E4F704 /* UIWindow+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969EB0521F997B100E4F704 /* UIWindow+Instantiate.swift */; };
 		A969EB0821F9986C00E4F704 /* NSObjectProtocol+KVO+KVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969EB0721F9986C00E4F704 /* NSObjectProtocol+KVO+KVC.swift */; };
@@ -272,6 +274,8 @@
 		A955729921E8E98F00C54B36 /* OperationQueue+MainUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+MainUtils.swift"; sourceTree = "<group>"; };
 		A95B443620B7DB9F00AC5E23 /* WKWebView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Load.swift"; sourceTree = "<group>"; };
 		A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Operators.swift"; sourceTree = "<group>"; };
+		A95E0B7B2206D9FE0052A2F3 /* UIViewController+ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContainerViewController.swift"; sourceTree = "<group>"; };
+		A95E0B7D2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContainerViewControllerTests.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
 		A969EB0521F997B100E4F704 /* UIWindow+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Instantiate.swift"; sourceTree = "<group>"; };
 		A969EB0721F9986C00E4F704 /* NSObjectProtocol+KVO+KVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObjectProtocol+KVO+KVC.swift"; sourceTree = "<group>"; };
@@ -565,6 +569,7 @@
 				A970A3F021E61A8D009B5046 /* DebouncerTests.swift */,
 				A970A3F221E61BE6009B5046 /* DispatchQueue+AsyncAfterTests.swift */,
 				A973B4FF22002F790024A957 /* UnicodeOutputStreamTests.swift */,
+				A95E0B7D2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift */,
 			);
 			path = "extensions-kit-tests";
 			sourceTree = "<group>";
@@ -944,6 +949,7 @@
 			children = (
 				A9A4BCDC20BC570900CA4848 /* UIViewController+ChildViewControllers.swift */,
 				A98E856E215FE5940023526B /* UIViewController+Storyboard.swift */,
+				A95E0B7B2206D9FE0052A2F3 /* UIViewController+ContainerViewController.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1607,6 +1613,7 @@
 				A9421F5E215E448200A4DFAC /* Date+FirstLast.swift in Sources */,
 				A9FA8526216230C80046B154 /* DoublyNode.swift in Sources */,
 				A93773BA2164F101008D809A /* UICollectionView+ScrollingUtils.swift in Sources */,
+				A95E0B7C2206D9FE0052A2F3 /* UIViewController+ContainerViewController.swift in Sources */,
 				A9E9D12F215F5F6C00E087C7 /* Array+Remove.swift in Sources */,
 				A9FD59CE215F62EA004ECA9A /* Array+MergeSort.swift in Sources */,
 				A929498620962BE600350C43 /* Int+Power.swift in Sources */,
@@ -1639,6 +1646,7 @@
 				A9ABF93E216CF84F00BF4350 /* IntDecimalToBinaryTests.swift in Sources */,
 				A9332C6921259B030041C558 /* DictionaryTests.swift in Sources */,
 				A973B50022002F790024A957 /* UnicodeOutputStreamTests.swift in Sources */,
+				A95E0B7E2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift in Sources */,
 				A9AFCF1A216899A800980730 /* ArrayFilterTests.swift in Sources */,
 				A9FECAB721E4970B00FF45C4 /* IdentifiableTests.swift in Sources */,
 				A9498F8A21B96D8900D498ED /* BuilderProtocolTests.swift in Sources */,
