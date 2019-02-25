@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import extensions_kit
 
 class UIColorTests: XCTestCase {
 
@@ -35,7 +36,9 @@ class UIColorTests: XCTestCase {
         XCTAssert(blackColorComponents == (hue: 0.0, saturation: 0.0, brightness: 0.0, alpha: 1.0))
         
         let customColor = UIColor(hue: 0.45, saturation: 0.23, brightness: 0.75, alpha: 0.86)
-        let customColorComponents = customColor.hsba
+        var customColorComponents = customColor.hsba
+        customColorComponents.saturation = customColorComponents.saturation.rounded(toPlaces: 2)
+        
         XCTAssert(customColorComponents == (hue: 0.45, saturation: 0.23, brightness: 0.75, alpha: 0.86))
     }
     

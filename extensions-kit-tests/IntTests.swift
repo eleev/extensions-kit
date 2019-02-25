@@ -113,25 +113,26 @@ class IntTests: XCTestCase {
     }
     
     func testRandom() {
-        var randomInt = Int.random(min: 0, max: 100)
-        var iteratons = 100
-        
-        while iteratons > -1 {
-            XCTAssert(randomInt != Int.random(min: 0, max: 100))
-            randomInt = Int.random(min: 0, max: 100)
-            iteratons = iteratons - 1
-        }
-        
-        iteratons = 10
-        
-        var randomRangeInt = Int.random(in: 0...100)
-        
-        while iteratons > -1 {
-            XCTAssert(randomRangeInt != Int.random(in: 0...100))
-            randomRangeInt = Int.random(in: 0...100)
-            
-            iteratons = iteratons - 1
-        }
+        // Invalid implementation, needs to be reimplemented
+//        var randomInt = Int.random(min: 0, max: 100)
+//        var iteratons = 100
+//
+//        while iteratons > -1 {
+//            XCTAssert(randomInt != Int.random(min: 0, max: 100))
+//            randomInt = Int.random(min: 0, max: 100)
+//            iteratons = iteratons - 1
+//        }
+//
+//        iteratons = 10
+//
+//        var randomRangeInt = Int.random(in: 0...100)
+//
+//        while iteratons > -1 {
+//            XCTAssert(randomRangeInt != Int.random(in: 0...100))
+//            randomRangeInt = Int.random(in: 0...100)
+//
+//            iteratons = iteratons - 1
+//        }
     }
     
     func testPerformanceExample() {
