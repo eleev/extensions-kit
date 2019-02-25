@@ -3,8 +3,9 @@
 [![Platforms](https://img.shields.io/badge/platforms-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
-[![Status](https://img.shields.io/badge/status-Alpha-magenta.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+
+<!-- [![Status](https://img.shields.io/badge/status-Alpha-magenta.svg)]() -->
 
 <!-- The presented platforms are supported yet. This badge will be needed as soon as the platforms are actually supported -->
 <!-- [![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-yellow.svg)]() -->
@@ -15,7 +16,7 @@
 <!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 09/February/2019.**
+**Last Update: 25/February/2019.**
 
 ![](logo-extensions_kit.png)
 
