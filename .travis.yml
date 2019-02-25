@@ -1,0 +1,8 @@
+language: swift 4.2.1
+os: osx
+osx_image: xcode10.1
+
+branches:
+only:
+- master
+- stable
