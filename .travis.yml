@@ -2,5 +2,5 @@ language: objective-c
 osx_image: xcode10.1
 
 script:
-- set -o pipefail && xcodebuild test -workspace extensions-kit/extensions-kit.xcworkspace -scheme extensions-kit -sdk iphonesimulator12.1 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -workspace extensions-kit.xcworkspace -scheme extensions-kit -sdk iphonesimulator12.1 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
