@@ -1,4 +1,6 @@
 language: objective-c
 osx_image: xcode10.1
-xcode_project: extensions-kit.xcodeproj
-xcode_scheme: extensions-kit
+
+script:
+- set -o pipefail && xcodebuild test -workspace extensions-kit/extensions-kit.xcworkspace -scheme extensions-kit -sdk iphonesimulator12.1 ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod lib lint
