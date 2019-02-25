@@ -1,4 +1,4 @@
-language: swift 4.2.1
+language: swift4.2
 os: osx
 osx_image: xcode10.1
 
