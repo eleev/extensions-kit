@@ -4,7 +4,7 @@
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![Build Status](https://travis-ci.org/jVirus/extensions-kit.svg?branch=master)](https://travis-ci.org/jVirus/extensions-kit)
-[![Coverage](https://codecov.io/gh/codecov/extensions-kit/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/extensions-kit/branch/master)
+[![Coverage](https://codecov.io/gh/jVirus/extensions-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/jVirus/extensions-kit)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 <!-- [![Status](https://img.shields.io/badge/status-Alpha-magenta.svg)]() -->
