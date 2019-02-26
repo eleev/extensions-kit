@@ -4,6 +4,7 @@
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
 [![Build Status](https://travis-ci.org/jVirus/extensions-kit.svg?branch=master)](https://travis-ci.org/jVirus/extensions-kit)
+[![Coverage](https://codecov.io/gh/codecov/extensions-kit/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/extensions-kit/branch/master)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 <!-- [![Status](https://img.shields.io/badge/status-Alpha-magenta.svg)]() -->
@@ -17,7 +18,7 @@
 <!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 25/February/2019.**
+**Last Update: 26/February/2019.**
 
 ![](logo-extensions_kit.png)
 
@@ -46,10 +47,11 @@ Please read these notes before openning any new issues or "burning" this repo �
 - The best way to help is to contribute by implementing fixes/features or additions and openning pool requests
 
 # 🗺 Roadmap
-These are the goals that need to be achieved over time:
 
 - [x] Add `TravisCI` support
-- [ ] Added unit test coverage and keep it at a high level
+- [x] Add `Codecov` support
+- [ ] Add support for docs generation
+- [ ] Add unit test coverage and keep it at a high level
 - [ ] Cover the framework with docs and sample code
 
 # 🍱 Categories
