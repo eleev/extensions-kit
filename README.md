@@ -273,7 +273,7 @@ var imageView = UIImageView().then {
 }
 ```
 
-### Custom Structures
+### Custom Types
 #### [Variable](/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomStructures/Variable.swift) 
 Lightweight bindable data type that allows to get on update notifications for a given value. Can be used with `MVVM` or any another architectural pattern to replace the need for 3rd party, heavyweight binding framework:
 
@@ -297,6 +297,23 @@ debouncer.schedule {
         value = "Changed Value"            
 }
 // After 2.0 seconds the value will be changed to "Changed Value"
+```
+
+#### [ObservableArray](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Foundation/CustomTypes/ObservableArray.swift)
+Syncronous, thread-safe observable array type:
+
+```swift
+let array: ObservableArray = [1,2,3,4,5]
+array += 6
+array += [7,8]
+
+array.allChanges = { change in
+        // Both changes will, for addition of `6` and `[7,8]` will be reflected in `change` property and the appropriate callbacks will be made
+}
+
+array.removeFirst()
+array.removeLast()
+array.remove(at: 4)
 ```
 
 ### Custom TextOutputStream
