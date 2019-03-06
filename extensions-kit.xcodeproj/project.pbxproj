@@ -71,7 +71,7 @@
 		A95E0B7E2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E0B7D2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
 		A968D5CA222D7793009A0357 /* ObservableArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968D5C9222D7793009A0357 /* ObservableArrayTests.swift */; };
-		A968D5CD222D77F2009A0357 /* ObservableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968D5CC222D77F2009A0357 /* ObservableCollection.swift */; };
+		A968D5CD222D77F2009A0357 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968D5CC222D77F2009A0357 /* ObservableArray.swift */; };
 		A969EB0621F997B100E4F704 /* UIWindow+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969EB0521F997B100E4F704 /* UIWindow+Instantiate.swift */; };
 		A969EB0821F9986C00E4F704 /* NSObjectProtocol+KVO+KVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969EB0721F9986C00E4F704 /* NSObjectProtocol+KVO+KVC.swift */; };
 		A96A71FB2146397E006A6C15 /* UIImage+Inverted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A71FA2146397E006A6C15 /* UIImage+Inverted.swift */; };
@@ -283,7 +283,7 @@
 		A95E0B7D2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContainerViewControllerTests.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
 		A968D5C9222D7793009A0357 /* ObservableArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArrayTests.swift; sourceTree = "<group>"; };
-		A968D5CC222D77F2009A0357 /* ObservableCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableCollection.swift; sourceTree = "<group>"; };
+		A968D5CC222D77F2009A0357 /* ObservableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
 		A969EB0521F997B100E4F704 /* UIWindow+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Instantiate.swift"; sourceTree = "<group>"; };
 		A969EB0721F9986C00E4F704 /* NSObjectProtocol+KVO+KVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObjectProtocol+KVO+KVC.swift"; sourceTree = "<group>"; };
 		A96A71FA2146397E006A6C15 /* UIImage+Inverted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Inverted.swift"; sourceTree = "<group>"; };
@@ -471,7 +471,7 @@
 			children = (
 				A90BEB4721C0ED79009AAF03 /* Variable.swift */,
 				A980805521E4FC820009E7B2 /* Debouncer.swift */,
-				A968D5CC222D77F2009A0357 /* ObservableCollection.swift */,
+				A968D5CC222D77F2009A0357 /* ObservableArray.swift */,
 			);
 			path = CustomTypes;
 			sourceTree = "<group>";
@@ -1613,7 +1613,7 @@
 				A9D4CFC3209AEA29006461AF /* Int+Roman.swift in Sources */,
 				A929498820962BE600350C43 /* Int+Digits.swift in Sources */,
 				A9ACB9832099E69F00966991 /* DispatchQueue+DispatchOnce.swift in Sources */,
-				A968D5CD222D77F2009A0357 /* ObservableCollection.swift in Sources */,
+				A968D5CD222D77F2009A0357 /* ObservableArray.swift in Sources */,
 				A98E856F215FE5940023526B /* UIViewController+Storyboard.swift in Sources */,
 				A9B9A8A82160FAC400D1D0C0 /* Stack.swift in Sources */,
 				A9FA852E216231940046B154 /* PriorityQueue.swift in Sources */,
