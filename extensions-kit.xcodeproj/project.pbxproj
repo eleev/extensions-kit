@@ -86,8 +86,6 @@
 		A971E5C121D6094600BF0D20 /* Array+IntersectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971E5C021D6094600BF0D20 /* Array+IntersectionTests.swift */; };
 		A971E5C321D60A5100BF0D20 /* Array+RemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971E5C221D60A5100BF0D20 /* Array+RemoveTests.swift */; };
 		A973B50022002F790024A957 /* UnicodeOutputStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973B4FF22002F790024A957 /* UnicodeOutputStreamTests.swift */; };
-		A973F48B220ED749008FF6F8 /* UndoManager+Replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973F48A220ED749008FF6F8 /* UndoManager+Replace.swift */; };
-		A973F48E220ED8F8008FF6F8 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973F48D220ED8F8008FF6F8 /* FileWatcher.swift */; };
 		A97A737D20AAF35500657828 /* CGRect+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */; };
 		A980805421E4FB7C0009E7B2 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = A980805321E4FB7C0009E7B2 /* Then.swift */; };
 		A980805621E4FC830009E7B2 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A980805521E4FC820009E7B2 /* Debouncer.swift */; };
@@ -298,8 +296,6 @@
 		A971E5C021D6094600BF0D20 /* Array+IntersectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+IntersectionTests.swift"; sourceTree = "<group>"; };
 		A971E5C221D60A5100BF0D20 /* Array+RemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+RemoveTests.swift"; sourceTree = "<group>"; };
 		A973B4FF22002F790024A957 /* UnicodeOutputStreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeOutputStreamTests.swift; sourceTree = "<group>"; };
-		A973F48A220ED749008FF6F8 /* UndoManager+Replace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UndoManager+Replace.swift"; sourceTree = "<group>"; };
-		A973F48D220ED8F8008FF6F8 /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
 		A97A737C20AAF35500657828 /* CGRect+AspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectFit.swift"; sourceTree = "<group>"; };
 		A980805321E4FB7C0009E7B2 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		A980805521E4FC820009E7B2 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
@@ -818,22 +814,6 @@
 			path = UIScreen;
 			sourceTree = "<group>";
 		};
-		A973F489220ED731008FF6F8 /* UndoManager */ = {
-			isa = PBXGroup;
-			children = (
-				A973F48A220ED749008FF6F8 /* UndoManager+Replace.swift */,
-			);
-			path = UndoManager;
-			sourceTree = "<group>";
-		};
-		A973F48C220ED8E3008FF6F8 /* FileWatcher */ = {
-			isa = PBXGroup;
-			children = (
-				A973F48D220ED8F8008FF6F8 /* FileWatcher.swift */,
-			);
-			path = FileWatcher;
-			sourceTree = "<group>";
-		};
 		A9860C2021FB202A007FD12C /* os */ = {
 			isa = PBXGroup;
 			children = (
@@ -1014,7 +994,6 @@
 		A9ACB9812099E68000966991 /* Grand Central Dispatch */ = {
 			isa = PBXGroup;
 			children = (
-				A973F48C220ED8E3008FF6F8 /* FileWatcher */,
 				A92BBB98214FF61C00BE02CD /* Atomics */,
 				A92BBB97214FF60800BE02CD /* Locks */,
 				A9ACB9822099E69F00966991 /* DispatchQueue+DispatchOnce.swift */,
@@ -1133,7 +1112,6 @@
 		A9D4CFBD209AE7E1006461AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				A973F489220ED731008FF6F8 /* UndoManager */,
 				A9272E5921FF4FB900CE8714 /* Custom TextOutputStream */,
 				A969EB0921F9999200E4F704 /* NSObjectProtocol */,
 				A94C3EEC21E8EB3200A29D3F /* NotificationCenter */,
@@ -1573,7 +1551,6 @@
 				A92BBB94214FF5DA00BE02CD /* ReadWriteLock.swift in Sources */,
 				A9FD59D8215F6434004ECA9A /* Array+RadixSort.swift in Sources */,
 				A93773B82164EFD1008D809A /* UITableView+Safety.swift in Sources */,
-				A973F48B220ED749008FF6F8 /* UndoManager+Replace.swift in Sources */,
 				A90BEB4821C0ED79009AAF03 /* Variable.swift in Sources */,
 				A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */,
 				A9B14F2A20A5DB89005221BA /* SCNVector3+Operators.swift in Sources */,
@@ -1617,7 +1594,6 @@
 				A98E856F215FE5940023526B /* UIViewController+Storyboard.swift in Sources */,
 				A9B9A8A82160FAC400D1D0C0 /* Stack.swift in Sources */,
 				A9FA852E216231940046B154 /* PriorityQueue.swift in Sources */,
-				A973F48E220ED8F8008FF6F8 /* FileWatcher.swift in Sources */,
 				A9D4CFCC209AEB88006461AF /* Collection+RandomItem.swift in Sources */,
 				A92BBB8E214FF5A200BE02CD /* LockType.swift in Sources */,
 				A96E1189219F017900F36250 /* UIScreen+InterfaceOrientation.swift in Sources */,
