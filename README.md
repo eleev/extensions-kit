@@ -50,6 +50,7 @@ Please read these notes before openning any new issues or "burning" this repo ðŸ
 
 - [x] Add `TravisCI` support
 - [x] Add `Codecov` support
+- [ ] Remove non iOS extensions (`AppKit`)
 - [ ] Add support for docs generation
 - [ ] Add unit test coverage and keep it at a high level
 - [ ] Cover the framework with docs and sample code
