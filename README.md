@@ -18,7 +18,7 @@
 <!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 06/March/2019.**
+**Last Update: 13/March/2019.**
 
 ![](logo-extensions_kit.png)
 
@@ -26,7 +26,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`199`** extensions + **`28`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`197`** extensions + **`24`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -68,10 +68,9 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [os - 1](#os)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 1](#scenekit)
-- [Grand Central Dispatch - 6](#grapnd-central-dispatch)
 - [WebKit - 1](#webkit)
 - [PhotoKit - 1](#photokit)
-
+- [concurrency-kit - for `GCD` extensions + even more](https://github.com/jVirus/concurrency-kit)
 
 # 📚 List of Extensions
 All the extensions are split into separete `groups` each of which represents a separete `SDK framework`. 
@@ -1032,36 +1031,6 @@ Uploads an animation sequence from a texture atlas and returns an array of textu
 ## SceneKit
 #### [SCNVector3+Operators](/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) 
 Adds support for various mathematical operators for `SCNVector3` type
-
-## Grand Central Dispatch
-
-### Extensions
-
-### DispatchQueue
-#### [DispatchQueue+DispatchOnce](/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BDispatchOnce.swift)  
-Adds support for `class` method that executes block of code only once a.k.a. `DispatchOnce` before `Swift 3.0`
-
-#### [DispatchQueue+AsyncAfter](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/Grand%20Central%20Dispatch/DispatchQueue%2BAsyncAfter.swift)
-Convenience method that removes the need to pass `.now() + time` in order to make an async call:
-
-```swift
-DispatchQueue.main.asyncAfter(seconds: 2.5) {
-       expectation.fulfill()
-}
-```
-
-### Custom Types
-#### [Atomic](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Atomics/Atomic.swift) 
-Guarantees that a valid value will be returned when accessing such property by using multiple threads
-
-### [Mutex](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/Mutex.swift) 
-Used to proptect shared resources. A mutex is owned by the task that takes it. In a given region of code only one thread is active
-
-#### [ReadWriteLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/ReadWriteLock.swift) 
-A synchronization primitive that solves one of the readers–writers problems
-
-### [UnfairLock](/extensions-kit/Extensions/Grand%20Central%20Dispatch/Locks/UnfairLock.swift) 
-A lock which causes a thread trying to acquire it to simply wait in a loop ("spin") while repeatedly checking if the lock is available
 
 ## WebKit
 
