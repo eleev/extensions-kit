@@ -124,7 +124,6 @@
 		A9AFCF182168910A00980730 /* ArraySortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AFCF172168910A00980730 /* ArraySortingTests.swift */; };
 		A9AFCF1A216899A800980730 /* ArrayFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AFCF19216899A800980730 /* ArrayFilterTests.swift */; };
 		A9AFCF1C21689CD500980730 /* ArrayUnionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AFCF1B21689CD500980730 /* ArrayUnionTests.swift */; };
-		A9B068CC223A2E06006B56D9 /* .codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = A9B068CB223A2E06006B56D9 /* .codecov.yml */; };
 		A9B14F2120A5D9EB005221BA /* CGRect+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */; };
 		A9B14F2520A5DA65005221BA /* MutableCollection+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */; };
 		A9B14F2720A5DACE005221BA /* Sequence+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */; };
@@ -326,7 +325,6 @@
 		A9AFCF172168910A00980730 /* ArraySortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySortingTests.swift; sourceTree = "<group>"; };
 		A9AFCF19216899A800980730 /* ArrayFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayFilterTests.swift; sourceTree = "<group>"; };
 		A9AFCF1B21689CD500980730 /* ArrayUnionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayUnionTests.swift; sourceTree = "<group>"; };
-		A9B068CB223A2E06006B56D9 /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codecov.yml; sourceTree = "<group>"; };
 		A9B14F2020A5D9EB005221BA /* CGRect+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Scale.swift"; sourceTree = "<group>"; };
 		A9B14F2420A5DA65005221BA /* MutableCollection+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Shuffle.swift"; sourceTree = "<group>"; };
 		A9B14F2620A5DACE005221BA /* Sequence+Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Shuffle.swift"; sourceTree = "<group>"; };
@@ -497,7 +495,6 @@
 		A929495920962BD400350C43 = {
 			isa = PBXGroup;
 			children = (
-				A9B068CB223A2E06006B56D9 /* .codecov.yml */,
 				A9EC4C84222425750059B8F6 /* .travis.yml */,
 				A929499520962E9C00350C43 /* .gitignore */,
 				A929496520962BD400350C43 /* extensions-kit */,
@@ -1377,7 +1374,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EC4C85222425750059B8F6 /* .travis.yml in Resources */,
-				A9B068CC223A2E06006B56D9 /* .codecov.yml in Resources */,
 				A929499620962E9C00350C43 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

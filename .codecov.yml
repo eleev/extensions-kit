@@ -1,2 +1,0 @@
-ignore:
-    - "extensions-kit/extensions-kit-tests/.*"  # ignore unit test folder and all its contents
