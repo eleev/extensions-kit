@@ -1,6 +1,7 @@
 codecov:
 strict_yaml_branch: master
 
+coverage:
 ignore:
-- "extensions-kit-tests/.*"
-- "Extensions/AppKit/NSBezierPath+cgPath.swift"
+- extensions-kit-tests/.*
+- Extensions/AppKit/NSBezierPath+cgPath.swift
