@@ -18,7 +18,7 @@
 <!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 14/March/2019.**
+**Last Update: 15/March/2019.**
 
 ![](logo-extensions_kit.png)
 
