@@ -7,7 +7,7 @@ script:
 
 #- xcodebuild -scheme extensions-kit -workspace extensions-kit.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone XS,OS=12.1' build test
 
-xcode_project: extensions-kit.xcodeproj
+xcode_workspace: extensions-kit.xcworkspace
 xcode_scheme: extensions-kit
 xcode_sdk: iphonesimulator12.1
 
