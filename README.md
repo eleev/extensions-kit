@@ -26,7 +26,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`197`** extensions + **`24`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`200`** extensions + **`24`** custom types.
 
 # 🏗 Installation
 ## CocoaPods
@@ -888,6 +888,20 @@ view.mask(corners: .allCorners, with: 10)
 #### [UIColor+ColorComponents](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BColorComponents.swift)
 Adds support for missing color components properties such as `rgba`, `hsba` and `grayscale`
 
+#### [UIColor+Blend](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BBlend.swift)
+Blends two colors by mixing the `RGBA` components:
+
+```swift
+let blendedColor = red.blend(with: blue, intensity: 0.5)
+```
+
+#### [UIColor+Brightness](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/UIKit/UIColor/UIColor%2BBrightness.swift)
+Changes the brightness of a color:
+
+```swift
+let brighterRed = red.increaseBrightness(0.25)
+```
+
 ### UICollectionView
 #### [UICollectionView+CustomCellRegistration](https://github.com/jVirus/ios-extensions/blob/master/extensions-kit/Extensions/UIKit/UICollectionView/UICollectionView%2BCustomCellRegistration.swift) 
 Registers custom `UICollectionViewCell` for a `UICollectionView` instance. `UICollectionViewCell` needs to be located in current Bundle
@@ -1029,8 +1043,17 @@ Adds a convenience initializer that generates a `gradient texture` for the speci
 Uploads an animation sequence from a texture atlas and returns an array of textures that can be futher used
 
 ## SceneKit
+
 #### [SCNVector3+Operators](/extensions-kit/Extensions/SceneKit/SCNVector3%2BOperators.swift) 
 Adds support for various mathematical operators for `SCNVector3` type
+
+#### [SCNAction+MoveAlong](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/SceneKit/SCNAction%2BMoveAlong.swift)
+The extension adds a new action method that allows a node to move along a `UIBezierPath`:
+
+```swift
+let flyoverAction = SCNAction.moveAlong(path: flyoverPath, z: 10, speed: plane.speed)
+plane.run(flyoverAction)
+```
 
 ## WebKit
 
