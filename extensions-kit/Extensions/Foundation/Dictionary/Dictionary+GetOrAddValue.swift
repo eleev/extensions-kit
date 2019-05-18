@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Dictionary {
+extension Dictionary {
     
     /// Checks for a value for a given key or creates a new key/value pair if none was found
     public mutating func value(for key: Key, orAdd valueClosure: @autoclosure () -> Value) -> Value {

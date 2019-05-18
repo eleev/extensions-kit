@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIApplication {
+extension UIApplication {
     
     public class func safeAreaBottom() -> CGFloat {
         let window = getFirstSharedAppsWindow()

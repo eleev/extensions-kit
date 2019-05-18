@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Dictionary {
+extension Dictionary {
     
     /// Unions self and the input dictionaries
     ///

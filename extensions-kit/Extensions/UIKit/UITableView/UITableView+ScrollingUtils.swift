@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UITableView {
+extension UITableView {
     
     /// Scrolls to bottom of the UITalbeView
     ///

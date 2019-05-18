@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension NSLayoutConstraint {
+extension NSLayoutConstraint {
     
     /// Sets the priority of the constraint to the specified value and then return self
     @discardableResult public func with(priority: UILayoutPriority) -> Self {

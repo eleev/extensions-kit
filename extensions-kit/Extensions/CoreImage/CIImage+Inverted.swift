@@ -8,7 +8,7 @@
 
 import CoreImage.CIImage
 
-public extension CIImage {
+extension CIImage {
     
     /// Inverts the colors of `self`
     public var inverted: CIImage? {

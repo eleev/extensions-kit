@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Collection where Index == Int {
+extension Collection where Index == Int {
     
     public var randomItem: Element? {
         guard !isEmpty else { return nil }

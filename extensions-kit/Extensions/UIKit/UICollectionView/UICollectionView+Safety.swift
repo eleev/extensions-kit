@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UICollectionView {
+extension UICollectionView {
     
     /// Checks if the index path is valid
     ///

@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Adds conformances to CoutableClosedRnage, CountableRange, PartialRangeThrough and PartialRangeFrom protocols support in a form of subscripts
-public extension String {
+extension String {
     
     public subscript(value: CountableClosedRange<Int>) -> Substring {
         return self[index(startIndex, offsetBy: value.lowerBound)...index(startIndex, offsetBy: value.upperBound)]

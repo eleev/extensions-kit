@@ -10,7 +10,7 @@ import Foundation
 
 public extension Array where Element: Comparable {
     
-    public static func quickSortHoare(array: inout [Element], lowest: Int, highest: Int) {
+    static func quickSortHoare(array: inout [Element], lowest: Int, highest: Int) {
         
         if lowest < highest {
             let pivot = Array.partitionHoare(array: &array, lowest: lowest, highest: highest)

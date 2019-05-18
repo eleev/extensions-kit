@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Decodable {
+extension Decodable {
   
     /// Decodes a file into a type
     ///

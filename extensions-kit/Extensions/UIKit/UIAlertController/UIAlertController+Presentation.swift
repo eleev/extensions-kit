@@ -8,7 +8,7 @@
 
 import UIKit.UIAlertController
 
-public extension UIAlertController {
+extension UIAlertController {
     
     /// Presents a UIAlertController with the given title, message, tintColor and alert actions
     ///

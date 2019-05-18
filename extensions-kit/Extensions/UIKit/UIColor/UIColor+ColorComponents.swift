@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - The extension adds support for missing color components properties for various use cases
-public extension UIColor {
+extension UIColor {
     
     // MARK: - Properties
     

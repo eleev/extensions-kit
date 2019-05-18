@@ -11,7 +11,7 @@ import SpriteKit
 import ImageIO
 
 // MARK: - Adds support for uploading GIFs from local files
-public extension SKSpriteNode {
+extension SKSpriteNode {
     
     // MARK: - Convenience initializers
     

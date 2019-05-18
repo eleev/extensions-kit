@@ -14,7 +14,7 @@ public enum SubsystemError: Error {
 }
 
 @available(iOS 12.0, *)
-public extension OSLog {
+extension OSLog {
     
     // MARK: Static properties
     

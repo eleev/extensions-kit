@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS, deprecated: 11.0)
-public extension UIView {
+extension UIView {
     
     /// Rounds the corners of self by masking the CALayer with a CAShapeLayer using UIBezierPath
     ///

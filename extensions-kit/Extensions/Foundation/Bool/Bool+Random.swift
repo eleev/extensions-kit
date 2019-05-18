@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Bool {
+extension Bool {
     
     public static var random: Bool {
         return arc4random_uniform(2) == 1

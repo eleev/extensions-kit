@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension String {
+extension String {
     
     /// Finds the first occurence for a given String
     public func index(of input: String,

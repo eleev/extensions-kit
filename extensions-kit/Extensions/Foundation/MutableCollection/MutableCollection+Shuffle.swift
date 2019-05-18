@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension MutableCollection where Self: RandomAccessCollection {
+extension MutableCollection where Self: RandomAccessCollection {
     
     /// In-place shuffling of self
     public mutating func shuffle() {

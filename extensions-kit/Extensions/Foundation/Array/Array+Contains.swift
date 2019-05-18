@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array where Element: Equatable {
+extension Array where Element: Equatable {
     
     /// Checks if self contains the specified elements
     ///
@@ -17,7 +17,7 @@ public extension Array where Element: Equatable {
     public func contains(elements: Element...) -> Bool {
         
         return elements.all {
-            let result = self.index(of: $0)
+            let result = self.firstIndex(of: $0)
             // Note that the force unwrapping here is safe because we explicitly checked whether the result is nil or not
             return result == nil ? false : result! >= 0
         }

@@ -43,17 +43,21 @@ class StringTests: XCTestCase {
     func testIndexOf() {
         let testString = "This is the test text z"
         
-        let zIndex = testString.lastIndex(of: "z")
-        XCTAssert(zIndex?.encodedOffset == testString.count - 1)
+        let zSymbol = "z"
+        let zIndex = testString.lastIndex(of: zSymbol)
+        XCTAssert(zIndex?.utf16Offset(in: zSymbol) == testString.count - 1)
         
-        let tIndex = testString.lastIndex(of: "t")
-        XCTAssert(tIndex?.encodedOffset == testString.count - 3)
+        let tSymbol = "t"
+        let tIndex = testString.lastIndex(of: tSymbol)
+        XCTAssert(tIndex?.utf16Offset(in: tSymbol) == testString.count - 3)
         
-        let iIndex = testString.lastIndex(of: "i")
-        XCTAssert(iIndex?.encodedOffset == testString.count - 18)
+        let iSymbol = "i"
+        let iIndex = testString.lastIndex(of: iSymbol)
+        XCTAssert(iIndex?.utf16Offset(in: iSymbol) == testString.count - 18)
         
-        let yIndex = testString.lastIndex(of: "Y")
-        XCTAssertFalse(yIndex?.encodedOffset == testString.count - 18)
+        let ySymbol = "y"
+        let yIndex = testString.lastIndex(of: ySymbol)
+        XCTAssertFalse(yIndex?.utf16Offset(in: ySymbol) == testString.count - 18)
     }
     
     func testBase64() {

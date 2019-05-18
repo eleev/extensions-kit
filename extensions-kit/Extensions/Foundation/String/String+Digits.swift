@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension String {
+extension String {
     
     /// Combines decimal digits into a single String property
     public var digits: String {

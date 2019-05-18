@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     /// Takes a screenshot of self, and returns an optional UIImage instance
     public var screenshot: UIImage? {

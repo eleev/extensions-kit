@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Date {
+extension Date {
     
     public func nextDate() -> Date {
         let nextDate = Calendar.current.date(byAdding: .day, value: 1, to: self)

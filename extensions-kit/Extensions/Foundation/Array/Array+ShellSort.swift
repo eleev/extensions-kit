@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array where Element: Comparable {
+extension Array where Element: Comparable {
     
     // Shell sort is an improved version of insertion sort. The original list is broken into smaller sublists and then individually sorted using insertion sort.
     public mutating func shellSorted(order sign: (Element, Element) -> Bool) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIImage {
+extension UIImage {
     
     /// Downsamples the input image to the specified point size and scale factor. Can be used to present the thumbnails, supports caching. The best way to utilize this method is to use GCD in order to delegate the work off the main thread, then use the .main dispatch queue to sync the results.
     ///

@@ -10,7 +10,7 @@ import UIKit.UIImage
 
 public extension UIImage {
     
-    class func rawOrientation(_ value: UIImage.Orientation) -> Int32 {
+    class func rawOrientation(_ value: UIImage.Orientation) -> Int32? {
         switch (value) {
         case .up:
             return 1
@@ -28,6 +28,8 @@ public extension UIImage {
             return 5
         case .rightMirrored:
             return 7
+        @unknown default:
+            return nil
         }
     }
 }

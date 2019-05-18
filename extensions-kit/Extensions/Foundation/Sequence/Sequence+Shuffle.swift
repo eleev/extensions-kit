@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Sequence {
+extension Sequence {
     
     /// Shuffls the elements of self
     ///

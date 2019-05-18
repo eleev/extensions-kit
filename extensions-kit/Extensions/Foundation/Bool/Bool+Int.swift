@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Bool {
+extension Bool {
     
     public var int: Int {
         return self ? 1 : 0

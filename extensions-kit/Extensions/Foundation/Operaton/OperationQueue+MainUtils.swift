@@ -11,12 +11,12 @@ import Foundation
 public extension OperationQueue {
     
     /// Checks whether the current queue is the main
-    public static var isMain: Bool {
+    static var isMain: Bool {
         return main == current
     }
     
     /// Executes an operation on the main operation queue
-    public static func onMain(_ operation: @escaping () -> Void) {
+    static func onMain(_ operation: @escaping () -> Void) {
         OperationQueue.main.addOperation(operation)
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array where Element == Int {
+extension Array where Element == Int {
     
     // Radix sort relies on the positional notation of integers and sorts an integer array for linear time.
     public mutating func radixSorted(of base: Int = 10) {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array where Element: Comparable {
+extension Array where Element: Comparable {
     
     /// Sorts self in place with the given order (<, >) using the Insertion Sort algorithm
     public mutating func insertionSorted(order: (Element, Element) -> Bool) {

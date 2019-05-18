@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     public func animateLayoutBounce(duration: Double = 0.5,
                                     usingSpringWithDamping damping: CGFloat = 0.8,

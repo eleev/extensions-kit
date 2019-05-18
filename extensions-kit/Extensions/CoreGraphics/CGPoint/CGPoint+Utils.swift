@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-public extension CGPoint {
+extension CGPoint {
     
     public func length() -> CGFloat {
         return sqrt(x*x + y*y)
@@ -28,10 +28,16 @@ public extension CGPoint {
         return self
     }
     
-    public func distanceTo(_ point: CGPoint) -> CGFloat {
-        return (self - point).length()
+    /// Computes the distance between the current [`self`] and the `other` point
+    public func distance(to other: CGPoint) -> CGFloat {
+        return sqrt(pow(x - other.x, 2) + pow(y - other.y, 2))
     }
-
+    
+    /// Computes an angle in radians between the current [`self`] and the argument parameter `point`
+    public func angle(to point: CGPoint) -> CGFloat {
+        return atan2(point.y - y, point.x - x)
+    }
+    
     /// Returns the angle in radians of the vector described by the CGPoint. The range of the angle is -π to π; an angle of 0 points to the right.
     public var angle: CGFloat {
         return atan2(y, x)

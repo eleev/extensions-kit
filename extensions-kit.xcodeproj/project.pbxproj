@@ -64,6 +64,11 @@
 		A95BCAB4216759F5006DF658 /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */; };
 		A95E0B7C2206D9FE0052A2F3 /* UIViewController+ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E0B7B2206D9FE0052A2F3 /* UIViewController+ContainerViewController.swift */; };
 		A95E0B7E2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95E0B7D2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift */; };
+		A961450B2283F62E00B8035B /* UIColor+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96145092283F62E00B8035B /* UIColor+Brightness.swift */; };
+		A961450C2283F62E00B8035B /* UIColor+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961450A2283F62E00B8035B /* UIColor+Blend.swift */; };
+		A961450E2283F85B00B8035B /* SCNAction+MoveAlong.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961450D2283F85B00B8035B /* SCNAction+MoveAlong.swift */; };
+		A96145122283F8D900B8035B /* UIBezierPath+RandomPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96145102283F8D800B8035B /* UIBezierPath+RandomPoint.swift */; };
+		A96145132283F8D900B8035B /* UIBezierPath+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96145112283F8D900B8035B /* UIBezierPath+Convenience.swift */; };
 		A961E14420C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */; };
 		A968D5CA222D7793009A0357 /* ObservableArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968D5C9222D7793009A0357 /* ObservableArrayTests.swift */; };
 		A968D5CD222D77F2009A0357 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968D5CC222D77F2009A0357 /* ObservableArray.swift */; };
@@ -267,6 +272,11 @@
 		A95BCAB3216759F5006DF658 /* CGSize+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Operators.swift"; sourceTree = "<group>"; };
 		A95E0B7B2206D9FE0052A2F3 /* UIViewController+ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContainerViewController.swift"; sourceTree = "<group>"; };
 		A95E0B7D2206DF420052A2F3 /* UIViewController+ContainerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContainerViewControllerTests.swift"; sourceTree = "<group>"; };
+		A96145092283F62E00B8035B /* UIColor+Brightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Brightness.swift"; sourceTree = "<group>"; };
+		A961450A2283F62E00B8035B /* UIColor+Blend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Blend.swift"; sourceTree = "<group>"; };
+		A961450D2283F85B00B8035B /* SCNAction+MoveAlong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNAction+MoveAlong.swift"; sourceTree = "<group>"; };
+		A96145102283F8D800B8035B /* UIBezierPath+RandomPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+RandomPoint.swift"; sourceTree = "<group>"; };
+		A96145112283F8D900B8035B /* UIBezierPath+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Convenience.swift"; sourceTree = "<group>"; };
 		A961E14320C0166F0069C29A /* UICollectionView+CustomCellRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCellRegistration.swift"; sourceTree = "<group>"; };
 		A968D5C9222D7793009A0357 /* ObservableArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArrayTests.swift; sourceTree = "<group>"; };
 		A968D5CC222D77F2009A0357 /* ObservableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
@@ -722,6 +732,15 @@
 			path = CGSize;
 			sourceTree = "<group>";
 		};
+		A961450F2283F8D000B8035B /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				A96145112283F8D900B8035B /* UIBezierPath+Convenience.swift */,
+				A96145102283F8D800B8035B /* UIBezierPath+RandomPoint.swift */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
 		A961E14220C0162F0069C29A /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -979,6 +998,7 @@
 			isa = PBXGroup;
 			children = (
 				A9B14F2920A5DB89005221BA /* SCNVector3+Operators.swift */,
+				A961450D2283F85B00B8035B /* SCNAction+MoveAlong.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -1047,6 +1067,7 @@
 		A9D4CFBC209AE7D7006461AF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A961450F2283F8D000B8035B /* UIBezierPath */,
 				A969EB0421F9978C00E4F704 /* UIWindow */,
 				A9E0485021DE16560000A9C4 /* UIAlertController */,
 				A99219D521B2718D007986AE /* Badge */,
@@ -1151,6 +1172,8 @@
 			isa = PBXGroup;
 			children = (
 				A9D91E8F21188A7300E9D822 /* UIColor+ColorComponents.swift */,
+				A961450A2283F62E00B8035B /* UIColor+Blend.swift */,
+				A96145092283F62E00B8035B /* UIColor+Brightness.swift */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -1345,11 +1368,11 @@
 				TargetAttributes = {
 					A929496220962BD400350C43 = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					A929496B20962BD400350C43 = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -1359,6 +1382,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A929495920962BD400350C43;
 			productRefGroup = A929496420962BD400350C43 /* Products */;
@@ -1489,6 +1513,8 @@
 				A96A720321463BFB006A6C15 /* NSLayoutConstraint+Activation.swift in Sources */,
 				A9FA8521216230700046B154 /* LinkedList.swift in Sources */,
 				A9E14DAB20B159700075D725 /* CGPoint+Utils.swift in Sources */,
+				A96145122283F8D900B8035B /* UIBezierPath+RandomPoint.swift in Sources */,
+				A96145132283F8D900B8035B /* UIBezierPath+Convenience.swift in Sources */,
 				A9FD59CC215F6268004ECA9A /* Array+InsertionSort.swift in Sources */,
 				A9C0B7E72133F76500C0D908 /* String+FormattedDate.swift in Sources */,
 				A9498F8C21B9717A00D498ED /* String+Subscript.swift in Sources */,
@@ -1521,6 +1547,8 @@
 				A980805621E4FC830009E7B2 /* Debouncer.swift in Sources */,
 				A90BEB4521C0E945009AAF03 /* Sequence+DuplicatesRemoved.swift in Sources */,
 				A92130B92096F0DB0043ADAB /* Int+EvenOdd.swift in Sources */,
+				A961450C2283F62E00B8035B /* UIColor+Blend.swift in Sources */,
+				A961450B2283F62E00B8035B /* UIColor+Brightness.swift in Sources */,
 				A9AB24F12142AEB7006E334B /* Dictionary+ConvenienceWrappers.swift in Sources */,
 				A98EFF3921AAE6EB0016BCD5 /* RandomAccessCollection+BinarySearch.swift in Sources */,
 				A9AB24EF2142AD5F006E334B /* Dictionary+Difference.swift in Sources */,
@@ -1532,6 +1560,7 @@
 				A9D4CFC6209AEA7F006461AF /* Bool+Int.swift in Sources */,
 				A9B9A8AB2160FB6000D1D0C0 /* Queue.swift in Sources */,
 				A92130B72096F0910043ADAB /* Int+Factorial.swift in Sources */,
+				A961450E2283F85B00B8035B /* SCNAction+MoveAlong.swift in Sources */,
 				A9D4CFBF209AE813006461AF /* SKScene+SerialSpriteLoading.swift in Sources */,
 				A9AB24E92142A83F006E334B /* Array+Contains.swift in Sources */,
 				A9421F4F215E427900A4DFAC /* Notification.swift in Sources */,
@@ -1776,7 +1805,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.extensions-kit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1802,7 +1831,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.extensions-kit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1822,7 +1851,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.extensions-kit-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1842,7 +1871,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.extensions-kit-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

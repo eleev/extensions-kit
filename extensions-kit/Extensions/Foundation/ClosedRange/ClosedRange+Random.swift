@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension ClosedRange {
+extension ClosedRange {
     
     // MARK: - Properties
     

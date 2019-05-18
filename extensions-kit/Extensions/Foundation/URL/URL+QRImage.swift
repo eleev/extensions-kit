@@ -10,7 +10,7 @@ import Foundation
 import UIKit.UIImage
 import CoreImage.CIImage
 
-public extension URL {
+extension URL {
     
     /// Creates a QR image from the `absoluteString` of the `URL`
     ///

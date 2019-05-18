@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension RandomAccessCollection {
+extension RandomAccessCollection {
     
     /// Binary Search algorithm for a given value with the closure that specified the order of the elements
     public func binarySearch(for value: Iterator.Element,
@@ -35,7 +35,7 @@ public extension RandomAccessCollection {
     
 }
 
-public extension RandomAccessCollection where Iterator.Element: Comparable {
+extension RandomAccessCollection where Iterator.Element: Comparable {
     
     public func binarySearch(for value: Iterator.Element) -> Index? {
         return binarySearch(for: value, isOrderIncreasing: <)

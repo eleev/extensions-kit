@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Int {
+extension Int {
     
     /// Checks if a number is even
     ///

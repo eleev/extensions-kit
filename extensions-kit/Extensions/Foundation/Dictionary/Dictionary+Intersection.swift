@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Dictionary where Key: Equatable, Value: Equatable {
+extension Dictionary where Key: Equatable, Value: Equatable {
     
     /// Computes intersection of self and the input Dictionaries
     ///

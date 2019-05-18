@@ -24,7 +24,11 @@ public extension UIView {
     /// The struct provides all the capabilities of the standard API `CACornerMask` through `OptoinSet` protocol.
     ///
     /// There are `5` different constants that can be chained together: 4 constants for each corner and the 5th one for all corners.
-    public struct UICorner: OptionSet {
+    struct UICorner: OptionSet {
+        
+        // MARK: - Typealiases
+        
+        public typealias RawValue = UInt
         
         // MARK: - Conformance to OptionSet protocol
         
@@ -74,27 +78,27 @@ public extension UIView {
     /// - Parameters:
     ///   - corners: is a UICorner struct
     ///   - radius: is a CGFloat argument
-    public func round(corners: UICorner, radius: CGFloat) {
+    func round(corners: UICorner, radius: CGFloat) {
         layer.cornerRadius = radius
         layer.maskedCorners = corners.convert()
         clipsToBounds = true
     }
     
     /// Rounds all the corners with the given radius
-    public func roundAllCorners(with radius: CGFloat) {
+    func roundAllCorners(with radius: CGFloat) {
         round(corners: .all, radius: radius)
     }
     
     /// Returns current corner radius
-    public func getCornerRadius() -> CGFloat {
+    func getCornerRadius() -> CGFloat {
         return layer.cornerRadius
     }
     
-    public func getRoundedCorners() -> UIView.UICorner {
+    func getRoundedCorners() -> UIView.UICorner {
         return UICorner.encode(cornerMask: layer.maskedCorners)
     }
     
-    public func resetRoundedCorners() {
+    func resetRoundedCorners() {
         layer.cornerRadius = 0
         layer.maskedCorners = .init(rawValue: 0)
     }

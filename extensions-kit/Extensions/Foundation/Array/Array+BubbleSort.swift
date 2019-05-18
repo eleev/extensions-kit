@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array where Element: Comparable {
+extension Array where Element: Comparable {
     
     public mutating func bubbleSorted(order sign: (Element, Element) -> Bool) {
         let count = self.count

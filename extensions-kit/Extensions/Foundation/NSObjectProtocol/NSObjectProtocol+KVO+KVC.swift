@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension NSObjectProtocol where Self: NSObject {
+extension NSObjectProtocol where Self: NSObject {
     
     @discardableResult public func observe<Value>(for keyPath: KeyPath<Self, Value>, onChange: @escaping (Value) -> ()) -> NSKeyValueObservation {
         return observe(keyPath, options: [.initial, .new], changeHandler: { (_, change) in

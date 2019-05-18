@@ -45,7 +45,7 @@ class Subject {
     /// Searches for the observer and returns its index
     public subscript(observer: Observer) -> Int? {
         get {
-            guard let index = observers.index(where: { $0.value === observer }) else {
+            guard let index = observers.firstIndex(where: { $0.value === observer }) else {
                 return nil
             }
             return index

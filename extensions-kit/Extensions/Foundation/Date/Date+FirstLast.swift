@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Date {
+extension Date {
     
     public var firstDayOfWeek: Date {
         var beginningOfWeek = Date()

@@ -239,6 +239,6 @@ extension Heap where T: Equatable {
     /// - Parameter node: is a Node of type T that is going to be searched
     /// - Returns: is an index in Heap array
     public func index(of node: T) -> Int? {
-        return nodes.index(where: { $0 == node })
+        return nodes.firstIndex(where: { $0 == node })
     }
 }

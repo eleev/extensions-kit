@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension NSLayoutConstraint {
+extension NSLayoutConstraint {
     
     public func setConstant(for value: CGFloat, animated: Bool = false, duration: TimeInterval = 0.3) {
         constant = value

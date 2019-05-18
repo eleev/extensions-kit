@@ -12,7 +12,7 @@ import Foundation
 public protocol BuilderProtocol { /* empty, implementation is added to the protocol extension*/ }
 
 #if swift(>=4.0)
-public extension BuilderProtocol where Self: AnyObject {
+extension BuilderProtocol where Self: AnyObject {
     
     @discardableResult
     public func `init`<T>(_ property: ReferenceWritableKeyPath<Self, T>, with value: T) -> Self {

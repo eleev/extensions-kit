@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Dictionary {
+extension Dictionary {
     
     public func jsonData(prettify: Bool = false) -> Data? {
         guard JSONSerialization.isValidJSONObject(self) else {

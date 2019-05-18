@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Sequence where Element: Equatable {
+extension Sequence where Element: Equatable {
     
     /// Removes the duplicate elements and returns the new Sequence without duplicates if any
     /// The complexity is O(log(n))

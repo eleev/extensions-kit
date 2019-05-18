@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension String {
+extension String {
     
     /// Encodes self to Base64 String encoding
     ///

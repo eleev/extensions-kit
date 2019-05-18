@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array where Element: Comparable {
+extension Array where Element: Comparable {
     
     public static func quickSortLomuto(array: inout [Element], lowest: Int, highest: Int)  {
         if lowest < highest {

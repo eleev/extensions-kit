@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UICollectionView {
+extension UICollectionView {
     
     /// Scrolls to the bottom of the UICollectionView
     ///

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension NSObject {
+extension NSObject {
     
     /// Contains name of a class
     public class var nameOfClass: String {

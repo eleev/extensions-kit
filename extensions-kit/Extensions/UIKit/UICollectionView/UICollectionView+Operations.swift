@@ -8,11 +8,11 @@
 
 import UIKit
 
-public extension UICollectionView {
+extension UICollectionView {
     
     // MARK: - Typealiases
     
-    typealias UICollectionViewCompletion = (Bool) -> ()
+    public typealias UICollectionViewCompletion = (Bool) -> ()
     
     // MARK: - Methods
     

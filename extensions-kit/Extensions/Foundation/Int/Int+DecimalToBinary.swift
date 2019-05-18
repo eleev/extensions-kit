@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Int {
+extension Int {
     
     /// Converts a decimal number to a binary number using the conventional algorithm.
     ///

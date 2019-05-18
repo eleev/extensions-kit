@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Collection {
+extension Collection {
     
     /// Safely checks whether the collection is able to retreive an element for the given Index, otherwise it will return nil
     public subscript(safe index: Index) -> Element? {

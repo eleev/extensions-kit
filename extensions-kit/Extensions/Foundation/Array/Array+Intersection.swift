@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array where Element: Equatable {
+extension Array where Element: Equatable {
     
     /// Computes intersection of self and the input values
     ///

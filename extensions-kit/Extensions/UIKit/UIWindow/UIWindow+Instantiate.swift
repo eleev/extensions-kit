@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIWindow {
+extension UIWindow {
     
     /// Creates a new `UIWindow` instance with the given root view controller, frame and a `WindowOption` if any
     public static func create<T: UIViewController>(with rootViewController: T, frame: CGRect = UIScreen.main.bounds, option: WindowOption = .none) -> UIWindow {

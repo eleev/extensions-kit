@@ -9,7 +9,7 @@
 import Foundation
 
 /// Merge sort is a sorting algorithm that has lower order running time than the insertion sort algorithm. Conceptually it is a devide and conquer sorting algorithm.
-public extension Array where Element: Comparable {
+extension Array where Element: Comparable {
     
     // MARK: - Typealiases
     

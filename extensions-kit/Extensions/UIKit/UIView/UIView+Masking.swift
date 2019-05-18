@@ -8,7 +8,7 @@
 
 import UIKit.UIView
 
-public extension UIView {
+extension UIView {
     
     /// Masks the view with the specified UIRectCorner array and corner radius
     public func mask(corners: UIRectCorner = [], with cornerRadius: CGFloat = 6) {

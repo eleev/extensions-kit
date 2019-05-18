@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UITableView {
+extension UITableView {
     
     /// Checks if the index path is valid
     ///

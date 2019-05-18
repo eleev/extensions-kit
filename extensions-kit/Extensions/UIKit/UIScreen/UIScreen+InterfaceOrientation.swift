@@ -8,7 +8,7 @@
 
 import UIKit.UIScreen
 
-public extension UIScreen {
+extension UIScreen {
     
     /// Interface orientation for the current UIScreen
     public var orientation: UIInterfaceOrientation {

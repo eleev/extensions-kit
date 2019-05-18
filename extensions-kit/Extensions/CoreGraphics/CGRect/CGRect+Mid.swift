@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-public extension CGRect {
+extension CGRect {
     
     public var mid: CGPoint {
         return CGPoint(x: midX, y: midY)

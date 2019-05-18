@@ -9,12 +9,12 @@
 import Foundation
 
 /// The extension adds support for convenience 'remove' methods for single elements, varargs and arrays of elements
-public extension Array where Element: Equatable {
+extension Array where Element: Equatable {
   
     /// Removes an Element by mutating the array
     @discardableResult
     public mutating func remove(object: Element) -> Element? {
-        return index(of: object).map { self.remove(at: $0) }
+        return firstIndex(of: object).map { self.remove(at: $0) }
     }
   
     /// Removes a number of Elements by mutating the origianl array

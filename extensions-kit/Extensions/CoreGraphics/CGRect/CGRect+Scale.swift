@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-public extension CGRect {
+extension CGRect {
     
     public func scaled(to size: CGSize) -> CGRect {
         return CGRect(

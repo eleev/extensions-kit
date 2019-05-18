@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Collection where Iterator.Element == IntegerLiteralType {
+extension Collection where Iterator.Element == IntegerLiteralType {
     
     public var sum: Element {
         return isEmpty ? 0 : reduce(0, +)

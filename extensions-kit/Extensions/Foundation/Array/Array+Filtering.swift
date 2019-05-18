@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Array {
+extension Array {
     
     /// Skipps the n number of elements and returns the remainig of the array
     ///

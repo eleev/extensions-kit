@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UICollectionView {
+extension UICollectionView {
     
     /// Registers custom UICollectionViewCell for a UICollectionView instance. UICollectionViewCell needs to be located in current Bundle
     ///

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Dictionary {
+extension Dictionary {
     
     public func has(key: Key) -> Bool {
         return self[key] != nil

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Collection {
+extension Collection {
     
     public func parallelForEach(_ each: (Self.Iterator.Element) -> Void) {
         let indicesArray = Array(indices)

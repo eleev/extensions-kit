@@ -8,7 +8,7 @@
 
 import CoreImage.CIImage
 
-public extension CIImage {
+extension CIImage {
     
     /// Creates a transparent image by inverting the colors of `self`. Target image should be black and white
     public var transparent: CIImage? {

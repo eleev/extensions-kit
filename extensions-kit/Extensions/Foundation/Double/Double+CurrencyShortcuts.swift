@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Double {
+extension Double {
     
     public var usd: String? {
         return formatter(for: "en_US_POSIX")

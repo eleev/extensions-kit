@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     /// Wrapper for 'setContentHuggingPriority' method with more convenient name
     public func setHugging(priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) {

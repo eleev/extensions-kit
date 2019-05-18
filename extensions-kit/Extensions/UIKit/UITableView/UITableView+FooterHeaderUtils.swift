@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UITableView {
+extension UITableView {
     
     ///  Removes table footer view
     public func removeTableFooterView() {

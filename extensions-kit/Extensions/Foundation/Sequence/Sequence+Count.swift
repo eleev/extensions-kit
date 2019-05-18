@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Sequence {
+extension Sequence {
     
     /// Performs a logical condition and counts all true results
     ///

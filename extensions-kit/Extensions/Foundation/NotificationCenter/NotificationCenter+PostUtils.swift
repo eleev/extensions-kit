@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension NotificationCenter {
+extension NotificationCenter {
     
     /// Posts a notification by using the `default` notification center
     public static func post(notification name: Foundation.Notification.Name, object: Any? = nil) {

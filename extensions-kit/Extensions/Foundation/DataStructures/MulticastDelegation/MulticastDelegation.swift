@@ -25,7 +25,7 @@ public class MulticastDelegate<T> {
     /// Searches for the delegate and returns its index
     public subscript(delegate: T) -> Int? {
         get {
-            guard let index = delegates.index(where: { $0.value  === delegate as AnyObject }) else {
+            guard let index = delegates.firstIndex(where: { $0.value  === delegate as AnyObject }) else {
                 return nil
             }
             return index

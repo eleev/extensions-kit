@@ -8,7 +8,7 @@
 
 import CoreImage.CIImage
 
-public extension CIImage {
+extension CIImage {
     
     /// Generates a QR image from the input `text` and with an optional `scale` parameter that specifies the affine transformation for the output `CIImage`
     public static func qrImage(from text: String, scaledBy scale: CGPoint = CGPoint(x: 10, y: 10)) -> CIImage? {

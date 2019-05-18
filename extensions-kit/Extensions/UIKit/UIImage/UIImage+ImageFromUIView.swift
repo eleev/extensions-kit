@@ -9,7 +9,7 @@
 import UIKit.UIImage
 import UIKit.UIView
 
-public extension UIImage {
+extension UIImage {
     
     public class func image(from view: UIView) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, 0.0)

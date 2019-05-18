@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Extension that adds missing operations
-public extension OptionSet where Element == Self {
+extension OptionSet where Element == Self {
     
     /// Duplicates the set, inserts the new element and returns Self
     public func inserting(new element: Self) -> Self {

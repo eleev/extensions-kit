@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIImage {
+extension UIImage {
     
     /// Inverts self by applying CIColorInvert filter
     public var inverted: UIImage? {

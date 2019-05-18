@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-public extension CGSize {
+extension CGSize {
     
     public static func +(left: CGSize, right: CGSize) -> CGSize {
         return CGSize(width: left.width + right.width, height: right.height + right.height)
