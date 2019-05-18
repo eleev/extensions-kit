@@ -2,7 +2,7 @@
 
 [![Platforms](https://img.shields.io/badge/platforms-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![CocoaPod](https://img.shields.io/badge/pod-1.7.0-lightblue.svg)]()
+[![CocoaPod](https://img.shields.io/badge/pod-1.8.0-lightblue.svg)]()
 [![Build Status](https://travis-ci.org/jVirus/extensions-kit.svg?branch=master)](https://travis-ci.org/jVirus/extensions-kit)
 [![Coverage](https://codecov.io/gh/jVirus/extensions-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/jVirus/extensions-kit)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
@@ -33,7 +33,7 @@
 `extensions-kit` is availabe via `CocoaPods`
 
 ```
-pod 'extensions-kit', '~> 1.7.0' 
+pod 'extensions-kit', '~> 1.8.0' 
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
