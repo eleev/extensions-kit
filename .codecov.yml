@@ -1,6 +1,0 @@
-codecov:
-strict_yaml_branch: master
-
-ignore:
-- "extensions-kit/extensions-kit-tests/.*"
-- "extensions-kit/Extensions/AppKit/NSBezierPath+cgPath.swift"

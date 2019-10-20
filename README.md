@@ -29,11 +29,23 @@
 📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`200`** extensions + **`24`** custom types.
 
 # 🏗 Installation
-## CocoaPods
-`extensions-kit` is availabe via `CocoaPods`
+## Swift Package Manager
 
-```
-pod 'extensions-kit', '~> 1.8.0' 
+### Xcode 11+
+
+1. Open `MenuBar` → `File` → `Swift Packages` → `Add Package Dependency...`
+2. Paste the package repository url `https://github.com/jVirus/extensions-kit` and hit `Next`.
+3. Select the installment rules.
+
+After specifying which version do you want to install, the package will be downloaded and attached to your project. 
+
+### Package.swift
+If you already have a `Package.swift` or you are building your own package simply add a new dependency:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/jVirus/extensions-kit", from: "1.0.0")
+]
 ```
 ## Manual
 You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
