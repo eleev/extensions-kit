@@ -25,7 +25,7 @@ public struct Queue<T> {
             return data.capacity
         }
         set {
-            data.reserveCapacity(capacity)
+            data.reserveCapacity(newValue)
         }
     }
     

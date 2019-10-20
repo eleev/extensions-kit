@@ -24,7 +24,7 @@ public struct Dequeue<T> {
             return data.capacity
         }
         set {
-            data.reserveCapacity(capacity)
+            data.reserveCapacity(newValue)
         }
     }
     
