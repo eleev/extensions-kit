@@ -1,11 +1,13 @@
 # extensions-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Platforms](https://img.shields.io/badge/platforms-iOS-yellow.svg)]()
-[![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
-[![CocoaPod](https://img.shields.io/badge/pod-1.8.0-lightblue.svg)]()
-[![Build Status](https://travis-ci.org/jVirus/extensions-kit.svg?branch=master)](https://travis-ci.org/jVirus/extensions-kit)
-[![Coverage](https://codecov.io/gh/jVirus/extensions-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/jVirus/extensions-kit)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![Platforms](https://img.shields.io/badge/Platforms-iOS-yellow.svg)]()
+[![Language](https://img.shields.io/badge/Language-Swift-orange.svg)]()
+[![SPM](https://img.shields.io/badge/SPM-Supported-lightblue.svg)]()
+[![Extensions](https://img.shields.io/badge/Extensions-218-red.svg)]()
+[![CustomTypes](https://img.shields.io/badge/Types-24-green.svg)]()
+<!-- [![Build Status](https://travis-ci.org/jVirus/extensions-kit.svg?branch=master)](https://travis-ci.org/jVirus/extensions-kit) -->
+<!--[![Coverage](https://codecov.io/gh/jVirus/extensions-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/jVirus/extensions-kit) -->
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
 <!-- [![Status](https://img.shields.io/badge/status-Alpha-magenta.svg)]() -->
 
@@ -26,7 +28,7 @@
 
 # ✍️ About
 
-📦 Collection of Swift extensions(+ custom types) for various use cases. The kit contains **`200`** extensions + **`24`** custom types.
+📦 Collection of Swift extensions(+ custom types) for various use cases.
 
 # 🏗 Installation
 ## Swift Package Manager
@@ -58,19 +60,9 @@ Please read these notes before openning any new issues or "burning" this repo �
 - Many of the presented extensions are experimental. They represent the state of mind at the moment of development. They may not reflect your own vision of doing things, or they may have some issues. Please, be polite and professional and describe your issues (if any) by openning a new issue, or searching for existing one
 - The best way to help is to contribute by implementing fixes/features or additions and openning pool requests
 
-# 🗺 Roadmap
-
-- [x] Add `TravisCI` support
-- [x] Add `Codecov` support
-- [ ] Remove non iOS extensions (`AppKit`)
-- [ ] Add support for docs generation
-- [ ] Add unit test coverage and keep it at a high level
-- [ ] Cover the framework with docs and sample code
-
 # 🍱 Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category + custom types. Each extension file may contain a number of extensions, grouped by a category.
 
-- [AppKit - 1](#appkit)
 - [AVFoundation - 1](#avfoundation) 
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
@@ -80,23 +72,12 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [os - 1](#os)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 2](#scenekit)
-- [WebKit - 1](#webkit)
 - [PhotoKit - 1](#photokit)
 - [concurrency-kit - for `GCD` extensions + even more](https://github.com/jVirus/concurrency-kit)
 
 # 📚 List of Extensions
 All the extensions are split into separete `groups` each of which represents a separete `SDK framework`. 
 
-## AppKit
-
-## NSBezierPath
-#### [NSBezierPath+cgPath](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AppKit/NSBezierPath%2BcgPath.swift) 
-Adds missing `cgPath` property that converts `self` (port of similar functionality from `iOS`)
-
-```swift
-let path = bezierPath.cgPath
-// path is of type CGPath and can be used in a shared code with iOS, tvOS or watchOS targets
-```
 
 ## AVFoundation
 #### [AVCaptureDevice+ToggleFlash](https://github.com/jVirus/extensions-kit/blob/master/extensions-kit/Extensions/AVFoundation/AVCaptureDevice%2BToggleFlash.swift)
@@ -1066,12 +1047,6 @@ The extension adds a new action method that allows a node to move along a `UIBez
 let flyoverAction = SCNAction.moveAlong(path: flyoverPath, z: 10, speed: plane.speed)
 plane.run(flyoverAction)
 ```
-
-## WebKit
-
-### WKWebView
-#### [WKWebView+Load](/extensions-kit/Extensions/WebKit/WKWebView/WKWebView%2BLoad.swift) 
-Adds support for navigating to the requested `URL` using `String`
 
 ## PhotoKit
 
