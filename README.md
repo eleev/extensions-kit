@@ -51,15 +51,7 @@ dependencies: [
 ]
 ```
 ## Manual
-You can always use `copy-paste` the sources method 😄. Or you can compile the framework and include it with your project.
-
-# ✏️ Notes
-Please read these notes before openning any new issues or "burning" this repo 🔥😅:
-
-- Technically you may reuse the majority of the extensions for `macOS`, `watchOS` and `tvOS`, even without the direct support of those `OSs`
-- Please, note that this framework was developed for proprietary projects, later on it was decided to open source it. It's far from being finished, however it does provide some value. Those parts that are unit-test covered were/are actually extensively used in real projects
-- Many of the presented extensions are experimental. They represent the state of mind at the moment of development. They may not reflect your own vision of doing things, or they may have some issues. Please, be polite and professional and describe your issues (if any) by openning a new issue, or searching for existing one
-- The best way to help is to contribute by implementing fixes/features or additions and openning pool requests
+You can always use `copy-paste` the sources method 😄.
 
 # 🍱 Categories
 List of categories for convenient navigation. The `numbers` represent total number of extensions for a given category + custom types. Each extension file may contain a number of extensions, grouped by a category.
