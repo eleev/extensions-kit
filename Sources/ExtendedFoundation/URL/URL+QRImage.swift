@@ -9,7 +9,7 @@
 import Foundation
 import UIKit.UIImage
 import CoreImage.CIImage
-import ExCoreImage
+import ExtendedCoreImage
 
 extension URL {
     

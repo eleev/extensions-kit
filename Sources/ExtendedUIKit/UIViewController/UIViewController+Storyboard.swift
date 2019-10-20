@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ExFoundation
+import ExtendedFoundation
 
 extension UIViewController {
 

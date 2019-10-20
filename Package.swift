@@ -13,17 +13,18 @@ let package = Package(
         .library(
             name: "ExtensionsKit",
             targets: [
-                "ExAVFoundation",
-                "ExCoreAnimation",
-                "ExCoreGraphics",
-                "ExCoreImage",
-                "ExFoundation",
-                "ExFoundationDataStructures",
-                "Exos",
-                "ExPhotoKit",
-                "ExSceneKit",
-                "ExSpriteKit",
-                "ExUIKit"
+                "ExtendedAVFoundation",
+                "ExtendedCoreAnimation",
+                "ExtendedCoreGraphics",
+                "ExtendedCoreImage",
+                "ExtendedFoundation",
+                "ExtendedFoundationDataStructures",
+                "ExtendedFoundationSorting",
+                "Extendedos",
+                "ExtendedPhotoKit",
+                "ExtendedSceneKit",
+                "ExtendedSpriteKit",
+                "ExtendedUIKit"
         ]),
     ],
     dependencies: [
@@ -34,49 +35,57 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "ExAVFoundation",
+            name: "ExtendedAVFoundation",
+            dependencies: []),
+        .target(
+            name: "ExtendedCoreAnimation",
+            dependencies: []),
+        .target(
+            name: "ExtendedCoreGraphics",
+            dependencies: []),
+        .target(
+            name: "ExtendedCoreImage",
+            dependencies: []),
+        .target(
+            name: "ExtendedFoundation",
+            dependencies: [
+                "ExtendedCoreImage"
+        ]),
+        .testTarget(
+            name: "ExtendedFoundationTests",
+            dependencies: [
+                "ExtendedFoundation"
+        ]),
+        .target(
+            name: "ExtendedFoundationDataStructures",
+            dependencies: []),
+        .target(
+            name: "ExtendedFoundationSorting",
             dependencies: []),
         .testTarget(
-            name: "ExAVFoundationTests",
+            name: "ExtendedFoundationSortingTests",
             dependencies: [
-                "ExAVFoundation"
+                "ExtendedFoundationSorting"
         ]),
         .target(
-            name: "ExCoreAnimation",
+            name: "Extendedos",
             dependencies: []),
         .target(
-            name: "ExCoreGraphics",
+            name: "ExtendedPhotoKit",
             dependencies: []),
         .target(
-            name: "ExCoreImage",
-            dependencies: []),
-        .target(
-            name: "ExFoundation",
+            name: "ExtendedSceneKit",
             dependencies: [
-                "ExCoreImage"
+                "ExtendedCoreGraphics",
+                "ExtendedUIKit"
         ]),
         .target(
-            name: "ExFoundationDataStructures",
+            name: "ExtendedSpriteKit",
             dependencies: []),
         .target(
-            name: "Exos",
-            dependencies: []),
-        .target(
-            name: "ExPhotoKit",
-            dependencies: []),
-        .target(
-            name: "ExSceneKit",
+            name: "ExtendedUIKit",
             dependencies: [
-                "ExCoreGraphics",
-                "ExUIKit"
-        ]),
-        .target(
-            name: "ExSpriteKit",
-            dependencies: []),
-        .target(
-            name: "ExUIKit",
-            dependencies: [
-                "ExFoundation"
+                "ExtendedFoundation"
         ])
     ]
 )

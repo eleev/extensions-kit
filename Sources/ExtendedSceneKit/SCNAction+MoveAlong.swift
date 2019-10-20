@@ -10,8 +10,8 @@ import class SceneKit.SCNAction
 import struct SceneKit.SCNVector3
 import CoreGraphics
 import class UIKit.UIBezierPath
-import ExUIKit
-import ExCoreGraphics
+import ExtendedUIKit
+import ExtendedCoreGraphics
 
 extension SCNAction {
     
