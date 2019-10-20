@@ -1,13 +1,14 @@
 # extensions-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Platforms](https://img.shields.io/badge/Platforms-iOS-yellow.svg)]()
+[![Platforms](https://img.shields.io/badge/Platforms-iOS & iPadOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/Language-Swift-orange.svg)]()
 [![SPM](https://img.shields.io/badge/SPM-Supported-lightblue.svg)]()
 [![Extensions](https://img.shields.io/badge/Extensions-218-red.svg)]()
 [![CustomTypes](https://img.shields.io/badge/Types-24-green.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
+
 <!-- [![Build Status](https://travis-ci.org/jVirus/extensions-kit.svg?branch=master)](https://travis-ci.org/jVirus/extensions-kit) -->
 <!--[![Coverage](https://codecov.io/gh/jVirus/extensions-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/jVirus/extensions-kit) -->
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
 <!-- [![Status](https://img.shields.io/badge/status-Alpha-magenta.svg)]() -->
 
