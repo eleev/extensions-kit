@@ -1,6 +1,6 @@
 # extensions-kit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Platforms](https://img.shields.io/badge/platforms-iOS_&_iPadOS-yellow.svg)]()
+[![Platforms](https://img.shields.io/badge/platforms-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![SPM](https://img.shields.io/badge/spm-Supported-lightblue.svg)]()
 [![Extensions](https://img.shields.io/badge/extensions-218-red.svg)]()
@@ -21,7 +21,7 @@
 <!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 20/October/2019.**
+**Last Update: 21/October/2019.**
 
 ![](logo-extensions_kit.png)
 
