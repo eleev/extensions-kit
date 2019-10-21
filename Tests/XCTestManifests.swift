@@ -8,7 +8,18 @@ public func allTests() -> [XCTestCaseEntry] {
         testCase(ArrayIntersectionTests.allTests),
         testCase(ArrayRemoveTests.allTests),
         testCase(ArrayFilterTests.allTests),
-        testCase(ArrayUnionTests.allTests)
+        testCase(ArrayUnionTests.allTests),
+        testCase(BoolTests.allTests),
+        testCase(DecodableTests.allTests),
+        testCase(DictionaryTests.allTests),
+        testCase(DoubleTests.allTests),
+        testCase(IntDecimalToBinaryTests.allTests),
+        testCase(IntTests.allTests),
+        testCase(NSObjectTests.allTests),
+        testCase(OptionSetTests.allTests),
+        testCase(SeqeunceTests.allTests),
+        testCase(StringTests.allTests),
+        testCase(UnicodeOutputStreamTests.allTests)
     ]
 }
 #endif
