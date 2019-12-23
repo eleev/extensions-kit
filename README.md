@@ -5,7 +5,7 @@
 [![SPM](https://img.shields.io/badge/spm-Supported-lightblue.svg)]()
 [![Extensions](https://img.shields.io/badge/extensions-219-red.svg)]()
 [![CustomTypes](https://img.shields.io/badge/types-24-green.svg)]()
-[![Build](https://github.com/rosberry/extensions-kit/workflows/Build/badge.svg)]()
+[![Build](https://github.com/jvirus/extensions-kit/workflows/Build/badge.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 <!-- [![Build Status](https://travis-ci.org/jVirus/extensions-kit.svg?branch=master)](https://travis-ci.org/jVirus/extensions-kit) -->
