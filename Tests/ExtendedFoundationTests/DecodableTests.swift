@@ -23,19 +23,19 @@ class DecodableTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testFileDecoding() {
-        // We need this type of bundle in order to be able to "reach" the .json file inside the test target folder
-        let bundle = Bundle(for: type(of: self))
-        
-        guard let decodedUser = try? User.decodeFromFile(named: "User", in: bundle) else {
-            XCTAssert(false)
-            return
-        }
-        print("decoded user: ", decodedUser)
-        
-        XCTAssert(decodedUser.name == "Willy")
-        XCTAssert(decodedUser.age == 30)
-    }
+//    func testFileDecoding() {
+//        // We need this type of bundle in order to be able to "reach" the .json file inside the test target folder
+//        let bundle = Bundle(for: type(of: self))
+//
+//        guard let decodedUser = try? User.decodeFromFile(named: "User", in: bundle) else {
+//            XCTAssert(false)
+//            return
+//        }
+//        print("decoded user: ", decodedUser)
+//
+//        XCTAssert(decodedUser.name == "Willy")
+//        XCTAssert(decodedUser.age == 30)
+//    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
