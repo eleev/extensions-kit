@@ -3,7 +3,7 @@
 [![Platforms](https://img.shields.io/badge/platforms-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg)]()
 [![SPM](https://img.shields.io/badge/spm-Supported-lightblue.svg)]()
-[![Extensions](https://img.shields.io/badge/extensions-218-red.svg)]()
+[![Extensions](https://img.shields.io/badge/extensions-219-red.svg)]()
 [![CustomTypes](https://img.shields.io/badge/types-24-green.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
@@ -21,7 +21,7 @@
 <!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 21/October/2019.**
+**Last Update: 23/December/2019.**
 
 ![](logo-extensions_kit.png)
 
@@ -61,7 +61,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 6](#core-image)
 - [Foundation - 109](#foundation)
-- [UIKit - 65](#uikit)
+- [UIKit - 66](#uikit)
 - [os - 1](#os)
 - [SpriteKit - 11](#spritekit)
 - [SceneKit - 2](#scenekit)
@@ -1046,6 +1046,7 @@ plane.run(flyoverAction)
 ### PHAsset
 #### [PHAsset+URL](/extensions-kit/Extensions/PhotoKit/PHAsset/PHAsset%2BURL.swift) 
 Provides possibility to get `URL` for image and video media types
+-->
 
 # 🙋‍♀️🙋‍♂️Contributing 
 - There is just one main rule for contributors - **please include your extensions in separete files**. It's important since such extension can be more easily referenced and reused.
