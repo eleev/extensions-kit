@@ -12,7 +12,7 @@ import XCTest
 class DecodableTests: XCTestCase {
 
     static var allTests = [
-//        ("testFileDecoding", testFileDecoding)
+        ("testFileDecoding", testFileDecoding)
     ]
     
     override func setUp() {
@@ -23,7 +23,7 @@ class DecodableTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-//    func testFileDecoding() {
+    func testFileDecoding() {
 //        // We need this type of bundle in order to be able to "reach" the .json file inside the test target folder
 //        let bundle = Bundle(for: type(of: self))
 //
@@ -35,7 +35,7 @@ class DecodableTests: XCTestCase {
 //
 //        XCTAssert(decodedUser.name == "Willy")
 //        XCTAssert(decodedUser.age == 30)
-//    }
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
