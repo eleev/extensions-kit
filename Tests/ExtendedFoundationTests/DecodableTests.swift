@@ -12,7 +12,7 @@ import XCTest
 class DecodableTests: XCTestCase {
 
     static var allTests = [
-        ("testFileDecoding", testFileDecoding)
+//        ("testFileDecoding", testFileDecoding)
     ]
     
     override func setUp() {
