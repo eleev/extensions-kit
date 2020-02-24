@@ -4,7 +4,7 @@
 [![Platforms](https://img.shields.io/badge/Platforms-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/Language-Swift-orange.svg)]()
 [![SPM](https://img.shields.io/badge/SPM-Supported-lightblue.svg)]()
-[![Extensions](https://img.shields.io/badge/Extensions-219-red.svg)]()
+[![Extensions](https://img.shields.io/badge/Extensions-246-red.svg)]()
 [![CustomTypes](https://img.shields.io/badge/Types-24-green.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
@@ -22,7 +22,7 @@
 <!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 23/December/2019.**
+**Last Update: 24/February/2020.**
 
 ![](logo-extensions_kit.png)
 
@@ -61,7 +61,7 @@ List of categories for convenient navigation. The `numbers` represent total numb
 - [Core Animation - 1](#core-animation)
 - [Core Graphics - 16](#core-graphics)
 - [Core Image - 6](#core-image)
-- [Foundation - 109](#foundation)
+- [Foundation - 146](#foundation)
 - [UIKit - 66](#uikit)
 - [os - 1](#os)
 - [SpriteKit - 11](#spritekit)
