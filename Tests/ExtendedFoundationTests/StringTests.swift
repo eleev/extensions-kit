@@ -203,6 +203,26 @@ class StringTests: XCTestCase {
         XCTAssert(result == "lo World")
     }
     
+    func testStringJSONValidation() {
+        let example =
+        """
+    {
+        "name":"kukumba.maybe",
+        "messages":["msg 1","msg 2","msg 3"],
+        "age":100
+
+    }
+    """
+        XCTAssertTrue(example.isJSON)
+    }
+    
+    func testStringUUIDValidation() {
+        let sampleFirst = "4320fa3d-c004-4f8d-873e-885d382c99b9"
+        let sampleSecond = "756150cb-a928-4941-b158-6fe3e2a40f16"
+        XCTAssertTrue(sampleFirst.isUUID)
+        XCTAssertTrue(sampleSecond.isUUID)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
