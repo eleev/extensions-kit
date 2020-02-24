@@ -57,4 +57,23 @@ extension String {
         }
         return true
     }
+
+    /// Check whether the string is a valid `JSON`
+    ///
+    /// - Returns: boolean value indicating whether self is `JSON`
+    public var isJSON: Bool {
+        guard
+            let jsonDataToVerify = self.data(using: String.Encoding.utf8),
+            let _ = try? JSONSerialization.jsonObject(with: jsonDataToVerify) else {
+                return false
+        }
+        return true
+    }
+    
+    /// Check whether the string is a valid `UUID`
+    ///
+    /// - Returns: boolean value indicating whether self is `UUID`
+    var isUUID: Bool {
+        return UUID(uuidString: self) != nil
+    }
 }
