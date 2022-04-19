@@ -6,6 +6,7 @@
 [![SPM](https://img.shields.io/badge/SPM-Supported-lightblue.svg)]()
 [![Extensions](https://img.shields.io/badge/Extensions-246-red.svg)]()
 [![CustomTypes](https://img.shields.io/badge/Types-24-green.svg)]()
+[![NLOC](https://img.shields.io/tokei/lines/github/jvirus/extensions-kit)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
 <!-- [![Build Status](https://travis-ci.org/jVirus/extensions-kit.svg?branch=master)](https://travis-ci.org/jVirus/extensions-kit) -->
@@ -22,7 +23,7 @@
 <!-- Documentation coverage also needs to be handled by CI -->
 <!-- [![Documentation](https://img.shields.io/badge/docs-100%25-magenta.svg)]() -->
 
-**Last Update: 24/February/2020.**
+**Last Update: 22/April/2022.**
 
 ![](logo-extensions_kit.png)
 
